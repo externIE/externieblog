@@ -6,14 +6,14 @@ email: daiweilai@foxmail.com
 description: "在这里探索iOS的一切。"
 keyword: "林义凯, 林义凯的博客, externIE, externie, linyikai, lyk, 义凯, 个人博客, 个人网站, 技术博客, iOS, Cocoa, Apple, WWDC, iPone, develop, 移动开发, APP, 设计模式, 最佳实践"
 url: "http://externie.github.io"              # your host, for absolute URL
-baseurl: "/externieblog"                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: true
-weibo_username:     I_義
-#zhihu_username:     daiweilai
+weibo_username:     ielinyikai
+zhihu_username:     externIE
 github_username:    externIE
 #twitter_username:  daiweilai
 #facebook_username:  daiweilai
