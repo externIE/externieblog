@@ -13,7 +13,7 @@ baseurl: "/externieblog"                             # for example, '/blog' if y
 # SNS settings
 RSS: true
 weibo_username:     ielinyikai
-zhihu_username:     externIE
+#zhihu_username:     externIE
 github_username:    externIE
 #twitter_username:  daiweilai
 #facebook_username:  daiweilai
