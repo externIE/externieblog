@@ -2,13 +2,13 @@
 layout:     post
 title:      "基于Node.js的即时通讯工具（移动智能终端课设）"
 subtitle:   "计科03班 20124980 林义凯"
-date:       2015-01-05 09:00:00
+date:       2016-01-05 09:00:00
 author:     "externIE"
 header-img: "img/post/2015-1-20-bg.jpg"
 tags:
     - 论文
 ---
-＃ 摘要：
+# 摘要：
 这是一个WebApp，用户间可以进行及时通讯，并且可以群聊，有最近聊天记录，最近联系人，以及消息推送，消息提醒，由于是纯webapp并且采用angular.js作客户端架构，应用可以实现全平台覆盖（良好适配桌面和手机屏幕），无论是win，mac，ios，android还是linux，稍加修改还可以作为android或ios上目前比较流行的hybrid app。主要架构：服务为LeanCloud，客户端视图采用HTML5，B/S连接采用WebSocket协议，客户端基本架构Angular.js。
 
 # 什么是Node.js:
