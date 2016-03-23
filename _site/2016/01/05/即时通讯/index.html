@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="在这里探索iOS的一切。">
+    <meta name="keyword"  content="林义凯, 林义凯的博客, externIE, externie, linyikai, lyk, 义凯, 个人博客, 个人网站, 技术博客, iOS, Cocoa, Apple, WWDC, iPone, develop, 移动开发, APP, 设计模式, 最佳实践">
+    <link rel="shortcut icon" href="http://daiweilai.github.io/img/common/favicon.ico">
+	
+	<link href="http://daiweilai.github.io//css/prism.css" rel="stylesheet" />
+	<script src="http://daiweilai.github.io//js/prism.js"></script>
+
+    <!--Custom JS-->
+    <script src="js/islider.js"></script>
+    <script src="js/plugins/islider_desktop.js"></script>
+	
+    <title>基于Node.js的即时通讯工具（移动智能终端课设） - 林义凯的博客|externIE's Blog</title>
+
+    <link rel="canonical" href="http://externie.github.io/externieblog/2016/01/05/%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/externieblog/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/externieblog/css/hux-blog.css">
+    <link rel="stylesheet" href="/externieblog/css/header.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/externieblog/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/externieblog/">externIE’s Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/externieblog/">主页</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/externieblog/about/">关于</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/externieblog/tags/">标签</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/externieblog/img/post/2015-1-20-bg.jpg" width="0" height="0"> -->
+
+	
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/externieblog/img/post/2015-1-20-bg.jpg')
+    }
+	
+	/*导航*/
+	.BlogAnchor {
+	    background: #ffffff;
+	    padding: 0px;
+	    line-height: 180%;
+	}
+	.BlogAnchor p {
+	    font-size: 18px;
+	    color: #15a230;
+	    margin-bottom: 0.3em;
+	}
+	.BlogAnchor .AnchorContent {
+	    padding: 5px 0px;
+	}
+	.BlogAnchor li{
+	    text-indent: 20px;
+	    font-size: 18px;
+	}
+	#AnchorContentToggle {
+	    font-size: 18px;
+	    font-weight: normal;
+	    color: #FFF;
+	    display: inline-block;
+	    line-height: 30px;
+	    background: #5cc26f;
+	    font-style: normal;
+	    padding: 1px 20px;
+	    margin-right: 10px;
+	}
+	.BlogAnchor a:hover {
+	    color: #5cc26f;
+	}
+	.BlogAnchor a {
+	    text-decoration: none;
+	}
+	
+
+	.ScrollTop {
+		width: 50px;
+		height: 50px;
+		background: black;
+		-moz-border-radius: 25px;
+		-webkit-border-radius: 25px;
+		border-radius: 25px;
+		position:fixed;
+		    bottom:18px;
+		    right:30px; 
+			-webkit-box-shadow: #666 0px 0px 5px;  
+			   -moz-box-shadow: #666 0px 0px 5px;  
+			   box-shadow: #666 0px 0px 5px; 
+	}
+	.ScrollTop p {
+	    font-size: 15px;
+	    color: #ffffff;
+		position:fixed;
+		    bottom:0px;
+		    right:40px;
+	}
+	
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/externieblog/tags/#论文" title="论文">论文</a>
+                        
+                    </div>
+                    <h1>基于Node.js的即时通讯工具（移动智能终端课设）</h1>
+                    
+                    
+                    <h2 class="subheading">计科03班 20124980 林义凯</h2>
+                    
+                    <span class="meta">Posted by externIE on January 5, 2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+
+<div class="BlogAnchor">
+    <p>
+        <b id="AnchorContentToggle" title="收起" style="cursor:pointer;">目录[+]</b>
+    </p>
+    <div class="AnchorContent" id="AnchorContent"> </div>
+</div>
+
+<div class="ScrollTop">
+    <p>
+        <b id="ScrollTopToggle" title="顶部" style="cursor:pointer;">Top</b>
+    </p>
+</div>
+				<h1 id="section">摘要：</h1>
+<p>这是一个WebApp，用户间可以进行及时通讯，并且可以群聊，有最近聊天记录，最近联系人，以及消息推送，消息提醒，由于是纯webapp并且采用angular.js作客户端架构，应用可以实现全平台覆盖（良好适配桌面和手机屏幕），无论是win，mac，ios，android还是linux，稍加修改还可以作为android或ios上目前比较流行的hybrid app。主要架构：服务为LeanCloud，客户端视图采用HTML5，B/S连接采用WebSocket协议，客户端基本架构Angular.js。</p>
+
+<h1 id="nodejs">什么是Node.js:</h1>
+<p>Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行的数据密集型的实时应用。Node是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。Node.
+js使用Module模块去划分不同的功能，以简化应用的开发。Modules模块有点象C语言中的类库。每一个Node.js的类库都包含了十分丰富的各类函数，比如http模块就包含了和http功能相关的很多函数，可以帮助开发者很容易地对比如http,tcp/udp等进行操作，还可以很容易的创建http和tcp/udp的服务器。</p>
+
+<h1 id="websocketwebsocket">什么是WebSocket协议以及为什么要用WebSocket：</h1>
+<p>在www服务器下我们常用的传输协议有http1.0和http1.1，那么我们的应用为什么要采用WebSocket而不是采用更主流支持更广的http协议呢？其实我们都知道http是一种无状态协议，所谓的无状态就是对事物处理没有记忆能力，并且http通常用于短连接，在不需要状态信息的短连接传输文件它的效率是很高的，但我们需要做的是一个即时通讯工具，需要的是不断的联系，显然http看起来并不是那么合适。那么http协议是不是就不能做到呢，其实也不是，我们照样可以用http来实现或者说模拟实时通讯，我们可以用http建立long poll就是长连接，客户端在没收到消息之前一直保持连接，在收到消息后，再次建立连接等待下一次消息的到来。另一种方法就是采用ajax技术不断的轮询服务器是否有消息等待客户端接收。显然听起来这两种方法都是非常糟糕的，当客户端一多，服务器每时每刻都会收到各种客户端的询问，资源消耗将是非常巨大的。如果我们有服务器主动转发消息的机制不是更好吗，所以我们需要采用WebSocket，因为它只需要客户端与服务器端进行一次握手建立连接就可以了，并且服务器能记住客户端的信息，不需要每次发送消息都要客户端将自己的状态再发给服务器，这么一说用WebSocket协议显然再合适不过了。但是WebSocket的支持并不像http那样广泛，所以再部署项目的时候我们也不能掉以轻心。</p>
+
+<h1 id="angularjsangularjs">什么是Angular.js以及为什么要用Angular.js：</h1>
+<p>Angular.js是谷歌开发的一款Web应用开发框架。它提供了一系列兼容性良好并且可拓展的服务，包括数据绑定，DOM操作，MVC设计模式和模块加载等。它不仅仅是一个类库而是提供了一个完整的框架，避免了和多个类库交互，不再需要熟悉不同的接口，也许性能上比不上jQuery库开发的应用，但是其开发webApp应用的效率是jQuery库不能比的。所以我们在开发webApp的时候通常会选择较为简单的途径－Angular.js，在这个项目中我们还用到了Angular.js中三个不同的模块分别是：1.leancloud-realtime（leancloud SDK 的angular.js包装）；2.ui.router；3.ngMaterial（提供Material风格的UI组件）</p>
+
+<h1 id="leancloudleancloud">什么是leancloud以及我们为什么要用leancloud：</h1>
+<p>leancloud是一套服务，提供免费和收费的后端服务，使开发者更专注于前端应用的设计，实现真正的零后端开发，开发者不用再关心数据和应用服务器，并且leancloud提供的云引擎可以将代码部署在云端执行，更加灵活的满足各种需求。在这个应用中我们的数据通讯以及数据存储推送等等服务都是由leancloud来承担，作为应用开发者我们真正做到只需要关心数据对象本身，而不用关心对象如何进行存储和获取，并且采用leancloud的js-realtime-sdk进行前端的开发。</p>
+
+<h1 id="section-1">系统分析及设计方案：</h1>
+<p>##按模块划分：
+我们首先来分析实际发生一段对话需要有几个实体，首先对话需要人物，而且至少是两个和两个以上的人物，其次对话需要有对话内容，在一次对话的每段内容中不仅包括对话消息还有产生对话的时间以及发送人。所以我们如果设计一个即时通讯的应用，至少一定要有两个模块，一个是用户（用来管理用户信息），另一个就是对话（管理对话内容和参与者信息），那么对于一个实用的系统来说我们还需要一个模块用来管理用户和其他用户的对话缓存（很遗憾在这个系统中我们没有实现用户关系系统，我们没有为新用户提供注册ID并参与对话的能力，我们仅仅可以实现已有用户之间的对话通过后台创建不同的对话来实现不同用户或用户群间的简单交流）。
+下面是我们的代码结构：
+src
+├── app
+│   ├── components      // 组件
+│   │   ├── conversation-cache    // 会话本地缓存 service
+│   │   ├── message               // 消息 directive
+│   │   ├── reverse-infinite-list // 向上滚动无限加载列表 directive
+│   │   └── user                  // 用户相关 service
+│   ├── conversation    // 会话 view，app 主界面
+│   │   └── conversation-message  // 消息 view，会话 view 的子 view
+│   ├── index.config.js // 配置依赖模块
+│   ├── index.module.js // js 入口，注册依赖模块，启动 app
+│   ├── index.route.js  // 配置路由
+│   ├── index.run.js    // 启动 app 的代码
+│   ├── index.scss
+│   └── login           // 登录 view
+├── assets
+│   ├── fonts
+│   └── images
+├── favicon.ico
+└── index.html  // 页面入口，ui-view 容器
+## 按业务划分：
+我们还是采用经典的MVC模式来设计我们的应用，视图方面我们采用html＋css的方式，每个视图有专有的控制器联系视图和后台的model。具体划分如下：</p>
+
+<p>src
+├── app
+│   ├── login     // 登陆
+│   │   ├── login.html+login.scss    // login界面
+│   │   └── login.controller.js                 // login控制器
+│   ├── conversation    // 会话 view，app 主界面
+│   │   ├── conversation-message  // 消息 view，会话 view 的子 view
+│   │   │ ├── conversation-message.html+  conversation-message.css
+│   │   │ └── conversation-message.controller.js
+│   │   ├── conversation.html+conversation.scss
+│   │   └── conversation.js
+└── index.html  // 页面入口，ui-view 容器</p>
+
+<h1 id="section-2">系统实现：</h1>
+<p>## index.module.js:
+js 入口，申明依赖模块，配置依赖模块，注册 components 与 views，启动 app。
+依赖的 angular 模块有：
+- <a href="https://github.com/leeyeh/angular-leancloud-realtime">leancloud-realtime</a>：leancloud realtime SDK 的 angular 包装
+- <a href="https://github.com/angular-ui/ui-router">ui.router</a>：基于状态的 router
+- <a href="https://material.angularjs.org/">ngMaterial</a>：提供 material design UI 组件</p>
+
+<h2 id="indexroutejs">index.route.js</h2>
+<p>配置 ui.router（提供了路由嵌套和视图命名的特性）</p>
+
+<h2 id="indexconfigjs">index.config.js</h2>
+<p>配置其他依赖模块</p>
+
+<h2 id="indexrunjs">index.run.js</h2>
+<p>启动 app 的脚本，通过监听 ui.router 的 <code class="highlighter-rouge">stateChangeStart</code> 事件在视图切换时检查用户登录状态。</p>
+
+<h2 id="login">Login</h2>
+<p>通过 UserService 的 login 方法，最终调用了 SDK 的  <a href="https://leancloud.cn/docs/js_realtime.html#AV_realtime"><code class="highlighter-rouge">AV.realtime()</code></a>，与实时通讯 server 建立长连接。然后跳转到 conversation 视图。</p>
+
+<h2 id="coversation">Coversation</h2>
+<p>聊天主界面，包括了当前用户的对话列表以及子视图 <code class="highlighter-rouge">ConversationMessage</code>。
+这个视图主要做了这些事情：</p>
+
+<ul>
+  <li>获取当前用户的所有会话，按照群聊单聊分类。</li>
+  <li>当新用户没有加入任何会话时，自动加入一个预设的群聊会话（defaultConversation）。</li>
+  <li>点击会话列表时让 <code class="highlighter-rouge">ConversationMessage</code> 视图转到对应的会话状态。</li>
+  <li>响应 rt 的 <code class="highlighter-rouge">message</code> 事件，维护会话的未读消息数。</li>
+  <li>响应 rt 的 <code class="highlighter-rouge">message</code> 事件、rt 的 <code class="highlighter-rouge">join</code> 事件，响应 <code class="highlighter-rouge">ConversationMessage</code> scope 的 <code class="highlighter-rouge">conv.messagesent</code> 事件，维护消息列表，将其按照最后消息时间排序。</li>
+  <li>点击 Logout 按钮时调用 UserService 的 login 方法进行注销。然后跳转到 Login 视图。</li>
+</ul>
+
+<h2 id="coversationmessage">CoversationMessage</h2>
+<p>聊天消息视图，<code class="highlighter-rouge">Coversation</code> 的子视图，由工具栏、消息列表、输入框以及在线用户列表侧边栏组成。其中暂态对话没有「在线用户列表」
+」概念。
+主要做了这些事情：
+- 根据当前的路由信息，获取或创建一个会话。
+- 获取该会话的历史消息记录，用户滚到顶部时加载更多历史消息。
+- 响应该会话的 <code class="highlighter-rouge">message</code> 事件，在列表中显示消息内容。
+- （可用的话）获取该会话的在线用户列表，提供本地的查询功能。
+- 通知 <code class="highlighter-rouge">Conversation</code> 视图用以清除该会话的未读消息计数。
+发送消息，通知 <code class="highlighter-rouge">Conversation</code> 视图用以调整会话列表排序。</p>
+
+<h2 id="message">Message</h2>
+<p>Message directive 封装了消息的样式，需要传入四个属性：
+- <code class="highlighter-rouge">message</code>：根据不同的消息类型展示不同的消息
+- <code class="highlighter-rouge">previousMessage</code>：根据上一条消息与当前消息的时间戳决定是否显示消息时间
+- <code class="highlighter-rouge">isMine</code>：标记是用户自己发送的消息
+<code class="highlighter-rouge">onNameClick</code>：点击消息发送方 ID 的回调</p>
+
+<h2 id="reverseinfinitelist">ReverseInfiniteList</h2>
+<p>封装了向上滚动到容器顶部时触发回调的 directive。</p>
+
+<h2 id="user">User</h2>
+<p>提供用户登录、注销、获取用户登录状态、用户信息的 service。</p>
+
+<h2 id="section-3">区分单聊与群聊</h2>
+<p>LeanMessage 服务本身不区分单聊与群聊，demo 中在会话属性（<code class="highlighter-rouge">attr</code>）中增加了一个标识符 <code class="highlighter-rouge">customConversationType</code> 来标识这是一个单聊会话。</p>
+
+<h1 id="section-4">系统后台的搭建：</h1>
+<p>系统后台的搭建其实十分简单，由于该应用用的是leancloud的服务，我们只需要在我们的帐号里面创建一个应用，在应用－设置－安全中心－Web安全域名里面输入该应用所部属的域名，并且在应用－设置－应用key里面找到appId，在leancloud-runtime和服务器进行连接的时候我们需要绑定应用的appID。在应用的存储页面我们可以看到不同的class，可以认为是我们应用的数据库，存储了所有网络会话信息。</p>
+
+<h1 id="section-5">该系统存在的问题：</h1>
+<p>由于对leancloud后台服务了解的缺失，这个系统并没有一个比较全面的用户系统支持，应用中并不支持用户自由注册和添加删除好友关系，也不支持对话删除功能。同时使用angular.js框架的应用性能并不理想，目前该框架的应用较少，websocket协议的支持面也比较窄，有的服务器不能支持该协议。ngMaterial也是较新的一个angular.js模块，通过实践我们发现在手机UC浏览器上这个项目不能正常运行。如果要想在 Android WebView 中使用，需要注意开启 WebSocket 支持。另外，在部分 Android 机型的 WebView 中不支持 WebSocket 的安全链接，所以需要从 wss 协议转为 ws 协议，关闭 WebSocket 的 SSL。</p>
+
+<h1 id="section-6">项目现况：</h1>
+<p>http://externie.com/dist
+请用账号test1登录（不需要输入邮箱地址）</p>
+
+<h1 id="section-7">参考文献：</h1>
+<p>1.百度百科websocket词条
+2.nodejs官网 http://nodejs.org/
+3.七步从Angular.js菜鸟到专家 http://developer.51cto.com/art/201308/408586.htm
+4.Gulp as a Development Web Server http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server–cms-20903
+5.leancloud数据存储文档
+6.leancloud实时通讯文档
+7.leancloud javascript文档</p>
+
+				
+<!--协议说明 -->
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+				<center>本<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">文章</span>由<span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">林义凯</span>创作，采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。</center>
+
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share"
+                    style="text-align: right"
+                    data-thread-key="/2016/01/05/即时通讯"
+                    data-title="基于Node.js的即时通讯工具（移动智能终端课设）"
+                    data-url="http://externie.github.io/externieblog/2016/01/05/%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/"
+                    data-images="http://externie.github.io/externieblog/img/post/2015-1-20-bg.jpg"
+                    data-content="摘要：
+这是一个WebApp，用户间可以进行及时通讯，并且可以群聊，有最近聊天记录，最近联系人，以及消息推送，消息提醒，由于是纯webapp并且采用ang... | 林义凯的博客|externIE's Blog " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                      </ul>
+                      <div class="ds-share-icons-more">
+                      </div>
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/externieblog/2015/11/17/iOS%E5%BA%94%E7%94%A8%E5%8F%91%E5%B8%83%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%86%E8%8A%82/" data-toggle="tooltip" data-placement="top" title="iOS应用发布中的一些细节">&larr; 上一篇</a>
+                    </li>
+                    
+                    
+                </ul>
+
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="/2016/01/05/即时通讯"
+                        data-title="基于Node.js的即时通讯工具（移动智能终端课设）"
+                        data-url="http://externie.github.io/externieblog/2016/01/05/%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+            </div>
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">标签选择</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#基础整理" title="基础整理" rel="2">
+                                    基础整理
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#预编译" title="预编译" rel="1">
+                                    预编译
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#宏定义" title="宏定义" rel="1">
+                                    宏定义
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#奇巧集" title="奇巧集" rel="1">
+                                    奇巧集
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#PaintCode" title="PaintCode" rel="1">
+                                    PaintCode
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#debug" title="debug" rel="1">
+                                    debug
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#调试" title="调试" rel="1">
+                                    调试
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#闲暇集" title="闲暇集" rel="1">
+                                    闲暇集
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#拾遗集" title="拾遗集" rel="1">
+                                    拾遗集
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#论文" title="论文" rel="1">
+                                    论文
+                                </a>
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+<script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
+ <script src="http://daiweilai.github.io/js/lightbox-plus-jquery.min.js"></script>
+ <link rel="stylesheet" href="http://daiweilai.github.io/css/lightbox.css">
+<script>
+$(".container").find("h2,h3,h4,h5,h6").each(function(i,item){
+    var tag = $(item).get(0).localName;
+    $(item).attr("id","wow"+i);
+    $("#AnchorContent").append('<li><a class="new'+tag+' anchor-link" onclick="return false;" href="#" link="#wow'+i+'">'+$(this).text()+'</a></li>');
+    $(".newh2").css("margin-left",0);
+    $(".newh3").css("margin-left",20);
+    $(".newh4").css("margin-left",40);
+    $(".newh5").css("margin-left",60);
+    $(".newh6").css("margin-left",80);
+});
+$("#AnchorContent").toggle();
+$("#AnchorContentToggle").click(function(){
+    var text = $(this).html();
+    if(text=="目录[-]"){
+        $(this).html("目录[+]");
+        $(this).attr({"title":"展开"});
+    }else{
+        $(this).html("目录[-]");
+        $(this).attr({"title":"收起"});
+    }
+    $("#AnchorContent").toggle();
+});
+
+$(".anchor-link").click(function(){
+    $("html,body").animate({scrollTop: $($(this).attr("link")).offset().top}, 1000);
+});
+
+$('.ScrollTop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+//给图片添加点击放大事件
+$(".container").find("img").each(function(i,item){
+    var tag = $(item).get(0);
+	tag.parentNode.innerHTML = "<div>" + "<a href="+tag.src+' data-lightbox="aaa"'+ " >"+ "<img src=" + tag.src + " />" +"</a>" + "</div>"
+	  
+});
+</script>
+
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'externie';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: ''
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a target="_blank" href="/externieblog/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/ielinyikai">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/externIE">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; externIE’s Blog 2016
+                    <br>
+                    Star my <a href="https://github.com/externie" target="_blank">blog</a> 
+               </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/externieblog/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/externieblog/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/externieblog/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- Highlight.js -->
+<script>
+    // async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+//         hljs.initHighlightingOnLoad();
+//     })
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/common/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
