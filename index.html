@@ -5,12 +5,12 @@ description: "据说大神都有属于他们自己的技术博客"
 
 {% for post in paginator.posts %}
 
-        <li style="">
+        <li style="margin: 0px;">
             <div class="collapsible-header waves-effect waves-teal active" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
                 {{ post.title }}
             </div>
             <!-- <a href="{{ post.url | prepend: site.baseurl }}"> -->
-            <div class="collapsible-body">
+            <div class="collapsible-body" style="padding: 1rem;">
                 {% if post.subtitle %}
                 <h6 class="post-subtitle">
                     {{ post.subtitle }}
@@ -19,16 +19,48 @@ description: "据说大神都有属于他们自己的技术博客"
                 <div class="post-content-preview">
                     {{ post.content | strip_html | truncate:200 }}
                 </div>
+
                 
             </div>
             <!-- </a> -->
        </li>
     
-    <p class="flow-text" style="text-align: right;font-size: 10;margin: 0px 24px 24px 0px;">
-        开始日期{{ post.date | date: "%B %-d, %Y" }}
-    </p>
+   
+    <div id="iSlider-effect-wrapper" style="margin: 0px 0px 14px 0px;">
+        <div id="text-effect{{ post.title }}" class="iSlider-effect" style=""></div>
+    </div>
 
-<!-- <hr> -->
+<script>
+var domList = [
+{
+    'height' : '100%',
+    'width' : '100%',
+    'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：{{ post.date | date: "%B %-d, %Y" }}</p>'
+},{
+    'height' : '100%',
+    'width' : '100%',
+    'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：A区主教113</p>'
+},{
+    'height' : '100%',
+    'width' : '100%',
+    'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
+}
+];
+
+//all animation effect
+new iSlider({
+    data: domList,
+    type:'dom',
+    dom: document.getElementById("text-effect{{ post.title }}"),
+    duration: 2000,
+    animateType: 'default',
+    isAutoplay: true,
+    isLooping: true,
+    ratio:0.1,
+    isVertical: true,
+}).bindMouse();
+</script>
+
 {% endfor %}
 
 <!-- Pager -->
