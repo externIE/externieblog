@@ -5,8 +5,8 @@ description: "据说大神都有属于他们自己的技术博客"
 
 {% for post in paginator.posts %}
 
-        <li style="margin:0px;">
-            <div class="collapsible-header">
+        <li style="">
+            <div class="collapsible-header waves-effect waves-teal" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
                 {{ post.title }}
             </div>
             <!-- <a href="{{ post.url | prepend: site.baseurl }}"> -->
@@ -24,11 +24,11 @@ description: "据说大神都有属于他们自己的技术博客"
             <!-- </a> -->
        </li>
     
-    <p class="" style="text-align: right;font-size: 10;margin-bottom: 10px;">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    <p class="flow-text" style="text-align: right;font-size: 10;margin: 0px 24px 24px 0px;">
+        开始日期{{ post.date | date: "%B %-d, %Y" }}
     </p>
 
-<hr>
+<!-- <hr> -->
 {% endfor %}
 
 <!-- Pager -->
