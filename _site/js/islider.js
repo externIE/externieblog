@@ -429,10 +429,14 @@ iSlider.prototype._bindHandler = function () {
         },100);
     };
 
+    var touchAble = this._opts.touchAble;
+    if (touchAble) {
     outer.addEventListener('touchstart', startHandler);
     outer.addEventListener('touchmove', moveHandler);
     outer.addEventListener('touchend', endHandler);
     window.addEventListener('orientationchange', orientationchangeHandler);
+    }
+    
 };
 
 iSlider.prototype.reset = function () {
