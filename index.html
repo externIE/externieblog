@@ -17,7 +17,9 @@ description: "据说大神都有属于他们自己的技术博客"
                 </h6>
                 {% endif %}
                 <div class="post-content-preview">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
                     {{ post.content | strip_html | truncate:200 }}
+                    </a>
                 </div>
 
                 

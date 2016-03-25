@@ -19,7 +19,7 @@ tags:
 
 图0
 
-![](http://daiweilai.github.io/img/post/2015-11-17-pic0.png)
+![测试测试测试~~~]({{site.url}}/img/post/2015-11-17-pic0.png)
 
 威武！
 
