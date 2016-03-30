@@ -9,23 +9,48 @@ description: "据说大神都有属于他们自己的技术博客"
             <div class="collapsible-header waves-effect waves-teal active" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
                 {{ post.category  }}
                 {{ post.title }}
-
-                <!-- {{post.tags}} -->
-                <!-- {{ post.category }} -->
             </div>
             <!-- <a href="{{ post.url | prepend: site.baseurl }}"> -->
-            <div class="collapsible-body" style="padding: 1rem;">
-                {% if post.subtitle %}
-                <h6 class="post-subtitle">
-                    {{ post.subtitle }}
+            <div class="collapsible-body" style="padding: 1rem; overflow: auto;">
 
-                </h6>
-                {% endif %}
-                <div class="post-content-preview">
-                    <a href="{{ post.url | prepend: site.baseurl }}">
-                    {{ post.content | strip_html | truncate:200 }}
-                    </a>
+                <div style="{% if post.speaker-img %}width: 50%;float: right;{% endif %}">
+                    {% if post.subtitle %}
+                        <h6 class="post-subtitle">
+                            {{ post.subtitle }}
+                        </h6>
+                    {% endif %}
+
+                    <div class="post-content-preview">
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            {% if post.speaker-img %}
+                                {{ post.content | strip_html | truncate:100 }}
+                            {% else %}
+                                {{ post.content | strip_html | truncate:200 }}
+                            {% endif %}
+                        </a>
+                    </div>
                 </div>
+
+                {% if post.speaker-img %}
+           <!--              <div style="width: 48%;height: 100%;float: left;background: url({{ post.speaker-img }});">
+                            
+                        </div> -->
+                        <!-- <img src="{{ post.speaker-img }}" style="width: 49%;height: 100%;float: left;"> -->
+                        <div style="width: 48%;height: auto;float: left;" class="">
+                            <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                 <div class="card-image waves-effect waves-block waves-light">
+                                   <img class="activator" src="{{ post.speaker-img }}">
+                                 </div>
+                                 <div class="card-content">
+                                   <span class="card-title activator grey-text text-darken-4">主讲人: {{ post.speaker }}</span>
+                                 </div>
+                                 <div class="card-reveal">
+                                   <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                   <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                 </div>
+                            </div>
+                        </div>
+                {% endif %}
 
                 
             </div>
@@ -52,7 +77,7 @@ var changeMonthToNum = function(str){
         return ('1月'+str.substr(i,str.length));
         case 'February':
         return ('2月'+str.substr(i,str.length));
-        case 'Mar':
+        case 'March':
         return ('3月'+str.substr(i,str.length));
         case 'April':
         return ('4月'+str.substr(i,str.length));
