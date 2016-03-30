@@ -18,8 +18,9 @@ description: "据说大神都有属于他们自己的技术博客"
                         <h6 class="post-subtitle">
                             {{ post.subtitle }}
                         </h6>
+                        <br/>
                     {% endif %}
-
+                    
                     <div class="post-content-preview">
                         <a href="{{ post.url | prepend: site.baseurl }}">
                             {% if post.speaker-img %}
@@ -41,13 +42,13 @@ description: "据说大神都有属于他们自己的技术博客"
                                  <div class="card-image waves-effect waves-block waves-light">
                                    <img class="activator" src="{{ post.speaker-img }}">
                                  </div>
-                                 <div class="card-content">
-                                   <span class="card-title activator grey-text text-darken-4" style="font-size: 15px;">主讲人: {{ post.speaker }}</span>
+                                 <div class="card-content valign-wrapper">
+                                   <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: {{ post.speaker }}</span>
                                  </div>
-                                 <div class="card-reveal">
-                                   <span class="card-title activator grey-text text-darken-4" style="font-size: 15px;">主讲人: {{ post.speaker }}</span>
+                                 <div class="card-reveal" style="padding: 0px 10px;">
+                                   <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px; width: 100%;">主讲人: {{ post.speaker }}</span>
                                    <br/>
-                                   <p style="padding: 0px;">
+                                   <p style="padding: 0px 0px 0px ;">
                                         {{ post.speaker-profile }}
                                    </p>
                                  </div>
