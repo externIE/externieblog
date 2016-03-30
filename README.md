@@ -114,7 +114,7 @@ layout:     post
 title:      "半年的iOS代码生活"
 subtitle:   "加班的领悟"
 date:       2015-11-11 12:00:00
-author:     "externIE"
+speaker:     "externIE"
 header-img: "img/post/2015-11-11-bg.jpg"
 tags:
     - 闲暇集

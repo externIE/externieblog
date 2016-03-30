@@ -3,10 +3,11 @@ layout:     post
 title:      "iOS应用发布中的一些细节"
 subtitle:   "玩转iOS应用发布"
 date:       2015-11-17 12:00:00
-author:     "externIE"
+speaker:     "externIE"
 header-img: "img/post/2015-11-17-bg.jpg"
 tags:
     - 拾遗集
+
 ---
 
 # iOS应用发布中的一些细节

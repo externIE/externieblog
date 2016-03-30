@@ -7,13 +7,18 @@ description: "据说大神都有属于他们自己的技术博客"
 
         <li style="margin: 0px;">
             <div class="collapsible-header waves-effect waves-teal active" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
+                {{ post.category  }}
                 {{ post.title }}
+
+                <!-- {{post.tags}} -->
+                <!-- {{ post.category }} -->
             </div>
             <!-- <a href="{{ post.url | prepend: site.baseurl }}"> -->
             <div class="collapsible-body" style="padding: 1rem;">
                 {% if post.subtitle %}
                 <h6 class="post-subtitle">
                     {{ post.subtitle }}
+
                 </h6>
                 {% endif %}
                 <div class="post-content-preview">

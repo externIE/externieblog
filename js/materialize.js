@@ -35,7 +35,7 @@ if (typeof(jQuery) === 'undefined') {
  * of conditions and the following disclaimer in the documentation and/or other materials
  * provided with the distribution.
  *
- * Neither the name of the author nor the names of contributors may be used to endorse
+ * Neither the name of the speaker nor the names of contributors may be used to endorse
  * or promote products derived from this software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
@@ -204,7 +204,7 @@ jQuery.extend( jQuery.easing,
  * of conditions and the following disclaimer in the documentation and/or other materials
  * provided with the distribution.
  *
- * Neither the name of the author nor the names of contributors may be used to endorse
+ * Neither the name of the speaker nor the names of contributors may be used to endorse
  * or promote products derived from this software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
@@ -2304,7 +2304,7 @@ $(document).ready(function(){
  * throttle() and getTime() taken from Underscore.js
  * https://github.com/jashkenas/underscore
  *
- * @author Copyright 2013 John Smart
+ * @speaker Copyright 2013 John Smart
  * @license https://raw.github.com/thesmart/jquery-scrollspy/master/LICENSE
  * @see https://github.com/thesmart
  * @version 0.1.2

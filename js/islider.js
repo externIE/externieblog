@@ -1,7 +1,7 @@
 /**
  * iSlider 
  * A simple, efficent mobile slider
- * @Author qbatyqi
+ * @speaker qbatyqi
  *
  * @param {Object}      opts                参数集
  * @param {Element}     opts.dom            外层元素        Outer wrapper

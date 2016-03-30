@@ -3,7 +3,7 @@ layout:     post
 title:      "无比迅速敏捷地开发iOS超精美控件"
 subtitle:   "没骗你，真的很迅速！"
 date:       2015-01-29 12:00:00
-author:     "DavidDay"
+speaker:     "DavidDay"
 header-img: "img/post/2015-1-29-bg.jpg"
 tags:
     - 奇巧集

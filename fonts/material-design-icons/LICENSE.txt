@@ -19,13 +19,13 @@ Using Creative Commons Public Licenses
 
 Creative Commons public licenses provide a standard set of terms and
 conditions that creators and other rights holders may use to share
-original works of authorship and other material subject to copyright
+original works of speakership and other material subject to copyright
 and certain other rights specified in the public license below. The
 following considerations are for informational purposes only, are not
 exhaustive, and do not form part of our licenses.
 
      Considerations for licensors: Our public licenses are
-     intended for use by those authorized to give the public
+     intended for use by those speakerized to give the public
      permission to use material in ways otherwise restricted by
      copyright and certain other rights. Our licenses are
      irrevocable. Licensors should read and understand the terms
@@ -45,7 +45,7 @@ exhaustive, and do not form part of our licenses.
      example, because of any applicable exception or limitation to
      copyright--then that use is not regulated by the license. Our
      licenses grant only permissions under copyright and certain
-     other rights that a licensor has authority to grant. Use of
+     other rights that a licensor has speakerity to grant. Use of
      the licensed material may still be restricted for other
      reasons, including because others have copyright or other
      rights in the material. A licensor may make special requests,
@@ -100,7 +100,7 @@ Section 1 -- Definitions.
      Rights.
 
   e. Effective Technological Measures means those measures that, in the
-     absence of proper authority, may not be circumvented under laws
+     absence of proper speakerity, may not be circumvented under laws
      fulfilling obligations under Article 11 of the WIPO Copyright
      Treaty adopted on December 20, 1996, and/or similar international
      agreements.
@@ -120,7 +120,7 @@ Section 1 -- Definitions.
   i. Licensed Rights means the rights granted to You subject to the
      terms and conditions of this Public License, which are limited to
      all Copyright and Similar Rights that apply to Your use of the
-     Licensed Material and that the Licensor has authority to license.
+     Licensed Material and that the Licensor has speakerity to license.
 
   j. Licensor means the individual(s) or entity(ies) granting rights
      under this Public License.
@@ -166,15 +166,15 @@ Section 2 -- Scope.
           6(a).
 
        4. Media and formats; technical modifications allowed. The
-          Licensor authorizes You to exercise the Licensed Rights in
+          Licensor speakerizes You to exercise the Licensed Rights in
           all media and formats whether now known or hereafter created,
           and to make technical modifications necessary to do so. The
           Licensor waives and/or agrees not to assert any right or
-          authority to forbid You from making technical modifications
+          speakerity to forbid You from making technical modifications
           necessary to exercise the Licensed Rights, including
           technical modifications necessary to circumvent Effective
           Technological Measures. For purposes of this Public License,
-          simply making modifications authorized by this Section 2(a)
+          simply making modifications speakerized by this Section 2(a)
           (4) never produces Adapted Material.
 
        5. Downstream recipients.
@@ -405,7 +405,7 @@ Section 8 -- Interpretation.
   d. Nothing in this Public License constitutes or may be interpreted
      as a limitation upon, or waiver of, any privileges and immunities
      that apply to the Licensor or You, including from the legal
-     processes of any jurisdiction or authority.
+     processes of any jurisdiction or speakerity.
 
 
 =======================================================================
@@ -416,10 +416,10 @@ licenses to material it publishes and in those instances will be
 considered the "Licensor." Except for the limited purpose of indicating
 that material is shared under a Creative Commons public license or as
 otherwise permitted by the Creative Commons policies published at
-creativecommons.org/policies, Creative Commons does not authorize the
+creativecommons.org/policies, Creative Commons does not speakerize the
 use of the trademark "Creative Commons" or any other trademark or logo
 of Creative Commons without its prior written consent including,
-without limitation, in connection with any unauthorized modifications
+without limitation, in connection with any unspeakerized modifications
 to any of its public licenses or any other arrangements,
 understandings, or agreements concerning use of licensed material. For
 the avoidance of doubt, this paragraph does not form part of the public
