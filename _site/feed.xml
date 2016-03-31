@@ -5,9 +5,25 @@
     <description>在这里探索iOS的一切。</description>
     <link>http://externie.github.io/externieblog/</link>
     <atom:link href="http://externie.github.io/externieblog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 31 Mar 2016 13:17:07 +0800</pubDate>
-    <lastBuildDate>Thu, 31 Mar 2016 13:17:07 +0800</lastBuildDate>
+    <pubDate>Thu, 31 Mar 2016 14:00:53 +0800</pubDate>
+    <lastBuildDate>Thu, 31 Mar 2016 14:00:53 +0800</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Modelling of Dispersed Multiphase Flows and Its Applications</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;摘要：&lt;/h1&gt;
+&lt;p&gt;This talk will provide an overview on research activities being undertaken at RMIT University, Australia in using both the state-of-the-art computer modelling (computational fluid dynamics) and laboratory experimental (LDA/PIV) techniques to investigate the complex transport processes of various fluid flow and heat transfer problems and two-phase flow systems. The talk will detail their applications relevant to a number of industrial and engineering applications such as in defence (ventilated cavity), nuclear safety (flow boiling), chemical engineering (bubble columns), energy (coal-fired power generation), building construction (fire and dust) and biomedical engineering applications (drug delivery and pollutants through human airways and blood flow system).&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Apr 2016 00:00:00 +0800</pubDate>
+        <link>http://externie.github.io/externieblog/%E7%90%86%E5%B7%A5/2016/04/01/Modelling-of-Dispersed-Multiphase-Flows-and-Its-Applications/</link>
+        <guid isPermaLink="true">http://externie.github.io/externieblog/%E7%90%86%E5%B7%A5/2016/04/01/Modelling-of-Dispersed-Multiphase-Flows-and-Its-Applications/</guid>
+        
+        <category>讲座</category>
+        
+        
+        <category>理工</category>
+        
+      </item>
     
       <item>
         <title>促进有效教学的PPT设计与优化</title>
