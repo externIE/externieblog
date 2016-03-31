@@ -24,7 +24,7 @@ description: "据说大神都有属于他们自己的技术博客"
                                        <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: {{ post.speaker }}</span>
                                      </div>
                                      <div class="card-reveal" style="padding: 0px 10px;">
-                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px; width: 100%;">主讲人: {{ post.speaker }}</span>
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: {{ post.speaker }}</span>
                                        <br/>
                                        <p style="padding: 0px 0px 0px ;">
                                             {{ post.speaker-profile }}
@@ -37,12 +37,17 @@ description: "据说大神都有属于他们自己的技术博客"
                    
                     <td style="{% if post.speaker-img %}width: 50%;{% else %}width: 100%;{% endif %}">
                     <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content{{ forloop.index }}">
-                        {% if post.subtitle %}
-                            <h6 class="post-subtitle">
-                                {{ post.subtitle }}
+                        {% if post.organizer %}
+                            <h6 class="post-organizer">
+                                主办单位：{{ post.organizer }}
                             </h6>
-                            <br/>
                         {% endif %}
+                        {% if post.co-organizer %}
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：{{ post.co-organizer }}
+                            </h6>
+                        {% endif %}
+                        <br/>
                         
                         <div class="post-content-preview" style="">
                             <a href="{{ post.url | prepend: site.baseurl }}">
@@ -72,7 +77,8 @@ description: "据说大神都有属于他们自己的技术博客"
         
 
 <script>
-document.getElementById("speaker-img{{forloop.index}}").style.height=document.getElementById("content{{forloop.index}}").offsetHeight+"px";
+
+
 var changeMonthToNum = function(str){
     let i = 0;
     let strM;
@@ -152,12 +158,12 @@ new iSlider({
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 上一页</a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页 &rarr;</a>
     </li>
     {% endif %}
 </ul>

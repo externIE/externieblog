@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "基于Node.js的即时通讯工具（移动智能终端课设）"
-subtitle:   "计科03班 20124980 林义凯"
+organizer:   "计科03班 20124980 林义凯"
 date:       2016-01-05 09:00:00
 speaker:     "externIE"
 header-img: "img/post/2015-1-20-bg.jpg"

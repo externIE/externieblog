@@ -112,7 +112,7 @@ featured-condition-size: 0             # A tag will be featured if the size of i
 ---
 layout:     post
 title:      "半年的iOS代码生活"
-subtitle:   "加班的领悟"
+organizer:   "加班的领悟"
 date:       2015-11-11 12:00:00
 speaker:     "externIE"
 header-img: "img/post/2015-11-11-bg.jpg"

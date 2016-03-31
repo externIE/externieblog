@@ -33,8 +33,8 @@ layout: default
                         {% comment %}
                             always create a h2 for keeping the margin , Hux
                         {% endcomment %}
-                        {% comment %} if page.subtitle {% endcomment %}
-                        <h2 class="subheading">{{ page.subtitle }}</h2>
+                        {% comment %} if page.organizer {% endcomment %}
+                        <h2 class="subheading">{{ page.organizer }}</h2>
                         {% comment %} endif {% endcomment %}
                         <span class="meta">Posted by {% if page.speaker %}{{ page.speaker }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
                     </div>

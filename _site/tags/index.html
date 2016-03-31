@@ -41,11 +41,14 @@
     <!-- <script src="js/plugins/islider_desktop.js"></script> -->
     <!-- <script src="js/materialize.min.js"></script> -->
 
+    
     <script src="/externieblog/js/jquery.min.js"></script>
+    <script src="/externieblog/js/materialize.js"></script>
+    <script src="/externieblog/js/app.js"></script>
     <!--Custom JS-->
     <script src="/externieblog/js/islider.js"></script>
     <script src="/externieblog/js/plugins/islider_desktop.js"></script>
-    <script src="/externieblog/js/materialize.min.js"></script>
+    
 
     <!-- Hux Delete, sad but pending in China
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -131,6 +134,39 @@
         </div>
     </div>
 </header>
+
+<div class="slider">
+    <ul class="slides">
+       <li>
+         <img src="/externieblog/img/common/home-bg.jpg"> <!-- random image -->
+         <div class="caption center-align">
+         <h3>This is our big Tagline!</h3>
+         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         </div>
+       </li>
+       <li>
+         <img src="/externieblog/img/common/tag-bg.jpg"> <!-- random image -->
+         <div class="caption left-align">
+         <h3>Left Aligned Caption</h3>
+         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         </div>
+       </li>
+       <li>
+         <img src="/externieblog/img/common/about-bg.jpg"> <!-- random image -->
+         <div class="caption right-align">
+         <h3>Right Aligned Caption</h3>
+         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         </div>
+       </li>
+       <li>
+         <img src="/externieblog/img/common/404-bg.jpg"> <!-- random image -->
+         <div class="caption center-align">
+         <h3>This is our big Tagline!</h3>
+         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         </div>
+       </li>
+    </ul>
+  </div>
 
   <div class="row" style="a{}">
     <div class="col s12">
@@ -243,7 +279,7 @@ islider1.bindMouse();
                                        <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 屠基元</span>
                                      </div>
                                      <div class="card-reveal" style="padding: 0px 10px;">
-                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px; width: 100%;">主讲人: 屠基元</span>
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 屠基元</span>
                                        <br/>
                                        <p style="padding: 0px 0px 0px ;">
                                             屠基元教授，1982年、1984年在东北大学分别获学士和硕士学位, 1984-1989年任复旦大学讲师,1992年获瑞典皇家理工学院博士学位,现任澳洲墨尔本皇家理工大学（RMIT）航空机械及制造工程学院副院长兼学术委员会主任，国家“千人计划”清华大学特聘教授。
@@ -260,11 +296,16 @@ islider1.bindMouse();
                     <td style="width: 50%;">
                     <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content1">
                         
-                            <h6 class="post-subtitle">
-                                主办单位 : 重庆大学工程学部 协办单位 : 重庆大学动力工程学院，低品位能源利用技术及系统教育部重点实验室
+                            <h6 class="post-organizer">
+                                主办单位：重庆大学工程学部
                             </h6>
-                            <br/>
                         
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：重庆大学动力工程学院，低品位能源利用技术及系统教育部重点实验室
+                            </h6>
+                        
+                        <br/>
                         
                         <div class="post-content-preview" style="">
                             <a href="/externieblog/%E7%90%86%E5%B7%A5/2016/04/01/Modelling-of-Dispersed-Multiphase-Flows-and-Its-Applications/">
@@ -293,7 +334,8 @@ This talk will provide an overview on research activities being undertaken at RM
         
 
 <script>
-document.getElementById("speaker-img1").style.height=document.getElementById("content1").offsetHeight+"px";
+
+
 var changeMonthToNum = function(str){
     let i = 0;
     let strM;
@@ -387,7 +429,7 @@ new iSlider({
                                        <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 李倩</span>
                                      </div>
                                      <div class="card-reveal" style="padding: 0px 10px;">
-                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px; width: 100%;">主讲人: 李倩</span>
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 李倩</span>
                                        <br/>
                                        <p style="padding: 0px 0px 0px ;">
                                             李倩，副教授，西南大学电化教育学本科、发展与教育心理学硕士，现执教于西南大学计算机与信息科学学院，任教师教育系主任。长期从事教育技术、教师教育、中小学信息技术教育等研究，已发表学科级、核心期刊等论文多篇，副主编及参编教材7部，主持或主研国家、市级、校级及院级等科研课题10余项。
@@ -402,11 +444,12 @@ new iSlider({
                     <td style="width: 50%;">
                     <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content2">
                         
-                            <h6 class="post-subtitle">
-                                主办单位 : 教师教学发展中心
+                            <h6 class="post-organizer">
+                                主办单位：教师教学发展中心
                             </h6>
-                            <br/>
                         
+                        
+                        <br/>
                         
                         <div class="post-content-preview" style="">
                             <a href="/externieblog/%E5%85%B6%E4%BB%96/2016/03/30/%E4%BF%83%E8%BF%9B%E6%9C%89%E6%95%88%E6%95%99%E5%AD%A6%E7%9A%84PPT%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BC%98%E5%8C%96/">
@@ -435,7 +478,8 @@ new iSlider({
         
 
 <script>
-document.getElementById("speaker-img2").style.height=document.getElementById("content2").offsetHeight+"px";
+
+
 var changeMonthToNum = function(str){
     let i = 0;
     let strM;
@@ -523,11 +567,12 @@ new iSlider({
                     <td style="width: 100%;">
                     <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content3">
                         
-                            <h6 class="post-subtitle">
-                                计科03班 20124980 林义凯
+                            <h6 class="post-organizer">
+                                主办单位：计科03班 20124980 林义凯
                             </h6>
-                            <br/>
                         
+                        
+                        <br/>
                         
                         <div class="post-content-preview" style="">
                             <a href="/externieblog/%E7%B1%BB%E5%88%AB/2016/01/05/%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/">
@@ -556,7 +601,8 @@ new iSlider({
         
 
 <script>
-document.getElementById("speaker-img3").style.height=document.getElementById("content3").offsetHeight+"px";
+
+
 var changeMonthToNum = function(str){
     let i = 0;
     let strM;
@@ -644,11 +690,12 @@ new iSlider({
                     <td style="width: 100%;">
                     <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content4">
                         
-                            <h6 class="post-subtitle">
-                                玩转iOS应用发布
+                            <h6 class="post-organizer">
+                                主办单位：玩转iOS应用发布
                             </h6>
-                            <br/>
                         
+                        
+                        <br/>
                         
                         <div class="post-content-preview" style="">
                             <a href="/externieblog/2015/11/17/iOS%E5%BA%94%E7%94%A8%E5%8F%91%E5%B8%83%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%86%E8%8A%82/">
@@ -683,7 +730,8 @@ new iSlider({
         
 
 <script>
-document.getElementById("speaker-img4").style.height=document.getElementById("content4").offsetHeight+"px";
+
+
 var changeMonthToNum = function(str){
     let i = 0;
     let strM;
@@ -771,11 +819,12 @@ new iSlider({
                     <td style="width: 100%;">
                     <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content5">
                         
-                            <h6 class="post-subtitle">
-                                加班的领悟
+                            <h6 class="post-organizer">
+                                主办单位：加班的领悟
                             </h6>
-                            <br/>
                         
+                        
+                        <br/>
                         
                         <div class="post-content-preview" style="">
                             <a href="/externieblog/2015/11/11/%E5%8D%8A%E5%B9%B4%E7%9A%84iOS%E4%BB%A3%E7%A0%81%E7%94%9F%E6%B4%BB/">
@@ -805,7 +854,8 @@ new iSlider({
         
 
 <script>
-document.getElementById("speaker-img5").style.height=document.getElementById("content5").offsetHeight+"px";
+
+
 var changeMonthToNum = function(str){
     let i = 0;
     let strM;
@@ -893,11 +943,12 @@ new iSlider({
                     <td style="width: 100%;">
                     <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content6">
                         
-                            <h6 class="post-subtitle">
-                                已加入豪华套餐系列
+                            <h6 class="post-organizer">
+                                主办单位：已加入豪华套餐系列
                             </h6>
-                            <br/>
                         
+                        
+                        <br/>
                         
                         <div class="post-content-preview" style="">
                             <a href="/externieblog/2015/04/13/iOS%E5%90%84%E7%A7%8D%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7/">
@@ -929,7 +980,8 @@ new iSlider({
         
 
 <script>
-document.getElementById("speaker-img6").style.height=document.getElementById("content6").offsetHeight+"px";
+
+
 var changeMonthToNum = function(str){
     let i = 0;
     let strM;
@@ -1017,11 +1069,12 @@ new iSlider({
                     <td style="width: 100%;">
                     <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content7">
                         
-                            <h6 class="post-subtitle">
-                                没骗你，真的很迅速！
+                            <h6 class="post-organizer">
+                                主办单位：没骗你，真的很迅速！
                             </h6>
-                            <br/>
                         
+                        
+                        <br/>
                         
                         <div class="post-content-preview" style="">
                             <a href="/externieblog/2015/01/29/%E6%97%A0%E6%AF%94%E8%BF%85%E9%80%9F%E6%95%8F%E6%8D%B7%E5%9C%B0%E5%BC%80%E5%8F%91iOS%E8%B6%85%E7%B2%BE%E7%BE%8E%E6%8E%A7%E4%BB%B6/">
@@ -1056,7 +1109,8 @@ new iSlider({
         
 
 <script>
-document.getElementById("speaker-img7").style.height=document.getElementById("content7").offsetHeight+"px";
+
+
 var changeMonthToNum = function(str){
     let i = 0;
     let strM;
@@ -1144,11 +1198,12 @@ new iSlider({
                     <td style="width: 100%;">
                     <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content8">
                         
-                            <h6 class="post-subtitle">
-                                只是初步探究哦
+                            <h6 class="post-organizer">
+                                主办单位：只是初步探究哦
                             </h6>
-                            <br/>
                         
+                        
+                        <br/>
                         
                         <div class="post-content-preview" style="">
                             <a href="/externieblog/2015/01/20/iOS%E4%B8%AD%E7%9A%84%E9%A2%84%E7%BC%96%E8%AF%91%E6%8C%87%E4%BB%A4%E7%9A%84%E5%88%9D%E6%AD%A5%E6%8E%A2%E7%A9%B6/">
@@ -1180,7 +1235,8 @@ new iSlider({
         
 
 <script>
-document.getElementById("speaker-img8").style.height=document.getElementById("content8").offsetHeight+"px";
+
+
 var changeMonthToNum = function(str){
     let i = 0;
     let strM;
@@ -1450,7 +1506,7 @@ new iSlider({
                             iOS各种调试技巧
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            已加入豪华套餐系列
 				        </h3>
 				        
@@ -1469,7 +1525,7 @@ new iSlider({
                             iOS中的预编译指令
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            只是初步探究哦
 				        </h3>
 				        
@@ -1493,7 +1549,7 @@ new iSlider({
                             iOS中的预编译指令
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            只是初步探究哦
 				        </h3>
 				        
@@ -1517,7 +1573,7 @@ new iSlider({
                             iOS中的预编译指令
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            只是初步探究哦
 				        </h3>
 				        
@@ -1541,7 +1597,7 @@ new iSlider({
                             无比迅速敏捷地开发iOS超精美控件
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            没骗你，真的很迅速！
 				        </h3>
 				        
@@ -1565,7 +1621,7 @@ new iSlider({
                             无比迅速敏捷地开发iOS超精美控件
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            没骗你，真的很迅速！
 				        </h3>
 				        
@@ -1589,7 +1645,7 @@ new iSlider({
                             iOS各种调试技巧
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            已加入豪华套餐系列
 				        </h3>
 				        
@@ -1613,7 +1669,7 @@ new iSlider({
                             iOS各种调试技巧
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            已加入豪华套餐系列
 				        </h3>
 				        
@@ -1637,7 +1693,7 @@ new iSlider({
                             半年的iOS代码生活
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            加班的领悟
 				        </h3>
 				        
@@ -1661,7 +1717,7 @@ new iSlider({
                             iOS应用发布中的一些细节
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            玩转iOS应用发布
 				        </h3>
 				        
@@ -1685,7 +1741,7 @@ new iSlider({
                             基于Node.js的即时通讯工具（移动智能终端课设）
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
+				        <h3 class="post-organizer">
 				            计科03班 20124980 林义凯
 				        </h3>
 				        
@@ -1709,8 +1765,8 @@ new iSlider({
                             Modelling of Dispersed Multiphase Flows and Its Applications
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
-				            主办单位 : 重庆大学工程学部 协办单位 : 重庆大学动力工程学院，低品位能源利用技术及系统教育部重点实验室
+				        <h3 class="post-organizer">
+				            重庆大学工程学部
 				        </h3>
 				        
 				    </a>
@@ -1728,8 +1784,8 @@ new iSlider({
                             促进有效教学的PPT设计与优化
 				        </h2>
 				        
-				        <h3 class="post-subtitle">
-				            主办单位 : 教师教学发展中心
+				        <h3 class="post-organizer">
+				            教师教学发展中心
 				        </h3>
 				        
 				    </a>
@@ -1799,14 +1855,12 @@ new iSlider({
     </div>
 </footer>
 
-<!-- jQuery -->
-<script src="/externieblog/js/jquery.min.js "></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="/externieblog/js/bootstrap.min.js "></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="/externieblog/js/hux-blog.min.js "></script>
+
+
 
 
 <!-- async load function -->

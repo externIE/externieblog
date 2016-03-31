@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      "Modelling of Dispersed Multiphase Flows and Its Applications"
-subtitle:   "主办单位 : 重庆大学工程学部
-协办单位 : 重庆大学动力工程学院，低品位能源利用技术及系统教育部重点实验室"
+organizer:   	"重庆大学工程学部"
+co-organizer:	"重庆大学动力工程学院，低品位能源利用技术及系统教育部重点实验室"
 header-img: "img/post/2015-1-20-bg.jpg"
 speaker:		"屠基元"
 speaker-img:	"img/post/20160401-spic-tyj.jpg"

@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "促进有效教学的PPT设计与优化"
-subtitle:   "主办单位 : 教师教学发展中心"
+organizer:   "教师教学发展中心"
 
 header-img: "img/post/2015-1-20-bg.jpg"
 speaker:		"李倩"
