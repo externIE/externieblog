@@ -2,25 +2,14 @@
 layout: default
 ---
 <!-- Page Header -->
-<header class="intro-header z-depth-1" style="">
-    <div class="" style="padding-right: 0px;padding-left: 0px;">
-        <div class="row" style="margin-left: 0px;margin-right: 0px;">
-            <div class="col s12 m12 l12" style="padding: 0px;">
-                    <div id="iSlider-effect-wrapper">
-                        <div id="animation-effect" class="iSlider-effect" style=""></div>
-                    </div>
-            </div>
-        </div>
-    </div>
-</header>
 
 <div class="slider">
     <ul class="slides">
        <li>
          <img src="/externieblog/img/common/home-bg.jpg"> <!-- random image -->
          <div class="caption center-align">
-         <h3>This is our big Tagline!</h3>
-         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         <h3>PPT的设计与优化</h3>
+         <h5 class="light grey-text text-lighten-3">主讲人：夏倩</h5>
          </div>
        </li>
        <li>
@@ -114,18 +103,18 @@ var domList = [
 ];
 
 //all animation effect
-var islider1 = new iSlider({
-    data: picList,
-    dom: document.getElementById("animation-effect"),
-    duration: 2000,
-    animateType: 'default',
-    isAutoplay: true,
-    isLooping: true,
-    ratio:870/1900,
-    touchAble:true,
-    // isVertical: true, 是否垂直滚动
-});
-islider1.bindMouse();
+// var islider1 = new iSlider({
+//     data: picList,
+//     dom: document.getElementById("animation-effect"),
+//     duration: 2000,
+//     animateType: 'default',
+//     isAutoplay: true,
+//     isLooping: true,
+//     ratio:870/1900,
+//     touchAble:true,
+//     // isVertical: true, 是否垂直滚动
+// });
+// islider1.bindMouse();
 </script>
 
 <!-- Main Content -->
@@ -182,6 +171,7 @@ islider1.bindMouse();
     		</div>
     <!-- Sidebar Container -->
             <div class="
+                hide-on-small-only
                 col-lg-3 col-lg-offset-0
                 col-md-3 col-md-offset-0
                 col-sm-12

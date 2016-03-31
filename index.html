@@ -50,7 +50,8 @@ description: "据说大神都有属于他们自己的技术博客"
                         <br/>
                         
                         <div class="post-content-preview" style="">
-                            <a href="{{ post.url | prepend: site.baseurl }}">
+                           <!--  <a class="modal-trigger" href="#profile{{forloop.index}}{{ post.url | prepend: site.baseurl }}"> -->
+                            <a class="modal-trigger" href="#profile{{forloop.index}}">
                                 {% if post.speaker-img %}
                                     {{ post.content | strip_html | truncate:100 }}
                                 {% else %}
@@ -69,9 +70,18 @@ description: "据说大神都有属于他们自己的技术博客"
             </div>
             <!-- </a> -->
             
-       </li>
+        </li>
         <div id="iSlider-effect-wrapper" style="margin: 0px 0px 14px 0px;">
             <div id="text-effect{{ post.title }}" class="iSlider-effect" style=""></div>
+        </div>
+
+        <div id="profile{{forloop.index}}" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>{{ post.title }}</h4>
+            <h5>主办单位：{{ post.organizer }}</h5>
+            <h5>主办单位：{{ post.co-organizer }}</h5>
+            <h6>{{ post.content | strip_html }}</h6>
+          </div>
         </div>
    
         
