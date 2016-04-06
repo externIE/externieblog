@@ -78,29 +78,29 @@
     // Drop Bootstarp low-performance Navbar
     // Use customize navbar with high-quality material design animation
     // in high-perf jank-free CSS3 implementation
-    var $body   = document.body;
-    var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
-    var $collapse = document.querySelector('.navbar-collapse');
+    // var $body   = document.body;
+    // var $toggle = document.querySelector('.navbar-toggle');
+    // var $navbar = document.querySelector('#huxblog_navbar');
+    // var $collapse = document.querySelector('.navbar-collapse');
 
-    $toggle.addEventListener('click', handleMagic)
-    function handleMagic(e){
-        if ($navbar.className.indexOf('in') > 0) {
-        // CLOSE
-            $navbar.className = " ";
-            // wait until animation end.
-            setTimeout(function(){
-                // prevent frequently toggle
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px"
-                }
-            },400)
-        }else{
-        // OPEN
-            $collapse.style.height = "auto"
-            $navbar.className += " in";
-        }
-    }
+    // $toggle.addEventListener('click', handleMagic)
+    // function handleMagic(e){
+    //     if ($navbar.className.indexOf('in') > 0) {
+    //     // CLOSE
+    //         $navbar.className = " ";
+    //         // wait until animation end.
+    //         setTimeout(function(){
+    //             // prevent frequently toggle
+    //             if($navbar.className.indexOf('in') < 0) {
+    //                 $collapse.style.height = "0px"
+    //             }
+    //         },400)
+    //     }else{
+    //     // OPEN
+    //         $collapse.style.height = "auto"
+    //         $navbar.className += " in";
+    //     }
+    // }
 </script>
 
 
@@ -247,10 +247,14 @@ var domList = [
                                        <img class="activator" src="img/post/20160401-spic-tyj.jpg">
                                      </div>
                                      <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
-                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 屠基元</span>
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 屠基元
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
                                      </div>
                                      <div class="card-reveal" style="padding: 0px 10px;">
-                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 屠基元</span>
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 屠基元
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
                                        <br/>
                                        <p style="padding: 0px 0px 0px ;">
                                             屠基元教授，1982年、1984年在东北大学分别获学士和硕士学位, 1984-1989年任复旦大学讲师,1992年获瑞典皇家理工学院博士学位,现任澳洲墨尔本皇家理工大学（RMIT）航空机械及制造工程学院副院长兼学术委员会主任，国家“千人计划”清华大学特聘教授。
@@ -409,10 +413,14 @@ new iSlider({
                                        <img class="activator" src="img/post/20160330-spic-lj.jpg">
                                      </div>
                                      <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
-                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 李倩</span>
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 李倩
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
                                      </div>
                                      <div class="card-reveal" style="padding: 0px 10px;">
-                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 李倩</span>
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 李倩
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
                                        <br/>
                                        <p style="padding: 0px 0px 0px ;">
                                             李倩，副教授，西南大学电化教育学本科、发展与教育心理学硕士，现执教于西南大学计算机与信息科学学院，任教师教育系主任。长期从事教育技术、教师教育、中小学信息技术教育等研究，已发表学科级、核心期刊等论文多篇，副主编及参编教材7部，主持或主研国家、市级、校级及院级等科研课题10余项。
