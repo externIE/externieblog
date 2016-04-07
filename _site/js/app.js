@@ -123,18 +123,18 @@ $.fn.scrollUnique = function() {
             var scrollTop = this.scrollTop,
                 scrollHeight = this.scrollHeight,
                 height = this.clientHeight;
-                document.getElementById('inp').innerHTML="移动";
+                // document.getElementById('inp').innerHTML="移动";
                 if(event.type === 'touchmove'){
                     moveEndX = event.originalEvent.changedTouches[0].pageX,
                     moveEndY = event.originalEvent.changedTouches[0].pageY,
                     X = moveEndX - startX,
                     Y = moveEndY - startY;
                     if ( Y > 0) {
-                        // document.getElementById('inp').innerHTML="向上";
+                        document.getElementById('inp').innerHTML+="向上";
                     }
                     else if ( Y < 0 ) {
-                        // document.getElementById('inp').innerHTML="向下";
-                        if(scrollTop+height>=scrollHeight-4){
+                        document.getElementById('inp').innerHTML+="向下";
+                        if(scrollTop+height>=scrollHeight-3){
                             event.preventDefault(); 
                         }//向下
                     }
@@ -150,9 +150,9 @@ $.fn.scrollUnique = function() {
         }
         
         $(this).on('touchstart', function(event) {
-            document.getElementById('inp').innerHTML="点击开始";
             startX = event.originalEvent.changedTouches[0].pageX,
             startY = event.originalEvent.changedTouches[0].pageY;
+            document.getElementById('inp').innerHTML="startX:"+startX+" startY:"+startY;
         });
         
         $(this).on(eventType, moveCallBack);
