@@ -135,6 +135,7 @@ $.fn.scrollUnique = function() {
                     else if ( Y < 0 ) {
                         // document.getElementById('inp').innerHTML="向下";
                         if(scrollTop+height>=scrollHeight-2){
+                            alert("停！！！");
                             event.preventDefault(); 
                         }//向下
                     }
@@ -158,5 +159,4 @@ $.fn.scrollUnique = function() {
         $(this).on('touchmove', moveCallBack);
     });	
 };
-
 
