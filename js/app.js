@@ -130,16 +130,15 @@ $.fn.scrollUnique = function() {
                     X = moveEndX - startX,
                     Y = moveEndY - startY;
                     document.getElementById('inp').innerHTML+=" moveY:"+moveEndY;
-                    if ( Y > 1) {
+                    if ( Y > 2) {
                         document.getElementById('inp').innerHTML+="向上";
                     }
-                    else if ( Y < -1 ) {
+                    else if ( Y < -2 ) {
                         document.getElementById('inp').innerHTML+="向下";
                         if(scrollTop+height>=scrollHeight-3){
                             event.preventDefault(); 
                         }//向下
                     }
-                    startY = moveEndY;
                 }
 
                 var delta = (event.originalEvent.wheelDelta) ? event.originalEvent.wheelDelta : -(event.originalEvent.detail || 0);
