@@ -130,11 +130,11 @@ $.fn.scrollUnique = function() {
                     X = moveEndX - startX,
                     Y = moveEndY - startY;
                     if ( Y > 0) {
-                        // document.getElementById('inp').innerHTML="向上";
+                        document.getElementById('inp').innerHTML="向上";
                     }
                     else if ( Y < 0 ) {
-                        // document.getElementById('inp').innerHTML="向下";
-                        if(scrollTop+height>=scrollHeight-2){
+                        document.getElementById('inp').innerHTML="向下";
+                        if(scrollTop+height>=scrollHeight-4){
                             alert("停！！！");
                             event.preventDefault(); 
                         }//向下
