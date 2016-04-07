@@ -163,3 +163,4 @@ $.fn.scrollUnique = function() {
     });	
 };
 
+document.getElementById('inp').innerHTML="外部测试";
