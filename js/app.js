@@ -123,7 +123,7 @@ $.fn.scrollUnique = function() {
             var scrollTop = this.scrollTop,
                 scrollHeight = this.scrollHeight,
                 height = this.clientHeight;
-                
+                document.getElementById('inp').innerHTML="移动";
                 if(event.type === 'touchmove'){
                     moveEndX = event.originalEvent.changedTouches[0].pageX,
                     moveEndY = event.originalEvent.changedTouches[0].pageY,
