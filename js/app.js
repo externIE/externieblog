@@ -117,7 +117,7 @@ $.fn.scrollUnique = function() {
         if (document.mozHidden !== undefined) {
             eventType = 'DOMMouseScroll';
         }
-        
+        alert("开始监听");
         document.getElementById('inp').innerHTML="监听";
         
         var moveCallBack = function(event) {
@@ -163,4 +163,4 @@ $.fn.scrollUnique = function() {
     });	
 };
 
-document.getElementById('inp').innerHTML="外部测试";
+
