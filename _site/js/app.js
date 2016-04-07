@@ -117,8 +117,6 @@ $.fn.scrollUnique = function() {
         if (document.mozHidden !== undefined) {
             eventType = 'DOMMouseScroll';
         }
-        alert("开始监听");
-        document.getElementById('inp').innerHTML="监听";
         
         var moveCallBack = function(event) {
             // 一些数据
@@ -132,10 +130,10 @@ $.fn.scrollUnique = function() {
                     X = moveEndX - startX,
                     Y = moveEndY - startY;
                     if ( Y > 0) {
-                        document.getElementById('inp').innerHTML="向上";
+                        // document.getElementById('inp').innerHTML="向上";
                     }
                     else if ( Y < 0 ) {
-                        document.getElementById('inp').innerHTML="向下";
+                        // document.getElementById('inp').innerHTML="向下";
                         if(scrollTop+height>=scrollHeight-4){
                             event.preventDefault(); 
                         }//向下
