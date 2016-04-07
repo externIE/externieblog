@@ -6,6 +6,7 @@ co-organizer:	"重庆大学动力工程学院，低品位能源利用技术及�
 header-img: "img/post/2015-1-20-bg.jpg"
 speaker:		"屠基元"
 speaker-img:	"img/post/20160401-spic-tyj.jpg"
+address:        "虎溪报告厅xxx教室"
 category:		"理工"
 tags:
     - 讲座

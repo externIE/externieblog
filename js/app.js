@@ -129,16 +129,17 @@ $.fn.scrollUnique = function() {
                     moveEndY = event.originalEvent.changedTouches[0].pageY,
                     X = moveEndX - startX,
                     Y = moveEndY - startY;
-                    document.getElementById('inp').innerHTML+=" moveY:"+moveEndY;
+                    // document.getElementById('inp').innerHTML+=" moveY:"+moveEndY;
                     if ( Y > 0) {
-                        document.getElementById('inp').innerHTML+="向上";
+                        // document.getElementById('inp').innerHTML+="向上";
                     }
                     else if ( Y < 0 ) {
-                        document.getElementById('inp').innerHTML+="向下";
+                        // document.getElementById('inp').innerHTML+="向下";
                         if(scrollTop+height>=scrollHeight-3){
                             event.preventDefault(); 
                         }//向下
                     }
+                    startY = moveEndY;
                 }
 
                 var delta = (event.originalEvent.wheelDelta) ? event.originalEvent.wheelDelta : -(event.originalEvent.detail || 0);
@@ -160,5 +161,45 @@ $.fn.scrollUnique = function() {
         $(this).on('touchmove', moveCallBack);
     });	
 };
+
+
+var changeMonthToNum = function(str){
+        var i = 0;
+        var strM;
+        for (; i < str.length; i++) {
+            if(str[i]==' '){
+                strM = str.substr(0,i);
+                break;
+            }
+        }
+        switch(strM){
+            case 'January':
+            return ('1月'+str.substr(i,str.length));
+            case 'February':
+            return ('2月'+str.substr(i,str.length));
+            case 'March':
+            return ('3月'+str.substr(i,str.length));
+            case 'April':
+            return ('4月'+str.substr(i,str.length));
+            case 'May':
+            return ('5月'+str.substr(i,str.length));
+            case 'June':
+            return ('6月'+str.substr(i,str.length));
+            case 'July':
+            return ('7月'+str.substr(i,str.length));
+            case 'August':
+            return ('8月'+str.substr(i,str.length));
+            case 'September':
+            return ('9月'+str.substr(i,str.length));
+            case 'October':
+            return ('10月'+str.substr(i,str.length));
+            case 'November':
+            return ('11月'+str.substr(i,str.length));
+            case 'December':
+            return ('12月'+str.substr(i,str.length));
+            default:
+            return (str);
+        }
+    }
 
 

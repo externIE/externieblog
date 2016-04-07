@@ -5,6 +5,7 @@ organizer:   "只是初步探究哦"
 date:       2015-01-20 12:00:00
 speaker:     "externIE"
 header-img: "img/post/2015-1-20-bg.jpg"
+address:        "A区主教"
 tags:
     - 基础整理
     - 预编译

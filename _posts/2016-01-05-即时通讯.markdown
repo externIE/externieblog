@@ -6,6 +6,7 @@ date:       2016-01-05 09:00:00
 speaker:     "externIE"
 header-img: "img/post/2015-1-20-bg.jpg"
 category:		"类别"
+address:        "虎溪一教xxx教室"
 tags:
     - 论文
 ---

@@ -5,6 +5,7 @@ organizer:   "没骗你，真的很迅速！"
 date:       2015-01-29 12:00:00
 speaker:     "DavidDay"
 header-img: "img/post/2015-1-29-bg.jpg"
+address:        "B区xxx教室"
 tags:
     - 奇巧集
     - PaintCode

@@ -92,11 +92,43 @@ description: "据说大神都有属于他们自己的技术博客"
         </div>
 
 <script>
+    var strMonth = changeMonthToNum('{{ post.date | date: "%B %-d, %Y" }}');
+    // var strMonth="测试日期";
+    var domList = [
+    {
+        'height' : '100%',
+        'width' : '100%',
+        'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
+    },{
+        'height' : '100%',
+        'width' : '100%',
+        'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：{{post.address}}</p>'
+    },{
+        'height' : '100%',
+        'width' : '100%',
+        'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
+    }
+    ];
 
+
+
+    //all animation effect
+    new iSlider({
+        data: domList,
+        type:'dom',
+        dom: document.getElementById("sub-profile{{forloop.index}}"),
+        duration: 2000,
+        animateType: 'default',
+        isAutoplay: true,
+        isLooping: true,
+        ratio:0.1,
+        isVertical: true,
+        touchAble: false,
+    });
 </script>
 
 <div id="iSlider-effect-wrapper" style="">
-    <div id="inp{{forloop.index}}" class="iSlider-effect" style="">test</div>
+    <div id="inp" class="iSlider-effect" style="">test</div>
 </div>
 
 {% endfor %}

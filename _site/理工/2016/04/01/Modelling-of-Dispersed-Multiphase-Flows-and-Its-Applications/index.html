@@ -502,77 +502,7 @@ $(".container").find("img").each(function(i,item){
 
 <!-- async load function -->
 <script>
-      var changeMonthToNum = function(str){
-    var i = 0;
-    var strM;
-    for (; i < str.length; i++) {
-        if(str[i]==' '){
-            strM = str.substr(0,i);
-            break;
-        }
-    }
-    switch(strM){
-        case 'January':
-        return ('1月'+str.substr(i,str.length));
-        case 'February':
-        return ('2月'+str.substr(i,str.length));
-        case 'March':
-        return ('3月'+str.substr(i,str.length));
-        case 'April':
-        return ('4月'+str.substr(i,str.length));
-        case 'May':
-        return ('5月'+str.substr(i,str.length));
-        case 'June':
-        return ('6月'+str.substr(i,str.length));
-        case 'July':
-        return ('7月'+str.substr(i,str.length));
-        case 'August':
-        return ('8月'+str.substr(i,str.length));
-        case 'September':
-        return ('9月'+str.substr(i,str.length));
-        case 'October':
-        return ('10月'+str.substr(i,str.length));
-        case 'November':
-        return ('11月'+str.substr(i,str.length));
-        case 'December':
-        return ('12月'+str.substr(i,str.length));
-        default:
-        return (str);
-    }
-}
-// var strMonth = changeMonthToNum('');
-var strMonth="测试日期";
-var domList = [
-{
-    'height' : '100%',
-    'width' : '100%',
-    'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-},{
-    'height' : '100%',
-    'width' : '100%',
-    'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：A区主教113</p>'
-},{
-    'height' : '100%',
-    'width' : '100%',
-    'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-}
-];
-
-
-
-//all animation effect
-new iSlider({
-    data: domList,
-    type:'dom',
-    dom: document.getElementById("sub-profile1"),
-    duration: 2000,
-    animateType: 'default',
-    isAutoplay: true,
-    isLooping: true,
-    ratio:0.1,
-    isVertical: true,
-    touchAble: false,
-});
+ 
     
     $(".card-reveal").scrollUnique();
     function async(u, c) {

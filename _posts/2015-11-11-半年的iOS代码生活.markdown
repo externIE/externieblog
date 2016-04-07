@@ -5,6 +5,7 @@ organizer:   "加班的领悟"
 date:       2015-11-11 12:00:00
 speaker:     "DavidDay"
 header-img: "img/post/2015-11-11-bg.jpg"
+address:        "虎溪综合楼xxx教室"
 tags:
     - 闲暇集
 ---

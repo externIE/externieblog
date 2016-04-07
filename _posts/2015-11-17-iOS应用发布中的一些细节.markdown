@@ -5,6 +5,7 @@ organizer:   "玩转iOS应用发布"
 date:       2015-11-17 12:00:00
 speaker:     "externIE"
 header-img: "img/post/2015-11-17-bg.jpg"
+address:        "A区五教xxx教室"
 tags:
     - 拾遗集
 

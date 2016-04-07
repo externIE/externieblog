@@ -5,6 +5,7 @@ organizer:   "已加入豪华套餐系列"
 date:       2015-04-13 12:00:00
 speaker:     "DavidDay"
 header-img: "img/post/2015-4-13-bg.jpg"
+address:        "A区八教xxx教室"
 tags:
     - 基础整理
     - debug
