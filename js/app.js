@@ -138,6 +138,8 @@ $.fn.scrollUnique = function() {
                             event.preventDefault(); 
                         }//向下
                     }
+                    startX = moveEndX;
+                    startY = moveEndY;
                 }
 
                 var delta = (event.originalEvent.wheelDelta) ? event.originalEvent.wheelDelta : -(event.originalEvent.detail || 0);
