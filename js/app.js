@@ -130,10 +130,10 @@ $.fn.scrollUnique = function() {
                     X = moveEndX - startX,
                     Y = moveEndY - startY;
                     document.getElementById('inp').innerHTML+=" moveY:"+moveEndY;
-                    if ( Y > 2) {
+                    if ( Y > 0) {
                         document.getElementById('inp').innerHTML+="向上";
                     }
-                    else if ( Y < -2 ) {
+                    else if ( Y < 0 ) {
                         document.getElementById('inp').innerHTML+="向下";
                         if(scrollTop+height>=scrollHeight-3){
                             event.preventDefault(); 
