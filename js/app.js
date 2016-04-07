@@ -112,25 +112,51 @@ $(function () {
 $.fn.scrollUnique = function() {
     return $(this).each(function() {
         var eventType = 'mousewheel';
+        var event = event || window.event;  
         // 火狐是DOMMouseScroll事件
         if (document.mozHidden !== undefined) {
             eventType = 'DOMMouseScroll';
         }
-        $(this).on(eventType, function(event) {
+        
+        var moveCallBack = function(event) {
             // 一些数据
             var scrollTop = this.scrollTop,
                 scrollHeight = this.scrollHeight,
                 height = this.clientHeight;
+                
+                if(event.type === 'touchmove'){
+                    moveEndX = event.originalEvent.changedTouches[0].pageX,
+                    moveEndY = event.originalEvent.changedTouches[0].pageY,
+                    X = moveEndX - startX,
+                    Y = moveEndY - startY;
+                    if ( Y > 0) {
+                        // document.getElementById('inp').innerHTML="向上";
+                    }
+                    else if ( Y < 0 ) {
+                        // document.getElementById('inp').innerHTML="向下";
+                        if(scrollTop+height>=scrollHeight-2){
+                            event.preventDefault(); 
+                        }//向下
+                    }
+                }
 
-            var delta = (event.originalEvent.wheelDelta) ? event.originalEvent.wheelDelta : -(event.originalEvent.detail || 0);        
-
-            if ((delta > 0 && scrollTop <= delta) || (delta < 0 && scrollHeight - height - scrollTop <= -1 * delta)) {
-                // IE浏览器下滚动会跨越边界直接影响父级滚动，因此，临界时候手动边界滚动定位
-                this.scrollTop = delta > 0? 0: scrollHeight;
-                // 向上滚 || 向下滚
-                event.preventDefault();
-            }        
+                var delta = (event.originalEvent.wheelDelta) ? event.originalEvent.wheelDelta : -(event.originalEvent.detail || 0);
+                if ((delta > 0 && scrollTop <= delta) || (delta < 0 && scrollHeight - height - scrollTop <= -1 * delta)) {
+                    // IE浏览器下滚动会跨越边界直接影响父级滚动，因此，临界时候手动边界滚动定位
+                    this.scrollTop = delta > 0? 0: scrollHeight;
+                    // 向上滚 || 向下滚
+                    event.preventDefault();
+                }        
+        }
+        
+        $(this).on('touchstart', function(event) {
+            startX = event.originalEvent.changedTouches[0].pageX,
+            startY = event.originalEvent.changedTouches[0].pageY;
         });
+        
+        $(this).on(eventType, moveCallBack);
+        $(this).on('touchmove', moveCallBack);
     });	
 };
+
 
