@@ -129,6 +129,7 @@ $.fn.scrollUnique = function() {
                     moveEndY = event.originalEvent.changedTouches[0].pageY,
                     X = moveEndX - startX,
                     Y = moveEndY - startY;
+                    document.getElementById('inp').innerHTML+=" moveY:"+moveEndY;
                     if ( Y > 0) {
                         document.getElementById('inp').innerHTML+="向上";
                     }
@@ -138,7 +139,6 @@ $.fn.scrollUnique = function() {
                             event.preventDefault(); 
                         }//向下
                     }
-                    startX = moveEndX;
                     startY = moveEndY;
                 }
 
@@ -154,7 +154,7 @@ $.fn.scrollUnique = function() {
         $(this).on('touchstart', function(event) {
             startX = event.originalEvent.changedTouches[0].pageX,
             startY = event.originalEvent.changedTouches[0].pageY;
-            document.getElementById('inp').innerHTML="startX:"+startX+" startY:"+startY;
+            document.getElementById('inp').innerHTML=" startY:"+startY;
         });
         
         $(this).on(eventType, moveCallBack);
