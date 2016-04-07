@@ -118,6 +118,8 @@ $.fn.scrollUnique = function() {
             eventType = 'DOMMouseScroll';
         }
         
+        document.getElementById('inp').innerHTML="监听";
+        
         var moveCallBack = function(event) {
             // 一些数据
             var scrollTop = this.scrollTop,
@@ -151,6 +153,7 @@ $.fn.scrollUnique = function() {
         }
         
         $(this).on('touchstart', function(event) {
+            document.getElementById('inp').innerHTML="点击开始";
             startX = event.originalEvent.changedTouches[0].pageX,
             startY = event.originalEvent.changedTouches[0].pageY;
         });
