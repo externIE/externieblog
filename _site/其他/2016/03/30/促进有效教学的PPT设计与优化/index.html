@@ -27,10 +27,12 @@
     
     <script src="/externieblog/js/jquery.min.js"></script>
     <script src="/externieblog/js/materialize.js"></script>
-    <script src="/externieblog/js/app.js"></script>
+    
     <!--Custom JS-->
     <script src="/externieblog/js/islider.js"></script>
     <script src="/externieblog/js/plugins/islider_desktop.js"></script>
+    <script src="/externieblog/js/iscroll.js"></script>
+    <script src="/externieblog/js/app.js"></script>
     
     <script></script>
 </head>
@@ -511,12 +513,26 @@ $(".container").find("img").each(function(i,item){
 
 
 
-
 <!-- async load function -->
 <script>
  
+    var myScroll;
+    // myScroll = new IScroll('.ScrollWrapper');
     
-    $(".card-reveal").scrollUnique();
+    myScroll = new IScroll('#ScrollWrapper', {
+		scrollbars: true,
+		mouseWheel: true,
+		interactiveScrollbars: true,
+		shrinkScrollbars: 'scale',
+		fadeScrollbars: true
+	});
+    
+
+
+// document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+
+    // $(".card-reveal").scrollUnique();
     function async(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),

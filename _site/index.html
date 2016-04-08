@@ -27,10 +27,12 @@
     
     <script src="/externieblog/js/jquery.min.js"></script>
     <script src="/externieblog/js/materialize.js"></script>
-    <script src="/externieblog/js/app.js"></script>
+    
     <!--Custom JS-->
     <script src="/externieblog/js/islider.js"></script>
     <script src="/externieblog/js/plugins/islider_desktop.js"></script>
+    <script src="/externieblog/js/iscroll.js"></script>
+    <script src="/externieblog/js/app.js"></script>
     
     <script></script>
 </head>
@@ -196,7 +198,39 @@ var domList = [
     <!-- Post Container -->
     		<div class="col s12 m12 l8">
                 <ul class="post-preview collapsible popout" data-collapsible="expandable" style="">
-    			     
+    			     <style type="text/css">
+
+
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+
+
+</style>
+
+
+
+
 
         <li style="margin: 0px;" class="z-depth-1">
             <div class="collapsible-header waves-effect waves-teal active" style="white-space:nowrap;text-overflow:ellipsis;">
@@ -218,7 +252,8 @@ var domList = [
                                            <i class="mdi-navigation-more-vert right"></i>
                                        </span>
                                      </div>
-                                     <div class="card-reveal" style="padding: 0px 10px;">
+                                     <div class="card-reveal" id="ScrollWrapper" style="padding: 0px 10px;">
+                                         <div id="scroller">
                                        <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 屠基元
                                            <i class="mdi-navigation-close right"></i>
                                        </span>
@@ -227,8 +262,15 @@ var domList = [
                                             屠基元教授，1982年、1984年在东北大学分别获学士和硕士学位, 1984-1989年任复旦大学讲师,1992年获瑞典皇家理工学院博士学位,现任澳洲墨尔本皇家理工大学（RMIT）航空机械及制造工程学院副院长兼学术委员会主任，国家“千人计划”清华大学特聘教授。
 多年来一直从事计算流体力学(CFD)的教学和研究,目前从事多相流与传热的数值模拟与实验基础研究，及多相流在航空、汽车、建筑、核能及生物医学工程的应用研究,已发表学术科研论文400多篇，新出专著8本, 由国际著名出版社（Elsevier 和Springer）出版发行,其中《多相流计算方法与应用》一书荣获英国化学工程师协会最佳出版物Brennel奖章。
 现任《Journal of Computational Multiphase Flows》主编,联合国（UN）及国际原子能机构（IAEA）专家委员会成员、国际计算流体力学会议组织委员会常务委员。曾两度荣获墨尔本皇家理工大学优秀教学奖和杰出研究奖。并且在清华大学、国防科大、东北大学、重庆大学、中科院研究生院、南京航空航天大学等国内名校任教讲课,课后受到学生和教师的一致好评。
-
+屠基元教授，1982年、1984年在东北大学分别获学士和硕士学位, 1984-1989年任复旦大学讲师,1992年获瑞典皇家理工学院博士学位,现任澳洲墨尔本皇家理工大学（RMIT）航空机械及制造工程学院副院长兼学术委员会主任，国家“千人计划”清华大学特聘教授。
+多年来一直从事计算流体力学(CFD)的教学和研究,目前从事多相流与传热的数值模拟与实验基础研究，及多相流在航空、汽车、建筑、核能及生物医学工程的应用研究,已发表学术科研论文400多篇，新出专著8本, 由国际著名出版社（Elsevier 和Springer）出版发行,其中《多相流计算方法与应用》一书荣获英国化学工程师协会最佳出版物Brennel奖章。
+现任《Journal of Computational Multiphase Flows》主编,联合国（UN）及国际原子能机构（IAEA）专家委员会成员、国际计算流体力学会议组织委员会常务委员。曾两度荣获墨尔本皇家理工大学优秀教学奖和杰出研究奖。并且在清华大学、国防科大、东北大学、重庆大学、中科院研究生院、南京航空航天大学等国内名校任教讲课,课后受到学生和教师的一致好评。 屠基元教授，1982年、1984年在东北大学分别获学士和硕士学位, 1984-1989年任复旦大学讲师,1992年获瑞典皇家理工学院博士学位,现任澳洲墨尔本皇家理工大学（RMIT）航空机械及制造工程学院副院长兼学术委员会主任，国家“千人计划”清华大学特聘教授。
+多年来一直从事计算流体力学(CFD)的教学和研究,目前从事多相流与传热的数值模拟与实验基础研究，及多相流在航空、汽车、建筑、核能及生物医学工程的应用研究,已发表学术科研论文400多篇，新出专著8本, 由国际著名出版社（Elsevier 和Springer）出版发行,其中《多相流计算方法与应用》一书荣获英国化学工程师协会最佳出版物Brennel奖章。
+现任《Journal of Computational Multiphase Flows》主编,联合国（UN）及国际原子能机构（IAEA）专家委员会成员、国际计算流体力学会议组织委员会常务委员。曾两度荣获墨尔本皇家理工大学优秀教学奖和杰出研究奖。并且在清华大学、国防科大、东北大学、重庆大学、中科院研究生院、南京航空航天大学等国内名校任教讲课,课后受到学生和教师的一致好评。 屠基元教授，1982年、1984年在东北大学分别获学士和硕士学位, 1984-1989年任复旦大学讲师,1992年获瑞典皇家理工学院博士学位,现任澳洲墨尔本皇家理工大学（RMIT）航空机械及制造工程学院副院长兼学术委员会主任，国家“千人计划”清华大学特聘教授。
+多年来一直从事计算流体力学(CFD)的教学和研究,目前从事多相流与传热的数值模拟与实验基础研究，及多相流在航空、汽车、建筑、核能及生物医学工程的应用研究,已发表学术科研论文400多篇，新出专著8本, 由国际著名出版社（Elsevier 和Springer）出版发行,其中《多相流计算方法与应用》一书荣获英国化学工程师协会最佳出版物Brennel奖章。
+现任《Journal of Computational Multiphase Flows》主编,联合国（UN）及国际原子能机构（IAEA）专家委员会成员、国际计算流体力学会议组织委员会常务委员。曾两度荣获墨尔本皇家理工大学优秀教学奖和杰出研究奖。并且在清华大学、国防科大、东北大学、重庆大学、中科院研究生院、南京航空航天大学等国内名校任教讲课,课后受到学生和教师的一致好评。 
                                        </p>
+                                            </div>
                                      </div>
                                 </div>
                             </div>
@@ -350,7 +392,8 @@ This talk will provide an overview on research activities being undertaken at RM
                                            <i class="mdi-navigation-more-vert right"></i>
                                        </span>
                                      </div>
-                                     <div class="card-reveal" style="padding: 0px 10px;">
+                                     <div class="card-reveal" id="ScrollWrapper" style="padding: 0px 10px;">
+                                         <div id="scroller">
                                        <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 李倩
                                            <i class="mdi-navigation-close right"></i>
                                        </span>
@@ -359,6 +402,7 @@ This talk will provide an overview on research activities being undertaken at RM
                                             李倩，副教授，西南大学电化教育学本科、发展与教育心理学硕士，现执教于西南大学计算机与信息科学学院，任教师教育系主任。长期从事教育技术、教师教育、中小学信息技术教育等研究，已发表学科级、核心期刊等论文多篇，副主编及参编教材7部，主持或主研国家、市级、校级及院级等科研课题10余项。
 近年来，承担《信息技术教育学》、《信息技术与课程整合》、《多媒体技术》、《高阶PPT设计与教学应用》等10余门本科及研究生课程；承担全国精品课程、六部委师范大学直播课程《课堂教学技术》的教学工作；承担西南大学青年教师教育技术能力培训共七期；承担重庆大学、重庆理工大学、江西财大等教师教育技术能力培训多期；连续四年承担青海、云南、贵州、重庆等省的中小学教师信息技术应用提升国培计划。近年来，荣获“西南大学优秀教师”、“西南大学学生最喜爱老师”、连续多年的 “优秀实习指导教师”等称号，指导学生参加全国及西南大学微课比赛获多个奖项。
                                        </p>
+                                            </div>
                                      </div>
                                 </div>
                             </div>
@@ -3460,12 +3504,26 @@ C语言中的__LINE__用以指示本行语句在源文件中的位置信息。�
 
 
 
-
 <!-- async load function -->
 <script>
  
+    var myScroll;
+    // myScroll = new IScroll('.ScrollWrapper');
     
-    $(".card-reveal").scrollUnique();
+    myScroll = new IScroll('#ScrollWrapper', {
+		scrollbars: true,
+		mouseWheel: true,
+		interactiveScrollbars: true,
+		shrinkScrollbars: 'scale',
+		fadeScrollbars: true
+	});
+    
+
+
+// document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+
+    // $(".card-reveal").scrollUnique();
     function async(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),

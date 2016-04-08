@@ -201,5 +201,3 @@ var changeMonthToNum = function(str){
             return (str);
         }
     }
-
-

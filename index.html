@@ -3,6 +3,39 @@ layout: page
 description: "据说大神都有属于他们自己的技术博客"
 ---
 
+
+<style type="text/css">
+
+
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+
+
+</style>
+
+
+
 {% for post in paginator.posts %}
 
         <li style="margin: 0px;" class="z-depth-1">
@@ -25,7 +58,8 @@ description: "据说大神都有属于他们自己的技术博客"
                                            <i class="mdi-navigation-more-vert right"></i>
                                        </span>
                                      </div>
-                                     <div class="card-reveal" style="padding: 0px 10px;">
+                                     <div class="card-reveal" id="ScrollWrapper" style="padding: 0px 10px;">
+                                         <div id="scroller">
                                        <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: {{ post.speaker }}
                                            <i class="mdi-navigation-close right"></i>
                                        </span>
@@ -33,6 +67,7 @@ description: "据说大神都有属于他们自己的技术博客"
                                        <p style="padding: 0px 0px 0px ;">
                                             {{ post.speaker-profile }}
                                        </p>
+                                            </div>
                                      </div>
                                 </div>
                             </div>
