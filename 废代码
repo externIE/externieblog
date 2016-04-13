@@ -1,0 +1,99 @@
+<div class="slider">
+    <ul class="slides">
+       <li>
+         <img src="/externieblog/img/common/home-bg.jpg"> <!-- random image -->
+         <div class="caption center-align">
+         <h3>PPT的设计与优化</h3>
+         <h5 class="light grey-text text-lighten-3">主讲人：夏倩</h5>
+         </div>
+       </li>
+       <li>
+         <img src="/externieblog/img/common/tag-bg.jpg"> <!-- random image -->
+         <div class="caption left-align">
+         <h3>Left Aligned Caption</h3>
+         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         </div>
+       </li>
+       <li>
+         <img src="/externieblog/img/common/about-bg.jpg"> <!-- random image -->
+         <div class="caption right-align">
+         <h3>Right Aligned Caption</h3>
+         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         </div>
+       </li>
+       <li>
+         <img src="/externieblog/img/common/404-bg.jpg"> <!-- random image -->
+         <div class="caption center-align">
+         <h3>This is our big Tagline!</h3>
+         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         </div>
+       </li>
+    </ul>
+  </div>
+
+  <div class="row" style="a{}">
+    <div class="col s12">
+    <ul class="tabs">
+      <li class="tab col s2" style="min-width: 0px;"><a class="active" href="#test">全部</a></li>
+      <li class="tab col s2" style="min-width: 0px;"><a href="#test2">理科</a></li>
+      <li class="tab col s2" style="min-width: 0px;"><a href="#test4">工科</a></li>
+      <li class="tab col s2" style="min-width: 0px;"><a href="#test4">商科</a></li>
+      <li class="tab col s2" style="min-width: 0px;"><a href="#test2">艺术</a></li>
+      <li class="tab col s2" style="min-width: 0px;"><a href="#test2">其他</a></li>
+    </ul>
+    </div>
+    <div id="test1" class="col s12"></div>
+    <div id="test2" class="col s12"></div>
+    <div id="test3" class="col s12"></div>
+    <div id="test4" class="col s12"></div>
+  </div>
+
+
+
+
+<script>
+
+
+var picList = [
+{
+    width: 1900,
+    height: 870,
+    content: "/externieblog/img/common/home-bg.jpg",
+},
+{
+    width: 1900,
+    height: 870,
+    content: "/externieblog/img/common/tag-bg.jpg",
+},
+{
+    width: 1900,
+    height: 870,
+    content: "/externieblog/img/common/about-bg.jpg",
+},
+{
+    width: 1900,
+    height: 870,
+    content: "/externieblog/img/common/404-bg.jpg",
+}
+];
+
+var domList = [
+{
+    'height' : '100%',
+    'width' : '100%',
+    'content' : '<div><h1>Home</h1><h2>This is home page</h2><p>home is pretty awsome</p><div>'
+},{
+    'height' : '100%',
+    'width' : '100%',
+    'content' : '<div><h1>Page1</h1><h2>This is page1</h2><p>page1 is pretty awsome</p><div>'
+},{
+    'height' : '100%',
+    'width' : '100%',
+    'content' : '<div><h1>Page2</h1><h2>This is Page2</h2><p>Page2 is pretty awsome</p><div>'
+},{
+    'height' : '100%',
+    'width' : '100%',
+    'content' : '<div><h1>Page3</h1><h2>This is page3</h2><p>page3 is pretty awsome</p><div>'
+}
+];
+</script>

@@ -118,10 +118,6 @@
 
 <!-- Highlight.js -->
 <script>
-    // async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
-//         hljs.initHighlightingOnLoad();
-//     })
-    // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
         async("/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {

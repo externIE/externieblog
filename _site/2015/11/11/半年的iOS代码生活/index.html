@@ -16,22 +16,23 @@
 
     
     <link rel="stylesheet" href="/externieblog/css/header.css">
-    <link rel="stylesheet" href="/externieblog/css/lyk.css">
+    
     <link type="text/css" rel="stylesheet" href="/externieblog/css/materialize.min.css"  media="screen,projection"/>
-
+    
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="/externieblog/css/syntax.css">
 
     <link rel="canonical" href="http://externie.github.io/externieblog/2015/11/11/%E5%8D%8A%E5%B9%B4%E7%9A%84iOS%E4%BB%A3%E7%A0%81%E7%94%9F%E6%B4%BB/">
-
+    <link rel="stylesheet" href="/externieblog/css/lyk.css">
     
-    <script src="/externieblog/js/jquery.min.js"></script>
-    <script src="/externieblog/js/materialize.js"></script>
+    <script src="/externieblog/js/iscroll.js"></script>
+    
     
     <!--Custom JS-->
     <script src="/externieblog/js/islider.js"></script>
     <script src="/externieblog/js/plugins/islider_desktop.js"></script>
-    <script src="/externieblog/js/iscroll.js"></script>
+    <script src="/externieblog/js/jquery.min.js"></script>
+    <script src="/externieblog/js/materialize.js"></script>
     <script src="/externieblog/js/app.js"></script>
     
     <script></script>
@@ -652,10 +653,6 @@ $(".container").find("img").each(function(i,item){
 
 <!-- Highlight.js -->
 <script>
-    // async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
-//         hljs.initHighlightingOnLoad();
-//     })
-    // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
         async("/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
