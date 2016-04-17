@@ -223,7 +223,7 @@
 
 <p>苹果的证书体系一直都是iOS初学者无尽的梦魇，什么开发证书、发布证书、推送证书，什么ad hoc、内测分发、真机调试……我想每一个iOS初学刚开始接触Apple的证书体系的时候内心是绝壁崩溃并且被心中的草泥马践踏的体无完肤的……。</p>
 
-<p>其实苹果的证书其实没那么玄乎，很多朋友弄不懂或者过了一段时间又不知道怎么弄了，本质的原因是因为对<a href="https://zh.wikipedia.org/zh-cn/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86">非对称加密(公开密钥加密)</a>的不理解<del>导致的</del>，所以为了完全的驾驭苹果的证书，这些基础的知识就是坑你的坎，必须跨过去的。</p>
+<p>其实苹果的证书其实没那么玄乎，很多朋友弄不懂或者过了一段时间又不知道怎么弄了，本质的原因是因为对<a href="https://zh.wikipedia.org/zh-cn/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86">非对称加密(公开密钥加密)</a>的不理解~~导致的~~，所以为了完全的驾驭苹果的证书，这些基础的知识就是坑你的坎，必须跨过去的。</p>
 
 <p>网上有各种解释证书中心里面每一种证书作用是什么、怎么创建、怎么使用的，但是这也只能授人以鱼，所以博主不会介绍每一种证书是干嘛的，因为你看前年多了一个<code class="highlighter-rouge">Pass Type ID Certificate</code> ，去年又有了<code class="highlighter-rouge">WatchKit Services Certificate</code> ，今年又来一个<code class="highlighter-rouge">Apple Pay Certificate</code>……根本就解释这些证书不完嘛~，所以理解这些证书的统一规律才是王道！所谓</p>
 
@@ -280,7 +280,7 @@
 
 <p>我想这个界面一弹出来的时候，蛋蛋忧伤迎面扑来。然后怒点 <code class="highlighter-rouge">Fix issue</code>，然后你们团队负责管理证书的基友突然发现证书中心多了好多好乱的证书以及描述文件，然后他爆了一句：what the huck！删掉了带有<code class="highlighter-rouge">Xcode *</code>的证书以及描述文件，然后自己又暴力的点了一发<code class="highlighter-rouge">Fix issue</code>，然后你突然调试不了了，再暴击<code class="highlighter-rouge">Fix issue</code>键，最后整个团队都只有通过<code class="highlighter-rouge">Fix issue</code>来真机调试了……。</p>
 
-<p>所以慎点<code class="highlighter-rouge">Fix issue</code>，如果点击这个选项，聪明的(<del>蠢哭的</del>)Xcode就会自己管理描述文件，然后各种莫名其妙的带有<code class="highlighter-rouge">Xcode *</code>的证书以及描述文件……</p>
+<p>所以慎点<code class="highlighter-rouge">Fix issue</code>，如果点击这个选项，聪明的(~~蠢哭的~~)Xcode就会自己管理描述文件，然后各种莫名其妙的带有<code class="highlighter-rouge">Xcode *</code>的证书以及描述文件……</p>
 
 <p>其实只要坚信一点，证书、设备ID、AppID、描述文件都弄对了就绝逼不会出问题的！</p>
 
@@ -319,7 +319,7 @@
 <ol>
   <li>苹果服务器证书端设置正确！打包证书、描述文件正确！！</li>
   <li>下载推送证书(cer格式)，导入keyChain，保证私钥存在，不存在去找创建这个证书的电脑要一份过来。</li>
-  <li>从钥匙库导出的<del>根证书</del>(推送证书)私钥(p12格式)</li>
+  <li>从钥匙库导出的~~根证书~~(推送证书)私钥(p12格式)</li>
 </ol>
 
 <p>第三步根证书的私钥这里是一个坑！因为一个App的推送证书的创建可以和根证书创建的电脑不同，也就是keyChain产生的<code class="highlighter-rouge">certSigningRequest</code>不一样，所以私钥也是不一样的，在这里生成Pem时，注意要使用推送证书的私钥！</p>
@@ -749,58 +749,7 @@ $(".container").find("img").each(function(i,item){
 
 
     <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    
-                    <li>
-                        <a target="_blank" href="/externieblog/feed.xml">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
 
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
-                    
-                    
-                    <li>
-                        <a target="_blank" href="http://weibo.com/ielinyikai">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-
-
-                    
-                    
-                    <li>
-                        <a target="_blank" href="https://github.com/externIE">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                </ul>
-                <p class="copyright text-muted">
-                    Copyright &copy; externIE’s Blog 2016
-                    <br>
-                    Star my <a href="https://github.com/externie" target="_blank">blog</a> 
-               </p>
-            </div>
-        </div>
-    </div>
-</footer>
 
 
 

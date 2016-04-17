@@ -225,9 +225,6 @@ This talk will provide an overview on research activities being undertaken at RM
     });
 </script>
 
-<div id="iSlider-effect-wrapper" style="">
-    <div id="inp" class="iSlider-effect" style="">test</div>
-</div>
 
 
         <li style="margin: 0px;" class="z-depth-1">
@@ -364,9 +361,6 @@ This talk will provide an overview on research activities being undertaken at RM
     });
 </script>
 
-<div id="iSlider-effect-wrapper" style="">
-    <div id="inp" class="iSlider-effect" style="">test</div>
-</div>
 
 
         <li style="margin: 0px;" class="z-depth-1">
@@ -595,9 +589,6 @@ http://externie.com/dist
     });
 </script>
 
-<div id="iSlider-effect-wrapper" style="">
-    <div id="inp" class="iSlider-effect" style="">test</div>
-</div>
 
 
         <li style="margin: 0px;" class="z-depth-1">
@@ -690,7 +681,7 @@ Certificates证书
 
 苹果的证书体系一直都是iOS初学者无尽的梦魇，什么开发证书、发布证书、推送证书，什么ad hoc、内测分发、真机调试……我想每一个iOS初学刚开始接触Apple的证书体系的时候内心是绝壁崩溃并且被心中的草泥马践踏的体无完肤的……。
 
-其实苹果的证书其实没那么玄乎，很多朋友弄不懂或者过了一段时间又不知道怎么弄了，本质的原因是因为对非对称加密(公开密钥加密)的不理解导致的，所以为了完全的驾驭苹果的证书，这些基础的知识就是坑你的坎，必须跨过去的。
+其实苹果的证书其实没那么玄乎，很多朋友弄不懂或者过了一段时间又不知道怎么弄了，本质的原因是因为对非对称加密(公开密钥加密)的不理解~~导致的~~，所以为了完全的驾驭苹果的证书，这些基础的知识就是坑你的坎，必须跨过去的。
 
 网上有各种解释证书中心里面每一种证书作用是什么、怎么创建、怎么使用的，但是这也只能授人以鱼，所以博主不会介绍每一种证书是干嘛的，因为你看前年多了一个Pass Type ID Certificate ，去年又有了WatchKit Services Certificate ，今年又来一个Apple Pay Certificate……根本就解释这些证书不完嘛~，所以理解这些证书的统一规律才是王道！所谓
 
@@ -747,7 +738,7 @@ Provisioning Profiles描述文件
 
 我想这个界面一弹出来的时候，蛋蛋忧伤迎面扑来。然后怒点 Fix issue，然后你们团队负责管理证书的基友突然发现证书中心多了好多好乱的证书以及描述文件，然后他爆了一句：what the huck！删掉了带有Xcode *的证书以及描述文件，然后自己又暴力的点了一发Fix issue，然后你突然调试不了了，再暴击Fix issue键，最后整个团队都只有通过Fix issue来真机调试了……。
 
-所以慎点Fix issue，如果点击这个选项，聪明的(蠢哭的)Xcode就会自己管理描述文件，然后各种莫名其妙的带有Xcode *的证书以及描述文件……
+所以慎点Fix issue，如果点击这个选项，聪明的(~~蠢哭的~~)Xcode就会自己管理描述文件，然后各种莫名其妙的带有Xcode *的证书以及描述文件……
 
 其实只要坚信一点，证书、设备ID、AppID、描述文件都弄对了就绝逼不会出问题的！
 
@@ -786,7 +777,7 @@ PHP有点调皮，还需要转换成pem
 
   苹果服务器证书端设置正确！打包证书、描述文件正确！！
   下载推送证书(cer格式)，导入keyChain，保证私钥存在，不存在去找创建这个证书的电脑要一份过来。
-  从钥匙库导出的根证书(推送证书)私钥(p12格式)
+  从钥匙库导出的~~根证书~~(推送证书)私钥(p12格式)
 
 
 第三步根证书的私钥这里是一个坑！因为一个App的推送证书的创建可以和根证书创建的电脑不同，也就是keyChain产生的certSigningRequest不一样，所以私钥也是不一样的，在这里生成Pem时，注意要使用推送证书的私钥！
@@ -1000,9 +991,6 @@ IMTS-90502 "Invalid Bundle. Apps that only contain the arm64 slice must also hav
     });
 </script>
 
-<div id="iSlider-effect-wrapper" style="">
-    <div id="inp" class="iSlider-effect" style="">test</div>
-</div>
 
 
         <li style="margin: 0px;" class="z-depth-1">
@@ -1169,7 +1157,7 @@ NSHipster、Objc.io ……都是不错的去处，大量的紧巴巴的干货，
 
 后记
 
-博主新开了一个博客系统，托管在了Github.io上，喜闻乐见的Jekll加借鉴(抄袭)的精美主题构建而成，反正样子应该还看得过去，如果有朋友有兴趣想了解iOS程序员为何日撸万行代码？数百奇巧淫技如何施展？无数干货为何频频送出？究竟编译器背后又隐藏着什么？这一切的背后是技术与生活的碰撞还是高效与投机的权衡？我真TM编不下去了，欢迎前往 [任意门]围观。
+博主新开了一个博客系统，托管在了Github.io上，喜闻乐见的Jekll加借鉴~~(抄袭)~~的精美主题构建而成，反正样子应该还看得过去，如果有朋友有兴趣想了解iOS程序员为何日撸万行代码？数百奇巧淫技如何施展？无数干货为何频频送出？究竟编译器背后又隐藏着什么？这一切的背后是技术与生活的碰撞还是高效与投机的权衡？我真TM编不下去了，欢迎前往 [任意门]围观。
 
 严肃地，如果你刚开始学习iOS开发或许可以从博主这里得到一些半干货。
 
@@ -1214,9 +1202,6 @@ NSHipster、Objc.io ……都是不错的去处，大量的紧巴巴的干货，
     });
 </script>
 
-<div id="iSlider-effect-wrapper" style="">
-    <div id="inp" class="iSlider-effect" style="">test</div>
-</div>
 
 
         <li style="margin: 0px;" class="z-depth-1">
@@ -1848,9 +1833,6 @@ Color Off Screen Rendered:.该选项为离屏渲染内容添加一个黄色的�
     });
 </script>
 
-<div id="iSlider-effect-wrapper" style="">
-    <div id="inp" class="iSlider-effect" style="">test</div>
-</div>
 
 
         <li style="margin: 0px;" class="z-depth-1">
@@ -2739,9 +2721,6 @@ PaintCode
     });
 </script>
 
-<div id="iSlider-effect-wrapper" style="">
-    <div id="inp" class="iSlider-effect" style="">test</div>
-</div>
 
 
         <li style="margin: 0px;" class="z-depth-1">
@@ -3140,9 +3119,6 @@ C语言中的__LINE__用以指示本行语句在源文件中的位置信息。�
     });
 </script>
 
-<div id="iSlider-effect-wrapper" style="">
-    <div id="inp" class="iSlider-effect" style="">test</div>
-</div>
 
 
 
@@ -3300,58 +3276,7 @@ C语言中的__LINE__用以指示本行语句在源文件中的位置信息。�
 
 
     <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    
-                    <li>
-                        <a target="_blank" href="/externieblog/feed.xml">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
 
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
-                    
-                    
-                    <li>
-                        <a target="_blank" href="http://weibo.com/ielinyikai">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-
-
-                    
-                    
-                    <li>
-                        <a target="_blank" href="https://github.com/externIE">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                </ul>
-                <p class="copyright text-muted">
-                    Copyright &copy; externIE’s Blog 2016
-                    <br>
-                    Star my <a href="https://github.com/externie" target="_blank">blog</a> 
-               </p>
-            </div>
-        </div>
-    </div>
-</footer>
 
 
 

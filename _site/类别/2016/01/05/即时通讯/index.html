@@ -195,7 +195,7 @@
 <p>这是一个WebApp，用户间可以进行及时通讯，并且可以群聊，有最近聊天记录，最近联系人，以及消息推送，消息提醒，由于是纯webapp并且采用angular.js作客户端架构，应用可以实现全平台覆盖（良好适配桌面和手机屏幕），无论是win，mac，ios，android还是linux，稍加修改还可以作为android或ios上目前比较流行的hybrid app。主要架构：服务为LeanCloud，客户端视图采用HTML5，B/S连接采用WebSocket协议，客户端基本架构Angular.js。</p>
 
 <h1 id="nodejs">什么是Node.js:</h1>
-<p>Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行的数据密集型的实时应用。Node是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。Node.
+<p>Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行的数据密集型的实时应用。Node是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。Node.<br />
 js使用Module模块去划分不同的功能，以简化应用的开发。Modules模块有点象C语言中的类库。每一个Node.js的类库都包含了十分丰富的各类函数，比如http模块就包含了和http功能相关的很多函数，可以帮助开发者很容易地对比如http,tcp/udp等进行操作，还可以很容易的创建http和tcp/udp的服务器。</p>
 
 <h1 id="websocketwebsocket">什么是WebSocket协议以及为什么要用WebSocket：</h1>
@@ -208,51 +208,51 @@ js使用Module模块去划分不同的功能，以简化应用的开发。Module
 <p>leancloud是一套服务，提供免费和收费的后端服务，使开发者更专注于前端应用的设计，实现真正的零后端开发，开发者不用再关心数据和应用服务器，并且leancloud提供的云引擎可以将代码部署在云端执行，更加灵活的满足各种需求。在这个应用中我们的数据通讯以及数据存储推送等等服务都是由leancloud来承担，作为应用开发者我们真正做到只需要关心数据对象本身，而不用关心对象如何进行存储和获取，并且采用leancloud的js-realtime-sdk进行前端的开发。</p>
 
 <h1 id="section-1">系统分析及设计方案：</h1>
-<p>##按模块划分：
-我们首先来分析实际发生一段对话需要有几个实体，首先对话需要人物，而且至少是两个和两个以上的人物，其次对话需要有对话内容，在一次对话的每段内容中不仅包括对话消息还有产生对话的时间以及发送人。所以我们如果设计一个即时通讯的应用，至少一定要有两个模块，一个是用户（用来管理用户信息），另一个就是对话（管理对话内容和参与者信息），那么对于一个实用的系统来说我们还需要一个模块用来管理用户和其他用户的对话缓存（很遗憾在这个系统中我们没有实现用户关系系统，我们没有为新用户提供注册ID并参与对话的能力，我们仅仅可以实现已有用户之间的对话通过后台创建不同的对话来实现不同用户或用户群间的简单交流）。
-下面是我们的代码结构：
-src
-├── app
-│   ├── components      // 组件
-│   │   ├── conversation-cache    // 会话本地缓存 service
-│   │   ├── message               // 消息 directive
-│   │   ├── reverse-infinite-list // 向上滚动无限加载列表 directive
-│   │   └── user                  // 用户相关 service
-│   ├── conversation    // 会话 view，app 主界面
-│   │   └── conversation-message  // 消息 view，会话 view 的子 view
-│   ├── index.config.js // 配置依赖模块
-│   ├── index.module.js // js 入口，注册依赖模块，启动 app
-│   ├── index.route.js  // 配置路由
-│   ├── index.run.js    // 启动 app 的代码
-│   ├── index.scss
-│   └── login           // 登录 view
-├── assets
-│   ├── fonts
-│   └── images
-├── favicon.ico
-└── index.html  // 页面入口，ui-view 容器
-## 按业务划分：
+<p>##按模块划分：<br />
+我们首先来分析实际发生一段对话需要有几个实体，首先对话需要人物，而且至少是两个和两个以上的人物，其次对话需要有对话内容，在一次对话的每段内容中不仅包括对话消息还有产生对话的时间以及发送人。所以我们如果设计一个即时通讯的应用，至少一定要有两个模块，一个是用户（用来管理用户信息），另一个就是对话（管理对话内容和参与者信息），那么对于一个实用的系统来说我们还需要一个模块用来管理用户和其他用户的对话缓存（很遗憾在这个系统中我们没有实现用户关系系统，我们没有为新用户提供注册ID并参与对话的能力，我们仅仅可以实现已有用户之间的对话通过后台创建不同的对话来实现不同用户或用户群间的简单交流）。<br />
+下面是我们的代码结构：<br />
+src<br />
+├── app<br />
+│   ├── components      // 组件<br />
+│   │   ├── conversation-cache    // 会话本地缓存 service<br />
+│   │   ├── message               // 消息 directive<br />
+│   │   ├── reverse-infinite-list // 向上滚动无限加载列表 directive<br />
+│   │   └── user                  // 用户相关 service<br />
+│   ├── conversation    // 会话 view，app 主界面<br />
+│   │   └── conversation-message  // 消息 view，会话 view 的子 view<br />
+│   ├── index.config.js // 配置依赖模块<br />
+│   ├── index.module.js // js 入口，注册依赖模块，启动 app<br />
+│   ├── index.route.js  // 配置路由<br />
+│   ├── index.run.js    // 启动 app 的代码<br />
+│   ├── index.scss<br />
+│   └── login           // 登录 view<br />
+├── assets<br />
+│   ├── fonts<br />
+│   └── images<br />
+├── favicon.ico<br />
+└── index.html  // 页面入口，ui-view 容器<br />
+## 按业务划分：<br />
 我们还是采用经典的MVC模式来设计我们的应用，视图方面我们采用html＋css的方式，每个视图有专有的控制器联系视图和后台的model。具体划分如下：</p>
 
-<p>src
-├── app
-│   ├── login     // 登陆
-│   │   ├── login.html+login.scss    // login界面
-│   │   └── login.controller.js                 // login控制器
-│   ├── conversation    // 会话 view，app 主界面
-│   │   ├── conversation-message  // 消息 view，会话 view 的子 view
-│   │   │ ├── conversation-message.html+  conversation-message.css
-│   │   │ └── conversation-message.controller.js
-│   │   ├── conversation.html+conversation.scss
-│   │   └── conversation.js
+<p>src<br />
+├── app<br />
+│   ├── login     // 登陆<br />
+│   │   ├── login.html+login.scss    // login界面<br />
+│   │   └── login.controller.js                 // login控制器<br />
+│   ├── conversation    // 会话 view，app 主界面<br />
+│   │   ├── conversation-message  // 消息 view，会话 view 的子 view<br />
+│   │   │ ├── conversation-message.html+  conversation-message.css<br />
+│   │   │ └── conversation-message.controller.js<br />
+│   │   ├── conversation.html+conversation.scss<br />
+│   │   └── conversation.js<br />
 └── index.html  // 页面入口，ui-view 容器</p>
 
 <h1 id="section-2">系统实现：</h1>
-<p>## index.module.js:
-js 入口，申明依赖模块，配置依赖模块，注册 components 与 views，启动 app。
-依赖的 angular 模块有：
-- <a href="https://github.com/leeyeh/angular-leancloud-realtime">leancloud-realtime</a>：leancloud realtime SDK 的 angular 包装
-- <a href="https://github.com/angular-ui/ui-router">ui.router</a>：基于状态的 router
+<p>## index.module.js:<br />
+js 入口，申明依赖模块，配置依赖模块，注册 components 与 views，启动 app。<br />
+依赖的 angular 模块有：<br />
+- <a href="https://github.com/leeyeh/angular-leancloud-realtime">leancloud-realtime</a>：leancloud realtime SDK 的 angular 包装<br />
+- <a href="https://github.com/angular-ui/ui-router">ui.router</a>：基于状态的 router<br />
 - <a href="https://material.angularjs.org/">ngMaterial</a>：提供 material design UI 组件</p>
 
 <h2 id="indexroutejs">index.route.js</h2>
@@ -268,7 +268,7 @@ js 入口，申明依赖模块，配置依赖模块，注册 components 与 view
 <p>通过 UserService 的 login 方法，最终调用了 SDK 的  <a href="https://leancloud.cn/docs/js_realtime.html#AV_realtime"><code class="highlighter-rouge">AV.realtime()</code></a>，与实时通讯 server 建立长连接。然后跳转到 conversation 视图。</p>
 
 <h2 id="coversation">Coversation</h2>
-<p>聊天主界面，包括了当前用户的对话列表以及子视图 <code class="highlighter-rouge">ConversationMessage</code>。
+<p>聊天主界面，包括了当前用户的对话列表以及子视图 <code class="highlighter-rouge">ConversationMessage</code>。<br />
 这个视图主要做了这些事情：</p>
 
 <ul>
@@ -281,21 +281,21 @@ js 入口，申明依赖模块，配置依赖模块，注册 components 与 view
 </ul>
 
 <h2 id="coversationmessage">CoversationMessage</h2>
-<p>聊天消息视图，<code class="highlighter-rouge">Coversation</code> 的子视图，由工具栏、消息列表、输入框以及在线用户列表侧边栏组成。其中暂态对话没有「在线用户列表」
-」概念。
-主要做了这些事情：
-- 根据当前的路由信息，获取或创建一个会话。
-- 获取该会话的历史消息记录，用户滚到顶部时加载更多历史消息。
-- 响应该会话的 <code class="highlighter-rouge">message</code> 事件，在列表中显示消息内容。
-- （可用的话）获取该会话的在线用户列表，提供本地的查询功能。
-- 通知 <code class="highlighter-rouge">Conversation</code> 视图用以清除该会话的未读消息计数。
+<p>聊天消息视图，<code class="highlighter-rouge">Coversation</code> 的子视图，由工具栏、消息列表、输入框以及在线用户列表侧边栏组成。其中暂态对话没有「在线用户列表」<br />
+」概念。<br />
+主要做了这些事情：<br />
+- 根据当前的路由信息，获取或创建一个会话。<br />
+- 获取该会话的历史消息记录，用户滚到顶部时加载更多历史消息。<br />
+- 响应该会话的 <code class="highlighter-rouge">message</code> 事件，在列表中显示消息内容。<br />
+- （可用的话）获取该会话的在线用户列表，提供本地的查询功能。<br />
+- 通知 <code class="highlighter-rouge">Conversation</code> 视图用以清除该会话的未读消息计数。<br />
 发送消息，通知 <code class="highlighter-rouge">Conversation</code> 视图用以调整会话列表排序。</p>
 
 <h2 id="message">Message</h2>
-<p>Message directive 封装了消息的样式，需要传入四个属性：
-- <code class="highlighter-rouge">message</code>：根据不同的消息类型展示不同的消息
-- <code class="highlighter-rouge">previousMessage</code>：根据上一条消息与当前消息的时间戳决定是否显示消息时间
-- <code class="highlighter-rouge">isMine</code>：标记是用户自己发送的消息
+<p>Message directive 封装了消息的样式，需要传入四个属性：<br />
+- <code class="highlighter-rouge">message</code>：根据不同的消息类型展示不同的消息<br />
+- <code class="highlighter-rouge">previousMessage</code>：根据上一条消息与当前消息的时间戳决定是否显示消息时间<br />
+- <code class="highlighter-rouge">isMine</code>：标记是用户自己发送的消息<br />
 <code class="highlighter-rouge">onNameClick</code>：点击消息发送方 ID 的回调</p>
 
 <h2 id="reverseinfinitelist">ReverseInfiniteList</h2>
@@ -314,16 +314,16 @@ js 入口，申明依赖模块，配置依赖模块，注册 components 与 view
 <p>由于对leancloud后台服务了解的缺失，这个系统并没有一个比较全面的用户系统支持，应用中并不支持用户自由注册和添加删除好友关系，也不支持对话删除功能。同时使用angular.js框架的应用性能并不理想，目前该框架的应用较少，websocket协议的支持面也比较窄，有的服务器不能支持该协议。ngMaterial也是较新的一个angular.js模块，通过实践我们发现在手机UC浏览器上这个项目不能正常运行。如果要想在 Android WebView 中使用，需要注意开启 WebSocket 支持。另外，在部分 Android 机型的 WebView 中不支持 WebSocket 的安全链接，所以需要从 wss 协议转为 ws 协议，关闭 WebSocket 的 SSL。</p>
 
 <h1 id="section-6">项目现况：</h1>
-<p>http://externie.com/dist
+<p>http://externie.com/dist<br />
 请用账号test1登录（不需要输入邮箱地址）</p>
 
 <h1 id="section-7">参考文献：</h1>
-<p>1.百度百科websocket词条
-2.nodejs官网 http://nodejs.org/
-3.七步从Angular.js菜鸟到专家 http://developer.51cto.com/art/201308/408586.htm
-4.Gulp as a Development Web Server http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server–cms-20903
-5.leancloud数据存储文档
-6.leancloud实时通讯文档
+<p>1.百度百科websocket词条<br />
+2.nodejs官网 http://nodejs.org/<br />
+3.七步从Angular.js菜鸟到专家 http://developer.51cto.com/art/201308/408586.htm<br />
+4.Gulp as a Development Web Server http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server–cms-20903<br />
+5.leancloud数据存储文档<br />
+6.leancloud实时通讯文档<br />
 7.leancloud javascript文档</p>
 
 				
@@ -578,58 +578,7 @@ $(".container").find("img").each(function(i,item){
 
 
     <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    
-                    <li>
-                        <a target="_blank" href="/externieblog/feed.xml">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
 
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
-                    
-                    
-                    <li>
-                        <a target="_blank" href="http://weibo.com/ielinyikai">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-
-
-                    
-                    
-                    <li>
-                        <a target="_blank" href="https://github.com/externIE">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                </ul>
-                <p class="copyright text-muted">
-                    Copyright &copy; externIE’s Blog 2016
-                    <br>
-                    Star my <a href="https://github.com/externie" target="_blank">blog</a> 
-               </p>
-            </div>
-        </div>
-    </div>
-</footer>
 
 
 

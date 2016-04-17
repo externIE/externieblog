@@ -5,9 +5,9 @@
     <description>在这里探索iOS的一切。</description>
     <link>http://externie.github.io/externieblog/</link>
     <atom:link href="http://externie.github.io/externieblog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 13 Apr 2016 09:11:00 +0800</pubDate>
-    <lastBuildDate>Wed, 13 Apr 2016 09:11:00 +0800</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
+    <pubDate>Sun, 17 Apr 2016 18:11:01 +0800</pubDate>
+    <lastBuildDate>Sun, 17 Apr 2016 18:11:01 +0800</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>Modelling of Dispersed Multiphase Flows and Its Applications</title>
@@ -55,7 +55,7 @@
 &lt;p&gt;这是一个WebApp，用户间可以进行及时通讯，并且可以群聊，有最近聊天记录，最近联系人，以及消息推送，消息提醒，由于是纯webapp并且采用angular.js作客户端架构，应用可以实现全平台覆盖（良好适配桌面和手机屏幕），无论是win，mac，ios，android还是linux，稍加修改还可以作为android或ios上目前比较流行的hybrid app。主要架构：服务为LeanCloud，客户端视图采用HTML5，B/S连接采用WebSocket协议，客户端基本架构Angular.js。&lt;/p&gt;
 
 &lt;h1 id=&quot;nodejs&quot;&gt;什么是Node.js:&lt;/h1&gt;
-&lt;p&gt;Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行的数据密集型的实时应用。Node是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。Node.
+&lt;p&gt;Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行的数据密集型的实时应用。Node是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。Node.&lt;br /&gt;
 js使用Module模块去划分不同的功能，以简化应用的开发。Modules模块有点象C语言中的类库。每一个Node.js的类库都包含了十分丰富的各类函数，比如http模块就包含了和http功能相关的很多函数，可以帮助开发者很容易地对比如http,tcp/udp等进行操作，还可以很容易的创建http和tcp/udp的服务器。&lt;/p&gt;
 
 &lt;h1 id=&quot;websocketwebsocket&quot;&gt;什么是WebSocket协议以及为什么要用WebSocket：&lt;/h1&gt;
@@ -68,51 +68,51 @@ js使用Module模块去划分不同的功能，以简化应用的开发。Module
 &lt;p&gt;leancloud是一套服务，提供免费和收费的后端服务，使开发者更专注于前端应用的设计，实现真正的零后端开发，开发者不用再关心数据和应用服务器，并且leancloud提供的云引擎可以将代码部署在云端执行，更加灵活的满足各种需求。在这个应用中我们的数据通讯以及数据存储推送等等服务都是由leancloud来承担，作为应用开发者我们真正做到只需要关心数据对象本身，而不用关心对象如何进行存储和获取，并且采用leancloud的js-realtime-sdk进行前端的开发。&lt;/p&gt;
 
 &lt;h1 id=&quot;section-1&quot;&gt;系统分析及设计方案：&lt;/h1&gt;
-&lt;p&gt;##按模块划分：
-我们首先来分析实际发生一段对话需要有几个实体，首先对话需要人物，而且至少是两个和两个以上的人物，其次对话需要有对话内容，在一次对话的每段内容中不仅包括对话消息还有产生对话的时间以及发送人。所以我们如果设计一个即时通讯的应用，至少一定要有两个模块，一个是用户（用来管理用户信息），另一个就是对话（管理对话内容和参与者信息），那么对于一个实用的系统来说我们还需要一个模块用来管理用户和其他用户的对话缓存（很遗憾在这个系统中我们没有实现用户关系系统，我们没有为新用户提供注册ID并参与对话的能力，我们仅仅可以实现已有用户之间的对话通过后台创建不同的对话来实现不同用户或用户群间的简单交流）。
-下面是我们的代码结构：
-src
-├── app
-│   ├── components      // 组件
-│   │   ├── conversation-cache    // 会话本地缓存 service
-│   │   ├── message               // 消息 directive
-│   │   ├── reverse-infinite-list // 向上滚动无限加载列表 directive
-│   │   └── user                  // 用户相关 service
-│   ├── conversation    // 会话 view，app 主界面
-│   │   └── conversation-message  // 消息 view，会话 view 的子 view
-│   ├── index.config.js // 配置依赖模块
-│   ├── index.module.js // js 入口，注册依赖模块，启动 app
-│   ├── index.route.js  // 配置路由
-│   ├── index.run.js    // 启动 app 的代码
-│   ├── index.scss
-│   └── login           // 登录 view
-├── assets
-│   ├── fonts
-│   └── images
-├── favicon.ico
-└── index.html  // 页面入口，ui-view 容器
-## 按业务划分：
+&lt;p&gt;##按模块划分：&lt;br /&gt;
+我们首先来分析实际发生一段对话需要有几个实体，首先对话需要人物，而且至少是两个和两个以上的人物，其次对话需要有对话内容，在一次对话的每段内容中不仅包括对话消息还有产生对话的时间以及发送人。所以我们如果设计一个即时通讯的应用，至少一定要有两个模块，一个是用户（用来管理用户信息），另一个就是对话（管理对话内容和参与者信息），那么对于一个实用的系统来说我们还需要一个模块用来管理用户和其他用户的对话缓存（很遗憾在这个系统中我们没有实现用户关系系统，我们没有为新用户提供注册ID并参与对话的能力，我们仅仅可以实现已有用户之间的对话通过后台创建不同的对话来实现不同用户或用户群间的简单交流）。&lt;br /&gt;
+下面是我们的代码结构：&lt;br /&gt;
+src&lt;br /&gt;
+├── app&lt;br /&gt;
+│   ├── components      // 组件&lt;br /&gt;
+│   │   ├── conversation-cache    // 会话本地缓存 service&lt;br /&gt;
+│   │   ├── message               // 消息 directive&lt;br /&gt;
+│   │   ├── reverse-infinite-list // 向上滚动无限加载列表 directive&lt;br /&gt;
+│   │   └── user                  // 用户相关 service&lt;br /&gt;
+│   ├── conversation    // 会话 view，app 主界面&lt;br /&gt;
+│   │   └── conversation-message  // 消息 view，会话 view 的子 view&lt;br /&gt;
+│   ├── index.config.js // 配置依赖模块&lt;br /&gt;
+│   ├── index.module.js // js 入口，注册依赖模块，启动 app&lt;br /&gt;
+│   ├── index.route.js  // 配置路由&lt;br /&gt;
+│   ├── index.run.js    // 启动 app 的代码&lt;br /&gt;
+│   ├── index.scss&lt;br /&gt;
+│   └── login           // 登录 view&lt;br /&gt;
+├── assets&lt;br /&gt;
+│   ├── fonts&lt;br /&gt;
+│   └── images&lt;br /&gt;
+├── favicon.ico&lt;br /&gt;
+└── index.html  // 页面入口，ui-view 容器&lt;br /&gt;
+## 按业务划分：&lt;br /&gt;
 我们还是采用经典的MVC模式来设计我们的应用，视图方面我们采用html＋css的方式，每个视图有专有的控制器联系视图和后台的model。具体划分如下：&lt;/p&gt;
 
-&lt;p&gt;src
-├── app
-│   ├── login     // 登陆
-│   │   ├── login.html+login.scss    // login界面
-│   │   └── login.controller.js                 // login控制器
-│   ├── conversation    // 会话 view，app 主界面
-│   │   ├── conversation-message  // 消息 view，会话 view 的子 view
-│   │   │ ├── conversation-message.html+  conversation-message.css
-│   │   │ └── conversation-message.controller.js
-│   │   ├── conversation.html+conversation.scss
-│   │   └── conversation.js
+&lt;p&gt;src&lt;br /&gt;
+├── app&lt;br /&gt;
+│   ├── login     // 登陆&lt;br /&gt;
+│   │   ├── login.html+login.scss    // login界面&lt;br /&gt;
+│   │   └── login.controller.js                 // login控制器&lt;br /&gt;
+│   ├── conversation    // 会话 view，app 主界面&lt;br /&gt;
+│   │   ├── conversation-message  // 消息 view，会话 view 的子 view&lt;br /&gt;
+│   │   │ ├── conversation-message.html+  conversation-message.css&lt;br /&gt;
+│   │   │ └── conversation-message.controller.js&lt;br /&gt;
+│   │   ├── conversation.html+conversation.scss&lt;br /&gt;
+│   │   └── conversation.js&lt;br /&gt;
 └── index.html  // 页面入口，ui-view 容器&lt;/p&gt;
 
 &lt;h1 id=&quot;section-2&quot;&gt;系统实现：&lt;/h1&gt;
-&lt;p&gt;## index.module.js:
-js 入口，申明依赖模块，配置依赖模块，注册 components 与 views，启动 app。
-依赖的 angular 模块有：
-- &lt;a href=&quot;https://github.com/leeyeh/angular-leancloud-realtime&quot;&gt;leancloud-realtime&lt;/a&gt;：leancloud realtime SDK 的 angular 包装
-- &lt;a href=&quot;https://github.com/angular-ui/ui-router&quot;&gt;ui.router&lt;/a&gt;：基于状态的 router
+&lt;p&gt;## index.module.js:&lt;br /&gt;
+js 入口，申明依赖模块，配置依赖模块，注册 components 与 views，启动 app。&lt;br /&gt;
+依赖的 angular 模块有：&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/leeyeh/angular-leancloud-realtime&quot;&gt;leancloud-realtime&lt;/a&gt;：leancloud realtime SDK 的 angular 包装&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/angular-ui/ui-router&quot;&gt;ui.router&lt;/a&gt;：基于状态的 router&lt;br /&gt;
 - &lt;a href=&quot;https://material.angularjs.org/&quot;&gt;ngMaterial&lt;/a&gt;：提供 material design UI 组件&lt;/p&gt;
 
 &lt;h2 id=&quot;indexroutejs&quot;&gt;index.route.js&lt;/h2&gt;
@@ -128,7 +128,7 @@ js 入口，申明依赖模块，配置依赖模块，注册 components 与 view
 &lt;p&gt;通过 UserService 的 login 方法，最终调用了 SDK 的  &lt;a href=&quot;https://leancloud.cn/docs/js_realtime.html#AV_realtime&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AV.realtime()&lt;/code&gt;&lt;/a&gt;，与实时通讯 server 建立长连接。然后跳转到 conversation 视图。&lt;/p&gt;
 
 &lt;h2 id=&quot;coversation&quot;&gt;Coversation&lt;/h2&gt;
-&lt;p&gt;聊天主界面，包括了当前用户的对话列表以及子视图 &lt;code class=&quot;highlighter-rouge&quot;&gt;ConversationMessage&lt;/code&gt;。
+&lt;p&gt;聊天主界面，包括了当前用户的对话列表以及子视图 &lt;code class=&quot;highlighter-rouge&quot;&gt;ConversationMessage&lt;/code&gt;。&lt;br /&gt;
 这个视图主要做了这些事情：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -141,21 +141,21 @@ js 入口，申明依赖模块，配置依赖模块，注册 components 与 view
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;coversationmessage&quot;&gt;CoversationMessage&lt;/h2&gt;
-&lt;p&gt;聊天消息视图，&lt;code class=&quot;highlighter-rouge&quot;&gt;Coversation&lt;/code&gt; 的子视图，由工具栏、消息列表、输入框以及在线用户列表侧边栏组成。其中暂态对话没有「在线用户列表」
-」概念。
-主要做了这些事情：
-- 根据当前的路由信息，获取或创建一个会话。
-- 获取该会话的历史消息记录，用户滚到顶部时加载更多历史消息。
-- 响应该会话的 &lt;code class=&quot;highlighter-rouge&quot;&gt;message&lt;/code&gt; 事件，在列表中显示消息内容。
-- （可用的话）获取该会话的在线用户列表，提供本地的查询功能。
-- 通知 &lt;code class=&quot;highlighter-rouge&quot;&gt;Conversation&lt;/code&gt; 视图用以清除该会话的未读消息计数。
+&lt;p&gt;聊天消息视图，&lt;code class=&quot;highlighter-rouge&quot;&gt;Coversation&lt;/code&gt; 的子视图，由工具栏、消息列表、输入框以及在线用户列表侧边栏组成。其中暂态对话没有「在线用户列表」&lt;br /&gt;
+」概念。&lt;br /&gt;
+主要做了这些事情：&lt;br /&gt;
+- 根据当前的路由信息，获取或创建一个会话。&lt;br /&gt;
+- 获取该会话的历史消息记录，用户滚到顶部时加载更多历史消息。&lt;br /&gt;
+- 响应该会话的 &lt;code class=&quot;highlighter-rouge&quot;&gt;message&lt;/code&gt; 事件，在列表中显示消息内容。&lt;br /&gt;
+- （可用的话）获取该会话的在线用户列表，提供本地的查询功能。&lt;br /&gt;
+- 通知 &lt;code class=&quot;highlighter-rouge&quot;&gt;Conversation&lt;/code&gt; 视图用以清除该会话的未读消息计数。&lt;br /&gt;
 发送消息，通知 &lt;code class=&quot;highlighter-rouge&quot;&gt;Conversation&lt;/code&gt; 视图用以调整会话列表排序。&lt;/p&gt;
 
 &lt;h2 id=&quot;message&quot;&gt;Message&lt;/h2&gt;
-&lt;p&gt;Message directive 封装了消息的样式，需要传入四个属性：
-- &lt;code class=&quot;highlighter-rouge&quot;&gt;message&lt;/code&gt;：根据不同的消息类型展示不同的消息
-- &lt;code class=&quot;highlighter-rouge&quot;&gt;previousMessage&lt;/code&gt;：根据上一条消息与当前消息的时间戳决定是否显示消息时间
-- &lt;code class=&quot;highlighter-rouge&quot;&gt;isMine&lt;/code&gt;：标记是用户自己发送的消息
+&lt;p&gt;Message directive 封装了消息的样式，需要传入四个属性：&lt;br /&gt;
+- &lt;code class=&quot;highlighter-rouge&quot;&gt;message&lt;/code&gt;：根据不同的消息类型展示不同的消息&lt;br /&gt;
+- &lt;code class=&quot;highlighter-rouge&quot;&gt;previousMessage&lt;/code&gt;：根据上一条消息与当前消息的时间戳决定是否显示消息时间&lt;br /&gt;
+- &lt;code class=&quot;highlighter-rouge&quot;&gt;isMine&lt;/code&gt;：标记是用户自己发送的消息&lt;br /&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;onNameClick&lt;/code&gt;：点击消息发送方 ID 的回调&lt;/p&gt;
 
 &lt;h2 id=&quot;reverseinfinitelist&quot;&gt;ReverseInfiniteList&lt;/h2&gt;
@@ -174,16 +174,16 @@ js 入口，申明依赖模块，配置依赖模块，注册 components 与 view
 &lt;p&gt;由于对leancloud后台服务了解的缺失，这个系统并没有一个比较全面的用户系统支持，应用中并不支持用户自由注册和添加删除好友关系，也不支持对话删除功能。同时使用angular.js框架的应用性能并不理想，目前该框架的应用较少，websocket协议的支持面也比较窄，有的服务器不能支持该协议。ngMaterial也是较新的一个angular.js模块，通过实践我们发现在手机UC浏览器上这个项目不能正常运行。如果要想在 Android WebView 中使用，需要注意开启 WebSocket 支持。另外，在部分 Android 机型的 WebView 中不支持 WebSocket 的安全链接，所以需要从 wss 协议转为 ws 协议，关闭 WebSocket 的 SSL。&lt;/p&gt;
 
 &lt;h1 id=&quot;section-6&quot;&gt;项目现况：&lt;/h1&gt;
-&lt;p&gt;http://externie.com/dist
+&lt;p&gt;http://externie.com/dist&lt;br /&gt;
 请用账号test1登录（不需要输入邮箱地址）&lt;/p&gt;
 
 &lt;h1 id=&quot;section-7&quot;&gt;参考文献：&lt;/h1&gt;
-&lt;p&gt;1.百度百科websocket词条
-2.nodejs官网 http://nodejs.org/
-3.七步从Angular.js菜鸟到专家 http://developer.51cto.com/art/201308/408586.htm
-4.Gulp as a Development Web Server http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server–cms-20903
-5.leancloud数据存储文档
-6.leancloud实时通讯文档
+&lt;p&gt;1.百度百科websocket词条&lt;br /&gt;
+2.nodejs官网 http://nodejs.org/&lt;br /&gt;
+3.七步从Angular.js菜鸟到专家 http://developer.51cto.com/art/201308/408586.htm&lt;br /&gt;
+4.Gulp as a Development Web Server http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server–cms-20903&lt;br /&gt;
+5.leancloud数据存储文档&lt;br /&gt;
+6.leancloud实时通讯文档&lt;br /&gt;
 7.leancloud javascript文档&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Jan 2016 17:00:00 +0800</pubDate>
@@ -231,7 +231,7 @@ js 入口，申明依赖模块，配置依赖模块，注册 components 与 view
 
 &lt;p&gt;苹果的证书体系一直都是iOS初学者无尽的梦魇，什么开发证书、发布证书、推送证书，什么ad hoc、内测分发、真机调试……我想每一个iOS初学刚开始接触Apple的证书体系的时候内心是绝壁崩溃并且被心中的草泥马践踏的体无完肤的……。&lt;/p&gt;
 
-&lt;p&gt;其实苹果的证书其实没那么玄乎，很多朋友弄不懂或者过了一段时间又不知道怎么弄了，本质的原因是因为对&lt;a href=&quot;https://zh.wikipedia.org/zh-cn/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86&quot;&gt;非对称加密(公开密钥加密)&lt;/a&gt;的不理解&lt;del&gt;导致的&lt;/del&gt;，所以为了完全的驾驭苹果的证书，这些基础的知识就是坑你的坎，必须跨过去的。&lt;/p&gt;
+&lt;p&gt;其实苹果的证书其实没那么玄乎，很多朋友弄不懂或者过了一段时间又不知道怎么弄了，本质的原因是因为对&lt;a href=&quot;https://zh.wikipedia.org/zh-cn/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86&quot;&gt;非对称加密(公开密钥加密)&lt;/a&gt;的不理解~~导致的~~，所以为了完全的驾驭苹果的证书，这些基础的知识就是坑你的坎，必须跨过去的。&lt;/p&gt;
 
 &lt;p&gt;网上有各种解释证书中心里面每一种证书作用是什么、怎么创建、怎么使用的，但是这也只能授人以鱼，所以博主不会介绍每一种证书是干嘛的，因为你看前年多了一个&lt;code class=&quot;highlighter-rouge&quot;&gt;Pass Type ID Certificate&lt;/code&gt; ，去年又有了&lt;code class=&quot;highlighter-rouge&quot;&gt;WatchKit Services Certificate&lt;/code&gt; ，今年又来一个&lt;code class=&quot;highlighter-rouge&quot;&gt;Apple Pay Certificate&lt;/code&gt;……根本就解释这些证书不完嘛~，所以理解这些证书的统一规律才是王道！所谓&lt;/p&gt;
 
@@ -288,7 +288,7 @@ js 入口，申明依赖模块，配置依赖模块，注册 components 与 view
 
 &lt;p&gt;我想这个界面一弹出来的时候，蛋蛋忧伤迎面扑来。然后怒点 &lt;code class=&quot;highlighter-rouge&quot;&gt;Fix issue&lt;/code&gt;，然后你们团队负责管理证书的基友突然发现证书中心多了好多好乱的证书以及描述文件，然后他爆了一句：what the huck！删掉了带有&lt;code class=&quot;highlighter-rouge&quot;&gt;Xcode *&lt;/code&gt;的证书以及描述文件，然后自己又暴力的点了一发&lt;code class=&quot;highlighter-rouge&quot;&gt;Fix issue&lt;/code&gt;，然后你突然调试不了了，再暴击&lt;code class=&quot;highlighter-rouge&quot;&gt;Fix issue&lt;/code&gt;键，最后整个团队都只有通过&lt;code class=&quot;highlighter-rouge&quot;&gt;Fix issue&lt;/code&gt;来真机调试了……。&lt;/p&gt;
 
-&lt;p&gt;所以慎点&lt;code class=&quot;highlighter-rouge&quot;&gt;Fix issue&lt;/code&gt;，如果点击这个选项，聪明的(&lt;del&gt;蠢哭的&lt;/del&gt;)Xcode就会自己管理描述文件，然后各种莫名其妙的带有&lt;code class=&quot;highlighter-rouge&quot;&gt;Xcode *&lt;/code&gt;的证书以及描述文件……&lt;/p&gt;
+&lt;p&gt;所以慎点&lt;code class=&quot;highlighter-rouge&quot;&gt;Fix issue&lt;/code&gt;，如果点击这个选项，聪明的(~~蠢哭的~~)Xcode就会自己管理描述文件，然后各种莫名其妙的带有&lt;code class=&quot;highlighter-rouge&quot;&gt;Xcode *&lt;/code&gt;的证书以及描述文件……&lt;/p&gt;
 
 &lt;p&gt;其实只要坚信一点，证书、设备ID、AppID、描述文件都弄对了就绝逼不会出问题的！&lt;/p&gt;
 
@@ -327,7 +327,7 @@ js 入口，申明依赖模块，配置依赖模块，注册 components 与 view
 &lt;ol&gt;
   &lt;li&gt;苹果服务器证书端设置正确！打包证书、描述文件正确！！&lt;/li&gt;
   &lt;li&gt;下载推送证书(cer格式)，导入keyChain，保证私钥存在，不存在去找创建这个证书的电脑要一份过来。&lt;/li&gt;
-  &lt;li&gt;从钥匙库导出的&lt;del&gt;根证书&lt;/del&gt;(推送证书)私钥(p12格式)&lt;/li&gt;
+  &lt;li&gt;从钥匙库导出的~~根证书~~(推送证书)私钥(p12格式)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;第三步根证书的私钥这里是一个坑！因为一个App的推送证书的创建可以和根证书创建的电脑不同，也就是keyChain产生的&lt;code class=&quot;highlighter-rouge&quot;&gt;certSigningRequest&lt;/code&gt;不一样，所以私钥也是不一样的，在这里生成Pem时，注意要使用推送证书的私钥！&lt;/p&gt;
@@ -624,7 +624,7 @@ js 入口，申明依赖模块，配置依赖模块，注册 components 与 view
 
 &lt;h2 id=&quot;section-4&quot;&gt;后记&lt;/h2&gt;
 
-&lt;p&gt;博主新开了一个博客系统，托管在了Github.io上，喜闻乐见的Jekll加借鉴&lt;del&gt;(抄袭)&lt;/del&gt;的精美主题构建而成，反正样子应该还看得过去，如果有朋友有兴趣想了解iOS程序员为何日撸万行代码？数百奇巧淫技如何施展？无数干货为何频频送出？究竟编译器背后又隐藏着什么？这一切的背后是技术与生活的碰撞还是高效与投机的权衡？我真TM编不下去了，欢迎前往 &lt;a href=&quot;http://daiweilai.github.io&quot; target=&quot;_blank&quot;&gt;[任意门]&lt;/a&gt;围观。&lt;/p&gt;
+&lt;p&gt;博主新开了一个博客系统，托管在了Github.io上，喜闻乐见的Jekll加借鉴~~(抄袭)~~的精美主题构建而成，反正样子应该还看得过去，如果有朋友有兴趣想了解iOS程序员为何日撸万行代码？数百奇巧淫技如何施展？无数干货为何频频送出？究竟编译器背后又隐藏着什么？这一切的背后是技术与生活的碰撞还是高效与投机的权衡？我真TM编不下去了，欢迎前往 &lt;a href=&quot;http://daiweilai.github.io&quot; target=&quot;_blank&quot;&gt;[任意门]&lt;/a&gt;围观。&lt;/p&gt;
 
 &lt;p&gt;严肃地，如果你刚开始学习iOS开发或许可以从博主这里得到一些半干货。&lt;/p&gt;
 
