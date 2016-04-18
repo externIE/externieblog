@@ -49,3 +49,5 @@ body{
 	background: #ccc;
 	overflow: hidden;
 }
+
+.ds-replybox .ds-avatar {padding-right: 10px;}

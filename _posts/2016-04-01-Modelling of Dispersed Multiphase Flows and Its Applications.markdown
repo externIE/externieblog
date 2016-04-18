@@ -8,6 +8,8 @@ speaker:		"屠基元"
 speaker-img:	"img/post/20160401-spic-tyj.jpg"
 address:        "虎溪报告厅xxx教室"
 category:		"理工"
+editorInCharge:	"刘皓"
+author:         "刘皓"
 tags:
     - 讲座
 speaker-profile:	"屠基元教授，1982年、1984年在东北大学分别获学士和硕士学位, 1984-1989年任复旦大学讲师,1992年获瑞典皇家理工学院博士学位,现任澳洲墨尔本皇家理工大学（RMIT）航空机械及制造工程学院副院长兼学术委员会主任，国家“千人计划”清华大学特聘教授。

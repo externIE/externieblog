@@ -20,9 +20,8 @@ layout: default
                 sidebar-container">
 
                 <!-- Featured Tags -->
-                {% if site.featured-tags %}
+<!--                 {% if site.featured-tags %}
                 <section>
-                    <!-- no hr -->
                     <h5><a href="/tags/">标签选择</a></h5>
                     <div class="tags">
         				{% for tag in site.tags %}
@@ -35,9 +34,9 @@ layout: default
         			</div>
                 </section>
                 {% endif %}
-
+ -->
                 <!-- Friends Blog -->
-                {% if site.friends %}
+<!--                 {% if site.friends %}
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
@@ -45,7 +44,7 @@ layout: default
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}
                 </ul>
-                {% endif %}
+                {% endif %} -->
             </div>
         {% else %}
 
@@ -66,7 +65,7 @@ layout: default
                 sidebar-container
             ">
                 <!-- Featured Tags -->
-                {% if site.featured-tags %}
+              <!--   {% if site.featured-tags %}
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="{{/tags/ | prepend: site.baseurl }}">标签选择</a></h5>
@@ -80,7 +79,7 @@ layout: default
                         {% endfor %}
                     </div>
                 </section>
-                {% endif %}
+                {% endif %} -->
 
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
