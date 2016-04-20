@@ -34,7 +34,6 @@
     <script src="/externieblog/js/jquery.min.js"></script>
     <script src="/externieblog/js/materialize.js"></script>
     <script src="/externieblog/js/app.js"></script>
-    
     <script></script>
 </head>
 
@@ -227,13 +226,12 @@ This talk will provide an overview on research activities being undertake... | �
 This talk will provide an overview on research activities being undertake... | 重大讲座信息APP " 
                     data-url="http://externie.github.io/externieblog/%E7%90%86%E5%B7%A5/2016/04/01/Modelling-of-Dispersed-Multiphase-Flows-and-Its-Applications/">
                     <div class="ds-share-inline">
-                      <ul  class="ds-share-icons-32 row">
-                        
-                        <li data-toggle="ds-share-icons-more col s2"><a class="ds-more" href="javascript:void(0);"></a></li>
-                        <li><a class="ds-weibo col s2" href="javascript:void(0);" data-service="weibo"></a></li>
-                        <li><a class="ds-qzone col s2" href="javascript:void(0);" data-service="qzone"></a></li>
-                        <li><a class="ds-qqt col s2" href="javascript:void(0);" data-service="qqt"></a></li>
-                        <li><a class="ds-wechat col s2" href="javascript:void(0);" data-service="wechat"></a></li>
+                      <ul  class="ds-share-icons-32 row ">
+                        <li class="col s2 offset-s1 valign-wapper" data-toggle="ds-share-icons-more"><a class="ds-more valign" href="javascript:void(0);"></a></li>
+                        <li class="col s2"><a class="ds-weibo" href="javascript:void(0);" data-service="weibo"></a></li>
+                        <li class="col s2"><a class="ds-qzone" href="javascript:void(0);" data-service="qzone"></a></li>
+                        <li class="col s2"><a class="ds-qqt" href="javascript:void(0);" data-service="qqt"></a></li>
+                        <li class="col s2"><a class="ds-wechat" href="javascript:void(0);" data-service="wechat"></a></li>
                         
                       </ul>
                       <div class="ds-share-icons-more">
@@ -241,14 +239,6 @@ This talk will provide an overview on research activities being undertake... | �
                     </div>
                     <hr>
                  </div>
-
-                 <div class="ds-share flat" data-thread-key="此处请替换为当前文章的thread-key" data-title="此处请替换为分享时显示的标题" data-images="此处请替换为分享时显示的图片的链接地址" data-content="此处请替换为分享时显示的内容" data-url="此处请替换为分享时显示的链接地址">
-    <div class="ds-share-aside-right">
-      <div class="ds-share-aside-inner">
-      </div>
-      <div class="ds-share-aside-toggle">分享到</div>
-    </div>
-</div>
                 <!-- 多说 Share end-->
                 
 
@@ -333,7 +323,8 @@ $(".container").find("img").each(function(i,item){
     (function() {
         var ds = document.createElement('script');
         ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        // ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.src = "/externieblog/js/embed.js";
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('head')[0]
          || document.getElementsByTagName('body')[0]).appendChild(ds);
