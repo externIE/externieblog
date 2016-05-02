@@ -5,8 +5,8 @@ description: "据说大神都有属于他们自己的技术博客"
 
 
 {% for post in paginator.posts %}
-        <li style="margin: 0px;" class="z-depth-1">
-            <div class="collapsible-header waves-effect waves-teal active row" style="white-space:nowrap;text-overflow:ellipsis;">
+        <li style="margin-bottom: 20px;" class="z-depth-1">
+            <div class="collapsible-header waves-effect waves-teal active row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;">
                 <h5 class="truncate col s7" style="" >{{ post.title }}</h5>
                 <h6 class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
                 	<!--时间-->
@@ -21,7 +21,8 @@ description: "据说大神都有属于他们自己的技术博客"
                 	</div>
                 </h6>
             </div>
-            <div class="collapsible-body" style="padding: 1rem; overflow: auto;">
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr/> 
                 <div class="">
                 <table>
                     <tr>
