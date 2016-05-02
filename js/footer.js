@@ -2,18 +2,26 @@
 	var interval = 150;
 	var scrollTextWrappers = document.getElementsByClassName("scrollTextWrapper");
 //	var scrollTextWrapper;
+	for (var iPW=0;iPW < scrollTextWrappers.length;iPW++) {
+		pScrollTextWrapper = scrollTextWrappers[iPW]; 
+		pScrollText = scrollTextWrappers[iPW].getElementsByClassName("scrollText")[0];
+		if(pScrollTextWrapper.scrollWidth > pScrollTextWrapper.clientWidth){
+			pScrollText.innerHTML += "   " + pScrollText.innerHTML;
+		}
+	}
 	function Marquee_extend(){
 		for (var iW=0;iW < scrollTextWrappers.length;iW++) {
 			scrollTextWrapper = scrollTextWrappers[iW]; 
 			scrollText = scrollTextWrappers[iW].getElementsByClassName("scrollText")[0];
+	
 			if(scrollTextWrapper.scrollWidth <= scrollTextWrapper.clientWidth){
 				continue;
 			}
-			if(scrollTextWrapper.scrollWidth-scrollTextWrapper.scrollLeft-scrollTextWrapper.clientWidth<=0){
-				scrollTextWrapper.scrollLeft=0;
-//				setTimeout(function(){
-//					scrollTextWrapper.scrollLeft=0;
-//				},1000);
+//			if(scrollTextWrapper.scrollWidth-scrollTextWrapper.scrollLeft-scrollTextWrapper.clientWidth<=0){
+//				scrollTextWrapper.scrollLeft =0;
+//			}
+			if(scrollTextWrapper.scrollLeft-scrollText.offsetWidth/2>=0){
+				scrollTextWrapper.scrollLeft -= scrollText.offsetWidth/2;
 			}
 			else{
 				scrollTextWrapper.scrollLeft++;
