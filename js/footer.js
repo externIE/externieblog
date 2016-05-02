@@ -29,3 +29,19 @@
 		}
 	}
 	setInterval(Marquee_extend,interval);
+	
+function ClickCollaspibleHeader(e){
+//	e.getElementById();
+	var title = e.getElementsByClassName("title")[0];
+	if($(title).hasClass("truncate")){
+		$(title).removeClass("truncate");
+		$(title).addClass("scrollText");
+	}else{
+		$(title).removeClass("scrollText");
+		$(title).addClass("truncate");
+	}
+}
+
+function test(){
+	Materialize.showStaggeredList("#staggered-test");
+}

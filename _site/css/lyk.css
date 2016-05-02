@@ -55,7 +55,6 @@ body{
 .scrollText{
 	word-break:keep-all;
 	white-space:nowrap;
-	display: inline;  
 }
 .scrollTextWrapper{
 	overflow: hidden;
