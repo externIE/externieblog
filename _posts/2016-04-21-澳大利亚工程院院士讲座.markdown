@@ -4,6 +4,7 @@ layout:     	post
 title:      	"澳大利亚工程院院士讲座"
 
 address:        "重庆大学A区采矿实验大楼207会议室"
+campus:         "A"
 
 organizer:   	"重庆大学工程学部"
 

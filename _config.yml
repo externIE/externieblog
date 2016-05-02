@@ -11,12 +11,14 @@ baseurl: "/externieblog"                             # for example, '/blog' if y
 
 future: true
 
+port: 5050
+
 
 # SNS settings
 RSS: true
 weibo_username:     ielinyikai
 #zhihu_username:     externIE
-github_username:    externIE
+github_username:    externIE     
 #twitter_username:  externIE
 #facebook_username:  externIE
 

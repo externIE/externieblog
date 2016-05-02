@@ -4,6 +4,7 @@ layout:     	post
 title:      	"通信工程学院专家系列报告会：张大鹏教授谈高级生物特征识别技术"
 
 address:        "A区主教学楼515会议室"
+campus:         "A"
 
 organizer:   	"重庆大学通信工程学院"
 

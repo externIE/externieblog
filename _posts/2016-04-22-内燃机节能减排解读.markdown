@@ -4,6 +4,7 @@ layout:     	post
 title:      	"内燃机节能减排解读 兼谈替代燃料"
 
 address:        "重庆大学A区第八教学楼103"
+campus:         "A"
 
 organizer:   	"重庆自主品牌汽车协同创新中心"
 

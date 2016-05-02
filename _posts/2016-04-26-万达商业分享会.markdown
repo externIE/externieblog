@@ -2,6 +2,7 @@
 layout:     post
 title:      "万达商业分享会"
 address:        "A区国际会议厅306"
+campus:         "A"
 organizer:   	"学生就业指导与服务中心、公共管理学院"
 co-organizer:	"招聘兄弟会、职通社、研就协、校企俱乐部"
 

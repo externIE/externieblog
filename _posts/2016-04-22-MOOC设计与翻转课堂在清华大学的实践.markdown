@@ -4,6 +4,7 @@ layout:     	post
 title:      	"MOOC设计与翻转课堂在清华大学的实践"
 
 address:        "主教213"
+campus:         "A"
 
 organizer:   	"教师教学发展中心"
 

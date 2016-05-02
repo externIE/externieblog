@@ -6,8 +6,20 @@ description: "据说大神都有属于他们自己的技术博客"
 
 {% for post in paginator.posts %}
         <li style="margin: 0px;" class="z-depth-1">
-            <div class="collapsible-header waves-effect waves-teal active" style="white-space:nowrap;text-overflow:ellipsis;">
-                <h5 class="truncate">{{ post.title }}</h5>
+            <div class="collapsible-header waves-effect waves-teal active row" style="white-space:nowrap;text-overflow:ellipsis;">
+                <h5 class="truncate col s8" style="" >{{ post.title }}</h5>
+                <h6 class="col s4" style="font-size: 5px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                	<div>时间：{{ post.date | date: "%-y/%-m/%-d"}}</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:2px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<!--<div class="scrollText" style="">A区sadfasdfa</div>-->
+                			<div class="scrollText" style="">{{post.address}}&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
             </div>
             <div class="collapsible-body" style="padding: 1rem; overflow: auto;">
                 <div class="">
@@ -79,9 +91,9 @@ description: "据说大神都有属于他们自己的技术博客"
             
         </li>
         <!--时间地点-->
-        <div id="iSlider-effect-wrapper" style="background:white;">
+        <!--<div id="iSlider-effect-wrapper" style="background:white;">
             <div id="sub-profile{{forloop.index}}" class="iSlider-effect" style=""></div>
-        </div>
+        </div>-->
 
         <!--详情信息-->
         <div id="profile{{forloop.index}}" class="modal bottom-sheet">
@@ -93,43 +105,41 @@ description: "据说大神都有属于他们自己的技术博客"
           </div>
         </div>
 
-<script>
-    var strMonth = changeMonthToNum('{{ post.date | date: "%B %-d, %Y" }}');
-    // var strMonth="测试日期";
-    var domList = [
-    {
-        'height' : '100%',
-        'width' : '100%',
-        'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-    },{
-        'height' : '100%',
-        'width' : '100%',
-        'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：{{post.address}}</p>'
-    },{
-        'height' : '100%',
-        'width' : '100%',
-        'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-    }
-    ];
-
-
-
-    //all animation effect
-    new iSlider({
-        data: domList,
-        type:'dom',
-        dom: document.getElementById("sub-profile{{forloop.index}}"),
-        duration: 2000,
-        animateType: 'default',
-        isAutoplay: true,
-        isLooping: true,
-        ratio:0.1,
-        isVertical: true,
-        touchAble: false,
-    });
-</script>
-
-
+<!--//<script>
+//  var strMonth = changeMonthToNum('{{ post.date | date: "%B %-d, %Y" }}');
+//  // var strMonth="测试日期";
+//  var domList = [
+//  {
+//      'height' : '100%',
+//      'width' : '100%',
+//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
+//  },{
+//      'height' : '100%',
+//      'width' : '100%',
+//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：{{post.address}}</p>'
+//  },{
+//      'height' : '100%',
+//      'width' : '100%',
+//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
+//  }
+//  ];
+//
+//
+//
+//  //all animation effect
+//  new iSlider({
+//      data: domList,
+//      type:'dom',
+//      dom: document.getElementById("sub-profile{{forloop.index}}"),
+//      duration: 2000,
+//      animateType: 'default',
+//      isAutoplay: true,
+//      isLooping: true,
+//      ratio:0.1,
+//      isVertical: true,
+//      touchAble: false,
+//  });
+//</script>-->
 {% endfor %}
 
 <script>

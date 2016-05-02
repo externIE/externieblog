@@ -4,6 +4,7 @@ layout:     	post
 title:      	"“在线课程设计与制作系列”工作坊（第二场）"
 
 address:        "教师教学发展中心"
+campus:         "A"
 
 organizer:   	"教师教学发展中心"
 

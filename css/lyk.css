@@ -51,3 +51,12 @@ body{
 }
 
 .ds-replybox .ds-avatar {padding-right: 10px;}
+
+.scrollText{
+	word-break:keep-all;
+	white-space:nowrap;
+	display: inline;  
+}
+.scrollTextWrapper{
+	overflow: hidden;
+}
