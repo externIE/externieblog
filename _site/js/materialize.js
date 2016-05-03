@@ -3704,11 +3704,11 @@ $(document).ready(function(){
   // Horizontal staggered list
   Materialize.showStaggeredList = function(selector) {
     var time = 0;
-    $(selector).find('li').velocity(
+    $(selector).find('li.show').velocity(
         { translateX: "-100px"},
         { duration: 0 });
 
-    $(selector).find('li').each(function() {
+    $(selector).find('li.show').each(function() {
       $(this).velocity(
         { opacity: "1", translateX: "0"},
         { duration: 800, delay: time, easing: [60, 10] });

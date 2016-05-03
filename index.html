@@ -5,7 +5,7 @@ description: "据说大神都有属于他们自己的技术博客"
 
 
 {% for post in paginator.posts %}
-        <li style="margin-bottom: 20px;" class="z-depth-1 {{post.campus}}">
+        <li style="margin-bottom: 20px;" class="z-depth-1 {{post.campus}} show">
             <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >{{ post.title }}</h5>
