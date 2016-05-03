@@ -65,7 +65,7 @@ function test(){
 	Materialize.showStaggeredList("#staggered-post");
 }
 
-function select(campus){
+function select(campus,from){
 	var postlist = document.getElementById("staggered-post");
 	var lis = postlist.getElementsByTagName("li");
 	for (var il=0;il < lis.length;il++) {
@@ -82,5 +82,11 @@ function select(campus){
 			$(li).removeClass("show");
 		}
 	}
-	Materialize.showStaggeredList("#staggered-post");
+	var fromDirection = from || "left";
+	console.log(fromDirection);
+	if (fromDirection == "right") {
+		Materialize.showStaggeredListRight("#staggered-post");
+	}else{
+		Materialize.showStaggeredList("#staggered-post");
+	}
 };
