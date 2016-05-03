@@ -43,5 +43,31 @@ function ClickCollaspibleHeader(e){
 }
 
 function test(){
-	Materialize.showStaggeredList("#staggered-test");
+	var postlist = document.getElementById("staggered-post");
+	var lis = postlist.getElementsByTagName("li");
+	for (var il=0;il < lis.length;il++) {
+		var li = lis[il];
+		if($(li).hasClass("hide")){
+			$(li).removeClass("hide");
+		}
+	}
+	Materialize.showStaggeredList("#staggered-post");
 }
+
+function select(campus){
+	var postlist = document.getElementById("staggered-post");
+	var lis = postlist.getElementsByTagName("li");
+	for (var il=0;il < lis.length;il++) {
+		var li = lis[il];
+		if($(li).hasClass("hide")){
+			$(li).removeClass("hide");
+		}
+		if(campus == 'ALL'){
+			continue;
+		}
+		if(!$(li).hasClass(campus)){
+			$(li).addClass("hide");
+		}
+	}
+	Materialize.showStaggeredList("#staggered-post");
+};
