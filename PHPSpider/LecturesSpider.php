@@ -11,7 +11,7 @@
 		// testFunc();
 	}
 	function testFunc(){//测试代码
-		echo time();
+		// echo time();
 	}
 	function testFunc2($test){
 		$test--;
@@ -90,7 +90,9 @@
 		$page = new PageParser($url,$category);
 		echo "\n";
 		echo $page;
-		$page->saveToFile("../_posts"); 
+		$basePath = dirname(__FILE__);
+		$basePath = str_replace("PHPSpider","",$basePath);
+		$page->saveToFile($basePath."_posts"); 
 		exec("ls");
 	}
 ?>
