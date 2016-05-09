@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "保护嗓子的科学发声方法"
+dtitle:      	  "教师教学发展中心面向全校教师举行“保护嗓子的科学发声方法”工作坊"
+time: 		  	  "14:30"
+address:	  	  "教师教学发展中心"
+campus:	  	  "A"
+speaker:	   	  "苏勤"
+speaker-profile: "苏勤，女，1978年生，中共党员。中国音乐家协会会员、重庆市嗓音研究会会员。毕业于西南大学音乐学院声乐演唱与教学专业，获硕士学位。"
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/2016/0331/20160331023948706.jpg"
+organizer:		  "教师教学发展中心"
+co-organizer:	  ""
+category:		  "教师教学发展工作坊"
+author:		  "教师教学发展中心 刘皓"
+editorInCharge:  "刘皓"
+---
+通过讲解和现场指导，教大家如何正确科学的发声，在保护嗓子的同时，更好促进课堂教学效果。

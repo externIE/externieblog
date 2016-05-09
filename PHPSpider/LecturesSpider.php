@@ -16,10 +16,12 @@
 		exec("git push");
 		echo "成功！\n";
 	}
-	function testFunc2($test){
-		$test--;
-		$test = null;
-		echo "func2:$test\n";
+	function testFunc(){
+		$test = "/Users/externIE/Documents/externieblog/";
+		echo substr($test,-1);
+		echo "\n";
+		echo substr($test,0,$test.length-1);
+		echo "\n";
 	}
 	function getAllItemsURL($mainURL){
 		$html = new simple_html_dom();
@@ -48,11 +50,11 @@
 		$titleElements = $html->find('div.item div.title');
 		$pageItems = array();
 		foreach ($titleElements as $key => $title) {
-			if(getPostDate($title->next_sibling())<=time()){
-				echo"\n\033[31m过期讲座：放弃！！\033[0m  ";
-				echo $title->last_child()->href."  ".getCategory($title);
-				continue;
-			}
+			// if(getPostDate($title->next_sibling())<=time()){
+			// 	echo"\n\033[31m过期讲座：放弃！！\033[0m  ";
+			// 	echo $title->last_child()->href."  ".getCategory($title);
+			// 	continue;
+			// }
 			$item = new Item($title->last_child()->href,getCategory($title));
 			$pageItems[$key] = $item;
 			echo $pageItems[$key];
@@ -91,8 +93,12 @@
 	}
 	function _crawlerItemPage($url,$category){
 		$page = new PageParser($url,$category);
-		$basePath = dirname(__FILE__);
-		$basePath = str_replace("PHPSpider","",$basePath);
+		// $basePath = dirname(__FILE__);
+		// $basePath = str_replace("PHPSpider","",$basePath);
+		// if (substr($basePath,-1)=="/") {		
+		// 	$basePath = substr($basePath,0,$basePath.length-1);
+		// }
+		$basePath = "/Users/externIE/Documents/externieblog";
 		echo "\n";
 		echo $page;
 		$page->saveToFile($basePath."/_posts"); 

@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "电化学及电致化学发光生物传感器信号放大策略"
+dtitle:      	  "电化学及电致化学发光生物传感器信号放大策略"
+time: 		  	  "11:30"
+address:	  	  "理科楼LA103"
+campus:	  	  "A"
+speaker:	   	  "袁若  西南大学化学化工学院院长"
+speaker-profile: "袁若，男，教授，博士生导师，西南大学化学化工学院院长，中国化学会理事、中国化学会分析化学委员会委员，发光与实时分析教育部重点实验室副主任，Nature集团《Scientific Reports》编委。1994年获湖南大学化学化工学院分析化学专业博士学位，此后在湖南大学化学生物传感与计量学国家重点实验室工作，主要从事生物和化学传感器的研究；先后在香港浸会大学、日本大阪大学和香港城市大学做访问学者，从事电化学生物传感器及DNA芯片的研究；1999年至今在西南大学化学化工学院工作。近年来，作为项目负责人主持完成及在研的国家及部省级科研课题20余项，在国际重要刊物（如《Anal. Chem.》、《Chem.-Eur. J》、《Chem. Commun.》、《J. Org. Chem.》、《Andv. Funct. Mater.》、《Biomaterials》、《Small》、《J. Mater. Chem. A》、《Nanoscale》、《ACS Appl. Mater. Interfaces》、《Biosens. Bioelectron.》等）上发表了SCI 收录论文430余篇，其中影响因子大于5.0的文章170余篇，个人H因子44。指导一名博士研究生获全国优秀博士论文提名奖，研究成果获重庆市2012年自然科学一等奖（排名第一），重庆市2013年科技进步一等奖（排名第二），入选Elsevier发布的2015中国高被引学者（Most Cited Chinese Researchers）榜单。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学理学部 重庆大学化学化工学院"
+co-organizer:	  ""
+category:		  "重大讲座 "
+author:		  "化学化工学院 柴俊青"
+editorInCharge:  "胡小华"
+---
+

@@ -1,0 +1,19 @@
+---
+layout: 			post
+title:       	  "冥想与生活"
+dtitle:      	  "教师教学发展中心面向全校师生举办“冥想与生活”工作坊"
+time: 		  	  "14:30"
+address:	  	  "教师教学发展中心"
+campus:	  	  "A"
+speaker:	   	  "章崇会"
+speaker-profile: "章崇会，安徽安庆人，1976年8月生，男，应用心理学博士。"
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/2016/0324/20160324115215651.jpg"
+organizer:		  "教师教学发展中心"
+co-organizer:	  ""
+category:		  "教师教学发展工作坊"
+author:		  "教师教学发展中心 刘皓"
+editorInCharge:  "刘皓"
+---
+分享与生活息息相关的冥想故事和简单实践，
+  从心理学分析冥想究竟是什么，
+  我们应该追求什么样的冥想？

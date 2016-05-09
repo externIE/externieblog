@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "美国医疗政策的比较分析"
+dtitle:      	  "美国医疗政策的比较分析"
+time: 		  	  "13:00"
+address:	  	  "重庆大学A区公共管理学院湖畔咖啡厅"
+campus:	  	  "A"
+speaker:	   	  "陈光宇（美国纽约布鲁克大学终身教授）"
+speaker-profile: "陈光宇博士是纽约布鲁克大学公共管理学院的终身教授，拥有公共管理的博士学位，教育管理硕士学位及冶金工程学硕士学位。陈光宇多年来一直从事政府管理和大学的教学管理工作。从上世纪90年代开始，陈光宇教授在加拿大BC省政府不同部委（财政部，交通部，教育部等）和省长办公厅从事高级管理、高级顾问和研究员等工作。在纽约布鲁克大学任教以来，陈光宇教授主要承担项目评估，预算和财务管理，政策分析， 研究方法，等方面课程的教学任务。其研究方向包括美国政府预算，国家大型项目评估，交通和学校安全，学校资质论证检验，非赢利性组织的管理， 研究方法的开发和应用。陈光宇教授是布鲁克大学管理委员会委员(Committee on Committees)，学生奖学金审批委员会委员。同时，陈光宇是期刊《Jacobs Journal of Epidemiology and Preventive Medicine》的常任编委成员。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "公共管理学院"
+co-organizer:	  ""
+category:		  "公管讲坛"
+author:		  "公共管理学院 刘淳"
+editorInCharge:  "刘淳"
+---
+

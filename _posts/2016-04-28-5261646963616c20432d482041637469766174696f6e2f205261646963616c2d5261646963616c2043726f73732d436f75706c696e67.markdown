@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Radical C-H Activation/ Radical-Radical Cross-Coupling"
+dtitle:      	  "重大讲座：武汉大学雷爱文教授"
+time: 		  	  "15:00"
+address:	  	  "重庆大学虎溪校区LA208会议室"
+campus:	  	  "D"
+speaker:	   	  "雷爱文教授（杰青、长江学者）"
+speaker-profile: "1995－2000：中国科学院上海有机化学研究所，有机化学博士。"
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/20160426/1461639014337664.png"
+organizer:		  "重庆大学理学部 重庆大学化学化工学院"
+co-organizer:	  ""
+category:		  "重大讲座 "
+author:		  "化学化工学院 何巧艺"
+editorInCharge:  "胡小华"
+---
+A new series of oxidative coupling reactions between two nucleophiles have been developed for efficient carbon-carbon and carbon-heteroatom bond formation.

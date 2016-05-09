@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "天然沉积土的结构性与评价方法"
+dtitle:      	  "【3月25日】天然沉积土的结构性与评价方法"
+time: 		  	  "15:30"
+address:	  	  "建工馆第一学术报告厅"
+campus:	  	  "undefined"
+speaker:	   	  "洪振舜"
+speaker-profile: "洪振舜，2002年作为东南大学引进人才担任东南大学交通学院教授、博士生导师。作为项目负责人，已经承担了国家基金面上项目4项、国家高新技术研究发展计划（863计划）项目1项、973课题1项，南水北调重大工程创新项目3项等。发表了30多篇SCI收录学术论文，其中在岩土工程的顶级期刊Géotechnique、Journal of Geotechnical and Geoenvironmental Engineering-ASCE、Canadian Geotechnical Journal、Soils and Foundations、Geotechnical Testing Journal-ASTM等国际刊物上发表论文10多篇。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "土木工程学院"
+co-organizer:	  "土木工程学院"
+category:		  "工程科学前沿讲坛"
+author:		  "土木工程学院 陈培稚"
+editorInCharge:  "陈培稚"
+---
+

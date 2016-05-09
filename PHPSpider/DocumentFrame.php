@@ -108,7 +108,7 @@
 		public function saveToFile($basePath){
 			$doc   = $this->buildDocument();
 			$path  = $basePath;
-			$path .= "/".$this->mDate."-".$this->mTitle.".markdown";
+			$path .= "/".$this->mDate."-".bin2hex($this->mTitle).".markdown";
 			$file  = fopen($path,"w");
 			if($file){
 				fwrite($file,$doc);
@@ -117,6 +117,7 @@
 			}else{
 				echo "保存失败\n";
 			}
+			echo "保存路径：$path";
 			
 		}
 	}
