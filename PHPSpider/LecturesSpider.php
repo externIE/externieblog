@@ -10,9 +10,11 @@
 		crawlerAllItemPages($items);
 		// testFunc();
 	}
-	function testFunc(){//测试代码
-		echo dir(__FILE__);
-		echo time();
+	function GitHubSync(){
+		exec("git add .");
+		exec("git commit -m \"newspost\"");
+		exec("git push");
+		echo "成功！\n";
 	}
 	function testFunc2($test){
 		$test--;
@@ -85,7 +87,7 @@
 		foreach ($items as $key => $value) {
 			_crawlerItemPage($value->getURL(),$value->getCategory());
 		}
-
+		GitHubSync();
 	}
 	function _crawlerItemPage($url,$category){
 		$page = new PageParser($url,$category);
