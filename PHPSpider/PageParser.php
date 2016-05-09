@@ -91,6 +91,12 @@
 			if ($this->checkStrInStr($address,"主教")) {
 				$campus = "A";
 			}
+			if ($this->checkStrInStr($address,"理科楼")) {
+				$campus = "A";
+			}
+			if ($this->checkStrInStr($address,"研究生院")) {
+				$campus = "A";
+			}
 			if ($this->checkStrInStr($address,"教师教学发展中心")) {
 				$campus = "A";
 			}

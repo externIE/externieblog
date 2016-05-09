@@ -1,5 +1,5 @@
 
-	var interval = 150;
+	var interval = 100;
 	var scrollTextWrappers = document.getElementsByClassName("scrollTextWrapper");
 //	var scrollTextWrapper;
 	for (var iPW=0;iPW < scrollTextWrappers.length;iPW++) {
@@ -90,10 +90,20 @@ function select(campus,from){
 
 function dealOutTimeCard(){
 	var allcards = $(".lecture-card");
+	var currentDate = new Date();
 	for (var i = allcards.length - 1; i >= 0; i--) {
-		getCardTime(allcards[i]);
+
+		if(currentDate - getCardTime(allcards[i]) > 0){
+			//过期的讲座
+			// console.log("guoqi")
+			if (!$(allcards[i]).hasClass("outtime")) {
+				$(allcards[i]).addClass("outtime");
+			};
+		}
 	};
 }
+
+
 function getCardTime(card){
 	
 	var date = $(card).find("#date").text();
@@ -104,6 +114,7 @@ function getCardTime(card){
 	dateTime.setFullYear("20"+arrDate[0],arrDate[1]-1,arrDate[2]);
 	dateTime.setHours(arrTime[0],arrTime[1],0,0);
 	console.log(dateTime.toString());
+	return dateTime;
 }
 
 dealOutTimeCard();
