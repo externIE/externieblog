@@ -1,18 +1,18 @@
 ---
-layout:post
-title:"职通讲坛第43期——龙湖分享会"
-dtitle:"职通讲坛第43期——龙湖分享会"
-time:"18时45分"
-address:"A区国际会议厅306"
-campus:"A"
-speaker:"廖波"
-speaker-profile:"廖波，人力资源管理专业，现任重庆龙湖商业HR总监。"
-speaker-img:"/newsv2/uploadfile/20160429/1461915158573879.jpg"
-organizer:"学生就业指导与服务中心"
-co-organizer:"职通社、研就协、校企俱乐部"
-category:"职通讲坛"
-author:"学生就业指导与服务中心 蒋盼"
-editorInCharge:"王玥琳"
+layout: 			post
+title:       	  "职通讲坛第43期——龙湖分享会"
+dtitle:      	  "职通讲坛第43期——龙湖分享会"
+time: 		  	  "18时45分"
+address:	  	  "A区国际会议厅306"
+campus:	  	  "A"
+speaker:	   	  "廖波"
+speaker-profile: "廖波，人力资源管理专业，现任重庆龙湖商业HR总监。"
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/20160429/1461915158573879.jpg"
+organizer:		  "学生就业指导与服务中心"
+co-organizer:	  "职通社、研就协、校企俱乐部"
+category:		  "职通讲坛"
+author:		  "学生就业指导与服务中心 蒋盼"
+editorInCharge:  "王玥琳"
 ---
 各学院：
   为了加强就业指导，提高毕业生的求职能力，提升学生的就业竞争力，学生就业指导与服务中心（简称“就业中心”）开展生涯规划及求职类专题讲座职通讲坛第43期。具体通知如下：

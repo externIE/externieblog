@@ -86,6 +86,9 @@
 			if ($this->checkStrInStr($address,"A")) {
 				$campus = "A";
 			}
+			if ($this->checkStrInStr($address,"主教")) {
+				$campus = "A";
+			}
 			if ($this->checkStrInStr($address,"B")) {
 				$campus = "B";
 			}
@@ -123,7 +126,12 @@
 		private function getSpeakerImgSrc(){
 			$eImg = $this->html->find("div.acontent img",0);
 			if ($eImg) {
-				return $eImg->src;
+				if(stristr($eImg->src,"http://news.cqu.edu.cn")){
+					return $eImg->src;
+				}else{
+					return "http://news.cqu.edu.cn".$eImg->src;
+				}
+				
 			}else{
 				return "http://externie.com/nophoto.png";
 			}

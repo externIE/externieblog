@@ -11,7 +11,8 @@
 		// testFunc();
 	}
 	function testFunc(){//测试代码
-		// echo time();
+		echo dir(__FILE__);
+		echo time();
 	}
 	function testFunc2($test){
 		$test--;
@@ -88,11 +89,11 @@
 	}
 	function _crawlerItemPage($url,$category){
 		$page = new PageParser($url,$category);
-		echo "\n";
-		echo $page;
 		$basePath = dirname(__FILE__);
 		$basePath = str_replace("PHPSpider","",$basePath);
-		$page->saveToFile($basePath."_posts"); 
+		echo "\n";
+		echo $page;
+		$page->saveToFile($basePath."/_posts"); 
 		exec("ls");
 	}
 ?>
