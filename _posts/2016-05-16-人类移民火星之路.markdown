@@ -2,7 +2,7 @@
 layout: 			post
 title:       	  "人类移民火星之路"
 dtitle:      	  "2016年重庆市科技活动周“科学名家面对面”系列讲座"
-time: 		  	  "14时30分"
+time: 		  	  "14:30"
 address:	  	  "重庆大学A区国际会议厅"
 campus:	  	  "A"
 speaker:	   	  "郑永春"

@@ -2,7 +2,7 @@
 layout: 			post
 title:       	  "职通讲坛第43期——龙湖分享会"
 dtitle:      	  "职通讲坛第43期——龙湖分享会"
-time: 		  	  "18时45分"
+time: 		  	  "18:45"
 address:	  	  "A区国际会议厅306"
 campus:	  	  "A"
 speaker:	   	  "廖波"

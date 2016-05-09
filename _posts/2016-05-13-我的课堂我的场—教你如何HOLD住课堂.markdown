@@ -2,7 +2,7 @@
 layout: 			post
 title:       	  "我的课堂我的场—教你如何HOLD住课堂"
 dtitle:      	  "“我的课堂我的场—教你如何HOLD住课堂”工作坊"
-time: 		  	  "14时30分"
+time: 		  	  "14:30"
 address:	  	  "教师教学发展中心"
 campus:	  	  "undefined"
 speaker:	   	  "陈圆"

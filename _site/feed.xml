@@ -5,8 +5,8 @@
     <description>在这里探索iOS的一切。</description>
     <link>http://externie.github.io/externieblog/</link>
     <atom:link href="http://externie.github.io/externieblog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 May 2016 11:56:55 +0800</pubDate>
-    <lastBuildDate>Mon, 09 May 2016 11:56:55 +0800</lastBuildDate>
+    <pubDate>Mon, 09 May 2016 15:32:52 +0800</pubDate>
+    <lastBuildDate>Mon, 09 May 2016 15:32:52 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -19,6 +19,19 @@
         
         
         <category>其它</category>
+        
+      </item>
+    
+      <item>
+        <title>我的课堂我的场—教你如何HOLD住课堂</title>
+        <description>&lt;p&gt;教师不仅是课堂的宣讲者、规划者，更是课堂的观察者、示范者、启发者、指挥者和引导者。教师需要良好地掌控课堂，需要营造强大的气场。本次工作坊将从树立科学的课堂管理观念、精心设计组织教学、激发学生自我管理、建立良好的师生关系、运用机智巧妙的教学手段等方面，教你如何营造权威、自信、亲和却不迁就、不苟同的教学气场。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 May 2016 00:00:00 +0800</pubDate>
+        <link>http://externie.github.io/externieblog/%E6%95%99%E5%B8%88%E6%95%99%E5%AD%A6%E5%8F%91%E5%B1%95%E5%B7%A5%E4%BD%9C%E5%9D%8A/2016/05/13/%E6%88%91%E7%9A%84%E8%AF%BE%E5%A0%82%E6%88%91%E7%9A%84%E5%9C%BA-%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95HOLD%E4%BD%8F%E8%AF%BE%E5%A0%82/</link>
+        <guid isPermaLink="true">http://externie.github.io/externieblog/%E6%95%99%E5%B8%88%E6%95%99%E5%AD%A6%E5%8F%91%E5%B1%95%E5%B7%A5%E4%BD%9C%E5%9D%8A/2016/05/13/%E6%88%91%E7%9A%84%E8%AF%BE%E5%A0%82%E6%88%91%E7%9A%84%E5%9C%BA-%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95HOLD%E4%BD%8F%E8%AF%BE%E5%A0%82/</guid>
+        
+        
+        <category>教师教学发展工作坊</category>
         
       </item>
     
@@ -71,6 +84,25 @@
         
         
         <category>职通讲坛</category>
+        
+      </item>
+    
+      <item>
+        <title>翻转课堂教学设计与实践</title>
+        <description>&lt;p&gt;（1）“互联网+”学习对教师教学的挑战与机遇。&lt;br /&gt;
+  （2）深度理解翻转课堂教学：为什么现代信息化环境需要教学模式的变革。&lt;br /&gt;
+  （3）教师实施翻转课堂教学时面临的三个主要问题：&lt;br /&gt;
+      A.如何基于“教学重构”设计翻转课堂教学（包括教学目标、教学内容和课堂教学活动设计）；&lt;br /&gt;
+      B.如何基于学科特点选择合适的翻转课堂教学策略；&lt;br /&gt;
+      C.个人如何自主制作教学微视频。&lt;br /&gt;
+  （4）我们的经验分享。&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 May 2016 00:00:00 +0800</pubDate>
+        <link>http://externie.github.io/externieblog/%E6%95%99%E5%B8%88%E6%95%99%E5%AD%A6%E5%8F%91%E5%B1%95%E5%B7%A5%E4%BD%9C%E5%9D%8A/2016/05/11/%E7%BF%BB%E8%BD%AC%E8%AF%BE%E5%A0%82%E6%95%99%E5%AD%A6%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/</link>
+        <guid isPermaLink="true">http://externie.github.io/externieblog/%E6%95%99%E5%B8%88%E6%95%99%E5%AD%A6%E5%8F%91%E5%B1%95%E5%B7%A5%E4%BD%9C%E5%9D%8A/2016/05/11/%E7%BF%BB%E8%BD%AC%E8%AF%BE%E5%A0%82%E6%95%99%E5%AD%A6%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/</guid>
+        
+        
+        <category>教师教学发展工作坊</category>
         
       </item>
     
@@ -263,40 +295,6 @@
         
         
         <category>其他</category>
-        
-      </item>
-    
-      <item>
-        <title>通信工程学院专家系列报告会：张大鹏教授谈高级生物特征识别技术</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;摘要：&lt;/h1&gt;
-&lt;p&gt;In recent times, an increasing, worldwide effort has been devoted to the development of automatic personal identification systems that can be effective in a wide variety of security contexts. As one of the most powerful and reliable means of personal authentication, biometrics has been an area of particular interest. It has led to the extensive study of biometric technologies and the development of numerous algorithms, applications, and systems, which could be defined as Advanced Biometrics. This presentation will systematically explain this new research trend. As case studies, a new biometrics technology (palmprint recognition) and two new biometrics applications (medical biometrics and aesthetical biometrics) are introduced. Some useful achievements could be given to illustrate their effectiveness.&lt;/p&gt;
-
-&lt;p&gt;本讲座将系统阐述高级生物特征识别技术在世界范围内的研究进展及趋势，以及在人体识别中的应用价值。此外，张教授将在本报告讲述其团队实验室在掌纹识别技术，以及两个新的生物特征识别技术的应用，包括医学生物特征识别、审美生物特征识别方面的研究成果。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 21 Apr 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E7%90%86%E5%B7%A5/2016/04/21/%E9%80%9A%E4%BF%A1%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2%E4%B8%93%E5%AE%B6%E7%B3%BB%E5%88%97%E6%8A%A5%E5%91%8A%E4%BC%9A-%E5%BC%A0%E5%A4%A7%E9%B9%8F%E6%95%99%E6%8E%88%E8%B0%88%E9%AB%98%E7%BA%A7%E7%94%9F%E7%89%A9%E7%89%B9%E5%BE%81%E8%AF%86%E5%88%AB%E6%8A%80%E6%9C%AF/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E7%90%86%E5%B7%A5/2016/04/21/%E9%80%9A%E4%BF%A1%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2%E4%B8%93%E5%AE%B6%E7%B3%BB%E5%88%97%E6%8A%A5%E5%91%8A%E4%BC%9A-%E5%BC%A0%E5%A4%A7%E9%B9%8F%E6%95%99%E6%8E%88%E8%B0%88%E9%AB%98%E7%BA%A7%E7%94%9F%E7%89%A9%E7%89%B9%E5%BE%81%E8%AF%86%E5%88%AB%E6%8A%80%E6%9C%AF/</guid>
-        
-        <category>讲座</category>
-        
-        
-        <category>理工</category>
-        
-      </item>
-    
-      <item>
-        <title>澳大利亚工程院院士讲座</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;摘要：&lt;/h1&gt;
-&lt;p&gt;没有内容简介&lt;/p&gt;
-</description>
-        <pubDate>Thu, 21 Apr 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E7%90%86%E5%B7%A5/2016/04/21/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%B7%A5%E7%A8%8B%E9%99%A2%E9%99%A2%E5%A3%AB%E8%AE%B2%E5%BA%A7/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E7%90%86%E5%B7%A5/2016/04/21/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%B7%A5%E7%A8%8B%E9%99%A2%E9%99%A2%E5%A3%AB%E8%AE%B2%E5%BA%A7/</guid>
-        
-        <category>讲座</category>
-        
-        
-        <category>理工</category>
         
       </item>
     

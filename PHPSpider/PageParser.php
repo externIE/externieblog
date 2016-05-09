@@ -75,7 +75,9 @@
 			// $strTime = $this->html->find("div.dinfo p",0)->plaintext;
 			// $strTime = strip_tags($strTime);//去除HTML&&PHP代码
 			// $arrInfo = explode(" ",$strTime);
-			return trim($this->findInfo("div.dinfo p",0,3));
+			$formatDate = trim($this->findInfo("div.dinfo p",0,3));
+			$formatDate = str_replace(array("时","分"), array(":",""), $formatDate);
+			return $formatDate;
 		}
 		private function getAddress(){
 			return trim($this->findInfo("div.dinfo p",1,2));
