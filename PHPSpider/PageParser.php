@@ -91,6 +91,9 @@
 			if ($this->checkStrInStr($address,"主教")) {
 				$campus = "A";
 			}
+			if ($this->checkStrInStr($address,"教师教学发展中心")) {
+				$campus = "A";
+			}
 			if ($this->checkStrInStr($address,"B")) {
 				$campus = "B";
 			}

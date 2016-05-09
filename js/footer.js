@@ -23,9 +23,6 @@
 			}
 			
 			scrollText = scrollTextWrappers[iW].getElementsByClassName("scrollText")[0];
-//			if(scrollTextWrapper.scrollWidth-scrollTextWrapper.scrollLeft-scrollTextWrapper.clientWidth<=0){
-//				scrollTextWrapper.scrollLeft =0;
-//			}
 			if(scrollTextWrapper.scrollLeft-scrollTextWrapper.scrollWidth/2>=0){
 				scrollTextWrapper.scrollLeft -= scrollTextWrapper.scrollWidth/2;
 			}
@@ -90,3 +87,47 @@ function select(campus,from){
 		Materialize.showStaggeredList("#staggered-post");
 	}
 };
+
+function dealOutTimeCard(){
+	var allcards = $(".lecture-card");
+	for (var i = allcards.length - 1; i >= 0; i--) {
+		getCardTime(allcards[i]);
+	};
+}
+function getCardTime(card){
+	
+	var date = $(card).find("#date").text();
+	var time = $(card).find("#time").text();
+	var arrDate = date.split("/");
+	var arrTime = time.split(":");
+	var dateTime = new Date();
+	dateTime.setFullYear("20"+arrDate[0],arrDate[1]-1,arrDate[2]);
+	dateTime.setHours(arrTime[0],arrTime[1],0,0);
+	console.log(dateTime.toString());
+}
+
+dealOutTimeCard();
+// getCardTime();
+
+
+function testFunc(){
+	// var date = new Date();
+	// console.log(date.toString());
+	// date.setFullYear("16","1"-1,"2");
+	// console.log(date.toString());
+}
+
+testFunc();
+
+
+
+
+
+
+
+
+
+
+
+
+
