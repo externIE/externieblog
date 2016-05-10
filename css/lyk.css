@@ -67,3 +67,37 @@ body{
 .outtime{
 	color:rgba(10,10,10,0.5);
 }
+
+
+.organizer-wrapper{
+	font-size: 0.5rem;
+	color:rgba(10,10,10,0.5);
+}
+
+.organizer-label{
+	float: left;
+	margin-top: 0px;
+}
+
+.co-organizer-label{
+	float:left;
+	margin-top: 0px;
+}
+
+.editor{
+	color:rgba(10,10,10,0.5);
+	font-size: 0.8rem;
+}
+
+
+.shareicon{
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.post-header{
+	background: #4da7a8;
+}
+

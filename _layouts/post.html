@@ -5,203 +5,120 @@ layout: default
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
-	
-<!-- Post Header -->
-<style type="text/css">
-    header.intro-header{
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
-    }
-	
-	/*导航*/
-	.BlogAnchor {
-	    background: #ffffff;
-	    padding: 0px;
-	    line-height: 180%;
-	}
-	.BlogAnchor p {
-	    font-size: 18px;
-	    color: #15a230;
-	    margin-bottom: 0.3em;
-	}
-	.BlogAnchor .AnchorContent {
-	    padding: 5px 0px;
-	}
-	.BlogAnchor li{
-	    text-indent: 20px;
-	    font-size: 18px;
-	}
-	#AnchorContentToggle {
-	    font-size: 18px;
-	    font-weight: normal;
-	    color: #FFF;
-	    display: inline-block;
-	    line-height: 30px;
-	    background: #5cc26f;
-	    font-style: normal;
-	    padding: 1px 20px;
-	    margin-right: 10px;
-	}
-	.BlogAnchor a:hover {
-	    color: #5cc26f;
-	}
-	.BlogAnchor a {
-	    text-decoration: none;
-	}
-	
 
-	.ScrollTop {
-		width: 50px;
-		height: 50px;
-		background: black;
-		-moz-border-radius: 25px;
-		-webkit-border-radius: 25px;
-		border-radius: 25px;
-		position:fixed;
-		    bottom:18px;
-		    right:30px; 
-			-webkit-box-shadow: #666 0px 0px 5px;  
-			   -moz-box-shadow: #666 0px 0px 5px;  
-			   box-shadow: #666 0px 0px 5px; 
-	}
-	.ScrollTop p {
-	    font-size: 15px;
-	    color: #ffffff;
-		position:fixed;
-		    bottom:0px;
-		    right:40px;
-	}
-	
-</style>
-<!-- <header class="intro-header" >
+
+<!-- Post Header -->
+
+<header class="post-header white-text" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col s12">
                 <div class="post-heading">
-                    <div class="tags">
-                        {% for tag in page.tags %}
-                        <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-                        {% endfor %}
-                    </div>
-                    <h1>{{ page.title }}</h1>
-                    {% comment %}
-                        always create a h2 for keeping the margin , Hux
-                    {% endcomment %}
-                    {% comment %} if page.organizer {% endcomment %}
-                    <h2 class="subheading">{{ page.organizer }}</h2>
-                    {% comment %} endif {% endcomment %}
-                    <span class="meta">Posted by {% if page.speaker %}{{ page.speaker }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                    <h2>{{ page.title }}</h2>
+                    
+                    <p class="speaker">
+                        主讲人：{% if page.speaker %}{{ page.speaker }}{% else %}{{ site.title }}{% endif %} 
+                    </p>
+                    <p class="tima-address">
+                        时间：{{ page.date | date: "%-m月%-d日"}}&nbsp;&nbsp;地点：{{ page.address }}
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-</header> -->
+</header>
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
+<div class="container">
+    <div class="organizer-wrapper">
+        {% comment %} if page.organizer {% endcomment %}
+        <div>
+            <p class="organizer-label">主办方：</p>
+            <p class="organizer">{{ page.organizer }}</p>
+        </div>
+        {% comment %} endif {% endcomment %}
+        {% comment %} if page.co-organizer {% endcomment %}
+        <div>
+            <p class="co-organizer-label">协办方：</p>
+            <p class="co-organizer">{{ page.co-organizer }}</p>
+        </div>
+        {% comment %} endif {% endcomment %}
+    </div>
 
-    <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-
-
-				{{ content }}
-				
-<!--编辑 -->
-				<center>文章作者：{{ page.author }}</center>
-                <center>责任编辑：{{ page.author }}</center>
-
-                <hr>
-
-                {% if site.duoshuo_share && site.duoshuo_username %}
-                <!-- 多说 Share start -->
-                </style>
-           <!--      <div class="ds-share"
-                    style="text-align: right"
-                    data-thread-key="{{page.id}}"
-                    data-title="{{page.title}}"
-                    data-url="{{site.url}}{{site.baseurl}}{{page.url}}"
-                    data-images="{{ site.url }}{{site.baseurl}}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
-                    data-content="{{ content | strip_html | truncate:80 }} | {{ site.SEOTitle }} " >
-                    <div class="ds-share-inline">
-                      <ul  class="ds-share-icons-16">
-                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
-                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
-                      </ul>
-                      <div class="ds-share-icons-more">
-                      </div>
-                    </div>
-                <hr>
-                </div> -->
-                <div class="ds-share flat" 
-                    data-thread-key="{{page.id}}" 
-                    data-title="{{page.title}}" 
-                    data-images="{ site.url }}{{site.baseurl}}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" 
-                    data-content="{{ content | strip_html | truncate:80 }} | {{ site.SEOTitle }} " 
-                    data-url="{{site.url}}{{site.baseurl}}{{page.url}}">
-                    <div class="ds-share-inline">
-                      <ul  class="ds-share-icons-32 row ">
-                        <li class="col s2 offset-s1 valign-wapper" data-toggle="ds-share-icons-more"><a class="ds-more valign" href="javascript:void(0);"></a></li>
-                        <li class="col s2"><a class="ds-weibo" href="javascript:void(0);" data-service="weibo"></a></li>
-                        <li class="col s2"><a class="ds-qzone" href="javascript:void(0);" data-service="qzone"></a></li>
-                        <li class="col s2"><a class="ds-qqt" href="javascript:void(0);" data-service="qqt"></a></li>
-                        <li class="col s2"><a class="ds-wechat" href="javascript:void(0);" data-service="wechat"></a></li>
-                        
-                      </ul>
-                      <div class="ds-share-icons-more">
-                      </div>
+    <!-- Post Content -->
+    <article>
+        
+            <div class="row">
+                <div class="col s12">
+    				{{ content }}
+                    <!--编辑 -->
+                    <div class="editor">
+        				<center>文章作者：{{ page.author }}</center>
+                        <center>责任编辑：{{ page.editorInCharge }}</center>
                     </div>
                     <hr>
-                 </div>
-                <!-- 多说 Share end-->
-                {% endif %}
+                    {% if site.duoshuo_share && site.duoshuo_username %}
+                    <!-- 多说 Share start -->
+                    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                          <a class="btn-floating btn-large red">
+                            <i class="large mdi-social-share"></i>
+                          </a>
 
+                            <div class="ds-share flat" 
+                                data-thread-key="{{page.id}}" 
+                                data-title="{{page.title}}" 
+                                data-images="{% if page.speaker-img %}{{ page.speaker-img }}{% else %}{{ site.header-img }}{% endif %}" 
+                                data-content="{{ content | strip_html | truncate:80 }} | {{ site.SEOTitle }} " 
+                                data-url="{{site.url}}{{site.baseurl}}{{page.url}}">                            
 
-                {% if site.duoshuo_username %}
-                <!-- 多说评论框 start -->
-                <div class="comment">
-                    <div class="ds-thread"
-                        data-thread-key="{{page.id}}"
-                        data-title="{{page.title}}"
-                        data-url="{{site.url}}{{site.baseurl}}{{page.url}}" >
+                                  <ul>
+                                    <li><a class="btn-floating red ds-weibo" data-service="weibo" style="">
+                                        <img style="width: 100%;height:100%;" src="{{ "/img/shareicon/weibo.png" | prepend: site.baseurl }}"/>        
+                                        <!-- <i class="large mdi-editor-format-quote"></i> -->
+                                    </a></li>
+                                    <li><a class="btn-floating yellow darken-1 ds-qzone" data-service="qzone">
+                                        <img style="width: 100%;height:100%;" src="{{ "/img/shareicon/qzone.png" | prepend: site.baseurl }}"/>    
+                                    </a></li>
+                                    <li><a class="btn-floating white ds-wechat">
+                                        <img style="width: 100%;height:100%;" src="{{ "/img/shareicon/weixin.png" | prepend: site.baseurl }}"/>  
+                                    </a></li>
+                                    <li><a class="btn-floating blue">
+
+                                    </a></li>
+                                  </ul>
+
+                             </div>
+
                     </div>
+                    <!-- 多说 Share end-->
+                    {% endif %}
+
+                    {% if site.duoshuo_username %}
+                    <!-- 多说评论框 start -->
+                    <div class="comment">
+                        <div class="ds-thread"
+                            data-thread-key="{{page.id}}"
+                            data-title="{{page.title}}"
+                            data-url="{{site.url}}{{site.baseurl}}{{page.url}}" >
+                        </div>
+                    </div>
+                    <!-- 多说评论框 end -->
+                    {% endif %}
+
                 </div>
-                <!-- 多说评论框 end -->
-                {% endif %}
-
             </div>
+        
+    </article>
 
-    <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
+</div>
 
-                <!-- Featured Tags -->
 
-                <!-- Friends Blog -->
-                {% if site.friends %}
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-</article>
+
+
+
 <script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
- <script src="http://daiweilai.github.io/js/lightbox-plus-jquery.min.js"></script>
- <link rel="stylesheet" href="http://daiweilai.github.io/css/lightbox.css">
+<script src="http://daiweilai.github.io/js/lightbox-plus-jquery.min.js"></script>
+<link rel="stylesheet" href="http://daiweilai.github.io/css/lightbox.css">
+
 <script>
 $(".container").find("h2,h3,h4,h5,h6").each(function(i,item){
     var tag = $(item).get(0).localName;
@@ -232,18 +149,17 @@ $(".anchor-link").click(function(){
 
 $('.ScrollTop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
 //给图片添加点击放大事件
-$(".container").find("img").each(function(i,item){
-    var tag = $(item).get(0);
-	tag.parentNode.innerHTML = "<div>" + "<a href="+tag.src+' data-lightbox="aaa"'+ " >"+ "<img src=" + tag.src + " />" +"</a>" + "</div>"
+// $(".container").find("img").each(function(i,item){
+//     var tag = $(item).get(0);
+// 	tag.parentNode.innerHTML = "<div>" + "<a href="+tag.src+' data-lightbox="aaa"'+ " >"+ "<img src=" + tag.src + " />" +"</a>" + "</div>"
 	  
-});
+// });
 </script>
 
 
 {% if site.duoshuo_username %}
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-    // dynamic User by Hux
     var _user = '{{site.duoshuo_username}}';
 
     // duoshuo comment query.
@@ -252,7 +168,7 @@ $(".container").find("img").each(function(i,item){
         var ds = document.createElement('script');
         ds.type = 'text/javascript';ds.async = true;
         // ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.src = "{{ "/js/embed.js" | prepend: site.baseurl }}";
+        ds.src = "{{ "/js/embed-explode.js" | prepend: site.baseurl }}";
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('head')[0]
          || document.getElementsByTagName('body')[0]).appendChild(ds);
