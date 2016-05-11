@@ -49,7 +49,9 @@ layout: default
         
             <div class="row">
                 <div class="col s12">
+                    <div id="content">
     				{{ content }}
+                    </div>
                     <!--编辑 -->
                     <div class="editor">
         				<center>文章作者：{{ page.author }}</center>
@@ -58,8 +60,8 @@ layout: default
                     <hr>
                     {% if site.duoshuo_share && site.duoshuo_username %}
                     <!-- 多说 Share start -->
-                    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-                          <a class="btn-floating btn-large red">
+                    <div id="floatShareBtn" class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                          <a id="" class="btn-floating btn-large red scaleFadeIn">
                             <i class="large mdi-social-share"></i>
                           </a>
 
@@ -92,9 +94,18 @@ layout: default
                     <!-- 多说 Share end-->
                     {% endif %}
 
+                    
+
+                </div>
+            </div>
+        
+    </article>
+
+</div>
+
                     {% if site.duoshuo_username %}
                     <!-- 多说评论框 start -->
-                    <div class="comment">
+                    <div id="comment" class="comment">
                         <div class="ds-thread"
                             data-thread-key="{{page.id}}"
                             data-title="{{page.title}}"
@@ -104,22 +115,78 @@ layout: default
                     <!-- 多说评论框 end -->
                     {% endif %}
 
-                </div>
-            </div>
-        
-    </article>
-
-</div>
 
 
 
 
 
-<script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
-<script src="http://daiweilai.github.io/js/lightbox-plus-jquery.min.js"></script>
-<link rel="stylesheet" href="http://daiweilai.github.io/css/lightbox.css">
+
+<!-- <script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script> -->
+<!-- <script src="http://daiweilai.github.io/js/lightbox-plus-jquery.min.js"></script> -->
+<!-- <link rel="stylesheet" href="http://daiweilai.github.io/css/lightbox.css"> -->
 
 <script>
+
+var options = [
+    {selector: '#ex-replybox', offset: 0 , up:false , callback: 'hideFloatBtn()'},
+    {selector: '#ex-replybox', offset: 0 , up:true , callback: 'showFloatBtn()'},
+    ];
+Materialize.scrollFireForever(options);
+
+
+
+// $("button").click(function(){
+//   $("div").animate({left:'250px'});
+// });
+
+function hideFloatBtn(){
+    if($("#floatShareBtn").hasClass("scaleFadeIn")){
+        $("#floatShareBtn").removeClass("scaleFadeIn");
+    }
+    if(!$("#floatShareBtn").hasClass("scaleFadeOut")){
+        $("#floatShareBtn").addClass("scaleFadeOut");
+    }
+    // console.log("运行到");
+} 
+
+function showFloatBtn(){
+    // console.log("运行upupup");
+    if($("#floatShareBtn").hasClass("scaleFadeOut")){
+        $("#floatShareBtn").removeClass("scaleFadeOut");
+    }
+    if(!$("#floatShareBtn").hasClass("scaleFadeIn")){
+        $("#floatShareBtn").addClass("scaleFadeIn");
+    }
+    
+} 
+
+
+// function switchImgToCircle(){
+
+//     var imgs = document.getElementById("ds-reset")
+//     console.log(imgs.innerHTML);
+//     // for (var i = imgs.length - 1; i >= 0; i--) {
+//     //     console.log(imgs[i]);
+//     //     $(imgs[i]).addClass("circle");
+//     // };
+// }
+
+// switchImgToCircle();
+
+var fba = document.getElementById("floatShareBtn");
+fba.addEventListener("webkitAnimationEnd", function(){ //动画结束时事件 
+    // console.log("end");
+    if($(this).hasClass("scaleFadeOut")){
+        // console.log($(this).css("bottom"));
+        $(this).css("bottom",$(this).css("bottom")-100);
+    }
+    if($(this).hasClass("scaleFadeIn")){
+        $(this).css("bottom",$(this).css("bottom")+100);
+    }
+}, false); 
+
+
+
 $(".container").find("h2,h3,h4,h5,h6").each(function(i,item){
     var tag = $(item).get(0).localName;
     $(item).attr("id","wow"+i);

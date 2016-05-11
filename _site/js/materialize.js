@@ -3646,6 +3646,8 @@ $(document).ready(function(){
     }
   };
 
+
+
   var closeFABMenu = function (btn) {
     $this = btn;
     // Get direction option
@@ -3657,6 +3659,11 @@ $(document).ready(function(){
     } else {
       offsetY = 40;
     }
+
+    // var circle = $this.hasClass("circle");
+    // if (circle === true) {
+    // 	offsetX = 
+    // };
 
     $this.removeClass('active');
     var time = 0;
@@ -3700,6 +3707,10 @@ $(document).ready(function(){
           }
       });
   };
+
+ 
+
+
 
   // Horizontal staggered list
   Materialize.showStaggeredList = function(selector) {
@@ -3879,6 +3890,64 @@ $(document).ready(function(){
       }
     }, 100);
   };
+
+
+   Materialize.scrollFireForever = function(options) {
+
+    var didScroll = false;
+
+    window.addEventListener("scroll", function() {
+      didScroll = true;
+    });
+
+    // Rate limit to 100ms
+    setInterval(function() {
+      if(didScroll) {
+          didScroll = false;
+
+          var windowScroll = window.pageYOffset + window.innerHeight;
+          // console.log(options.length);
+          for (var i = 0 ; i < options.length; i++) {
+            // Get options from each line
+            var value = options[i];
+            var selector = value.selector,
+                offset = value.offset,
+                callback = value.callback;
+
+            var currentElement = document.querySelector(selector);
+            if ( currentElement !== null) {
+              var elementOffset = currentElement.getBoundingClientRect().top + window.pageYOffset;
+              if (value.up) {
+              		// console.log(windowScroll);
+              		// console.log(elementOffset + offset);
+              	if (windowScroll < (elementOffset + offset)) {
+              		// console.log("up");
+                  if (value.done !== true) {
+	                  var callbackFunc = new Function(callback);
+	                  callbackFunc();
+	                  value.done = true;
+		                }
+	              }else{
+		              value.done = false;
+		          }
+              }else{
+              	// console.log("down");
+              	if (windowScroll > (elementOffset + offset)) {
+                  if (value.done !== true) {
+	                  var callbackFunc = new Function(callback);
+	                  callbackFunc();
+	                  value.done = true;
+		                }
+	              }else{
+		                value.done = false;
+		          }
+              }
+            }
+          }
+      }
+    }, 100);
+  };
+
 
 })(jQuery);;/*!
  * pickadate.js v3.5.0, 2014/04/13

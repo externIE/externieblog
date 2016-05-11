@@ -765,12 +765,12 @@ function(e, t, s) {
             t += "</a>"
         },
         et.likeTooltip = function(e) {
-            var t = '<div class="ds-like-tooltip ds-rounded"><p>很高兴你能喜欢，分享一下吧：</p><ul>';
-            for (var s in e.services) t += '<li><a class="ds-share-to-' + s + " ds-service-link ds-" + s + '" href="' + a() + "/share-proxy/?" + o.param({
-                service: s,
-                thread_id: e.thread_id
-            }) + '">' + e.services[s] + "</a></li>";
-            return t += '</ul><p class="ds-like-tooltip-footer"><a class="ds-like-tooltip-close">算了</a></p></div>'
+            // var t = '<div class="ds-like-tooltip ds-rounded"><p>很高兴你能喜欢，分享一下吧：</p><ul>';
+            // for (var s in e.services) t += '<li><a class="ds-share-to-' + s + " ds-service-link ds-" + s + '" href="' + a() + "/share-proxy/?" + o.param({
+            //     service: s,
+            //     thread_id: e.thread_id
+            // }) + '">' + e.services[s] + "</a></li>";
+            // return t += '</ul><p class="ds-like-tooltip-footer"><a class="ds-like-tooltip-close">算了</a></p></div>'
         },
         et.loginButtons = function() {
             var e = '<div class="ds-login-buttons"><p>社交帐号登录:</p><div class="ds-social-links"><ul class="ds-service-list">' + et.serviceList(X) + '<li><a class="ds-more-services" href="javascript:void(0)">更多»</a></li></ul><ul class="ds-service-list ds-additional-services">' + et.serviceList(K) + "</ul></div></div>";
@@ -785,11 +785,11 @@ function(e, t, s) {
             return t += "</div>"
         },
         et.meta = function(e) {
-            var t = '<div class="ds-meta"><a href="javascript:void(0)" class="ds-like-thread-button ds-rounded';
+            var t = '<div class="ds-meta"><center id="ex-like-button"><a href="javascript:void(0)" class="ds-like-thread-button ds-rounded';
             return e.user_vote > 0 && (t += " ds-thread-liked"),
-            t += '"> <span class="ds-thread-like-text">',
-            t += e.user_vote > 0 ? '<img src="http://externie.com/smallicon/zan.png">': '<img src="http://externie.com/smallicon/zan-cancel.png">',
-            t += '</span><span class="ds-thread-cancel-like">取消喜欢</span></a><span class="ds-like-panel"></span></div>'
+            t += '"> ',
+            t += e.user_vote > 0 ? '<img class="ex-like-img" src="http://externie.com/smallicon/zan.png">': '<img class="ex-like-img" src="http://externie.com/smallicon/zan-cancel.png">',
+            t += '</a></center><center><span class="ds-like-panel"></span></center></div>'
         },
         et.notify = function(e) {
             var t = '<div id="ds-reset"><a class="ds-logo" href="http://duoshuo.com/" target="_blank" title="多说"></a><ul class="ds-notify-unread"><li';
@@ -830,7 +830,7 @@ function(e, t, s) {
             return t += "</li>"
         },
         et.postListHead = function(e) {
-            var t = '<div class="ds-comments-info"><div class="ds-sort"><a class="ds-order-desc">' + D.latest + '</a><a class="ds-order-asc">' + D.earliest + '</a><a class="ds-order-hot">' + D.hottest + '</a></div><ul class="ds-comments-tabs"><li class="ds-tab"><a class="ds-comments-tab-duoshuo ds-current" href="javascript:void(0);"></a></li>';
+            var t = '<hr class="hrinhotandcold"/><div class="ds-comments-info"><div class="ds-sort"><a class="ds-order-desc">' + D.latest + '</a><a class="ds-order-asc">' + D.earliest + '</a><a class="ds-order-hot">' + D.hottest + '</a></div><ul class="ds-comments-tabs"><li class="ds-tab"><a class="ds-comments-tab-duoshuo ds-current" href="javascript:void(0);"></a></li>';
             return e.options.show_reposts && e.thread.reposts && (t += '<li class="ds-tab"><a class="ds-comments-tab-repost" href="javascript:void(0);"></a></li>'),
             t += " ",
             e.options.show_weibo && e.thread.weibo_reposts && (t += '<li class="ds-tab"><a class="ds-comments-tab-weibo" href="javascript:void(0);"></a></li>'),
@@ -876,9 +876,9 @@ function(e, t, s) {
             return t
         },
         et.replybox = function(e) {
-            var t = '<div class="ds-replybox">';
+            var t = '<div id="ex-replybox" class="ds-replybox">';
             if (t += r() ? ' href="javascript:void(0);" onclick="return false"': 
-                '<form method="post">' + tt(e.params) + '<div class="ds-textarea-wrapper ds-rounded-top"><textarea name="message" title="Ctrl+Enter快捷提交" placeholder="' + u(D.leave_a_message) + '"></textarea><pre class="ds-hidden-text"></pre>', t += "</div>",
+                '<form id="form" method="post">' + tt(e.params) + '<div id="bottom-textarea" class=" ds-textarea-wrapper ds-rounded-top"><textarea name="message" title="Ctrl+Enter快捷提交" placeholder="' + u(D.leave_a_message) + '"></textarea><pre class="ds-hidden-text"></pre>', t += "</div>",
                 t += '', !r() && nt.data.repostOptions) {
                 // t += '<input id="ds-sync-checkbox',
                 // e.inline && (t += "-inline"),
@@ -889,7 +889,10 @@ function(e, t, s) {
                 // t += '">' + D.share_to + "</label>";
                 // for (var s in nt.data.repostOptions) t += et.serviceIcon(s, !nt.data.repostOptions[s])
             }
-            return t += '<button class="ds-post-button" type="submit">' + u(D.post) + '</button></div>',
+
+            
+        
+            return t += '<button style="width: 20%;height: 100%;" class="ds-post-button btn waves-effect waves-light" type="submit">' + u(D.post) + '</button></div>',
             t += "</form></div>"
         },
         et.serviceBindList = function(e) {
@@ -1540,8 +1543,13 @@ function(e, t, s) {
                     a
                 }
             }),
-            et.likePanel = function(e) {
-                return e.likes ? '<span class="ds-highlight">' + e.likes + "</span> 人喜欢": ""
+            et.likePanel = function(e,add) {
+                if (add == 0) {
+                    countlike = e.likes;
+                    // alert(countlike);
+                };
+                countlike+=add;
+                return countlike ? '<span class="ds-highlight">' + countlike + "</span> 人喜欢": ""
             },
             st.Meta = function(e) {
                 this.embedThread = e
@@ -1549,9 +1557,12 @@ function(e, t, s) {
             st.Meta.prototype = {
                 render: function() {
                     function a(a) {
+                        // alert("click");
+                        var p = l.hasClass("ds-thread-liked");
                         function r(e) {
+                            // alert("reset");
                             o.set(e),
-                            n.resetLikePanel()
+                            n.resetLikePanel(p?-1:1)
                         }
                         function c() {
                             n.tooltip.detach(),
@@ -1567,12 +1578,13 @@ function(e, t, s) {
                             }
                             return ! 1
                         }
-                        var p = l.hasClass("ds-thread-liked");
+                        
                         if (R.post("threads/vote", {
                             thread_id: n.embedThread.threadId,
                             vote: p ? 0 : 1
                         },
-                        r), l.toggleClass("ds-thread-liked"), l.find(".ds-thread-like-text").empty().append(p?'<img src="http://externie.com/smallicon/zan.png">' : '<img src="http://externie.com/smallicon/zan-cancel.png">'), p) return n.tooltip && c(a),
+                        r), l.toggleClass("ds-thread-liked"), l.find(".ex-like-img").attr("src",p?"http://externie.com/smallicon/zan-cancel.png" : "http://externie.com/smallicon/zan.png"), p) 
+                            return n.tooltip && c(a),
                         !1;
                         if (n.tooltip === s) {
                             var h = et.likeTooltip({
@@ -1600,13 +1612,14 @@ function(e, t, s) {
                     o = n.embedThread.model,
                     d = n.el = H(et.meta(o.toJSON())),
                     l = d.find(".ds-like-thread-button");
+                    // alert("click");
                     return l.click(a),
-                    n.resetLikePanel(),
+                    n.resetLikePanel(0),
                     r() && d.hide(),
                     n
                 },
-                resetLikePanel: function() {
-                    this.el.find(".ds-like-panel").html(et.likePanel(this.embedThread.model.toJSON()))
+                resetLikePanel: function(add) {
+                    this.el.find(".ds-like-panel").html(et.likePanel(this.embedThread.model.toJSON(),add))
                 }
             },
             st.PostListHead = function(e) {

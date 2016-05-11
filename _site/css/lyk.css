@@ -39,6 +39,10 @@ body{
 	text-size-adjust: none;
 }
 
+.ex-like-img{
+	width: 64px;
+}
+
 #ScrollWrapper {
 	position: absolute;
 	z-index: 1;
@@ -100,4 +104,150 @@ body{
 .post-header{
 	background: #4da7a8;
 }
+
+.scaleFadeIn{
+	-webkit-animation-name: scaleFadeIn; /*动画名称*/
+	-webkit-animation-duration: 0.2s; /*动画持续时间*/
+	-webkit-animation-iteration-count: 1; /*动画次数*/
+	-webkit-animation-delay: 0s;
+	-webkit-animation-timing-function:ease-out；
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	display: block;
+}
+
+.scaleFadeOut{
+	-webkit-animation-name: scaleFadeOut; /*动画名称*/
+	-webkit-animation-duration: 0.2s; /*动画持续时间*/
+	-webkit-animation-iteration-count: 1; /*动画次数*/
+	-webkit-animation-delay: 0s;
+	-webkit-animation-timing-function:ease-out；
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	/*display: none;*/
+}
+
+@keyframes scaleFadeOut
+{
+	from { 
+		transform: none;
+		opacity: 1;
+	}
+    to { 
+    	transform: scale(0.2);
+    	opacity: 0; 
+    }
+}
+
+@-moz-keyframes scaleFadeOut /* Firefox */
+{
+	from { 
+		transform: none;
+		opacity: 1;
+	}
+    to { 
+    	transform: scale(0.2);
+    	opacity: 0; 
+    }
+}
+
+@-webkit-keyframes scaleFadeOut /* Safari 和 Chrome */
+{
+	from { 
+		transform: none;
+		opacity: 1;
+	}
+    to { 
+    	transform: scale(0.2);
+    	opacity: 0; 
+    }
+}
+
+@-o-keyframes scaleFadeOut /* Opera */
+{
+	from { 
+		transform: none;
+		opacity: 1;
+	}
+    to { 
+    	transform: scale(0.2);
+    	opacity: 0; 
+    }
+}
+
+
+
+
+
+@keyframes scaleFadeIn
+{
+	from { 
+		transform: scale(0.2);
+    	opacity: 0; 
+	}
+    to { 
+    	transform: scale(1);
+    	opacity: 1; 
+    }
+}
+
+@-moz-keyframes scaleFadeIn /* Firefox */
+{
+	from { 
+		transform: scale(0.2);
+    	opacity: 0; 
+    }
+    to { 
+    	transform: scale(1);
+    	opacity: 1; 
+    }
+}
+
+@-webkit-keyframes scaleFadeIn /* Safari 和 Chrome */
+{
+	from { 
+		transform: scale(0.2);
+    	opacity: 0; 
+	}
+    to { 
+    	transform: scale(1);
+    	opacity: 1; 
+    }
+}
+
+@-o-keyframes scaleFadeIn /* Opera */
+{
+	from { 
+		transform: scale(0.2);
+    	opacity: 0; 
+	}
+    to { 
+    	transform: scale(1);
+    	opacity: 1; 
+    }
+}
+
+
+.ds-post-button{
+	width: 20%;
+	height: 100%;
+}
+
+#bottom-textarea{
+	float:left;
+	width:80%;
+}
+
+.hrinhotandcold{
+	width: 80%;
+	background:rgba(10,10,10,0.5);
+	height:0px;
+	border:none;
+	border-top:1px solid #FBFAFA;
+}
+
+.untouch{
+	display: none;
+}
+
 
