@@ -877,7 +877,7 @@ function(e, t, s) {
         },
         et.replybox = function(e) {
             var t = '<div id="ex-replybox" class="ds-replybox">';
-            if (t += r() ? ' href="javascript:void(0);" onclick="return false"': 
+            if (t +=  
                 '<form id="form" method="post">' + tt(e.params) + '<div id="bottom-textarea" class=" ds-textarea-wrapper ds-rounded-top"><textarea name="message" title="Ctrl+Enter快捷提交" placeholder="' + u(D.leave_a_message) + '"></textarea><pre class="ds-hidden-text"></pre>', t += "</div>",
                 t += '', !r() && nt.data.repostOptions) {
                 // t += '<input id="ds-sync-checkbox',
