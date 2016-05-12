@@ -503,7 +503,7 @@
 }
 
 .ds-like-panel{
-	font-size: 0.5rem;
+	font-size: 0.8rem;
 }
 
 #ds-thread #ds-reset a.ds-like-thread-button {
@@ -717,7 +717,7 @@
 	font-size: 12px;
 	z-index: 3;
 	/*padding: 0 0 0 60px;*/
-	margin-top: 10px;
+	margin-top: 20px;
 	height: 50px;
 	position: relative;
 	_zoom: 1
@@ -913,7 +913,6 @@ img {
 	-webkit-transition: all .15s linear;
 	-moz-transition: all .15s linear;
 	transition: all .15s linear;
-	box-shadow: inset 0 0 1px #fff
 }
 
 #ds-thread #ds-reset .ds-post-button:hover {

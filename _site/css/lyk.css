@@ -74,7 +74,7 @@ body{
 
 
 .organizer-wrapper{
-	font-size: 0.5rem;
+	font-size: 0.8rem;
 	color:rgba(10,10,10,0.5);
 }
 
@@ -231,6 +231,7 @@ body{
 .ds-post-button{
 	width: 20%;
 	height: 100%;
+	box-shadow:0 0 10px rgba(148, 148, 148, 0.5);
 }
 
 #bottom-textarea{
@@ -248,6 +249,11 @@ body{
 
 .untouch{
 	display: none;
+}
+
+#ex-replybox{
+	border-top: 1px #ccc;
+	box-shadow:0 0 10px rgba(148, 148, 148, 0.5);
 }
 
 

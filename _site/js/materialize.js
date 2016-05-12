@@ -3638,6 +3638,7 @@ $(document).ready(function(){
 
       var time = 0;
       $this.find('ul .btn-floating').reverse().each( function () {
+      	// $(this).css("bottom",0); 
         $(this).velocity(
           { opacity: "1", scaleX: "1", scaleY: "1", translateY: "0", translateX: '0'},
           { duration: 80, delay: time });
@@ -3670,7 +3671,7 @@ $(document).ready(function(){
     $this.find('ul .btn-floating').velocity("stop", true);
     $this.find('ul .btn-floating').velocity(
       { opacity: "0", scaleX: ".4", scaleY: ".4", translateY: offsetY + 'px', translateX: offsetX + 'px'},
-      { duration: 80 }
+      { duration: 80 , complete:function() { }}
     );
   };
 

@@ -5,9 +5,22 @@
     <description>在这里探索iOS的一切。</description>
     <link>http://externie.github.io/externieblog/</link>
     <atom:link href="http://externie.github.io/externieblog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 12 May 2016 00:24:49 +0800</pubDate>
-    <lastBuildDate>Thu, 12 May 2016 00:24:49 +0800</lastBuildDate>
+    <pubDate>Thu, 12 May 2016 15:43:25 +0800</pubDate>
+    <lastBuildDate>Thu, 12 May 2016 15:43:25 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>中国火电厂技术现状与目前关注热点问题</title>
+        <description>&lt;p&gt;主要介绍我国火电厂锅炉环保和大型锅炉技术方面的发展状况，以及目前技术研究的热点问题。分为两部分：第一部分关于烟气污染物治理方面，从降低NOx，SOx和粉尘方面总结目前的技术状况和存在的问题，结合存在的问题，介绍了目前研究的热点项目情况。第二部分关于我国发展超超临界机组锅炉情况，介绍我国目前发展的超超临界二次再热机组状况与700℃机组研发状况。可为火力发电研究方向确定及提高毕业生就业选择提供参考。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 19 May 2016 00:00:00 +0800</pubDate>
+        <link>http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/19/e4b8ade59bbde781abe794b5e58e82e68a80e69cafe78eb0e78ab6e4b88ee79baee5898de585b3e6b3a8e783ade782b9e997aee9a298/</link>
+        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/19/e4b8ade59bbde781abe794b5e58e82e68a80e69cafe78eb0e78ab6e4b88ee79baee5898de585b3e6b3a8e783ade782b9e997aee9a298/</guid>
+        
+        
+        <category>工程科学前沿讲坛</category>
+        
+      </item>
     
       <item>
         <title>The Four Imperatives of Energy and Future Energy Options</title>
@@ -166,19 +179,6 @@
         <pubDate>Sun, 08 May 2016 00:00:00 +0800</pubDate>
         <link>http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/08/e7958ce99da2e794b5e58c96e5ada6e59fbae7a180e58f8ae5ba94e794a8/</link>
         <guid isPermaLink="true">http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/08/e7958ce99da2e794b5e58c96e5ada6e59fbae7a180e58f8ae5ba94e794a8/</guid>
-        
-        
-        <category>重大讲座 </category>
-        
-      </item>
-    
-      <item>
-        <title>电化学及电致化学发光生物传感器信号放大策略</title>
-        <description>
-</description>
-        <pubDate>Sun, 08 May 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/08/e794b5e58c96e5ada6e58f8ae794b5e887b4e58c96e5ada6e58f91e58589e7949fe789a9e4bca0e6849fe599a8e4bfa1e58fb7e694bee5a4a7e7ad96e795a5/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/08/e794b5e58c96e5ada6e58f8ae794b5e887b4e58c96e5ada6e58f91e58589e7949fe789a9e4bca0e6849fe599a8e4bfa1e58fb7e694bee5a4a7e7ad96e795a5/</guid>
         
         
         <category>重大讲座 </category>

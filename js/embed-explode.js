@@ -745,7 +745,7 @@ function(e, t, s) {
             t += '<button type="submit">' + D.repost + "</button></div></form>"
         },
         et.dialog = function(e) {
-            var t = '<div class="ds-dialog"><div class="ds-dialog-inner ds-rounded"><div class="ds-dialog-body">' + e + '</div><div class="ds-dialog-footer"><a href="http://duoshuo.com/" target="_blank" class="ds-logo"></a><span>社会化评论框</span></div><a class="ds-dialog-close" href="javascript:void(0)" title="关闭"></a></div></div>';
+            var t = '<div class="ds-dialog"><div class="ds-dialog-inner ds-rounded"><div class="ds-dialog-body">' + e + '</div></div></div>';
             return t
         },
         et.hotPosts = function(e) {
@@ -876,7 +876,7 @@ function(e, t, s) {
             return t
         },
         et.replybox = function(e) {
-            var t = '<div id="ex-replybox" class="ds-replybox">';
+            var t = '<div id="ex-replybox" class="ds-replybox" style="margin-left:-20px;margin-right:-20px;">';
             if (t +=  
                 '<form id="form" method="post">' + tt(e.params) + '<div id="bottom-textarea" class=" ds-textarea-wrapper ds-rounded-top"><textarea name="message" title="Ctrl+Enter快捷提交" placeholder="' + u(D.leave_a_message) + '"></textarea><pre class="ds-hidden-text"></pre>', t += "</div>",
                 t += '', !r() && nt.data.repostOptions) {
@@ -928,7 +928,7 @@ function(e, t, s) {
         },
         et.toolbar = function() {
             var e = '<div class="ds-toolbar"><div class="ds-account-control"><span class="ds-icon ds-icon-settings"></span> <span>帐号管理</span><ul><li><a class="ds-bind-more" href="javascript:void(0);" style="border-top: none">绑定更多</a></li><li><a target="_blank" href="' + S.REMOTE + "/settings/" + x(T()) + '">' + u(D.settings) + '</a></li><li><a rel="nofollow" href="' + Z.logoutUrl() + '" style="border-bottom: none">登出</a></li></ul></div><div class="ds-visitor">';
-            return e += nt.data.url ? '<a class="ds-visitor-name" href="' + u(nt.data.url) + '" target="_blank">' + u(nt.data.name) + "</a>": '<span class="ds-visitor-name">' + u(nt.data.name) + "</span>",
+            return e += nt.data.url ? '<a class="ds-visitor-name" href="' + u(nt.data.url) + '" target="_self">' + u(nt.data.name) + "</a>": '<span class="ds-visitor-name">' + u(nt.data.name) + "</span>",
             e += '<a class="ds-unread-comments-count" href="javascript:void(0);" title="新回复"></a></div></div>'
         },
         et.topThreads = function(e) {
@@ -936,7 +936,7 @@ function(e, t, s) {
             s = e.response;
             if (s) for (var a, i = -1,
             r = s.length - 1; r > i;) a = s[i += 1],
-            t += '<li><a target="_blank" href="' + u(a.url) + '" title="' + u(a.title) + '">' + u(a.title) + "</a></li>";
+            t += '<li><a target="_self" href="' + u(a.url) + '" title="' + u(a.title) + '">' + u(a.title) + "</a></li>";
             return t
         },
         et.topUsers = function(e) {
@@ -1033,7 +1033,7 @@ function(e, t, s) {
                 } [t] || [550, 400];
                 return e.open(s + ( - 1 == s.indexOf("?") ? "?": "&") + o.param({
                     origin: h.origin || "http://" + h.host
-                }), "_blank", "width=" + a[0] + ",height=" + a[1] + ",toolbar=no,menubar=no,location=yes")
+                }), "_self", "width=" + a[0] + ",height=" + a[1] + ",toolbar=no,menubar=no,location=yes")
             }
             function y(e) {
                 var t = Z[r() ? "loginUrl": "bindUrl"](e);
@@ -1574,7 +1574,7 @@ function(e, t, s) {
                                 c(t);
                                 break;
                             default:
-                                if (!e.open(this.href, "_blank", "height=500,width=600,top=0,left=0,toolbar=no,menubar=no,resizable=yes,location=yes,status=no")) return
+                                if (!e.open(this.href, "_self", "height=500,width=600,top=0,left=0,toolbar=no,menubar=no,resizable=yes,location=yes,status=no")) return
                             }
                             return ! 1
                         }
@@ -2167,7 +2167,16 @@ function(e, t, s) {
                     }
                     i.delegate("a", "click",
                     function(t) {
+                        var btn = t.target.parentNode;
+                        if(btn.style.opacity == 0){
+                            console.log("nothing an return ");
+                            return;
+                        }
                         var s = H(this).data("service");
+                        if (s === "moveToBodyEnd"){
+                            console.log("moveToEnd");
+                            return;
+                        }
                         if (!i.data("url")) return void alert("请设置data-url");
                         if ("wechat" === s) {
                             var r = a() + "/api/qrcode/getImage.png",
@@ -2186,7 +2195,7 @@ function(e, t, s) {
                                 content: i.data("content"),
                                 url: i.data("url")
                             });
-                            e.open(l, "_blank")
+                            e.open(l, "_self")
                         }
                         t.preventDefault(),
                         t.stopPropagation()
