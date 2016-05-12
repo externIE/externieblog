@@ -113,7 +113,7 @@ function getCardTime(card){
 	var dateTime = new Date();
 	dateTime.setFullYear("20"+arrDate[0],arrDate[1]-1,arrDate[2]);
 	dateTime.setHours(arrTime[0],arrTime[1],0,0);
-	console.log(dateTime.toString());
+	// console.log(dateTime.toString());
 	return dateTime;
 }
 

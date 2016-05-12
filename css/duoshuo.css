@@ -775,7 +775,7 @@ img {
 	overflow: auto;
 	padding: 10px;
 	height: 54px;
-	margin: 0;
+	margin: 0 0 0 10px;
 	resize: none;
 	color: #999;
 	width: 100%

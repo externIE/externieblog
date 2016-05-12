@@ -41,6 +41,7 @@ body{
 
 .ex-like-img{
 	width: 64px;
+	height: 64px;
 }
 
 #ScrollWrapper {
@@ -251,9 +252,20 @@ body{
 	display: none;
 }
 
-#ex-replybox{
+/*#ex-replybox{
 	border-top: 1px #ccc;
 	box-shadow:0 0 10px rgba(148, 148, 148, 0.5);
-}
+}*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
 
 

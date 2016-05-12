@@ -1,79 +1,50 @@
 ---
 layout: default
 ---
-<!-- Page Header -->
+<div class="navbar-fixed hide-on-small-only">
+    
+    <nav>
+      <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">重庆大学学术信息发布平台</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="javascript:select('ALL')">所有</a></li>
+        <li><a href="javascript:select('A')">A区</a></li>
+        <li><a href="javascript:select('B')">B区</a></li>
+        <li><a href="javascript:select('C')">C区</a></li>
+        <li><a href="javascript:select('D')">虎溪校区</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1" style="width: 200px;">
+            <i class="mdi-navigation-arrow-drop-down right"></i><span class="right">分类</span></a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+    
+</div>
 
+<!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    {% for post in site.posts %}
+        {% assign hasBefore = false %}
+        {% for temp in site.posts limit:forloop.index0 %}
+            {% if post.category ==  temp.category %}
+                {% assign hasBefore = true %}
+            {% endif %}
+        {% endfor %}
+        {% if hasBefore != true %}
+            <li><a href="#!">{{post.category}}</a></li>
+        {% endif %}
+    {% endfor %}
+  </ul>
 
 <!-- Main Content -->
 <div class="">
 	<div class="row">
-        {% if site.sidebar == false %}
-<!-- NO SIDEBAR -->
-    <!-- Post Container -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-                {{ content }}
-            </div>
-    <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-            </div>
-        {% else %}
-
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
-            <!-- <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/> -->
-    		<div class="col s12 m12 l8" style="padding: 0 0rem;">
+        <!-- Post Container -->
+    		<div class="col s12 m12 l8 push-l2" style="padding: 0 0rem;">
                 <ul id="staggered-post" class="post-preview collapsible popout" data-collapsible="expandable" style="margin: 1.5rem 0 1rem 0;box-shadow: 0px 0px 0px #888888;;border: 0px;">
     			     {{ content }}
                 </ul>
     		</div>
-    <!-- Sidebar Container -->
-            <div class="
-                hide-on-small-only
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
-    		</div>
-        {% endif %}
 	</div>
 </div>
+

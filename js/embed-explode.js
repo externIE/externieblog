@@ -2167,16 +2167,15 @@ function(e, t, s) {
                     }
                     i.delegate("a", "click",
                     function(t) {
-                        var btn = t.target.parentNode;
-                        if(btn.style.opacity == 0){
-                            console.log("nothing an return ");
-                            return;
-                        }
                         var s = H(this).data("service");
                         if (s === "moveToBodyEnd"){
-                            console.log("moveToEnd");
+                            // console.log("moveToEnd");
                             return;
                         }
+                        if (s === "home") {
+                            e.open("http://externie.github.io/externieblog","_self");
+                            return;
+                        };
                         if (!i.data("url")) return void alert("请设置data-url");
                         if ("wechat" === s) {
                             var r = a() + "/api/qrcode/getImage.png",

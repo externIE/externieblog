@@ -8,22 +8,16 @@
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="description" content="在这里探索iOS的一切。">
     <meta name="keyword"  content="林义凯, 林义凯的博客, externIE, externie, linyikai, lyk, 义凯, 个人博客, 个人网站, 技术博客, iOS, Cocoa, Apple, WWDC, iPone, develop, 移动开发, APP, 设计模式, 最佳实践">
-    <!-- <link rel="shortcut icon" href="http://daiweilai.github.io/img/common/favicon.ico"> -->
-	
-	<!-- <link href="http://daiweilai.github.io//css/prism.css" rel="stylesheet" /> -->
 	
     <title>重大讲座信息APP</title>
 
     
     <link rel="stylesheet" href="/externieblog/css/header.css">
 
-    
+
     
     <link type="text/css" rel="stylesheet" href="/externieblog/css/materialize.min.css"  media="screen,projection"/>
     
-    <!-- Pygments Github CSS -->
-    <!-- <link rel="stylesheet" href="/externieblog/css/syntax.css"> -->
-
     <link rel="canonical" href="http://externie.github.io/externieblog/">
 
     <link rel="stylesheet" href="/externieblog/css/lyk.css">
@@ -76,53 +70,336 @@
 </script>
 
 
-    <!-- Page Header -->
+    <div class="navbar-fixed hide-on-small-only">
+    
+    <nav>
+      <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">重庆大学学术信息发布平台</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="javascript:select('ALL')">所有</a></li>
+        <li><a href="javascript:select('A')">A区</a></li>
+        <li><a href="javascript:select('B')">B区</a></li>
+        <li><a href="javascript:select('C')">C区</a></li>
+        <li><a href="javascript:select('D')">虎溪校区</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1" style="width: 200px;">
+            <i class="mdi-navigation-arrow-drop-down right"></i><span class="right">分类</span></a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+    
+</div>
 
+<!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    
+        
+        
+        
+            <li><a href="#!">工程科学前沿讲坛</a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+            <li><a href="#!">其它</a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+            <li><a href="#!">教师教学发展工作坊</a></li>
+        
+    
+        
+        
+        
+            <li><a href="#!">重大讲座 </a></li>
+        
+    
+        
+        
+        
+            <li><a href="#!">职通讲坛</a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+            <li><a href="#!">经管讲坛 </a></li>
+        
+    
+        
+        
+        
+            <li><a href="#!">优质课程建设培训</a></li>
+        
+    
+        
+        
+        
+            <li><a href="#!">名家会客厅 </a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+            <li><a href="#!">汽车工程前沿讲坛 </a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+            <li><a href="#!">光电讲坛</a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+            <li><a href="#!">逸夫楼讲座</a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+            <li><a href="#!">就业指导工作坊</a></li>
+        
+    
+        
+        
+        
+            <li><a href="#!">文字斋讲座 </a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+            <li><a href="#!">建工讲坛</a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+            <li><a href="#!">博雅讲座</a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+            <li><a href="#!">公管讲坛</a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+  </ul>
 
 <!-- Main Content -->
 <div class="">
 	<div class="row">
-        
-
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
-            <!-- <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/>
-            <input style="button" value="按钮" class="col s12" style="height:100px;"/> -->
-    		<div class="col s12 m12 l8" style="padding: 0 0rem;">
+        <!-- Post Container -->
+    		<div class="col s12 m12 l8 push-l2" style="padding: 0 0rem;">
                 <ul id="staggered-post" class="post-preview collapsible popout" data-collapsible="expandable" style="margin: 1.5rem 0 1rem 0;box-shadow: 0px 0px 0px #888888;;border: 0px;">
     			     
         <li style="margin-bottom: 20px;" class="z-depth-1 undefined show lecture-card">
@@ -213,12 +490,7 @@
             <!-- </a> -->
             
         </li>
-        <!--时间地点-->
-        <!--<div id="iSlider-effect-wrapper" style="background:white;">
-            <div id="sub-profile1" class="iSlider-effect" style=""></div>
-        </div>-->
 
-        <!--详情信息-->
         <div id="profile1" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>中国火电厂技术现状与目前关注热点问题</h4>
@@ -229,41 +501,7 @@
           </div>
         </div>
 
-<!--//<script>
-//  var strMonth = changeMonthToNum('May 19, 2016');
-//  // var strMonth="测试日期";
-//  var domList = [
-//  {
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：动力工程学院304会议室</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-//  }
-//  ];
-//
-//
-//
-//  //all animation effect
-//  new iSlider({
-//      data: domList,
-//      type:'dom',
-//      dom: document.getElementById("sub-profile1"),
-//      duration: 2000,
-//      animateType: 'default',
-//      isAutoplay: true,
-//      isLooping: true,
-//      ratio:0.1,
-//      isVertical: true,
-//      touchAble: false,
-//  });
-//</script>-->
+
 
         <li style="margin-bottom: 20px;" class="z-depth-1 undefined show lecture-card">
             <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
@@ -353,12 +591,7 @@
             <!-- </a> -->
             
         </li>
-        <!--时间地点-->
-        <!--<div id="iSlider-effect-wrapper" style="background:white;">
-            <div id="sub-profile2" class="iSlider-effect" style=""></div>
-        </div>-->
 
-        <!--详情信息-->
         <div id="profile2" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>The Four Imperatives of Energy and Future Energy Options</h4>
@@ -370,41 +603,7 @@
           </div>
         </div>
 
-<!--//<script>
-//  var strMonth = changeMonthToNum('May 19, 2016');
-//  // var strMonth="测试日期";
-//  var domList = [
-//  {
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：动力工程学院304</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-//  }
-//  ];
-//
-//
-//
-//  //all animation effect
-//  new iSlider({
-//      data: domList,
-//      type:'dom',
-//      dom: document.getElementById("sub-profile2"),
-//      duration: 2000,
-//      animateType: 'default',
-//      isAutoplay: true,
-//      isLooping: true,
-//      ratio:0.1,
-//      isVertical: true,
-//      touchAble: false,
-//  });
-//</script>-->
+
 
         <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
             <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
@@ -495,12 +694,7 @@
             <!-- </a> -->
             
         </li>
-        <!--时间地点-->
-        <!--<div id="iSlider-effect-wrapper" style="background:white;">
-            <div id="sub-profile3" class="iSlider-effect" style=""></div>
-        </div>-->
 
-        <!--详情信息-->
         <div id="profile3" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>运载火箭系统发展及其结构设计技术</h4>
@@ -511,41 +705,7 @@
           </div>
         </div>
 
-<!--//<script>
-//  var strMonth = changeMonthToNum('May 16, 2016');
-//  // var strMonth="测试日期";
-//  var domList = [
-//  {
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：研究生院102</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-//  }
-//  ];
-//
-//
-//
-//  //all animation effect
-//  new iSlider({
-//      data: domList,
-//      type:'dom',
-//      dom: document.getElementById("sub-profile3"),
-//      duration: 2000,
-//      animateType: 'default',
-//      isAutoplay: true,
-//      isLooping: true,
-//      ratio:0.1,
-//      isVertical: true,
-//      touchAble: false,
-//  });
-//</script>-->
+
 
         <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
             <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
@@ -635,12 +795,7 @@
             <!-- </a> -->
             
         </li>
-        <!--时间地点-->
-        <!--<div id="iSlider-effect-wrapper" style="background:white;">
-            <div id="sub-profile4" class="iSlider-effect" style=""></div>
-        </div>-->
 
-        <!--详情信息-->
         <div id="profile4" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>人类移民火星之路</h4>
@@ -651,41 +806,7 @@
           </div>
         </div>
 
-<!--//<script>
-//  var strMonth = changeMonthToNum('May 16, 2016');
-//  // var strMonth="测试日期";
-//  var domList = [
-//  {
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：重庆大学A区国际会议厅</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-//  }
-//  ];
-//
-//
-//
-//  //all animation effect
-//  new iSlider({
-//      data: domList,
-//      type:'dom',
-//      dom: document.getElementById("sub-profile4"),
-//      duration: 2000,
-//      animateType: 'default',
-//      isAutoplay: true,
-//      isLooping: true,
-//      ratio:0.1,
-//      isVertical: true,
-//      touchAble: false,
-//  });
-//</script>-->
+
 
         <li style="margin-bottom: 20px;" class="z-depth-1 undefined show lecture-card">
             <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
@@ -776,12 +897,7 @@
             <!-- </a> -->
             
         </li>
-        <!--时间地点-->
-        <!--<div id="iSlider-effect-wrapper" style="background:white;">
-            <div id="sub-profile5" class="iSlider-effect" style=""></div>
-        </div>-->
 
-        <!--详情信息-->
         <div id="profile5" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>隧道围岩稳定精细化模拟方法与应用</h4>
@@ -792,41 +908,7 @@
           </div>
         </div>
 
-<!--//<script>
-//  var strMonth = changeMonthToNum('May 13, 2016');
-//  // var strMonth="测试日期";
-//  var domList = [
-//  {
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：采矿大楼207会议室</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-//  }
-//  ];
-//
-//
-//
-//  //all animation effect
-//  new iSlider({
-//      data: domList,
-//      type:'dom',
-//      dom: document.getElementById("sub-profile5"),
-//      duration: 2000,
-//      animateType: 'default',
-//      isAutoplay: true,
-//      isLooping: true,
-//      ratio:0.1,
-//      isVertical: true,
-//      touchAble: false,
-//  });
-//</script>-->
+
 
         <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
             <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
@@ -916,12 +998,7 @@
             <!-- </a> -->
             
         </li>
-        <!--时间地点-->
-        <!--<div id="iSlider-effect-wrapper" style="background:white;">
-            <div id="sub-profile6" class="iSlider-effect" style=""></div>
-        </div>-->
 
-        <!--详情信息-->
         <div id="profile6" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>我的课堂我的场—教你如何HOLD住课堂</h4>
@@ -932,41 +1009,7 @@
           </div>
         </div>
 
-<!--//<script>
-//  var strMonth = changeMonthToNum('May 13, 2016');
-//  // var strMonth="测试日期";
-//  var domList = [
-//  {
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：教师教学发展中心</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-//  }
-//  ];
-//
-//
-//
-//  //all animation effect
-//  new iSlider({
-//      data: domList,
-//      type:'dom',
-//      dom: document.getElementById("sub-profile6"),
-//      duration: 2000,
-//      animateType: 'default',
-//      isAutoplay: true,
-//      isLooping: true,
-//      ratio:0.1,
-//      isVertical: true,
-//      touchAble: false,
-//  });
-//</script>-->
+
 
         <li style="margin-bottom: 20px;" class="z-depth-1 D show lecture-card">
             <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
@@ -1056,12 +1099,7 @@
             <!-- </a> -->
             
         </li>
-        <!--时间地点-->
-        <!--<div id="iSlider-effect-wrapper" style="background:white;">
-            <div id="sub-profile7" class="iSlider-effect" style=""></div>
-        </div>-->
 
-        <!--详情信息-->
         <div id="profile7" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>Bona Fide Optical Discs and Players for Molecular Diagnostics</h4>
@@ -1072,41 +1110,7 @@
           </div>
         </div>
 
-<!--//<script>
-//  var strMonth = changeMonthToNum('May 13, 2016');
-//  // var strMonth="测试日期";
-//  var domList = [
-//  {
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：重庆大学虎溪校区理科楼LA108</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-//  }
-//  ];
-//
-//
-//
-//  //all animation effect
-//  new iSlider({
-//      data: domList,
-//      type:'dom',
-//      dom: document.getElementById("sub-profile7"),
-//      duration: 2000,
-//      animateType: 'default',
-//      isAutoplay: true,
-//      isLooping: true,
-//      ratio:0.1,
-//      isVertical: true,
-//      touchAble: false,
-//  });
-//</script>-->
+
 
         <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
             <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
@@ -1199,12 +1203,7 @@
             <!-- </a> -->
             
         </li>
-        <!--时间地点-->
-        <!--<div id="iSlider-effect-wrapper" style="background:white;">
-            <div id="sub-profile8" class="iSlider-effect" style=""></div>
-        </div>-->
 
-        <!--详情信息-->
         <div id="profile8" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>职通讲坛第43期——龙湖分享会</h4>
@@ -1254,41 +1253,7 @@
           </div>
         </div>
 
-<!--//<script>
-//  var strMonth = changeMonthToNum('May 12, 2016');
-//  // var strMonth="测试日期";
-//  var domList = [
-//  {
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：A区国际会议厅306</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-//  }
-//  ];
-//
-//
-//
-//  //all animation effect
-//  new iSlider({
-//      data: domList,
-//      type:'dom',
-//      dom: document.getElementById("sub-profile8"),
-//      duration: 2000,
-//      animateType: 'default',
-//      isAutoplay: true,
-//      isLooping: true,
-//      ratio:0.1,
-//      isVertical: true,
-//      touchAble: false,
-//  });
-//</script>-->
+
 
         <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
             <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
@@ -1381,12 +1346,7 @@
             <!-- </a> -->
             
         </li>
-        <!--时间地点-->
-        <!--<div id="iSlider-effect-wrapper" style="background:white;">
-            <div id="sub-profile9" class="iSlider-effect" style=""></div>
-        </div>-->
 
-        <!--详情信息-->
         <div id="profile9" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>翻转课堂教学设计与实践</h4>
@@ -1403,41 +1363,7 @@
           </div>
         </div>
 
-<!--//<script>
-//  var strMonth = changeMonthToNum('May 11, 2016');
-//  // var strMonth="测试日期";
-//  var domList = [
-//  {
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：主教330</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-//  }
-//  ];
-//
-//
-//
-//  //all animation effect
-//  new iSlider({
-//      data: domList,
-//      type:'dom',
-//      dom: document.getElementById("sub-profile9"),
-//      duration: 2000,
-//      animateType: 'default',
-//      isAutoplay: true,
-//      isLooping: true,
-//      ratio:0.1,
-//      isVertical: true,
-//      touchAble: false,
-//  });
-//</script>-->
+
 
         <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
             <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
@@ -1528,12 +1454,7 @@
             <!-- </a> -->
             
         </li>
-        <!--时间地点-->
-        <!--<div id="iSlider-effect-wrapper" style="background:white;">
-            <div id="sub-profile10" class="iSlider-effect" style=""></div>
-        </div>-->
 
-        <!--详情信息-->
         <div id="profile10" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>界面电化学基础及应用</h4>
@@ -1544,41 +1465,1069 @@
           </div>
         </div>
 
-<!--//<script>
-//  var strMonth = changeMonthToNum('May 8, 2016');
-//  // var strMonth="测试日期";
-//  var domList = [
-//  {
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : ' <p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">开始日期：'+strMonth+'</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">地点：理科楼LA103</p>'
-//  },{
-//      'height' : '100%',
-//      'width' : '100%',
-//      'content' : '<p class="flow-text" style="margin: 5px 0px 24px 0px;text-align: right;font-style: italic;font-size: 10px;color: #a3a3a3;">1000人喜欢</p>'
-//  }
-//  ];
-//
-//
-//
-//  //all animation effect
-//  new iSlider({
-//      data: domList,
-//      type:'dom',
-//      dom: document.getElementById("sub-profile10"),
-//      duration: 2000,
-//      animateType: 'default',
-//      isAutoplay: true,
-//      isLooping: true,
-//      ratio:0.1,
-//      isVertical: true,
-//      touchAble: false,
-//  });
-//</script>-->
+
+
+        <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+                <div class="scrollTextWrapper col s7" style="">
+                	<h5 id="title" class="truncate title" style="" >电化学及电致化学发光生物传感器信号放大策略</h5>
+                </div>
+                <h6 id="address&time" class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                    <div style="float:left;">时间：</div>
+                	<div id="date" class="date" style="float:left;">16/5/8</div>
+                    <div style="float:left;">&nbsp&nbsp</div>
+                    <div id="time" class="time">11:30</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:12px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<div class="scrollText" style="">理科楼LA103&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
+            </div>
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
+                <div class="">
+                <table>
+                    <tr>
+                    
+                    <td style="width: 50%;" id="speaker-img11">
+                            <div style="" class="">
+                                <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                     <div class="card-image waves-effect waves-block waves-light">
+                                       <img class="activator" src="http://externie.com/nophoto.png">
+                                     </div>
+                                     <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 袁若  西南大学化学化工学院院长
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
+                                     </div>
+                                     <div class="card-reveal"  style="padding: 0px 10px;">
+                                         
+                                       <span class="card-title grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 袁若  西南大学化学化工学院院长
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
+                                       <br/>
+                                       <p style="padding: 0px 0px 0px ;">
+                                            袁若，男，教授，博士生导师，西南大学化学化工学院院长，中国化学会理事、中国化学会分析化学委员会委员，发光与实时分析教育部重点实验室副主任，Nature集团《Scientific Reports》编委。1994年获湖南大学化学化工学院分析化学专业博士学位，此后在湖南大学化学生物传感与计量学国家重点实验室工作，主要从事生物和化学传感器的研究；先后在香港浸会大学、日本大阪大学和香港城市大学做访问学者，从事电化学生物传感器及DNA芯片的研究；1999年至今在西南大学化学化工学院工作。近年来，作为项目负责人主持完成及在研的国家及部省级科研课题20余项，在国际重要刊物（如《Anal. Chem.》、《Chem.-Eur. J》、《Chem. Commun.》、《J. Org. Chem.》、《Andv. Funct. Mater.》、《Biomaterials》、《Small》、《J. Mater. Chem. A》、《Nanoscale》、《ACS Appl. Mater. Interfaces》、《Biosens. Bioelectron.》等）上发表了SCI 收录论文430余篇，其中影响因子大于5.0的文章170余篇，个人H因子44。指导一名博士研究生获全国优秀博士论文提名奖，研究成果获重庆市2012年自然科学一等奖（排名第一），重庆市2013年科技进步一等奖（排名第二），入选Elsevier发布的2015中国高被引学者（Most Cited Chinese Researchers）榜单。
+                                       </p>
+                                            
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    </td>
+                    
+                   
+                    <td style="width: 50%;">
+                    <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content11">
+                        
+                            <h6 class="post-organizer">
+                                主办单位：重庆大学理学部 重庆大学化学化工学院
+                            </h6>
+                        
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：
+                            </h6>
+                        
+                        <br/>
+                        
+                        <div class="post-content-preview" style="">
+                            <a class="modal-trigger" href="/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/08/e794b5e58c96e5ada6e58f8ae794b5e887b4e58c96e5ada6e58f91e58589e7949fe789a9e4bca0e6849fe599a8e4bfa1e58fb7e694bee5a4a7e7ad96e795a5/">
+                            <!-- <a class="modal-trigger" href="#profile11"> -->
+                                
+                                    
+
+                                
+                            </a>
+                        </div>
+                    </div>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+
+
+                
+            </div>
+            <!-- </a> -->
+            
+        </li>
+
+        <div id="profile11" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>电化学及电致化学发光生物传感器信号放大策略</h4>
+            <h5>主办单位：重庆大学理学部 重庆大学化学化工学院</h5>
+            <h5>主办单位：</h5>
+            <h6>
+</h6>
+          </div>
+        </div>
+
+
+
+        <li style="margin-bottom: 20px;" class="z-depth-1 B show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+                <div class="scrollTextWrapper col s7" style="">
+                	<h5 id="title" class="truncate title" style="" >学术研究如何与国际接轨？</h5>
+                </div>
+                <h6 id="address&time" class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                    <div style="float:left;">时间：</div>
+                	<div id="date" class="date" style="float:left;">16/5/6</div>
+                    <div style="float:left;">&nbsp&nbsp</div>
+                    <div id="time" class="time">08:55</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:12px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<div class="scrollText" style="">重庆大学B区一综合楼103教室&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
+            </div>
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
+                <div class="">
+                <table>
+                    <tr>
+                    
+                    <td style="width: 50%;" id="speaker-img12">
+                            <div style="" class="">
+                                <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                     <div class="card-image waves-effect waves-block waves-light">
+                                       <img class="activator" src="http://externie.com/nophoto.png">
+                                     </div>
+                                     <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 吴联生
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
+                                     </div>
+                                     <div class="card-reveal"  style="padding: 0px 10px;">
+                                         
+                                       <span class="card-title grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 吴联生
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
+                                       <br/>
+                                       <p style="padding: 0px 0px 0px ;">
+                                            吴联生教授:会计学博士、工商管理博士后、长江学者特聘教授、国家杰出青年基金获得者，享受国务院特殊政府津贴；现为北京大学光华管理学院教授、副院长、博士生导师、博士后合作导师；目前主要研究会计规则与盈余管理、公司治理与公司财务行为；已在The Accounting Review、Information Systems Research、Journal of Banking and Finance、Journal of Accounting and Public Policy等国际权威期刊和《中国社会科学》《经济研究》《管理世界》《会计研究》《审计研究》等国内权威期刊上发表论文数十篇，出版专著3部，主持国家社会科学基金项目、国家自然科学基金项目、教育部人文社会科学项目等共6项；著作曾获得北京市第九届哲学社会科学优秀成果一等奖，学术论文曾获美国管理学年会(AOM)最佳论文奖、中国中青年财务成本研究会第四届“天健杯”优秀科研成果论文类特等奖、中国会计学会年度优秀论文奖以及中国会计学会财务成本分会“学术创新奖”等；获得霍英东教育基金会第十届高等院校青年教师奖，入选教育部“新世纪优秀人才支持计划”；在教学方面，先后获北京大学教学优秀奖和北京大学树仁奖教金。
+                                       </p>
+                                            
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    </td>
+                    
+                   
+                    <td style="width: 50%;">
+                    <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content12">
+                        
+                            <h6 class="post-organizer">
+                                主办单位：经管学院
+                            </h6>
+                        
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：会计系
+                            </h6>
+                        
+                        <br/>
+                        
+                        <div class="post-content-preview" style="">
+                            <a class="modal-trigger" href="/externieblog/%E7%BB%8F%E7%AE%A1%E8%AE%B2%E5%9D%9B%20/2016/05/06/e5ada6e69cafe7a094e7a9b6e5a682e4bd95e4b88ee59bbde99985e68ea5e8bda8efbc9f/">
+                            <!-- <a class="modal-trigger" href="#profile12"> -->
+                                
+                                    主题一：主题发言
+  题目：学术研究如何与国际接轨？
+  主讲人：吴联生 教授
+
+主题二：工作论文分享
+  题目一：土地引资、税收争夺与企业税负
+  报告人：重庆大学经济与工商管理学院博士生 胡...
+                                
+                            </a>
+                        </div>
+                    </div>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+
+
+                
+            </div>
+            <!-- </a> -->
+            
+        </li>
+
+        <div id="profile12" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>学术研究如何与国际接轨？</h4>
+            <h5>主办单位：经管学院</h5>
+            <h5>主办单位：会计系</h5>
+            <h6>主题一：主题发言
+  题目：学术研究如何与国际接轨？
+  主讲人：吴联生 教授
+
+主题二：工作论文分享
+  题目一：土地引资、税收争夺与企业税负
+  报告人：重庆大学经济与工商管理学院博士生 胡菁芯
+  题目二：融资融券与股权质押——基于双重差分模型的检验
+  报告人：重庆大学经济与工商管理学院博士生 杨茵
+
+时间：2016年5月9日 下午2：30
+  地点：重庆大学B区一综合楼103教室
+
+欢迎各位老师、同学前来参加！
+</h6>
+          </div>
+        </div>
+
+
+
+        <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+                <div class="scrollTextWrapper col s7" style="">
+                	<h5 id="title" class="truncate title" style="" >总整课程的规划</h5>
+                </div>
+                <h6 id="address&time" class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                    <div style="float:left;">时间：</div>
+                	<div id="date" class="date" style="float:left;">16/5/5</div>
+                    <div style="float:left;">&nbsp&nbsp</div>
+                    <div id="time" class="time">15:00</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:12px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<div class="scrollText" style="">主教504&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
+            </div>
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
+                <div class="">
+                <table>
+                    <tr>
+                    
+                    <td style="width: 50%;" id="speaker-img13">
+                            <div style="" class="">
+                                <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                     <div class="card-image waves-effect waves-block waves-light">
+                                       <img class="activator" src="http://news.cqu.edu.cn/newsv2/uploadfile/2016/0426/20160426051428956.jpg">
+                                     </div>
+                                     <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 萧德瑛
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
+                                     </div>
+                                     <div class="card-reveal"  style="padding: 0px 10px;">
+                                         
+                                       <span class="card-title grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 萧德瑛
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
+                                       <br/>
+                                       <p style="padding: 0px 0px 0px ;">
+                                            萧德瑛，美国佐治亚理工学院工程科学与力学博士，台湾新竹清华大学动力机械系教授、台湾白强工业科学基金会执行长。主要研究专业为计算机外设产品机构设计、结构设计、CAD/CAM、TFT背光板光路设计。
+                                       </p>
+                                            
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    </td>
+                    
+                   
+                    <td style="width: 50%;">
+                    <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content13">
+                        
+                            <h6 class="post-organizer">
+                                主办单位：教务处、教师教学发展中心
+                            </h6>
+                        
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：
+                            </h6>
+                        
+                        <br/>
+                        
+                        <div class="post-content-preview" style="">
+                            <a class="modal-trigger" href="/externieblog/%E4%BC%98%E8%B4%A8%E8%AF%BE%E7%A8%8B%E5%BB%BA%E8%AE%BE%E5%9F%B9%E8%AE%AD/2016/05/05/e680bbe695b4e8afbee7a88be79a84e8a784e58892/">
+                            <!-- <a class="modal-trigger" href="#profile13"> -->
+                                
+                                    总整课程（Capstone）是评估专业能力的重要手段，故此部分将是本课程之重点。首先会介绍总整课程的定义，再介绍如何针对工程专业来规划总整课程，总整课程如何执行，如何做成果展示及评量方法。最后将...
+                                
+                            </a>
+                        </div>
+                    </div>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+
+
+                
+            </div>
+            <!-- </a> -->
+            
+        </li>
+
+        <div id="profile13" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>总整课程的规划</h4>
+            <h5>主办单位：教务处、教师教学发展中心</h5>
+            <h5>主办单位：</h5>
+            <h6>总整课程（Capstone）是评估专业能力的重要手段，故此部分将是本课程之重点。首先会介绍总整课程的定义，再介绍如何针对工程专业来规划总整课程，总整课程如何执行，如何做成果展示及评量方法。最后将以台湾六个系的执行过程为案例，分别说明不同专业领域及不同学校的做法。
+</h6>
+          </div>
+        </div>
+
+
+
+        <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+                <div class="scrollTextWrapper col s7" style="">
+                	<h5 id="title" class="truncate title" style="" >学术不端与现代性</h5>
+                </div>
+                <h6 id="address&time" class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                    <div style="float:left;">时间：</div>
+                	<div id="date" class="date" style="float:left;">16/5/5</div>
+                    <div style="float:left;">&nbsp&nbsp</div>
+                    <div id="time" class="time">08:50</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:12px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<div class="scrollText" style="">研究生院308国际会议厅&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
+            </div>
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
+                <div class="">
+                <table>
+                    <tr>
+                    
+                    <td style="width: 50%;" id="speaker-img14">
+                            <div style="" class="">
+                                <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                     <div class="card-image waves-effect waves-block waves-light">
+                                       <img class="activator" src="http://externie.com/nophoto.png">
+                                     </div>
+                                     <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 张德昭
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
+                                     </div>
+                                     <div class="card-reveal"  style="padding: 0px 10px;">
+                                         
+                                       <span class="card-title grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 张德昭
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
+                                       <br/>
+                                       <p style="padding: 0px 0px 0px ;">
+                                            &nbsp; 张德昭，男，重庆大学马克思主义理论教研部教授。先后毕业于四川大学和复旦大学，获四川大学哲学学士/硕士学位、复旦大学哲学博士学位，在重庆大学工业工程博士后科研流动站从事过研究工作。曾在家乡南充及军队工作多年。现任中国自然辩证法研究会青年委员，国家社会科学基金通讯评委，重庆大学科学技术协会常委，重庆大学公共管理学院教授。担任科学技术哲学、马克思主义理论、马克思主义哲学专业硕士研究生导师。
+                                       </p>
+                                            
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    </td>
+                    
+                   
+                    <td style="width: 50%;">
+                    <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content14">
+                        
+                            <h6 class="post-organizer">
+                                主办单位：重庆大学研究生院
+                            </h6>
+                        
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：重庆大学研究生创新实践基地,重庆大学研究生科学技术协会
+                            </h6>
+                        
+                        <br/>
+                        
+                        <div class="post-content-preview" style="">
+                            <a class="modal-trigger" href="/externieblog/%E5%90%8D%E5%AE%B6%E4%BC%9A%E5%AE%A2%E5%8E%85%20/2016/05/05/e5ada6e69cafe4b88de7abafe4b88ee78eb0e4bba3e680a7/">
+                            <!-- <a class="modal-trigger" href="#profile14"> -->
+                                
+                                    论文抄袭、研究成果造假、伪造文献……近年来,国内大学、科研机构一些学者的造假新闻不绝于耳，屡见报端。特别是随着论文查重手段的进度，这种学术不端行为越来越难于隐藏。学术不端成为了高校的阴影面，人人...
+                                
+                            </a>
+                        </div>
+                    </div>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+
+
+                
+            </div>
+            <!-- </a> -->
+            
+        </li>
+
+        <div id="profile14" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>学术不端与现代性</h4>
+            <h5>主办单位：重庆大学研究生院</h5>
+            <h5>主办单位：重庆大学研究生创新实践基地,重庆大学研究生科学技术协会</h5>
+            <h6>论文抄袭、研究成果造假、伪造文献……近年来,国内大学、科研机构一些学者的造假新闻不绝于耳，屡见报端。特别是随着论文查重手段的进度，这种学术不端行为越来越难于隐藏。学术不端成为了高校的阴影面，人人避之唯恐不及。学术不端不仅败坏学术风气，更严重阻碍了我国科学事业的进步。
+      学术不端出现的原因是什么？学术不端和学术环境、学术管理的变化有什么联系？如何从制度上治理学术不端？重庆大学马克思主义理论教研部教授张德昭老师与我们一起相约周五，深入分析学术不端滋生的土壤，从根本上剖析学术不端，防范学术不端于未然。
+</h6>
+          </div>
+        </div>
+
+
+
+        <li style="margin-bottom: 20px;" class="z-depth-1 undefined show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+                <div class="scrollTextWrapper col s7" style="">
+                	<h5 id="title" class="truncate title" style="" >文化翻身：梁漱溟之问</h5>
+                </div>
+                <h6 id="address&time" class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                    <div style="float:left;">时间：</div>
+                	<div id="date" class="date" style="float:left;">16/5/4</div>
+                    <div style="float:left;">&nbsp&nbsp</div>
+                    <div id="time" class="time">19:30</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:12px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<div class="scrollText" style="">&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
+            </div>
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
+                <div class="">
+                <table>
+                    <tr>
+                    
+                    <td style="width: 50%;" id="speaker-img15">
+                            <div style="" class="">
+                                <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                     <div class="card-image waves-effect waves-block waves-light">
+                                       <img class="activator" src="http://externie.com/nophoto.png">
+                                     </div>
+                                     <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 罗志田
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
+                                     </div>
+                                     <div class="card-reveal"  style="padding: 0px 10px;">
+                                         
+                                       <span class="card-title grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 罗志田
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
+                                       <br/>
+                                       <p style="padding: 0px 0px 0px ;">
+                                            罗志田，著名历史学家，现任四川大学杰出教授，北京大学历史学系教授。1952年生，1977年考入四川大学历史系。 1987年留美，在美国新墨西哥州立大学攻读硕士学位。1989-1993年在美国普林斯顿大学攻读博士学位。1994年至2003年任四川大学历史文化学院教授、博士生导师。 2003年至今任北京大学历史学系教授。其研究方向主要为中国近代文化史、中外关系史，发表论文上百篇，专著十余本，是当前中国近现代史领域最具影响力的历史学家之一。近著有《权势转移：近代中国的思想与社会》、《道出于二：过渡时代的新旧之争》等。
+                                       </p>
+                                            
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    </td>
+                    
+                   
+                    <td style="width: 50%;">
+                    <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content15">
+                        
+                            <h6 class="post-organizer">
+                                主办单位：人文社会科学高等研究院（http://ias.cqu.edu.cn）
+                            </h6>
+                        
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：
+                            </h6>
+                        
+                        <br/>
+                        
+                        <div class="post-content-preview" style="">
+                            <a class="modal-trigger" href="/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/04/e69687e58c96e7bfbbe8baabefbc9ae6a281e6bcb1e6ba9fe4b98be997ae/">
+                            <!-- <a class="modal-trigger" href="#profile15"> -->
+                                
+                                    五四学生运动后，原本少为人知的梁漱溟因其《东西文化及其哲学》一书而“暴得大名”，社会反响相当热烈。这是因为梁漱溟提出了一个从晚清开始一直围困住中国读书人的问题，即在西方文化实际成为“世界文化”的...
+                                
+                            </a>
+                        </div>
+                    </div>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+
+
+                
+            </div>
+            <!-- </a> -->
+            
+        </li>
+
+        <div id="profile15" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>文化翻身：梁漱溟之问</h4>
+            <h5>主办单位：人文社会科学高等研究院（http://ias.cqu.edu.cn）</h5>
+            <h5>主办单位：</h5>
+            <h6>五四学生运动后，原本少为人知的梁漱溟因其《东西文化及其哲学》一书而“暴得大名”，社会反响相当热烈。这是因为梁漱溟提出了一个从晚清开始一直围困住中国读书人的问题，即在西方文化实际成为“世界文化”的现实下，东方或中国文化是否可能“复兴”或“翻身”，以及怎样“翻身”。其实也就是从文化层面思考怎样“解决”中国在世界上的地位问题。对梁漱溟而言，问题的核心不是什么“东西文化的优劣”，而是关涉到东方文化的生死。这个在当年具有时代性的问题，到现在也仍然围困住很多中国人。多年来这个问题一直引人关注，今人论及此事仍在使用类似“生死博弈”这样的词语，表明我们还没解决文化的“生死”问题，可知“梁漱溟之问”的意义今天依然存在。讲座讨论的是当时人怎样思考和因应这个问题。
+</h6>
+          </div>
+        </div>
+
+
+
+        <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+                <div class="scrollTextWrapper col s7" style="">
+                	<h5 id="title" class="truncate title" style="" >工程教育专业认证的程序</h5>
+                </div>
+                <h6 id="address&time" class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                    <div style="float:left;">时间：</div>
+                	<div id="date" class="date" style="float:left;">16/5/4</div>
+                    <div style="float:left;">&nbsp&nbsp</div>
+                    <div id="time" class="time">15:00</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:12px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<div class="scrollText" style="">主教504&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
+            </div>
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
+                <div class="">
+                <table>
+                    <tr>
+                    
+                    <td style="width: 50%;" id="speaker-img16">
+                            <div style="" class="">
+                                <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                     <div class="card-image waves-effect waves-block waves-light">
+                                       <img class="activator" src="http://news.cqu.edu.cn/newsv2/uploadfile/2016/0426/20160426050928232.jpg">
+                                     </div>
+                                     <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 萧德瑛
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
+                                     </div>
+                                     <div class="card-reveal"  style="padding: 0px 10px;">
+                                         
+                                       <span class="card-title grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 萧德瑛
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
+                                       <br/>
+                                       <p style="padding: 0px 0px 0px ;">
+                                            萧德瑛，美国佐治亚理工学院工程科学与力学博士，台湾新竹清华大学动力机械系教授、台湾白强工业科学基金会执行长。主要研究专业为计算机外设产品机构设计、结构设计、CAD/CAM、TFT背光板光路设计。
+                                       </p>
+                                            
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    </td>
+                    
+                   
+                    <td style="width: 50%;">
+                    <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content16">
+                        
+                            <h6 class="post-organizer">
+                                主办单位：教务处、教师教学发展中心
+                            </h6>
+                        
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：
+                            </h6>
+                        
+                        <br/>
+                        
+                        <div class="post-content-preview" style="">
+                            <a class="modal-trigger" href="/externieblog/%E4%BC%98%E8%B4%A8%E8%AF%BE%E7%A8%8B%E5%BB%BA%E8%AE%BE%E5%9F%B9%E8%AE%AD/2016/05/04/e5b7a5e7a88be69599e882b2e4b893e4b89ae8aea4e8af81e79a84e7a88be5ba8f/">
+                            <!-- <a class="modal-trigger" href="#profile16"> -->
+                                
+                                    介绍工程教育专业认证的程序及每个程序所需要的工作。在每个程序中将介绍作法并说明《华盛顿协议》的精神，如何从培养目标展开完成目标所需专业能力，再由课程规划来满足专业能力需求。并由教学评估的角度来看...
+                                
+                            </a>
+                        </div>
+                    </div>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+
+
+                
+            </div>
+            <!-- </a> -->
+            
+        </li>
+
+        <div id="profile16" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>工程教育专业认证的程序</h4>
+            <h5>主办单位：教务处、教师教学发展中心</h5>
+            <h5>主办单位：</h5>
+            <h6>介绍工程教育专业认证的程序及每个程序所需要的工作。在每个程序中将介绍作法并说明《华盛顿协议》的精神，如何从培养目标展开完成目标所需专业能力，再由课程规划来满足专业能力需求。并由教学评估的角度来看课程的成效，评估它是否能满足专业能力的需求。各种评估的方式也在此介绍，并说明如何依评估的结果如何做课程改进。在案例介绍中会以不同台湾高校的作法来说明各阶段的对应方法。
+</h6>
+          </div>
+        </div>
+
+
+
+        <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+                <div class="scrollTextWrapper col s7" style="">
+                	<h5 id="title" class="truncate title" style="" >大数据时代的系统结构与创新技术论坛及研讨会</h5>
+                </div>
+                <h6 id="address&time" class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                    <div style="float:left;">时间：</div>
+                	<div id="date" class="date" style="float:left;">16/5/4</div>
+                    <div style="float:left;">&nbsp&nbsp</div>
+                    <div id="time" class="time">09:00</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:12px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<div class="scrollText" style="">重庆大学主教504会议室&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
+            </div>
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
+                <div class="">
+                <table>
+                    <tr>
+                    
+                    <td style="width: 50%;" id="speaker-img17">
+                            <div style="" class="">
+                                <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                     <div class="card-image waves-effect waves-block waves-light">
+                                       <img class="activator" src="http://externie.com/nophoto.png">
+                                     </div>
+                                     <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: Ahmed Louri，IEEEFellow，Edwin Sha ，李涛，邵子立
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
+                                     </div>
+                                     <div class="card-reveal"  style="padding: 0px 10px;">
+                                         
+                                       <span class="card-title grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: Ahmed Louri，IEEEFellow，Edwin Sha ，李涛，邵子立
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
+                                       <br/>
+                                       <p style="padding: 0px 0px 0px ;">
+                                            Dr. Ahmed Louri is the David and Marilyn Karlgaard Professor and the Chairman of the Department of Electrical and Computer Engineering in the School of Engineering and Applied Sciences at The George Washington University. Dr. Ahmed Louri received the M.S and Ph.D. degrees in Computer Engineering from the University of Southern California, Los Angeles in 1984 and 1988 respectively. Prior to joining GWU in August 2015, he was a Professor of Electrical and Computer Engineering and the Director of the High-Performance Computing Architectures and Technologies Laboratory at the University of Arizona from 1988 to 2015. Dr. Louri chaired the Computer Engineering Program of the Electrical and Computer Engineering Department at the University of Arizona from 2000 to 2006.
+                                       </p>
+                                            
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    </td>
+                    
+                   
+                    <td style="width: 50%;">
+                    <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content17">
+                        
+                            <h6 class="post-organizer">
+                                主办单位：计算机学院
+                            </h6>
+                        
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：
+                            </h6>
+                        
+                        <br/>
+                        
+                        <div class="post-content-preview" style="">
+                            <a class="modal-trigger" href="/externieblog/%E5%85%B6%E5%AE%83/2016/05/04/e5a4a7e695b0e68daee697b6e4bba3e79a84e7b3bbe7bb9fe7bb93e69e84e4b88ee5889be696b0e68a80e69cafe8aebae59d9be58f8ae7a094e8aea8e4bc9a/">
+                            <!-- <a class="modal-trigger" href="#profile17"> -->
+                                
+                                    报告一：Power-Efficient and Reliable Network-on-Chips for Scalable Multicore Architectures
+  主讲人：Ahme...
+                                
+                            </a>
+                        </div>
+                    </div>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+
+
+                
+            </div>
+            <!-- </a> -->
+            
+        </li>
+
+        <div id="profile17" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>大数据时代的系统结构与创新技术论坛及研讨会</h4>
+            <h5>主办单位：计算机学院</h5>
+            <h5>主办单位：</h5>
+            <h6>报告一：Power-Efficient and Reliable Network-on-Chips for Scalable Multicore Architectures
+  主讲人：Ahmed Louri，IEEEFellow，美国乔治华盛顿大学讲习教授，电子计算机工程系主任
+   报告摘要：
+  Today’s microprocessor designers have resorted to increasing the number of cores per die as a power-efficient approach to performance improvement, leading to the Chip Multiprocessors (CMPs) or the multicore era. Both industrial and academic roadmaps project that hundreds to thousands of general-purpose tera-op CMPs will be needed within a decade in order to satisfy future needs for high-performance computing.
+  The proliferation of multiple cores on the same die heralded the advent of a communication-centric, rather than computation-centric systems, to the forefront of computing design wherein the design of the on-chip interconnect fabric connecting various modules, namely the processing cores, cache banks, and memory units, has become extremely important. Further, the continuing scaling of technology has accentuated the on-chip interconnect problem since global wire delays do not scale down as fast as gate delays. To address the growing wire delay problems and improve the performance, a growing number of multicore designs have adopted a more flexible and scalable packet-switched architecture called Network-on-Chip (NoC) architectures. As the number of cores on the chip keeps growing to satisfy power and performance scaling, the NoC design has become the most critical element to achieving the performance potential of future CMPs. Among the challenges facing current NoC design, power dissipation and reliability have been identified as the most critical ones.
+  In this talk, I will first discuss several research challenges facing multicore architectures and NoC design. Next I will present some of our ongoing efforts to address these issues using architectural innovations as well as a synergistic mix of emerging interconnect technologies. The talk will conclude with pointers to some future research directions in this area
+  报告二：The  work to Design the Most Efficient In-Memory Storage System
+  主讲人：Edwin Sha （沙行勉)，“千人计划”特聘教授，重庆大学计算机学院院长
+   报告摘要：
+  This talk will discuss, from the perspective of system software, how to design the most efficient in-memory storage system, in particular files system and data  system. As the emerging technologies of persistent memory, like PCM, MRAM, provide opportunities for preserving data in memory, traditional storage system structures may need re-studying and re-designing. The talk will present a  work  d on a new concept that each file has its own ``Virtual Address Space." A file system, Sustainable In-Memory File System (SIMFS), is then designed and fully implemented. The experiments show that SIMFS is the fastest in-memory file system. This  work has lots of potential to explore; some new optimization techniques are further designed. We also briefly present the most efficient index structures we recently developed for NVM- d relational data . All of the results give the best known ones in literatures.
+  报告三：Innovating Next Generation Computer Architecture in Big Data Era: Think Big, See Small
+  主讲人：李涛，美国佛罗里达大学教授，海外杰青
+   报告摘要：
+  Computer architecture forms the foundation of society’s information technology. This foundation, which was laid several decades ago, is facing grand challenges today as power limits and reduced semiconductor reliability make it increasingly more difficult to leverage CMOS scaling, and the shift towards data centers, big data and cloud computing will include sustainability requirements for traditional architectures. At the same time, there are emerging technologies such as green and clean energy computing, scalable memory devices, advanced integration and interconnect methodologies that can be game-changers in the future. A new plethora of computer architectures can be built by exploiting innovative concepts, mechanisms and implementations that take advantages of these emerging technologies while addressing new design challenges in big data era.
+  In this talk, I will address the opportunities and challenges of integrating renewable energy technologies that enable high-performance and sustainable computer and data center architectures. Designing renewable energy driven computer systems poses various challenges in terms of intelligent control strategies for better energy utilization, optimizations for reducing overhead, and improving reliability. I will discuss new mechanisms for data centers that can achieve high efficiency and dependability in utilizing renewable energy. Moreover, I will address the challenges and opportunities of fully exploiting the potential of emerging phase-change memory technologies to improve computer system memory performance, power-efficiency and reliability for big data applications. Although technology scaling and advanced material engineering provide smaller and denser devices, they make achieving these design goals increasingly challenging. I will introduce holistic and cross-  design approaches that leverage nano-scale CMOS fabrication technologies, emerging integration methodologies and advanced material engineering.
+  报告四：Bridging Semantic Gaps in Key-Value Storage Systems with Software-Defined SSDs
+  主讲人：邵子立，香港理工大学副教授，电子计算学系副主任
+   报告摘要：
+  Key-value (KV) stores become critical as they are one of the most important building blocks in modern web infrastructures and high-performance data-intensive applications. For example, KV storage systems such as Memcached and Redis have been widely adopted as web   cache in data -driven web systems, and KV stores are also the backbone technique in large-scale distributed NoSQL data s such as LevelDB at Google, Dynamo at Amazon, and Cassandra at Apache. In KV stores, fast, predictable KV access latency is the key performance indicator. However, grand challenges are posted for KV stores to achieve this, particularly when handling real-time applications such as high-frequency trading, online advertising, and online TVs/gaming.
+  In this talk, I will present our recent work in optimizing flash- d key-value cache systems. In particular, I will discuss how to bridge the semantic gap between hardware/software by directly opening device-level details to key-value cache systems. In this way, we can leverage the domain knowledge of key-value caches and the unique device-level properties, so as to maximize the efficiency of a key-value cache system on flash devices while minimizing its weakness.
+  欢迎各位老师、同学参加，并针对有关问题现场提问!
+</h6>
+          </div>
+        </div>
+
+
+
+        <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+                <div class="scrollTextWrapper col s7" style="">
+                	<h5 id="title" class="truncate title" style="" >智能制造与先进夹具技术</h5>
+                </div>
+                <h6 id="address&time" class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                    <div style="float:left;">时间：</div>
+                	<div id="date" class="date" style="float:left;">16/4/29</div>
+                    <div style="float:left;">&nbsp&nbsp</div>
+                    <div id="time" class="time">14:30</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:12px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<div class="scrollText" style="">重庆大学A区主教504&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
+            </div>
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
+                <div class="">
+                <table>
+                    <tr>
+                    
+                    <td style="width: 50%;" id="speaker-img18">
+                            <div style="" class="">
+                                <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                     <div class="card-image waves-effect waves-block waves-light">
+                                       <img class="activator" src="http://externie.com/nophoto.png">
+                                     </div>
+                                     <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 袁华
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
+                                     </div>
+                                     <div class="card-reveal"  style="padding: 0px 10px;">
+                                         
+                                       <span class="card-title grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 袁华
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
+                                       <br/>
+                                       <p style="padding: 0px 0px 0px ;">
+                                            袁华，德国斯图加特大学工学博士、同济大学客座教授、合肥工业大学客座教授、资深机械制造专家、资深工业技术咨询专家，二十世纪八十年代赴德国深造，先后在德国斯图加特大学机械制造系力学研究所和机床研究所从事研究和教学工作。尤其在机床研究所就职的八年时间里，为多家德国机床行业著名企业完成了许多具有实际应用背景的科研项目的研究，撰写了大量的研究报告，并在国际会议和德国专业杂志上发表多篇学术论文。在此期间还积极参与研究所的教学工作，给德国学生讲课，先后指导过数十名德国学生的课程设计和硕士毕业论文。这些学生中的佼佼者如今已在德国机械制造行业的各大企业中担任重要职务。
+                                       </p>
+                                            
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    </td>
+                    
+                   
+                    <td style="width: 50%;">
+                    <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content18">
+                        
+                            <h6 class="post-organizer">
+                                主办单位：重庆自主品牌汽车协同创新中心
+                            </h6>
+                        
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：
+                            </h6>
+                        
+                        <br/>
+                        
+                        <div class="post-content-preview" style="">
+                            <a class="modal-trigger" href="/externieblog/%E6%B1%BD%E8%BD%A6%E5%B7%A5%E7%A8%8B%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B%20/2016/04/29/e699bae883bde588b6e980a0e4b88ee58588e8bf9be5a4b9e585b7e68a80e69caf/">
+                            <!-- <a class="modal-trigger" href="#profile18"> -->
+                                
+                                    机床、刀具和夹具是实现机械加工的三大重要环节，其中机床和刀具具有较强的通用性，但夹具却与工件有着极强的相关性。在实现金属切削加工的智能制造中，夹具技术是瓶颈。本报告首先阐述夹具技术和智能制造的关...
+                                
+                            </a>
+                        </div>
+                    </div>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+
+
+                
+            </div>
+            <!-- </a> -->
+            
+        </li>
+
+        <div id="profile18" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>智能制造与先进夹具技术</h4>
+            <h5>主办单位：重庆自主品牌汽车协同创新中心</h5>
+            <h5>主办单位：</h5>
+            <h6>机床、刀具和夹具是实现机械加工的三大重要环节，其中机床和刀具具有较强的通用性，但夹具却与工件有着极强的相关性。在实现金属切削加工的智能制造中，夹具技术是瓶颈。本报告首先阐述夹具技术和智能制造的关系，以及如何发展夹具技术，以满足智能制造的要求。针对中国金属切削加工领域长期以来存在的“重设备轻工艺”的严重误区，本报告还将阐述夹具与机床和刀具之间相辅相成的重要关系、夹具在金属切削加工中的重要地位以及选择和使用夹具应当遵从的各项重要准则，并以车削和铣削加工中一些典型零件和加工难度较大的零件为例，分析其夹持技术的关键点，介绍如何实现这些零件高效夹持的方案。
+</h6>
+          </div>
+        </div>
+
+
+
+        <li style="margin-bottom: 20px;" class="z-depth-1 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+                <div class="scrollTextWrapper col s7" style="">
+                	<h5 id="title" class="truncate title" style="" >Modeling and Control of Discrete Event Systems: Automata and Petri Nets Perspectives</h5>
+                </div>
+                <h6 id="address&time" class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                    <div style="float:left;">时间：</div>
+                	<div id="date" class="date" style="float:left;">16/4/29</div>
+                    <div style="float:left;">&nbsp&nbsp</div>
+                    <div id="time" class="time">15:00</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:12px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<div class="scrollText" style="">主教学楼1811会议室&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
+            </div>
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
+                <div class="">
+                <table>
+                    <tr>
+                    
+                    <td style="width: 50%;" id="speaker-img19">
+                            <div style="" class="">
+                                <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                     <div class="card-image waves-effect waves-block waves-light">
+                                       <img class="activator" src="http://externie.com/nophoto.png">
+                                     </div>
+                                     <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 李志武
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
+                                     </div>
+                                     <div class="card-reveal"  style="padding: 0px 10px;">
+                                         
+                                       <span class="card-title grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 李志武
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
+                                       <br/>
+                                       <p style="padding: 0px 0px 0px ;">
+                                            主讲人简介：
+                                       </p>
+                                            
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    </td>
+                    
+                   
+                    <td style="width: 50%;">
+                    <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content19">
+                        
+                            <h6 class="post-organizer">
+                                主办单位：计算机学院
+                            </h6>
+                        
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：
+                            </h6>
+                        
+                        <br/>
+                        
+                        <div class="post-content-preview" style="">
+                            <a class="modal-trigger" href="/externieblog/%E5%85%B6%E5%AE%83/2016/04/29/4d6f64656c696e6720616e6420436f6e74726f6c206f66204469736372657465204576656e742053797374656d733a204175746f6d61746120616e64205065747269204e65747320506572737065637469766573/">
+                            <!-- <a class="modal-trigger" href="#profile19"> -->
+                                
+                                    计算机学院专家讲座
+  Modeling and Control of Discrete Event Systems: Automata and Petri Nets Perspectives ...
+                                
+                            </a>
+                        </div>
+                    </div>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+
+
+                
+            </div>
+            <!-- </a> -->
+            
+        </li>
+
+        <div id="profile19" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>Modeling and Control of Discrete Event Systems: Automata and Petri Nets Perspectives</h4>
+            <h5>主办单位：计算机学院</h5>
+            <h5>主办单位：</h5>
+            <h6>计算机学院专家讲座
+  Modeling and Control of Discrete Event Systems: Automata and Petri Nets Perspectives 
+  主 讲 人：P rof. ZhiWu Li （李志武）
+  （IEEE Fellow，西安电子科技大学机电工程学院院长）
+  讲座时间：2016年4月29日（星期五）15:00–16:30
+  讲座地点：主教学楼1811会议室
+  主办单位：重庆大学计算机学院
+  报告摘要：
+  The extensive applications of information technology provide spurs to the blooming of highly automated and computer-integrated systems that increasingly play an essential role in the development of the human society, leading to the deployment of discrete event systems that are thought of as a mathematical or methodological abstract of many contemporary technological systems such as intelligent urban traffic systems, automated flexiblemanufacturingsystems,computernetworks,communicationprotocols, logistic systems, monitoring and control of large buildings, distributed data s, and concurrent software systems. The purpose of this talk is to briefly introduce ideas of the modeling and control of discrete event systems in automaton and Petri net perspectives. Supervisory control theory  d on formal languages and finite state machines is first reviewed and a Petri net approach is then recalled. Their comparison is demonstrated through a toy example from manufacturing.   
+  欢迎各位老师、同学参加，并针对有关问题现场提问!
+</h6>
+          </div>
+        </div>
+
+
+
+        <li style="margin-bottom: 20px;" class="z-depth-1 D show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+                <div class="scrollTextWrapper col s7" style="">
+                	<h5 id="title" class="truncate title" style="" >Radical C-H Activation/ Radical-Radical Cross-Coupling</h5>
+                </div>
+                <h6 id="address&time" class="col s5" style="font-size: 10px;line-height: 1.5;height: 100%;">
+                	<!--时间-->
+                    <div style="float:left;">时间：</div>
+                	<div id="date" class="date" style="float:left;">16/4/28</div>
+                    <div style="float:left;">&nbsp&nbsp</div>
+                    <div id="time" class="time">15:00</div>
+              		<!--地点-->
+                	<div>
+                		<div style="float: left;font-zie:12px;">地点：</div>
+                		<div class="scrollTextWrapper" style="">
+                			<div class="scrollText" style="">重庆大学虎溪校区LA208会议室&nbsp;&nbsp;</div>
+                		</div>
+                	</div>
+                </h6>
+            </div>
+            <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
+            	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
+                <div class="">
+                <table>
+                    <tr>
+                    
+                    <td style="width: 50%;" id="speaker-img20">
+                            <div style="" class="">
+                                <div class="card" style="box-shadow: 0px 0px 0px 0px;">
+                                     <div class="card-image waves-effect waves-block waves-light">
+                                       <img class="activator" src="http://news.cqu.edu.cn/newsv2/uploadfile/20160426/1461639014337664.png">
+                                     </div>
+                                     <div class="card-content valign-wrapper" style="padding: 40px 0px 0px 0px;">
+                                       <span class="card-title activator grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 雷爱文教授（杰青、长江学者）
+                                           <i class="mdi-navigation-more-vert right"></i>
+                                       </span>
+                                     </div>
+                                     <div class="card-reveal"  style="padding: 0px 10px;">
+                                         
+                                       <span class="card-title grey-text text-darken-4 valign center-align" style="font-size: 15px;width: 100%;">主讲人: 雷爱文教授（杰青、长江学者）
+                                           <i class="mdi-navigation-close right"></i>
+                                       </span>
+                                       <br/>
+                                       <p style="padding: 0px 0px 0px ;">
+                                            1995－2000：中国科学院上海有机化学研究所，有机化学博士。
+                                       </p>
+                                            
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    </td>
+                    
+                   
+                    <td style="width: 50%;">
+                    <div class="" style="height: 100%;width: 100%;margin: 0px;" id="content20">
+                        
+                            <h6 class="post-organizer">
+                                主办单位：重庆大学理学部 重庆大学化学化工学院
+                            </h6>
+                        
+                        
+                            <h6 class="post-organizer" style="font-style: italic;">
+                                协办单位：
+                            </h6>
+                        
+                        <br/>
+                        
+                        <div class="post-content-preview" style="">
+                            <a class="modal-trigger" href="/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/04/28/5261646963616c20432d482041637469766174696f6e2f205261646963616c2d5261646963616c2043726f73732d436f75706c696e67/">
+                            <!-- <a class="modal-trigger" href="#profile20"> -->
+                                
+                                    A new series of oxidative coupling reactions between two nucleophiles have been developed for eff...
+                                
+                            </a>
+                        </div>
+                    </div>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+
+
+                
+            </div>
+            <!-- </a> -->
+            
+        </li>
+
+        <div id="profile20" class="modal bottom-sheet">
+          <div class="modal-content">
+            <h4>Radical C-H Activation/ Radical-Radical Cross-Coupling</h4>
+            <h5>主办单位：重庆大学理学部 重庆大学化学化工学院</h5>
+            <h5>主办单位：</h5>
+            <h6>A new series of oxidative coupling reactions between two nucleophiles have been developed for efficient carbon-carbon and carbon-heteroatom bond formation.
+</h6>
+          </div>
+        </div>
+
+
 
 
 <script>
@@ -1599,19 +2548,9 @@
 
                 </ul>
     		</div>
-    <!-- Sidebar Container -->
-            <div class="
-                hide-on-small-only
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
-    		</div>
-        
 	</div>
 </div>
+
 
 
     <!-- Footer -->

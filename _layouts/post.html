@@ -1,10 +1,6 @@
 ---
 layout: default
 ---
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
-
 
 
 <!-- Post Header -->
@@ -19,7 +15,7 @@ layout: default
                     <p class="speaker">
                         主讲人：{% if page.speaker %}{{ page.speaker }}{% else %}{{ site.title }}{% endif %} 
                     </p>
-                    <p class="tima-address">
+                    <p class="tima-address" style="float:left;">
                         时间：{{ page.date | date: "%-m月%-d日"}}&nbsp;&nbsp;地点：{{ page.address }}
                     </p>
                 </div>
@@ -86,6 +82,10 @@ layout: default
                                     <li><a class="btn-floating blue" data-service="moveToBodyEnd" onclick="moveToBodyEnd(this)">
                                         <i class="mdi-editor-mode-edit"></i>
                                     </a></li>
+                                    <li class="hide-on-small-only"><a href="#" class="btn-floating grey" data-service="home">
+                                        <i class="mdi-action-home"></i>
+                                    </a></li>
+
                                   </ul>
 
                              </div>
