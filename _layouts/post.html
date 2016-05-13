@@ -57,7 +57,7 @@ layout: default
                     {% if site.duoshuo_share && site.duoshuo_username %}
                     <!-- 多说 Share start -->
                     <div id="floatShareBtn" class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-                          <a id="" class="btn-floating btn-large red scaleFadeIn">
+                          <a id="" class="btn-floating btn-large red scaleFadeIn mainBtn">
                             <i class="large mdi-social-share"></i>
                           </a>
 
@@ -139,6 +139,9 @@ Materialize.scrollFireForever(options);
 function moveToBodyEnd(e){
     // e.prevent
     document.getElementsByTagName('BODY')[0].scrollTop=document.getElementsByTagName('BODY')[0].scrollHeight;
+    // $("body").slideDown(300,function(){
+    //     console.log("touchDown");
+    // });
 }
 
 // $("button").click(function(){
@@ -146,23 +149,37 @@ function moveToBodyEnd(e){
 // });
 
 function hideFloatBtn(){
-    if($("#floatShareBtn").hasClass("scaleFadeIn")){
-        $("#floatShareBtn").removeClass("scaleFadeIn");
-    }
-    if(!$("#floatShareBtn").hasClass("scaleFadeOut")){
-        $("#floatShareBtn").addClass("scaleFadeOut");
-    }
+    // if($("#floatShareBtn").hasClass("scaleFadeIn")){
+    //     $("#floatShareBtn").removeClass("scaleFadeIn");
+    // }
+    // if(!$("#floatShareBtn").hasClass("scaleFadeOut")){
+    //     $("#floatShareBtn").addClass("scaleFadeOut");
+    // }
     // console.log("运行到");
+    $("#floatShareBtn btn-floating").stop(false,true);
+    $("#floatShareBtn").animate({
+        opacity:'0'
+    },200,'swing',function(){
+        $("#floatShareBtn").addClass("hide");
+    });
+
 } 
 
 function showFloatBtn(){
     // console.log("运行upupup");
-    if($("#floatShareBtn").hasClass("scaleFadeOut")){
-        $("#floatShareBtn").removeClass("scaleFadeOut");
-    }
-    if(!$("#floatShareBtn").hasClass("scaleFadeIn")){
-        $("#floatShareBtn").addClass("scaleFadeIn");
-    }
+    // if($("#floatShareBtn").hasClass("scaleFadeOut")){
+    //     $("#floatShareBtn").removeClass("scaleFadeOut");
+    // }
+    // if(!$("#floatShareBtn").hasClass("scaleFadeIn")){
+    //     $("#floatShareBtn").addClass("scaleFadeIn");
+    // }
+    $("#floatShareBtn").stop(false,true);
+    $("#floatShareBtn").animate({
+        opacity:'1'
+    },200,'swing',function(){
+        $("#floatShareBtn").removeClass("hide");
+
+    });
     
 } 
 
