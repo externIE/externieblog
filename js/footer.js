@@ -103,7 +103,7 @@ function selectCategory(category,from){
 			$(li).removeClass("hide");
 			$(li).addClass("show");
 		}
-		if(category === 'ALL'){
+		if(category === 'ALL' || category === '所有'){
 			continue;
 		}
 		if(!$(li).hasClass(category) && $(li).hasClass(mCampus)){

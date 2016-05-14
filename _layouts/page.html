@@ -25,10 +25,10 @@ layout: default
   <ul id="dropdown1" class="dropdown-content">
     <script type="text/javascript">
       if (window.android) {
-        window.android.setCategoryItem("其它");
+        window.android.setCategoryItem("所有");
       }; 
     </script>
-    <li><a href="javascript:selectCategory('ALL')">所有</a></li>
+    <li><a href="javascript:selectCategory('所有')">所有</a></li>
     {% for post in site.posts %}
         {% assign hasBefore = false %}
         {% for temp in site.posts limit:forloop.index0 %}
@@ -48,7 +48,7 @@ layout: default
      <li><a href="javascript:selectCategory('其它')">其它</a></li>
      <script type="text/javascript">
          if (window.android) {
-            window.android.setCategoryItem("所有");
+            window.android.setCategoryItem("其它");
           }; 
      </script>
   </ul>
