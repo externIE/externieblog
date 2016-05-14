@@ -4,8 +4,8 @@ layout: default
 <div class="navbar-fixed hide-on-small-only">
     
     <nav>
-      <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">重庆大学学术信息发布平台</a>
+      <div class="nav-wrapper blue darken-2" >
+      <a href="#!" class="brand-logo" >重庆大学学术信息发布平台</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="javascript:select('ALL')">所有</a></li>
         <li><a href="javascript:select('A')">A区</a></li>
@@ -23,6 +23,12 @@ layout: default
 
 <!-- Dropdown Structure -->
   <ul id="dropdown1" class="dropdown-content">
+    <script type="text/javascript">
+      if (window.android) {
+        window.android.setCategoryItem("其它");
+      }; 
+    </script>
+    <li><a href="javascript:selectCategory('ALL')">所有</a></li>
     {% for post in site.posts %}
         {% assign hasBefore = false %}
         {% for temp in site.posts limit:forloop.index0 %}
@@ -30,10 +36,21 @@ layout: default
                 {% assign hasBefore = true %}
             {% endif %}
         {% endfor %}
-        {% if hasBefore != true %}
-            <li><a href="#!">{{post.category}}</a></li>
+        {% if hasBefore != true and post.category != '其它'' %}
+            <script type="text/javascript">
+                if (window.android) {
+                  window.android.setCategoryItem("{{post.category}}");
+                }; 
+            </script>
+            <li><a href="javascript:selectCategory('{{post.category}}')">{{post.category}}</a></li>
         {% endif %}
     {% endfor %}
+     <li><a href="javascript:selectCategory('其它')">其它</a></li>
+     <script type="text/javascript">
+         if (window.android) {
+            window.android.setCategoryItem("所有");
+          }; 
+     </script>
   </ul>
 
 <!-- Main Content -->
@@ -41,7 +58,7 @@ layout: default
 	<div class="row">
         <!-- Post Container -->
     		<div class="col s12 m12 l8 push-l2" style="padding: 0 0rem;">
-                <ul id="staggered-post" class="post-preview collapsible popout" data-collapsible="expandable" style="margin: 1.5rem 0 1rem 0;box-shadow: 0px 0px 0px #888888;;border: 0px;">
+                <ul id="staggered-post" class="post-preview collapsible popout" data-collapsible="expandable" style="margin: 1.5rem 0 0 0;box-shadow: 0px 0px 0px #888888;;border: 0px;">
     			     {{ content }}
                 </ul>
     		</div>

@@ -97,10 +97,28 @@
 			if ($this->checkStrInStr($address,"研究生院")) {
 				$campus = "A";
 			}
+			if ($this->checkStrInStr($address,"采矿大楼")) {
+				$campus = "A";
+			}
+			if ($this->checkStrInStr($address,"动力工程学院")) {
+				$campus = "A";
+			}
 			if ($this->checkStrInStr($address,"教师教学发展中心")) {
 				$campus = "A";
 			}
+			if ($this->checkStrInStr($address,"机械传动国家重点实验室")) {
+				$campus = "A";
+			}
 			if ($this->checkStrInStr($address,"B")) {
+				$campus = "B";
+			}
+			if ($this->checkStrInStr($address,"建工馆")) {
+				$campus = "B";
+			}
+			if ($this->checkStrInStr($address,"建筑城规学院")) {
+				$campus = "B";
+			}
+			if ($this->checkStrInStr($address,"建管学院")) {
 				$campus = "B";
 			}
 			if ($this->checkStrInStr($address,"C")) {

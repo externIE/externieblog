@@ -1,12 +1,19 @@
 ---
 layout: page
-description: "据说大神都有属于他们自己的技术博客"
+description: ""
 ---
 
+{% if paginator.previous_page %}
+    <center>
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">回到</a>
+        </li>
+    </center>
+{% endif %}
 
 {% for post in paginator.posts %}
-        <li style="margin-bottom: 20px;" class="z-depth-1 {{post.campus}} show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="ALL {{post.category}} {{post.campus}} show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >{{ post.title }}</h5>
                 </div>
@@ -96,14 +103,7 @@ description: "据说大神都有属于他们自己的技术博客"
             
         </li>
 
-        <div id="profile{{forloop.index}}" class="modal bottom-sheet">
-          <div class="modal-content">
-            <h4>{{ post.title }}</h4>
-            <h5>主办单位：{{ post.organizer }}</h5>
-            <h5>主办单位：{{ post.co-organizer }}</h5>
-            <h6>{{ post.content | strip_html }}</h6>
-          </div>
-        </div>
+      
 
 
 {% endfor %}
@@ -114,16 +114,14 @@ description: "据说大神都有属于他们自己的技术博客"
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 上一页</a>
-    </li>
-    {% endif %}
+<ul class="pager" style="margin-top: 1rem;">
+    
     {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页 &rarr;</a>
-    </li>
+    <center>
+        <li class="next">
+            <a style="color: rgba(10,10,10,0.3);" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">历史</a>
+        </li>
+    </center>
     {% endif %}
 </ul>
 {% endif %}

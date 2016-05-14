@@ -4,7 +4,7 @@ title:       	  "技术与城市的对话：以ArcGIS为主的新技术体系探
 dtitle:      	  "技术与城市的对话：以ArcGIS为主的新技术体系探索"
 time: 		  	  "11:47"
 address:	  	  "重庆大学建筑城规学院5223学术报告厅"
-campus:	  	  "undefined"
+campus:	  	  "B"
 speaker:	   	  "黄积小"
 speaker-profile: "主讲人：黄积小"
 speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/2016/0405/20160405115927771.jpg"

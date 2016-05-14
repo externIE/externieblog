@@ -62,7 +62,9 @@ function test(){
 	Materialize.showStaggeredList("#staggered-post");
 }
 
+var mCampus="ALL";
 function select(campus,from){
+	mCampus = campus;
 	var postlist = document.getElementById("staggered-post");
 	var lis = postlist.getElementsByTagName("li");
 	for (var il=0;il < lis.length;il++) {
@@ -87,6 +89,36 @@ function select(campus,from){
 		Materialize.showStaggeredList("#staggered-post");
 	}
 };
+
+function selectCategory(category,from){
+	var category = category || 'ALL';
+	var fromDirection = from || "left";
+	console.log(category);
+	console.log(fromDirection);
+	var postlist = document.getElementById("staggered-post");
+	var lis = postlist.getElementsByTagName("li");
+	for (var il=0;il < lis.length;il++) {
+		var li = lis[il];
+		if($(li).hasClass("hide") && $(li).hasClass(mCampus)){
+			$(li).removeClass("hide");
+			$(li).addClass("show");
+		}
+		if(category === 'ALL'){
+			continue;
+		}
+		if(!$(li).hasClass(category) && $(li).hasClass(mCampus)){
+			$(li).addClass("hide");
+			$(li).removeClass("show");
+		}
+	}
+	
+	
+	if (fromDirection == "right") {
+		Materialize.showStaggeredListRight("#staggered-post");
+	}else{
+		Materialize.showStaggeredList("#staggered-post");
+	}
+}
 
 function dealOutTimeCard(){
 	var allcards = $(".lecture-card");
@@ -119,16 +151,6 @@ function getCardTime(card){
 
 dealOutTimeCard();
 // getCardTime();
-
-
-function testFunc(){
-	// var date = new Date();
-	// console.log(date.toString());
-	// date.setFullYear("16","1"-1,"2");
-	// console.log(date.toString());
-}
-
-testFunc();
 
 
 

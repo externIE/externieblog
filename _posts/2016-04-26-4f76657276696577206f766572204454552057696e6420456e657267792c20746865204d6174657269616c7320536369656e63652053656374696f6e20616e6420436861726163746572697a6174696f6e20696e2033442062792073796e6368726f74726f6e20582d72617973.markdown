@@ -4,7 +4,7 @@ title:       	  "Overview over DTU Wind Energy, the Materials Science Section an
 dtitle:      	  "丹麦院士讲座（一）"
 time: 		  	  "15:00"
 address:	  	  "机械传动国家重点实验室"
-campus:	  	  "undefined"
+campus:	  	  "A"
 speaker:	   	  "Prof. Dorte Juul Jensen (Technical Univertsiy of Denmark,  Denark)"
 speaker-profile: "Prof. Jensen is the Professor in the Materials Science and Advanced Characterization Section, Department of Wind Energy, Technical University of Denmark. She received her Ph.D. degree from the Technical University of Denmark and Risø National Laboratory in 1980. Then she worked in Risø National Laboratory and got promoted to Professor in 2012. She currently serves as the head of Section “Materials Science and Advanced Characterization”, Department of Wind Energy, DTU."
 speaker-img:	  "http://externie.com/nophoto.png"
