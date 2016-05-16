@@ -4,28 +4,14 @@
 <!-- Custom Theme JavaScript -->
 <!-- <script src="{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}"></script> -->
 <script src="{{ "/js/footer.js " | prepend: site.baseurl }}"></script>
-
+<script src="{{ "/js/framework7.js" | prepend: site.baseurl}}"></script>
 
 <!-- async load function -->
 <script>
- 
- //    var myScroll;
- //    // myScroll = new IScroll('.ScrollWrapper');
-    
- //    myScroll = new IScroll('#ScrollWrapper', {
-	// 	scrollbars: true,
-	// 	mouseWheel: true,
-	// 	interactiveScrollbars: true,
-	// 	shrinkScrollbars: 'scale',
-	// 	fadeScrollbars: true
-	// });
-    
 
+    var myApp = new Framework7({
+    });
 
-// document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-
-
-    // $(".card-reveal").scrollUnique();
     function async(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),

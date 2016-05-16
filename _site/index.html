@@ -14,6 +14,7 @@
     <title>重大讲座信息APP</title>
 
     
+
     <link rel="stylesheet" href="/externieblog/css/header.css">
 
 
@@ -24,6 +25,9 @@
 
     <link rel="stylesheet" href="/externieblog/css/lyk.css">
     <link rel="stylesheet" type="text/css" href="/externieblog/css/duoshuo.css">
+
+    <!-- <link rel="stylesheet" href="/externieblog/css/framework7.material.css"> -->
+
     <script src="/externieblog/js/iscroll.js"></script>
     
     
@@ -486,13 +490,13 @@
 <div class="">
 	<div class="row">
         <!-- Post Container -->
-    		<div class="col s12 m12 l8 push-l2" style="padding: 0 0rem;">
+    		<div class="col s12 m12 l8 push-l2 list-block" style="padding: 0 0rem;">
                 <ul id="staggered-post" class="post-preview collapsible popout" data-collapsible="expandable" style="margin: 1.5rem 0 0 0;box-shadow: 0px 0px 0px #888888;;border: 0px;">
     			     
 
 
-        <li style="margin-top: 1rem" class="ALL 工程科学前沿讲坛 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 工程科学前沿讲坛 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >中国火电厂技术现状与目前关注热点问题</h5>
                 </div>
@@ -506,10 +510,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">动力工程学院304会议室&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">动力工程学院304会议室&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -584,8 +591,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 工程科学前沿讲坛 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 工程科学前沿讲坛 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >The Four Imperatives of Energy and Future Energy Options</h5>
                 </div>
@@ -599,10 +606,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">动力工程学院304&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">动力工程学院304&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -677,8 +687,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 工程科学前沿讲坛 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 工程科学前沿讲坛 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >运载火箭系统发展及其结构设计技术</h5>
                 </div>
@@ -692,10 +702,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">研究生院102&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">研究生院102&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -771,8 +784,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 其它 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 其它 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >人类移民火星之路</h5>
                 </div>
@@ -786,10 +799,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">重庆大学A区国际会议厅&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">重庆大学A区国际会议厅&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -864,8 +880,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 工程科学前沿讲坛 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 工程科学前沿讲坛 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >隧道围岩稳定精细化模拟方法与应用</h5>
                 </div>
@@ -879,10 +895,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">采矿大楼207会议室&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">采矿大楼207会议室&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -958,8 +977,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 教师教学发展工作坊 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 教师教学发展工作坊 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >我的课堂我的场—教你如何HOLD住课堂</h5>
                 </div>
@@ -973,10 +992,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">教师教学发展中心&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">教师教学发展中心&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1051,8 +1073,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 重大讲座  D show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 重大讲座  D show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >Bona Fide Optical Discs and Players for Molecular Diagnostics</h5>
                 </div>
@@ -1066,10 +1088,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">重庆大学虎溪校区理科楼LA108&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">重庆大学虎溪校区理科楼LA108&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1144,8 +1169,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 职通讲坛 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 职通讲坛 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >职通讲坛第43期——龙湖分享会</h5>
                 </div>
@@ -1159,10 +1184,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">A区国际会议厅306&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">A区国际会议厅306&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1240,8 +1268,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 教师教学发展工作坊 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 教师教学发展工作坊 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >翻转课堂教学设计与实践</h5>
                 </div>
@@ -1255,10 +1283,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">主教330&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">主教330&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1336,8 +1367,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 重大讲座  A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 重大讲座  A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >界面电化学基础及应用</h5>
                 </div>
@@ -1351,10 +1382,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">理科楼LA103&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">理科楼LA103&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1430,8 +1464,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 重大讲座  A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 重大讲座  A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >电化学及电致化学发光生物传感器信号放大策略</h5>
                 </div>
@@ -1445,10 +1479,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">理科楼LA103&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">理科楼LA103&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1524,8 +1561,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 经管讲坛  B show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 经管讲坛  B show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >学术研究如何与国际接轨？</h5>
                 </div>
@@ -1539,10 +1576,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">重庆大学B区一综合楼103教室&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">重庆大学B区一综合楼103教室&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1623,8 +1663,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 优质课程建设培训 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 优质课程建设培训 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >总整课程的规划</h5>
                 </div>
@@ -1638,10 +1678,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">主教504&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">主教504&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1716,8 +1759,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 名家会客厅  A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 名家会客厅  A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >学术不端与现代性</h5>
                 </div>
@@ -1731,10 +1774,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">研究生院308国际会议厅&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">研究生院308国际会议厅&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1809,8 +1855,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 重大讲座  undefined show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 重大讲座  undefined show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >文化翻身：梁漱溟之问</h5>
                 </div>
@@ -1824,10 +1870,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1902,8 +1951,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 优质课程建设培训 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 优质课程建设培训 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >工程教育专业认证的程序</h5>
                 </div>
@@ -1917,10 +1966,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">主教504&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">主教504&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -1995,8 +2047,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 其它 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 其它 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >大数据时代的系统结构与创新技术论坛及研讨会</h5>
                 </div>
@@ -2010,10 +2062,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">重庆大学主教504会议室&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">重庆大学主教504会议室&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -2089,8 +2144,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 汽车工程前沿讲坛  A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 汽车工程前沿讲坛  A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >智能制造与先进夹具技术</h5>
                 </div>
@@ -2104,10 +2159,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">重庆大学A区主教504&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">重庆大学A区主教504&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -2182,8 +2240,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 其它 A show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 其它 A show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >Modeling and Control of Discrete Event Systems: Automata and Petri Nets Perspectives</h5>
                 </div>
@@ -2197,10 +2255,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">主教学楼1811会议室&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">主教学楼1811会议室&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -2276,8 +2337,8 @@
 
 
 
-        <li style="margin-top: 1rem" class="ALL 重大讲座  D show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL 重大讲座  D show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >Radical C-H Activation/ Radical-Radical Cross-Coupling</h5>
                 </div>
@@ -2291,10 +2352,13 @@
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">重庆大学虎溪校区LA208会议室&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">重庆大学虎溪校区LA208会议室&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
@@ -2401,28 +2465,14 @@
 <!-- Custom Theme JavaScript -->
 <!-- <script src="/externieblog/js/hux-blog.min.js "></script> -->
 <script src="/externieblog/js/footer.js "></script>
-
+<script src="/externieblog/js/framework7.js"></script>
 
 <!-- async load function -->
 <script>
- 
- //    var myScroll;
- //    // myScroll = new IScroll('.ScrollWrapper');
-    
- //    myScroll = new IScroll('#ScrollWrapper', {
-	// 	scrollbars: true,
-	// 	mouseWheel: true,
-	// 	interactiveScrollbars: true,
-	// 	shrinkScrollbars: 'scale',
-	// 	fadeScrollbars: true
-	// });
-    
 
+    var myApp = new Framework7({
+    });
 
-// document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-
-
-    // $(".card-reveal").scrollUnique();
     function async(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),

@@ -14,6 +14,7 @@
     <title>关于 - 重大讲座信息APP</title>
 
     
+
     <link rel="stylesheet" href="/externieblog/css/header.css">
 
 
@@ -24,6 +25,9 @@
 
     <link rel="stylesheet" href="/externieblog/css/lyk.css">
     <link rel="stylesheet" type="text/css" href="/externieblog/css/duoshuo.css">
+
+    <!-- <link rel="stylesheet" href="/externieblog/css/framework7.material.css"> -->
+
     <script src="/externieblog/js/iscroll.js"></script>
     
     
@@ -486,7 +490,7 @@
 <div class="">
 	<div class="row">
         <!-- Post Container -->
-    		<div class="col s12 m12 l8 push-l2" style="padding: 0 0rem;">
+    		<div class="col s12 m12 l8 push-l2 list-block" style="padding: 0 0rem;">
                 <ul id="staggered-post" class="post-preview collapsible popout" data-collapsible="expandable" style="margin: 1.5rem 0 0 0;box-shadow: 0px 0px 0px #888888;;border: 0px;">
     			     <!-- Language Selector -->
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
@@ -583,28 +587,14 @@
 <!-- Custom Theme JavaScript -->
 <!-- <script src="/externieblog/js/hux-blog.min.js "></script> -->
 <script src="/externieblog/js/footer.js "></script>
-
+<script src="/externieblog/js/framework7.js"></script>
 
 <!-- async load function -->
 <script>
- 
- //    var myScroll;
- //    // myScroll = new IScroll('.ScrollWrapper');
-    
- //    myScroll = new IScroll('#ScrollWrapper', {
-	// 	scrollbars: true,
-	// 	mouseWheel: true,
-	// 	interactiveScrollbars: true,
-	// 	shrinkScrollbars: 'scale',
-	// 	fadeScrollbars: true
-	// });
-    
 
+    var myApp = new Framework7({
+    });
 
-// document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-
-
-    // $(".card-reveal").scrollUnique();
     function async(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),

@@ -152,6 +152,24 @@ function getCardTime(card){
 dealOutTimeCard();
 // getCardTime();
 
+$('a').click(function(e){e.stopPropagation();})
+
+function collectLecture(cardEl){
+	hideCollectBtn();
+	var title = cardEl.getElementsByClassName("title")[0].innerHTML;
+	var date = cardEl.getElementsByClassName("date")[0].innerHTML;
+	var time = cardEl.getElementsByClassName("time")[0].innerHTML;
+	var address = cardEl.getElementsByClassName("address")[0].innerHTML;
+	address = address.split("&nbsp;")[0];
+	//这里调用Android函数给Android返回卡片的信息
+	if (window.android) {
+		window.android.collectLecture(title,date,time,address);
+	};
+}
+
+function hideCollectBtn(){
+	myApp.swipeoutClose(myApp.swipeoutOpenedEl);
+}
 
 
 

@@ -3,6 +3,7 @@ layout: page
 description: ""
 ---
 
+
 {% if paginator.previous_page %}
     <center>
         <li class="previous">
@@ -12,8 +13,8 @@ description: ""
 {% endif %}
 
 {% for post in paginator.posts %}
-        <li style="margin-top: 1rem" class="ALL {{post.category}} {{post.campus}} show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:1rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+        <li style="margin-top: 1rem" class="swipeout ALL {{post.category}} {{post.campus}} show lecture-card">
+            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >{{ post.title }}</h5>
                 </div>
@@ -27,10 +28,13 @@ description: ""
                 	<div>
                 		<div style="float: left;font-zie:12px;">地点：</div>
                 		<div class="scrollTextWrapper" style="">
-                			<div class="scrollText" style="">{{post.address}}&nbsp;&nbsp;</div>
+                			<div id="address" class="address scrollText" style="">{{post.address}}&nbsp;&nbsp;</div>
                 		</div>
                 	</div>
                 </h6>
+                <div class="swipeout-actions-right">
+                    <a href="#" onclick="collectLecture(this.parentNode.parentNode)" class="yellow" style="left: 0px;">收藏</a>
+                </div>
             </div>
             <div class="collapsible-body" style="padding: 0rem 1rem 1rem 1rem; overflow: auto;border-bottom: 0px;">
             	<hr size=0.5 color=#E1E1E1 style="FILTER: alpha(opacity=100,finishopacity=0,style=3);margin: 0px;"/> 
