@@ -131,6 +131,9 @@ function dealOutTimeCard(){
 			if (!$(allcards[i]).hasClass("outtime")) {
 				$(allcards[i]).addClass("outtime");
 			};
+			if ($(allcards[i]).hasClass("swipeout")) {
+				$(allcards[i]).removeClass("swipeout");
+			};
 		}
 	};
 }
