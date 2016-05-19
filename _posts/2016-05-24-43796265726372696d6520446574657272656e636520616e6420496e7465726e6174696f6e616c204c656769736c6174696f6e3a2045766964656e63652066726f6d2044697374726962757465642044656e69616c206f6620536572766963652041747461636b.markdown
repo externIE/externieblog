@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Cybercrime Deterrence and International Legislation: Evidence from Distributed Denial of Service Attack"
+dtitle:      	  "网络犯罪预防与国际立法：来自分布式拒绝服务攻击的证据"
+time: 		  	  "10:00"
+address:	  	  "重庆大学B区经济与工商管理学院103教室"
+campus:	  	  "B"
+speaker:	   	  "Kai-Lung Hui 教授"
+speaker-profile: "Kai-Lung Hui博士是香港科技大学商学院信息系统、商业统计与运作管理系教授。他的研究兴趣包括信息隐私与安全、信息技术政策和电子商务等。Kai-Lung Hui教授的工作已经发表在《Management Science》,《Information Systems Research》,《MIS Quarterly》、《Journal of Management Information Systems》等国际权威学术期刊上。同时，Kai-Lung Hui教授还为很多政府部门以及非政府组织做咨询服务，比如香港特别行政区的知识产权部门，世界知识产权组织以及新加坡法务部等。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "经管学院"
+co-organizer:	  ""
+category:		  "经管讲坛 "
+author:		  "经济与工商管理学院 黄河"
+editorInCharge:  "林鉴军"
+---
+<p style="text-align: justify;">本次报告主要介绍针对网络犯罪预防与国际立法之间关系的研究。研究重点评估了网络犯罪立法对预防分布式拒绝服务攻击的影响。通过收集2004-2008年期间共177天在106个国家有记录的预防分布式拒绝服务攻击记录，研究发现网络犯罪立法至少可以降低10.8%的预防分布式拒绝服务攻击。然而，如果立法的国家在国际合作上有所保留，那么，相应的预防效应将不会出现。此外，研究还证实了网络犯罪立法存在网络效应和替代效应。上述研究发现表明网络上的攻击者是理性的，同时是由经济利益驱动的，同时会策略性地选择攻击目标。

@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "我的创业分享"
+dtitle:      	  "重庆大学第67期经管论坛之创业分享会"
+time: 		  	  "19:30"
+address:	  	  "重庆大学A区经管学院303"
+campus:	  	  "A"
+speaker:	   	  "冯俊阳"
+speaker-profile: "冯俊阳，人力资源资深从业者、连续创业者，擅长公司运营及战略管控，十余年外资企业及大型多元化控股集团人力资源副总裁任职经历；之后创立人力资源公司仕派诺，任职总经理，经历行业巨变且大多同行无法破局被淘汰的行业困境中，顺利实现逆境生存及业绩稳步增长的创业先例。现任拉米科技CEO，旗下主打产品为全国一站式大数据校招求职社区----开频校招。&nbsp;"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学经济与工商管理学院"
+co-organizer:	  "重庆大学经管学院研究生会、研究生团委"
+category:		  "经管讲坛 "
+author:		  "经济与工商管理学院 林鉴军"
+editorInCharge:  "林鉴军"
+---
+

@@ -1,0 +1,18 @@
+---
+layout: 			post
+title:       	  "The Four Imperatives of Energy and Future Energy Options"
+dtitle:      	  "澳大利亚工程院院士、西澳大学教授讲座"
+time: 		  	  "08:30"
+address:	  	  "动力工程学院304"
+campus:	  	  "A"
+speaker:	   	  "张东柯  教授"
+speaker-profile: "Professor Dongke Zhang FTSE obtained his BE and ME degrees from Nanjing Institute of Technology (now Southeast University), Nanjing, China in 1984 and 1987 respectively, and PhD in Chemical Engineering from the University of Newcastle, NSW in 1993. He is the Foundation Professor of Chemical Engineering and Inaugural Director of the Centre for Energy at The University of Western Australia. He was elected to the Fellowship of Australian Academy of Technological Sciences and Engineering (ATSE), serving as Deputy Chair of ATSE Energy Forum, and was named John Curtin Distinguished Professor in 2007 and the Top 100 Most Influential Engineers of Australia by Engineers Australia in 2011."
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学工程学部"
+co-organizer:	  "重庆大学动力工程学院，低品位能源利用技术及系统教育部重点实验室"
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 陈青"
+editorInCharge:  "陈青"
+---
+This talk will introduce and discuss the concept of four imperatives of energy and articulate their implications in sustainable energy development. The four imperatives are, in the order of importance, Power Intensity, Energy Density, Cost, and Scale.
+  Some newest figures of the four imperatives will be shared in order to illustrate that it is imperative to place a balanced approach to coal, oil, natural gas, nuclear, and renewable energy resources and their development. As an example for discussion, a priority list of strategies for technological developments in coal, natural gas and nuclear power as China’s top national energy policy, followed by a set of strategies for renewable energy developments in niche areas, is discussed.

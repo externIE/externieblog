@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Nuclear Materials Research at NC State University"
+dtitle:      	  "北卡罗来纳州立大学教授讲座"
+time: 		  	  "15:00"
+address:	  	  "重庆大学A区综合实验大楼"
+campus:	  	  "A"
+speaker:	   	  "Prof. K. Linga. Murty"
+speaker-profile: "Dr. Murty is the Professor in the Department of Nuclear Engineering and Department of Materials Science and Engineering, has extensive experience in Mechanical  llurgy and is the author of more than 125 technical papers on creep, fatigue, and fracture of  ls. He received his M.S. and Ph.D. degrees from the Cornell University, Ithaca, NY in 1967 and 1970."
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学工程学部"
+co-organizer:	  "重庆大学材料科学与工程学院"
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 陈青"
+editorInCharge:  "夏天"
+---
+A brief outline of the research activities during the past 3 decades in the Nuclear Materials Research group at NC State University will be summarized that comprise of creep mechanisms in materials, reliability of solders in electronic packaging, radiation embrittlement of ferritic steels, anisotropic biaxial creep of hcp  ls with emphasis on Zircaloy cladding, condition monitoring of structural materials using automated ball indentation, NMR study of dynamical behavior of point and line defects during deformation and radiation effects in nanocrystalline materials. The talk will highlight the current and past collaborative research programs in USA and abroad ending with the current research programs on transitions in creep mechanisms of low c/a-ratio hcp  ls, creep and creep-fatigue of alloy 709 and SCC of stainless steel welds in canisters for dry storage of spent nuclear fuel.

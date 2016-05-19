@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Triboelectrification for energy harvesting and sensing"
+dtitle:      	  "采用摩擦起电效应的能量采集和自供电传感技术"
+time: 		  	  "09:00"
+address:	  	  "重庆大学A区主教学楼1201"
+campus:	  	  "A"
+speaker:	   	  "朱光"
+speaker-profile: "朱光，中组部青年“千人计划”，中科院北京纳米能源与系统研究所研究员/博导，2013年5月在美国佐治亚理工学院获得工学博士，之后在佐治亚理工学院从事博士后，2014年6月回国。近年来主要从事机械能-电能转换材料和机制的应用基础研究。至今在Nature系列等国际一流刊物共发表论文70余篇，平均影响因子大于11，SCI总引用4000余次，H因子37，申请美国发明专利6项、中国发明专利20项。研究成果被Science和Nature等顶级科学杂志正面亮点评述，同时被CNN、Reuters、Nanowerk、MIT Technology Review和《中国科学报》等权威媒体深入报道。在国际性学术会议作报告10余次。主持国家和省市级多项科研项目。入选2015年中组部“青年千人”和“北京市海外高层次人才”计划。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "光电工程学院"
+co-organizer:	  "信息获取与仪器系统研究室"
+category:		  "光电讲坛"
+author:		  "光电工程学院 陈涛"
+editorInCharge:  "罗莎"
+---
+Triboelectrification is a type of quasi-permanent charge transfer between two materials that are in contact. Most daily static electricity can be explained by the triboelectrification. Though it has been discovered from the ancient time, people are lack of accurate and unified de ion on the fundamental mechanism of the charge transfer. Still, this phenomenon has been utilized in applications including electrostatic separations, photocopying, and laser printing. More recently, triboelectrification was coupled with electrostatic induction, which gave rise to a new type of energy conversion. Triboelectric charge of opposite signs on two dissimilar materials drive the transient transport of free electrons between electrodes in the external circuit as the two materials experience relative motions. In this process, mechanical kinetic energy is converted into electric energy. This type of energy conversion can be utilized in two major aspects. First, it offers a new paradigm for harvesting ambient mechanical energy in an efficient, simple, and cost-effective way. The harvested energy can be directly used or stored as a power source in a variety of applications, such as the supplemental power for portable/wearable electronics. Second, it provides a novel route in detecting motion-related stimuli by measuring and analyzing the generated electrical signal. For example, we’ve developed a flexible sensor array that can reveal the position, motion trajectory, and the profile of a contact  . This talk aims to elaborate the above topics by using our research in recent years.

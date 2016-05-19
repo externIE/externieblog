@@ -1,0 +1,18 @@
+---
+layout: 			post
+title:       	  "Advanced Biometrics 高级生物特征识别技术"
+dtitle:      	  "通信工程学院专家系列报告会：张大鹏教授谈高级生物特征识别技术"
+time: 		  	  "10:00"
+address:	  	  "A区主教学楼515会议室"
+campus:	  	  "A"
+speaker:	   	  "香港理工大学讲习/特聘教授，IEEE&IAPR Fellow：David Zhang （张大鹏）"
+speaker-profile: "张大鹏教授，毕业于北京大学，获学士学位。分别在1982，1985年获得哈尔滨工业大学计算机硕士和博士学位。1986-1988年在清华大学作博士后研究，而后任中央研究院副教授。1994年获得加拿大滑铁卢大学电气与计算机科学专业第二个博士学位。自2005年开始，张教授被聘为香港理工大学讲习/特聘教授（Chair Professor）。他作为创始人，在香港特区政府的支持下建立了生物特征识别研究中心（Biometric Research Center，BRC）。目前，张教授还兼任清华大学访问讲习教授、北京大学、上海交通大学、哈尔滨工业大学、加拿大滑铁卢大学客座教授。张教授是图像与图形学国际学术期刊（IJIG）的创始人和主编（Editor-in-Chief），Springer国际生物特征识别系列KISB的创始人和编辑，也是第一届生物特征识别国际学术会议ICBA的发起者和大会主席。另外，他也是10多个期刊包括IEEE Transactions的副主编（Associate Editor）。迄今为止，出版专著10余部，国际期刊论文400余篇，35项美国/日本/香港/中国发明专利。根据谷歌学术引用统计，其论文被引用次数超过33000余次，H-index为84。 张教授被汤森路透（Thomson Reuters）选为2014、2015年高被引科学家。张教授是IEEE计算机学会的杰出演讲者，也是IEEE Fellow和IAPR Fellow。"
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/2016/0418/20160418031715430.jpg"
+organizer:		  "重庆大学通信工程学院"
+co-organizer:	  ""
+category:		  "其它"
+author:		  "通信工程学院 肖磊"
+editorInCharge:  "许可"
+---
+In recent times, an increasing, worldwide effort has been devoted to the development of automatic personal identification systems that can be effective in a wide variety of security contexts. As one of the most powerful and reliable means of personal authentication, biometrics has been an area of particular interest. It has led to the extensive study of biometric technologies and the development of numerous algorithms, applications, and systems, which could be defined as Advanced Biometrics. This presentation will systematically explain this new research trend. As case studies, a new biometrics technology (palmprint recognition) and two new biometrics applications (medical biometrics and aesthetical biometrics) are introduced. Some useful achievements could be given to illustrate their effectiveness.
+  本讲座将系统阐述高级生物特征识别技术在世界范围内的研究进展及趋势，以及在人体识别中的应用价值。此外，张教授将在本报告讲述其团队实验室在掌纹识别技术，以及两个新的生物特征识别技术的应用，包括医学生物特征识别、审美生物特征识别方面的研究成果。

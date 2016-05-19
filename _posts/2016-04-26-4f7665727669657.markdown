@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Overview over DTU Wind Energy, the Materials Science Section and Characterization in 3D by synchrotron X-rays"
+dtitle:      	  "丹麦院士讲座（一）"
+time: 		  	  "15:00"
+address:	  	  "机械传动国家重点实验室"
+campus:	  	  "A"
+speaker:	   	  "Prof. Dorte Juul Jensen (Technical Univertsiy of Denmark,  Denark)"
+speaker-profile: "Prof. Jensen is the Professor in the Materials Science and Advanced Characterization Section, Department of Wind Energy, Technical University of Denmark. She received her Ph.D. degree from the Technical University of Denmark and Risø National Laboratory in 1980. Then she worked in Risø National Laboratory and got promoted to Professor in 2012. She currently serves as the head of Section “Materials Science and Advanced Characterization”, Department of Wind Energy, DTU."
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学工程学部"
+co-organizer:	  "重庆大学机械传动国家重点实验室"
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 夏天"
+editorInCharge:  "夏天"
+---
+This presentation will first provide an overview over the Section for Materials Science and Advanced Characterization, and the Department of Wind Energy at the Technical University of Denmark. The development of a so-called 3D X-ray Diffraction (3DXRD) technique is then described from idea to implementation. The use of this characterization technique has enabled detailed analyses of materials microstructures in 3D with micron or even sub-micron spatial resolution and to follow the microstructural evolution over time during for example mechanical loading or annealing. This has led to results challenging today’s understanding of key phenomena. Examples of key experiments are given. These experiments would not have been possible without the 3DXRD technique. Limitations of 3DXRD are discussed. On-going technique development and a complementary x-ray method are presented. Finally, challenges and suggestions for the future success of 3D/4D materials science are discussed.

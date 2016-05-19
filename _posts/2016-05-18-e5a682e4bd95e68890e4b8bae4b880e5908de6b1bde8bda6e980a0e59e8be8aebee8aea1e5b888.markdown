@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "如何成为一名汽车造型设计师"
+dtitle:      	  "如何成为一名汽车造型设计师"
+time: 		  	  "14:30"
+address:	  	  "重庆大学A区主教504"
+campus:	  	  "A"
+speaker:	   	  "岩田正史"
+speaker-profile: "岩田正史先生1974年毕业于日本大学艺术系美术学科工业设计，1974年4月入职三菱汽车工业股份有限公司，乘用车技术中心（爱知县/冈崎）设计课。从业40年期间研发了多款车型，包括：初代Galant A、初代Pajero、SSW（Show Car）、三菱重工建设机械、第2代Galant A、Galant Station Wagon、第2代Mirage、初代Pajero、Lancer Turbo、第二代Pajero、HSRIII（Show Car）、Proton汽车 SAGA（Malaysia），现代汽车第2代Granger（韩国）/第3代Derabonea、Space Liner（Show Car）、CZ3（Show Car）、面向台湾生产Galant、MPV、Mini Van，面向印度尼西亚生产Mini Van、小型Track等。2010年赴任重庆长安汽车研究总院设计中心对长安汽车自主研发车的CTF进行研发指导，先行研发及Brand DNA构建；2012年赴任北京汽车汽车研究院Design部对北汽自主研发车的Interior/Coloring Design进行研发指导。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆自主品牌汽车协同创新中心"
+co-organizer:	  ""
+category:		  "汽车工程前沿讲坛 "
+author:		  "工程学部 陈青"
+editorInCharge:  "陈青"
+---
+讲座将围绕汽车设计开发基本流程以及汽车外饰设计及内饰设计进行介绍，其中将分享岩田正史先生40年的汽车设计经验和经历。
