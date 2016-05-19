@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Magnetic Iron Oxide Nanostructures and Their Biomedical Applications"
+dtitle:      	  "新加坡国立大学丁军教授讲座"
+time: 		  	  "09:00"
+address:	  	  "国际会议厅306（实验设备处大楼）"
+campus:	  	  "undefined"
+speaker:	   	  "丁军"
+speaker-profile: "丁军，新加坡国立大学教授，材料科学与工程系副系(院)主任，中科院宁波材料技术与工程研究所客座教授。已经在磁学和磁性材料方面从事研究工作二十多年，研究工作主要集中在以下两个方向：（1）缺陷引起的铁磁，铁电和光学方面的效应；（2）纳米磁性材料在生物医学、环境和储能方面的应用。已发表文章超过400篇，被引用次数超过12000多次，H-Index影响因子61。参加过各类型会议超过200次，其中邀请报告80余次。他至今已指导40多名研究生，30多名博士和访问学者。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学工程学部"
+co-organizer:	  "重庆大学动力工程学院 低品位能源利用技术及系统教育部重点实验室"
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 吴瑶"
+editorInCharge:  "陈青"
+---
+<p style="TEXT-ALIGN: justify">Magnetic nanostructures have been fabricated by wet-chemical routes, such as thermal decomposition and hydrothermal process. For magnetic nanoparticles, we have fabricated spherical Fe3O4 nanoparticles. We have also synhtesized Fe3O4 naorings and nanodiscs.Because of their vortex domain structure, magnetic nanorings and nanodiscs can be relatively well suspended with suitable surfactant, even if their sizes are much larger than the critical size for superparamagnetism. These nanorings and nanodiscs possess relatively large magnetic hysteresis loss, which could result in excellent performance for magnetic hyperthermia. We have performed in-vivo hyperthermia. The results have demonstrated that magnetic nanorings are promising hyperthermia agent for cancer treatment. Fe3O4 nanodiscs could be aligned under magnetic field. This has resulted in a great enhancement of magnetic hyperthermia performance. In addition, these magnetic nanoparticles have shown excellent results for MRI contrast enhancement.

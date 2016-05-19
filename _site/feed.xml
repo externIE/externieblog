@@ -5,8 +5,8 @@
     <description>在这里探索iOS的一切。</description>
     <link>http://externie.github.io/externieblog/</link>
     <atom:link href="http://externie.github.io/externieblog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 19 May 2016 12:22:05 +0800</pubDate>
-    <lastBuildDate>Thu, 19 May 2016 12:22:05 +0800</lastBuildDate>
+    <pubDate>Thu, 19 May 2016 21:38:58 +0800</pubDate>
+    <lastBuildDate>Thu, 19 May 2016 21:38:58 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -59,6 +59,20 @@
         
         
         <category>职通讲坛</category>
+        
+      </item>
+    
+      <item>
+        <title>Magnetic Iron Oxide Nanostructures and Their Biomedical Applications</title>
+        <description>&lt;p style=&quot;TEXT-ALIGN: justify&quot;&gt;Magnetic nanostructures have been fabricated by wet-chemical routes, such as thermal decomposition and hydrothermal process. For magnetic nanoparticles, we have fabricated spherical Fe3O4 nanoparticles. We have also synhtesized Fe3O4 naorings and nanodiscs.Because of their vortex domain structure, magnetic nanorings and nanodiscs can be relatively well suspended with suitable surfactant, even if their sizes are much larger than the critical size for superparamagnetism. These nanorings and nanodiscs possess relatively large magnetic hysteresis loss, which could result in excellent performance for magnetic hyperthermia. We have performed in-vivo hyperthermia. The results have demonstrated that magnetic nanorings are promising hyperthermia agent for cancer treatment. Fe3O4 nanodiscs could be aligned under magnetic field. This has resulted in a great enhancement of magnetic hyperthermia performance. In addition, these magnetic nanoparticles have shown excellent results for MRI contrast enhancement.
+&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 May 2016 00:00:00 +0800</pubDate>
+        <link>http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/24/4d61676e6574696/</link>
+        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/24/4d61676e6574696/</guid>
+        
+        
+        <category>工程科学前沿讲坛</category>
         
       </item>
     
@@ -165,19 +179,6 @@
         
         
         <category>汽车工程前沿讲坛 </category>
-        
-      </item>
-    
-      <item>
-        <title>Nuclear Materials Research at NC State University</title>
-        <description>&lt;p&gt;A brief outline of the research activities during the past 3 decades in the Nuclear Materials Research group at NC State University will be summarized that comprise of creep mechanisms in materials, reliability of solders in electronic packaging, radiation embrittlement of ferritic steels, anisotropic biaxial creep of hcp  ls with emphasis on Zircaloy cladding, condition monitoring of structural materials using automated ball indentation, NMR study of dynamical behavior of point and line defects during deformation and radiation effects in nanocrystalline materials. The talk will highlight the current and past collaborative research programs in USA and abroad ending with the current research programs on transitions in creep mechanisms of low c/a-ratio hcp  ls, creep and creep-fatigue of alloy 709 and SCC of stainless steel welds in canisters for dry storage of spent nuclear fuel.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 May 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/18/4e75636c6561722/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/18/4e75636c6561722/</guid>
-        
-        
-        <category>工程科学前沿讲坛</category>
         
       </item>
     
