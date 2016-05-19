@@ -164,10 +164,10 @@ function collectLecture(cardEl){
 	var time = cardEl.getElementsByClassName("time")[0].innerHTML;
 	var address = cardEl.getElementsByClassName("address")[0].innerHTML;
 	var url = cardEl.getElementsByClassName("modal-trigger")[0].href;
-	address = address.split("&nbsp;")[0];
+		address = address.split("&nbsp;")[0];
 	//这里调用Android函数给Android返回卡片的信息
 	if (window.android) {
-		window.android.collectLecture(title,date,time,address);
+		window.android.collectLecture(url,title,date,time,address);
 	};
 }
 
