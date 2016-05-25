@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "现代分析化学和精准医学"
+dtitle:      	  "重大讲座-“杰青”许国旺研究员学术讲座"
+time: 		  	  "19:00"
+address:	  	  "重庆大学虎溪校区理科楼LA104"
+campus:	  	  "D"
+speaker:	   	  "许国旺 研究员 中国科学院大连化学物理研究所"
+speaker-profile: "许国旺: 1991年在中国科学院大连化物所获理学博士学位，并留所在国家色谱研究分析中心工作。1995.10-1997.9获得马普(Max-Planck-Institut)研究基金在德国Tuebingen大学医学院工作。1997年9月底回国在大连化物所继续担任题目组长，97年11月提升为研究员。99年5月被聘为博士生导师。2004年获国家自然科学基金委杰出青年基金资助，2005年起担任代谢组学研究中心主任，2008年起担任中国科学院分离分析化学重点实验室副主任，2016年起担任大连化物所生物技术部常务副主任。现为中国化学会色谱专业委员会副主任、中国质谱学会常务理事。正在担任 bolomics, Anal. Chim. Acta, Anal. Bioanal. Chem.，J. Chromatogr. B，J. Pharmaceut. Biomed. Anal.，J. Sep. Sci., Chromatographia等10多个国内外杂志编委，国际高效液相色谱会议科学委员会常委，也是多届国际毛细管色谱会议的科学委员会成员、国际代谢组学会议的组织者和科学委员会成员。至今为止，已发表SCI文章300多篇，申请发明专利80多件（其中已授权30多项）。"
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/2016/0520/20160520015433243.png"
+organizer:		  "重庆大学理学部 重庆大学化学化工学院"
+co-organizer:	  ""
+category:		  "其它"
+author:		  "化学化工学院 何巧艺"
+editorInCharge:  "何巧艺"
+---
+
