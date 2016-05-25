@@ -32,6 +32,7 @@
     
     
     <!--Custom JS-->
+    
     <script src="/externieblog/js/islider.js"></script>
     <script src="/externieblog/js/plugins/islider_desktop.js"></script>
     <script src="/externieblog/js/jquery.min.js"></script>
@@ -120,23 +121,10 @@
 <!-- Custom Theme JavaScript -->
 <!-- <script src="/externieblog/js/hux-blog.min.js "></script> -->
 <script src="/externieblog/js/footer.js "></script>
-<script src="/externieblog/js/framework7.js"></script>
+
 
 <!-- async load function -->
-<script>
 
-    var myApp = new Framework7({
-    });
-
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
 
 <!-- Highlight.js -->
 <script>
@@ -153,12 +141,6 @@
 <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
 
 <!--fastClick.js -->
-<script>
-    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
-        var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
-    })
-</script>
 
 
 <!-- Google Analytics -->

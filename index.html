@@ -14,7 +14,7 @@ description: ""
 
 {% for post in paginator.posts %}
         <li style="margin-top: 1rem" class="swipeout ALL {{post.category}} {{post.campus}} show lecture-card">
-            <div class="collapsible-header waves-effect waves-teal row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;" onclick="ClickCollaspibleHeader(this)">
+            <div class="collapsible-header row" style="padding:0.6rem 0rem;border-bottom: 0px;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 0px;position: relative;overflow: hidden;" onclick="ClickCollaspibleHeader(this)">
                 <div class="scrollTextWrapper col s7" style="">
                 	<h5 id="title" class="truncate title" style="" >{{ post.title }}</h5>
                 </div>
