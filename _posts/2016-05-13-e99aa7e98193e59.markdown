@@ -14,4 +14,4 @@ category:		  "工程科学前沿讲坛"
 author:		  "工程学部 陈青"
 editorInCharge:  "夏天"
 ---
-
+暂无讲座简介

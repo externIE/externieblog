@@ -77,6 +77,9 @@
 		}
 
 		public function setSpeachContent($content){
+			if ($content == "") {
+				$content = "暂无讲座简介";
+			}
 			$this->mSpeachContent = $content;
 		}
 
