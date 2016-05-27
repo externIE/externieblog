@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "岩石裂纹扩展三维应力场的物理可视化方法"
+dtitle:      	  "长江学者、国家杰出青年基金获得者鞠杨教授讲座"
+time: 		  	  "10:00"
+address:	  	  "主教504"
+campus:	  	  "A"
+speaker:	   	  "鞠杨"
+speaker-profile: "鞠杨，男，1967年出生，博士，教授。国家杰出青年科学基金获得者，2012年入选为 "长江学者奖励计划"特聘教授。现任中国矿业大学（北京）力学与建筑工程学院副院长、中国矿业大学北京市岩石混凝土破坏力学重点实验室常务副主任、岩石力学与分形研究所副所长。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  ""
+co-organizer:	  ""
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 王琴"
+editorInCharge:  "夏天"
+---
+

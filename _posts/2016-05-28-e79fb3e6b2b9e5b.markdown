@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "石油工程水射流钻井完井增产技术研究与应用"
+dtitle:      	  "中国工程院李根生院士讲座"
+time: 		  	  "09:00"
+address:	  	  "主教504"
+campus:	  	  "A"
+speaker:	   	  "李根生"
+speaker-profile: "李根生，男，1961年9月生，安徽石台人，中国工程院院士，博士，中国石油大学（北京）教授，美国犹他大学能源与地质研究院高级客座科学家、国家973项目首席科学家。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  ""
+co-organizer:	  ""
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 王琴"
+editorInCharge:  "夏天"
+---
+

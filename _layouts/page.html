@@ -57,27 +57,31 @@ layout: default
 <div class="">
 	<div class="row">
         <!-- Post Container -->
-    		<div class="col s12 m12 l8 push-l2 list-block" style="padding: 0 0rem;">
+    		<div class="col s12 m12 l8 push-l1 list-block" style="padding: 0 0rem;">
                 <ul id="staggered-post" class="post-preview collapsible popout" data-collapsible="expandable" style="margin: 1.5rem 0 0 0;box-shadow: 0px 0px 0px #888888;;border: 0px;">
     			     {{ content }}
                 </ul>
     		</div>
+        <div class="hide-on-med-and-down col l3 push-l9" style="position: fixed;">
+          <center>
+              <img class="responsive-img" src="img/common/download.png">
+          </center>
+        </div>
 	</div>
 </div>
-
 <script src="{{ "/js/framework7.js" | prepend: site.baseurl}}"></script>
 <script>
 
-    var myApp = new Framework7({
-    });
+    // var myApp = new Framework7({
+    // });
 
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
+    // function async(u, c) {
+    //   var d = document, t = 'script',
+    //       o = d.createElement(t),
+    //       s = d.getElementsByTagName(t)[0];
+    //   o.src = u;
+    //   if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    //   s.parentNode.insertBefore(o, s);
+    // }
 </script>
 

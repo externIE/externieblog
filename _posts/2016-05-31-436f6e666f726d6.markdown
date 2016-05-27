@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Conformal Wide-Band End-Fire Antennas of Low Profile  共形端射式低剖面宽带天线"
+dtitle:      	  "Zhongxiang Shen 谈共形端射式低剖面宽带天线技术"
+time: 		  	  "16:00"
+address:	  	  "主教学楼510会议室"
+campus:	  	  "A"
+speaker:	   	  "Zhongxiang Shen   新加坡南洋理工大学教授"
+speaker-profile: "Zhongxiang Shen received the B. Eng. degree from the University of Electronic Science and Technology of China, Chengdu,China, in 1987, the M. S. degree from Southeast University, Nanjing, China, in 1990, and the PhD degree from the University of Waterloo, Waterloo, Ontario, Canada, in 1997, all in electrical engineering."
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "通信工程学院"
+co-organizer:	  ""
+category:		  "重大讲座 "
+author:		  "通信工程学院 肖磊"
+editorInCharge:  "许可"
+---
+<p style="text-align: justify;">In this talk, I will share our recent experience in designing several end-fire antennas of extremely low profile. These end-fire antennas should be mounted on a conformal conducting surface and can operate over a wide frequency band (at least 100% fractional bandwidth). After some basic considerations about end-fire antennas, I shall review existing designs of wide-band and end-fire antennas. After that, three novel wide-band end-fire antennas will be introduced in details: narrow H-plane horn antenna, surface-wave antenna, and log-periodic monopole antenna. In the end, I shall also mention a few end-fire antennas that are worthy investigation in the future.

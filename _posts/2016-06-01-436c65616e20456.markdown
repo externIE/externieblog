@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Clean Energy Systems"
+dtitle:      	  "新加坡国立大学教授讲座"
+time: 		  	  "09:00"
+address:	  	  "5教211"
+campus:	  	  "undefined"
+speaker:	   	  "Prof. Jim Yang Lee"
+speaker-profile: "Prof. Jim Yang Lee是新加坡国立大学的Full Professor，该校化学与生物分子工程系主任、能源技术研究所所长。1979获得新加坡大学化学工程理学学士学位；1985年获得美国密歇根大学（安娜堡校区）化学工程专业博士学位；1985-1987：德克萨斯大学奥斯汀分校博士后研究员；1987-今：新加坡国立大学化学和生物分子工程系教授。现在同时兼职于能源研究所和材料研究与工程研究所。&nbsp; Prof. Jim Yang Lee的研究重点是纳米材料的合成和应用。他目前研究的项目包括锂离子电池、锂-硫电池、电化学催化剂、金属-空气电池等。他还致力于形状和尺寸控制合成纳米粒子和“绿色合成与简单的微生物和生物小分子的金属纳米粒子”。近年来，他在有影响力的国际期刊上发表文章300余篇、论文被引用次数超过17000次、H因子达72。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "工程学部"
+co-organizer:	  "航空航天学院"
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 刘畅"
+editorInCharge:  "陈青"
+---
+This lecture discusses the key concepts in “clean energy” from source to end-use and emphasizes the importance of a systems approach to solving this complex problem for sustainable developments. Some common options such as solar energy and biofuels will be analysed in terms of these principles to understand the technological and socioeconomic challenges within. If time permits we will also discuss an even more complex sustainability issue – the waste-water-energy nexus.

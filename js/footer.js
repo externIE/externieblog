@@ -155,7 +155,7 @@ function getCardTime(card){
 dealOutTimeCard();
 // getCardTime();
 
-$('a').click(function(e){e.stopPropagation();})
+$('a.collectBtn').click(function(e){e.stopPropagation();})
 
 function collectLecture(cardEl){
 	hideCollectBtn();

@@ -5,8 +5,8 @@
     <description>在这里探索iOS的一切。</description>
     <link>http://externie.github.io/externieblog/</link>
     <atom:link href="http://externie.github.io/externieblog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 25 May 2016 09:30:27 +0800</pubDate>
-    <lastBuildDate>Wed, 25 May 2016 09:30:27 +0800</lastBuildDate>
+    <pubDate>Fri, 27 May 2016 15:15:30 +0800</pubDate>
+    <lastBuildDate>Fri, 27 May 2016 15:15:30 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -45,6 +45,19 @@
       </item>
     
       <item>
+        <title>Clean Energy Systems</title>
+        <description>&lt;p&gt;This lecture discusses the key concepts in “clean energy” from source to end-use and emphasizes the importance of a systems approach to solving this complex problem for sustainable developments. Some common options such as solar energy and biofuels will be analysed in terms of these principles to understand the technological and socioeconomic challenges within. If time permits we will also discuss an even more complex sustainability issue – the waste-water-energy nexus.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Jun 2016 00:00:00 +0800</pubDate>
+        <link>http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/06/01/436c65616e20456/</link>
+        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/06/01/436c65616e20456/</guid>
+        
+        
+        <category>工程科学前沿讲坛</category>
+        
+      </item>
+    
+      <item>
         <title>高效光、电化学产氢催化剂的设计与思考</title>
         <description>&lt;p&gt;氢能是高效的可再生、清洁二次能源，由于其储量极为丰富（占宇宙质量的75%），因此也被认为人类的终极能源之一。但氢在地球上主要以化合态存在，开发大规模、廉价、清洁、高效的制氢技术是氢能有效利用的关键。本报告将围绕氢能清洁获取的两种主要途径—光解水产氢与电解水产氢，结合研究组在高效半导体可见光产氢纳米催化剂与低成本电解水产氢催化剂方面的相关研究工作，介绍光、电化学产氢催化剂的研究现状与我们在高效产氢纳米催化剂的设计与制备方面的一些认识与思考。&lt;/p&gt;
 </description>
@@ -54,6 +67,20 @@
         
         
         <category>其它</category>
+        
+      </item>
+    
+      <item>
+        <title>Conformal Wide-Band End-Fire Antennas of Low Profile  共形端射式低剖面宽带天线</title>
+        <description>&lt;p style=&quot;text-align: justify;&quot;&gt;In this talk, I will share our recent experience in designing several end-fire antennas of extremely low profile. These end-fire antennas should be mounted on a conformal conducting surface and can operate over a wide frequency band (at least 100% fractional bandwidth). After some basic considerations about end-fire antennas, I shall review existing designs of wide-band and end-fire antennas. After that, three novel wide-band end-fire antennas will be introduced in details: narrow H-plane horn antenna, surface-wave antenna, and log-periodic monopole antenna. In the end, I shall also mention a few end-fire antennas that are worthy investigation in the future.
+&lt;/p&gt;
+</description>
+        <pubDate>Tue, 31 May 2016 00:00:00 +0800</pubDate>
+        <link>http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/31/436f6e666f726d6/</link>
+        <guid isPermaLink="true">http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/31/436f6e666f726d6/</guid>
+        
+        
+        <category>重大讲座 </category>
         
       </item>
     
@@ -174,33 +201,6 @@
         
         
         <category>教师教学发展工作坊</category>
-        
-      </item>
-    
-      <item>
-        <title>中国火电厂技术现状与目前关注热点问题</title>
-        <description>&lt;p&gt;主要介绍我国火电厂锅炉环保和大型锅炉技术方面的发展状况，以及目前技术研究的热点问题。分为两部分：第一部分关于烟气污染物治理方面，从降低NOx，SOx和粉尘方面总结目前的技术状况和存在的问题，结合存在的问题，介绍了目前研究的热点项目情况。第二部分关于我国发展超超临界机组锅炉情况，介绍我国目前发展的超超临界二次再热机组状况与700℃机组研发状况。可为火力发电研究方向确定及提高毕业生就业选择提供参考。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 19 May 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/19/e4b8ade59bbde78/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/19/e4b8ade59bbde78/</guid>
-        
-        
-        <category>工程科学前沿讲坛</category>
-        
-      </item>
-    
-      <item>
-        <title>The Four Imperatives of Energy and Future Energy Options</title>
-        <description>&lt;p&gt;This talk will introduce and discuss the concept of four imperatives of energy and articulate their implications in sustainable energy development. The four imperatives are, in the order of importance, Power Intensity, Energy Density, Cost, and Scale.&lt;br /&gt;
-  Some newest figures of the four imperatives will be shared in order to illustrate that it is imperative to place a balanced approach to coal, oil, natural gas, nuclear, and renewable energy resources and their development. As an example for discussion, a priority list of strategies for technological developments in coal, natural gas and nuclear power as China’s top national energy policy, followed by a set of strategies for renewable energy developments in niche areas, is discussed.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 19 May 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/19/54686520466f757/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/19/54686520466f757/</guid>
-        
-        
-        <category>工程科学前沿讲坛</category>
         
       </item>
     

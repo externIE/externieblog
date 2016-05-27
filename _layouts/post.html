@@ -79,7 +79,7 @@ layout: default
                                     <li><a class="btn-floating white ds-wechat" data-service="wechat">
                                         <img style="width: 100%;height:100%;" src="{{ "/img/shareicon/weixin.png" | prepend: site.baseurl }}"/>  
                                     </a></li>
-                                    <li><a class="btn-floating blue" data-service="moveToBodyEnd" onclick="moveToBodyEnd(this)">
+                                    <li><a class="btn-floating blue btn_moveToEnd" data-service="moveToBodyEnd">
                                         <i class="mdi-editor-mode-edit"></i>
                                     </a></li>
                                     <li class="hide-on-small-only"><a href="#" class="btn-floating grey" data-service="home">
@@ -123,10 +123,6 @@ layout: default
 
 
 
-<!-- <script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script> -->
-<!-- <script src="http://daiweilai.github.io/js/lightbox-plus-jquery.min.js"></script> -->
-<!-- <link rel="stylesheet" href="http://daiweilai.github.io/css/lightbox.css"> -->
-
 <script>
 
 var options = [
@@ -136,26 +132,7 @@ var options = [
 Materialize.scrollFireForever(options);
 
 
-function moveToBodyEnd(e){
-    // e.prevent
-    document.getElementsByTagName('BODY')[0].scrollTop=document.getElementsByTagName('BODY')[0].scrollHeight;
-    // $("body").slideDown(300,function(){
-    //     console.log("touchDown");
-    // });
-}
-
-// $("button").click(function(){
-//   $("div").animate({left:'250px'});
-// });
-
 function hideFloatBtn(){
-    // if($("#floatShareBtn").hasClass("scaleFadeIn")){
-    //     $("#floatShareBtn").removeClass("scaleFadeIn");
-    // }
-    // if(!$("#floatShareBtn").hasClass("scaleFadeOut")){
-    //     $("#floatShareBtn").addClass("scaleFadeOut");
-    // }
-    // console.log("运行到");
     $("#floatShareBtn btn-floating").stop(false,true);
     $("#floatShareBtn").animate({
         opacity:'0'
@@ -166,13 +143,6 @@ function hideFloatBtn(){
 } 
 
 function showFloatBtn(){
-    // console.log("运行upupup");
-    // if($("#floatShareBtn").hasClass("scaleFadeOut")){
-    //     $("#floatShareBtn").removeClass("scaleFadeOut");
-    // }
-    // if(!$("#floatShareBtn").hasClass("scaleFadeIn")){
-    //     $("#floatShareBtn").addClass("scaleFadeIn");
-    // }
     $("#floatShareBtn").stop(false,true);
     $("#floatShareBtn").animate({
         opacity:'1'
@@ -182,19 +152,6 @@ function showFloatBtn(){
     });
     
 } 
-
-
-// function switchImgToCircle(){
-
-//     var imgs = document.getElementById("ds-reset")
-//     console.log(imgs.innerHTML);
-//     // for (var i = imgs.length - 1; i >= 0; i--) {
-//     //     console.log(imgs[i]);
-//     //     $(imgs[i]).addClass("circle");
-//     // };
-// }
-
-// switchImgToCircle();
 
 var fba = document.getElementById("floatShareBtn");
 fba.addEventListener("webkitAnimationEnd", function(){ //动画结束时事件 
@@ -220,24 +177,14 @@ $(".container").find("h2,h3,h4,h5,h6").each(function(i,item){
     $(".newh5").css("margin-left",60);
     $(".newh6").css("margin-left",80);
 });
-$("#AnchorContent").toggle();
-$("#AnchorContentToggle").click(function(){
-    var text = $(this).html();
-    if(text=="目录[-]"){
-        $(this).html("目录[+]");
-        $(this).attr({"title":"展开"});
-    }else{
-        $(this).html("目录[-]");
-        $(this).attr({"title":"收起"});
-    }
-    $("#AnchorContent").toggle();
-});
 
 $(".anchor-link").click(function(){
     $("html,body").animate({scrollTop: $($(this).attr("link")).offset().top}, 1000);
 });
 
-$('.ScrollTop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+// function moveToEnd(){$('html,body').animate({scrollTop: document.getElementsByTagName('BODY')[0].scrollHeight}, 800);}
+
+$('.btn_moveToEnd').click(function(){$('html,body').animate({scrollTop: document.getElementsByTagName('BODY')[0].scrollHeight}, 800);});
 //给图片添加点击放大事件
 // $(".container").find("img").each(function(i,item){
 //     var tag = $(item).get(0);

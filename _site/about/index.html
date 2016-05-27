@@ -120,9 +120,12 @@
         
         
         
-    
-        
-        
+            <script type="text/javascript">
+                if (window.android) {
+                  window.android.setCategoryItem("工程科学前沿讲坛");
+                }; 
+            </script>
+            <li><a href="javascript:selectCategory('工程科学前沿讲坛')">工程科学前沿讲坛</a></li>
         
     
         
@@ -134,10 +137,22 @@
         
             <script type="text/javascript">
                 if (window.android) {
-                  window.android.setCategoryItem("工程科学前沿讲坛");
+                  window.android.setCategoryItem("重大讲座 ");
                 }; 
             </script>
-            <li><a href="javascript:selectCategory('工程科学前沿讲坛')">工程科学前沿讲坛</a></li>
+            <li><a href="javascript:selectCategory('重大讲座 ')">重大讲座 </a></li>
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
         
     
         
@@ -199,13 +214,6 @@
     
         
         
-        
-            <script type="text/javascript">
-                if (window.android) {
-                  window.android.setCategoryItem("重大讲座 ");
-                }; 
-            </script>
-            <li><a href="javascript:selectCategory('重大讲座 ')">重大讲座 </a></li>
         
     
         
@@ -539,7 +547,7 @@
 <div class="">
 	<div class="row">
         <!-- Post Container -->
-    		<div class="col s12 m12 l8 push-l2 list-block" style="padding: 0 0rem;">
+    		<div class="col s12 m12 l8 push-l1 list-block" style="padding: 0 0rem;">
                 <ul id="staggered-post" class="post-preview collapsible popout" data-collapsible="expandable" style="margin: 1.5rem 0 0 0;box-shadow: 0px 0px 0px #888888;;border: 0px;">
     			     <!-- Language Selector -->
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
@@ -625,23 +633,27 @@
 
                 </ul>
     		</div>
+        <div class="hide-on-med-and-down col l3 push-l9" style="position: fixed;">
+          <center>
+              <img class="responsive-img" src="img/common/download.png">
+          </center>
+        </div>
 	</div>
 </div>
-
 <script src="/externieblog/js/framework7.js"></script>
 <script>
 
-    var myApp = new Framework7({
-    });
+    // var myApp = new Framework7({
+    // });
 
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
+    // function async(u, c) {
+    //   var d = document, t = 'script',
+    //       o = d.createElement(t),
+    //       s = d.getElementsByTagName(t)[0];
+    //   o.src = u;
+    //   if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    //   s.parentNode.insertBefore(o, s);
+    // }
 </script>
 
 
@@ -674,11 +686,8 @@
 <!--fastClick.js -->
 
 
-<!-- Google Analytics -->
 
 
-
-<!-- Baidu Tongji -->
 
 
 

@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "损伤煤层瓦斯运移过程的热固耦合模型及其应用"
+dtitle:      	  "国家杰出青年基金获得者朱万成教授讲座"
+time: 		  	  "10:40"
+address:	  	  "主教504"
+campus:	  	  "A"
+speaker:	   	  "朱万成"
+speaker-profile: "朱万成，1974年2月生，新疆呼图壁县人，博士，国家杰出青年科学基金获得者，东北大学教授，博士生导师，德国洪堡学者。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  ""
+co-organizer:	  ""
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 王琴"
+editorInCharge:  "夏天"
+---
+
