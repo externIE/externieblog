@@ -1,7 +1,7 @@
 ---
 layout: 			post
 title:       	  "历久尚新的环境断裂"
-dtitle:      	  "历久尚新的环境断裂"
+dtitle:      	  "乔利杰谈历久尚新的环境断裂"
 time: 		  	  "10:00"
 address:	  	  "重庆大学虎溪校区理科楼LA107"
 campus:	  	  "D"

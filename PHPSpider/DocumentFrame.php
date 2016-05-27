@@ -28,10 +28,11 @@
 
 		}
 		public function setTitle($title){
-			$this->mTitle = $title;
+
+			$this->mTitle = str_replace(array("\""), array("“"), $title);
 		}
 		public function setDTitle($dtitle){
-			$this->mDTitle = $dtitle;
+			$this->mDTitle = str_replace(array("\""), array("“"), $dtitle);
 		}
 
 		public function setDate($date){
@@ -51,7 +52,7 @@
 			$this->mSpeaker = $speaker;
 		}
 		public function setSpeakerProfile($speakerProfile){
-			$this->mSpeakerProfile = $speakerProfile;
+			$this->mSpeakerProfile = str_replace(array("\""), array("“"), $speakerProfile);
 		}
 		public function setSpeakerImgSrc($src){
 			$this->mSpeakerImgSrc = $src;
