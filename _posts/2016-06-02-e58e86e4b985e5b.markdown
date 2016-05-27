@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "历久尚新的环境断裂"
+dtitle:      	  "历久尚新的环境断裂"
+time: 		  	  "10:00"
+address:	  	  "重庆大学虎溪校区理科楼LA107"
+campus:	  	  "D"
+speaker:	   	  "长江学者、国家杰出青年基金获得者乔利杰教授"
+speaker-profile: "乔利杰，北京科技大学教授，博士生导师，1988年毕业于北京科技大学大学材料物理专业获博士学位。主要研究方向为：材料的环境断裂机理，低维材料的纳米力学研究，材料的摩擦磨损研究，材料的失效分析。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学理学部 化学化工学院"
+co-organizer:	  ""
+category:		  "其它"
+author:		  "化学化工学院 何巧艺"
+editorInCharge:  "胡小华"
+---
+

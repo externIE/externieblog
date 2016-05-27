@@ -11,10 +11,11 @@ layout: default
             <div class="col s12">
                 <div class="post-heading">
                     <h2>{{ page.title }}</h2>
-                    
+                    {% if page.speaker %}
                     <p class="speaker">
-                        主讲人：{% if page.speaker %}{{ page.speaker }}{% else %}{{ site.title }}{% endif %} 
+                        主讲人：{{ page.speaker }} 
                     </p>
+                    {% endif %}
                     <p class="tima-address" style="float:left;">
                         时间：{{ page.date | date: "%-m月%-d日"}}&nbsp;&nbsp;地点：{{ page.address }}
                     </p>
@@ -26,18 +27,18 @@ layout: default
 
 <div class="container">
     <div class="organizer-wrapper">
-        {% comment %} if page.organizer {% endcomment %}
+        {% if page.organizer %}
         <div>
             <p class="organizer-label">主办方：</p>
             <p class="organizer">{{ page.organizer }}</p>
         </div>
-        {% comment %} endif {% endcomment %}
-        {% comment %} if page.co-organizer {% endcomment %}
+        {% endif %}
+        {% if page.co-organizer %}
         <div>
             <p class="co-organizer-label">协办方：</p>
             <p class="co-organizer">{{ page.co-organizer }}</p>
         </div>
-        {% comment %} endif {% endcomment %}
+        {% endif %}
     </div>
 
     <!-- Post Content -->
@@ -115,12 +116,6 @@ layout: default
 
 </div>
 
-                    
-
-
-
-
-
 
 
 <script>
@@ -182,15 +177,13 @@ $(".anchor-link").click(function(){
     $("html,body").animate({scrollTop: $($(this).attr("link")).offset().top}, 1000);
 });
 
-// function moveToEnd(){$('html,body').animate({scrollTop: document.getElementsByTagName('BODY')[0].scrollHeight}, 800);}
-
 $('.btn_moveToEnd').click(function(){$('html,body').animate({scrollTop: document.getElementsByTagName('BODY')[0].scrollHeight}, 800);});
-//给图片添加点击放大事件
-// $(".container").find("img").each(function(i,item){
-//     var tag = $(item).get(0);
-// 	tag.parentNode.innerHTML = "<div>" + "<a href="+tag.src+' data-lightbox="aaa"'+ " >"+ "<img src=" + tag.src + " />" +"</a>" + "</div>"
+//响应式图片
+$("#content").find("img").each(function(i,item){
+    var tag = $(item).get(0);
+    $(tag).addClass("responsive-img");
 	  
-// });
+});
 </script>
 
 
