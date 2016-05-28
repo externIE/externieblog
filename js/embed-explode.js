@@ -1033,7 +1033,7 @@ function(e, t, s) {
                 } [t] || [550, 400];
                 return e.open(s + ( - 1 == s.indexOf("?") ? "?": "&") + o.param({
                     origin: h.origin || "http://" + h.host
-                }), "_self", "width=" + a[0] + ",height=" + a[1] + ",toolbar=no,menubar=no,location=yes")
+                }), "_blank", "width=" + a[0] + ",height=" + a[1] + ",toolbar=no,menubar=no,location=yes")
             }
             function y(e) {
                 var t = Z[r() ? "loginUrl": "bindUrl"](e);
@@ -2194,7 +2194,10 @@ function(e, t, s) {
                                 content: i.data("content"),
                                 url: i.data("url")
                             });
-                            e.open(l, "_self")
+                            console.log(e);
+                            // showGaryBox('弹窗',l,function(){alert('窗口关闭！')})
+                            // e.showModelessDialog(l);
+                            e.open(l, "_blank")
                         }
                         t.preventDefault(),
                         t.stopPropagation()

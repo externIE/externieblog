@@ -6,24 +6,6 @@
 <script src="{{ "/js/footer.js " | prepend: site.baseurl }}"></script>
 
 
-<!-- async load function -->
-
-
-<!-- Highlight.js -->
-<script>
-    if($('#tag_cloud').length !== 0){
-        async("/js/jquery.tagcloud.js",function(){
-            $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
-    }
-</script>
-<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
-
-<!--fastClick.js -->
 
 
 
