@@ -1574,7 +1574,7 @@ function(e, t, s) {
                                 c(t);
                                 break;
                             default:
-                                if (!e.open(this.href, "_self", "height=500,width=600,top=0,left=0,toolbar=no,menubar=no,resizable=yes,location=yes,status=no")) return
+                                if (!e.open(this.href, "_blank", "height=500,width=600,top=0,left=0,toolbar=no,menubar=no,resizable=yes,location=yes,status=no")) return
                             }
                             return ! 1
                         }
