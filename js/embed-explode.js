@@ -1,3 +1,4 @@
+
 !
 function(e, t, s) {
     function a() {
@@ -538,7 +539,7 @@ function(e, t, s) {
                 return this
             }
         }),
-        Q = S.Widget = J.extend({
+       EXQ = Q = S.Widget = J.extend({
             init: function(e, t) {
                 this.el = e,
                 this.options = t || {},
@@ -910,7 +911,7 @@ function(e, t, s) {
             s = e;
             if (s) for (var a, i = -1,
             r = s.length - 1; r > i;) a = s[i += 1],
-            t += '<li><a href="' + Z.loginUrl(a) + '" rel="nofollow" class="ds-service-link ds-' + a + '">' + S.serviceNames[a] + "</a></li>";
+            t += '<li><a href="' + Z.loginUrl(a) + '"target="_blank" rel="nofollow" class="ds-service-link ds-' + a + '">' + S.serviceNames[a] + "</a></li>";
             return t
         },
         et.shareWidget = function(e) {
@@ -928,7 +929,7 @@ function(e, t, s) {
         },
         et.toolbar = function() {
             var e = '<div class="ds-toolbar"><div class="ds-account-control"><span class="ds-icon ds-icon-settings"></span> <span>帐号管理</span><ul><li><a class="ds-bind-more" href="javascript:void(0);" style="border-top: none">绑定更多</a></li><li><a target="_blank" href="' + S.REMOTE + "/settings/" + x(T()) + '">' + u(D.settings) + '</a></li><li><a rel="nofollow" href="' + Z.logoutUrl() + '" style="border-bottom: none">登出</a></li></ul></div><div class="ds-visitor">';
-            return e += nt.data.url ? '<a class="ds-visitor-name" href="' + u(nt.data.url) + '" target="_self">' + u(nt.data.name) + "</a>": '<span class="ds-visitor-name">' + u(nt.data.name) + "</span>",
+            return e += nt.data.url ? '<a class="ds-visitor-name" href="' + u(nt.data.url) + '" target="_blank">' + u(nt.data.name) + "</a>": '<span class="ds-visitor-name">' + u(nt.data.name) + "</span>",
             e += '<a class="ds-unread-comments-count" href="javascript:void(0);" title="新回复"></a></div></div>'
         },
         et.topThreads = function(e) {
@@ -936,7 +937,7 @@ function(e, t, s) {
             s = e.response;
             if (s) for (var a, i = -1,
             r = s.length - 1; r > i;) a = s[i += 1],
-            t += '<li><a target="_self" href="' + u(a.url) + '" title="' + u(a.title) + '">' + u(a.title) + "</a></li>";
+            t += '<li><a target="_blank" href="' + u(a.url) + '" title="' + u(a.title) + '">' + u(a.title) + "</a></li>";
             return t
         },
         et.topUsers = function(e) {
