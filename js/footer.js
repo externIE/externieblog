@@ -82,12 +82,13 @@ function select(campus,from){
 		}
 	}
 	var fromDirection = from || "left";
-	console.log(fromDirection);
-	if (fromDirection == "right") {
-		Materialize.showStaggeredListRight("#staggered-post");
-	}else{
-		Materialize.showStaggeredList("#staggered-post");
-	}
+	Materialize.divideList("#staggered-post");
+	// console.log(fromDirection);
+	// if (fromDirection == "right") {
+	// 	Materialize.showStaggeredListRight("#staggered-post");
+	// }else{
+	// 	Materialize.showStaggeredList("#staggered-post");
+	// }
 };
 
 function selectCategory(category,from){
@@ -111,13 +112,13 @@ function selectCategory(category,from){
 			$(li).removeClass("show");
 		}
 	}
+	Materialize.divideList("#staggered-post");
 	
-	
-	if (fromDirection == "right") {
-		Materialize.showStaggeredListRight("#staggered-post");
-	}else{
-		Materialize.showStaggeredList("#staggered-post");
-	}
+	// if (fromDirection == "right") {
+	// 	Materialize.showStaggeredListRight("#staggered-post");
+	// }else{
+	// 	Materialize.showStaggeredList("#staggered-post");
+	// }
 }
 
 function dealOutTimeCard(){

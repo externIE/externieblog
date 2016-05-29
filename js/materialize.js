@@ -3713,6 +3713,7 @@ $(document).ready(function(){
 
 
 
+
   // Horizontal staggered list
   Materialize.showStaggeredList = function(selector) {
     var time = 0;
@@ -3739,6 +3740,20 @@ $(document).ready(function(){
         { opacity: "1", translateX: "0"},
         { duration: 800, delay: time, easing: [60, 10] });
       time += 120;
+    });
+  };
+
+  Materialize.divideList = function(selector) {
+    var time = 0;
+    $(selector).find('li.show').velocity(
+        { marginTop:"-1rem"},
+        { duration: 0 });
+
+    $(selector).find('li.show').each(function() {
+      $(this).velocity(
+        { opacity: "1", marginTop:"1rem"},
+        { duration: 800, delay: time });
+      // time += 120;
     });
   };
 
