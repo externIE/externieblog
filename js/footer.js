@@ -170,6 +170,7 @@ function collectLecture(cardEl){
 	if (window.android) {
 		window.android.collectLecture(url,title,date,time,address);
 	};
+	console.log("收藏成功");
 }
 
 function hideCollectBtn(){

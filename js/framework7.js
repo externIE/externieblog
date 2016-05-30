@@ -5201,6 +5201,9 @@ function() {
             on: function(e, t, n, r) {
                 function i(e) {
                     var r = e.target;
+                    if (r.tagName=="A") {
+                        return;
+                    };
                     if (a(r).is(t)) n.call(r, e);
                     else for (var i = a(r).parents(), s = 0; s < i.length; s++) a(i[s]).is(t) && n.call(i[s], e)
                 }
