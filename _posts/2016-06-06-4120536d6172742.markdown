@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "A Smart New World: The Dream and Reality of Cyber Physical Systems"
+dtitle:      	  "A Smart New World: The Dream and Reality of Cyber Physical Systems"
+time: 		  	  "10:00"
+address:	  	  "重庆大学主教学楼"
+campus:	  	  "A"
+speaker:	   	  "P rof. Sang Son（IEEE Fellow，韩国工程院院士，韩国科学院院士）"
+speaker-profile: "Prof. Son现任韩国DGIST（大邱庆北科学技术院）研究生院院长以及DGIST CPS国际中心主任。Prof. Son曾担任美国弗吉尼亚大学计算机系教授，韩国西江大学WCU讲座教授。Prof. Son 分别于首尔国立大学（SNU）、韩国科学技术学院（KAIST）及马里兰大学帕克分校（UMCP）获得学士、硕士及博士学位。Prof. Son曾作为访问教授工作于韩国科学技术院（KAIST），香港城市大学（CityU），法国里尔中央理工大学（Ecole Centrale de Lille），瑞典林雪平（ oping）大学及瑞典舍夫德（Skovde）大学。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "计算机学院"
+co-organizer:	  ""
+category:		  "名家会客厅 "
+author:		  "计算机学院 申卫洁"
+editorInCharge:  "申卫洁"
+---
+With continuing miniaturization and increased wireless connectivity, the computing systems are becoming deeply  ded into everyday life and interact with processes and events of the physical world. This cyber-physical interaction has the potential to transform how humans interact with and control the physical world. Systems featuring a tight combination of, and coordination between, the system’s computational and physical elements are broadly called cyber physical systems (CPS). Examples of CPS include medical devices and systems, aerospace systems, transportation systems, smart grids, robotic systems, and smart spaces. Advances in key technologies are changing how these types of systems operate. For instance, the level of uncertainty in which these systems operate is increasing, creating the need for greater robustness. Pervasive wireless access is pushing these systems to unprecedented dynamic and non-deterministic situations. There is a critical demand for CPS to be adaptive to provide robustness to meet the requirements. In this talk, we illustrate few examples of CPS, and discuss the research challenges that should be addressed to achieve the dream of a smart and safe new world.

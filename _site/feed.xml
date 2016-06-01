@@ -2,23 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>externIE’s 重大讲座信息APP</title>
-    <description>在这里探索iOS的一切。</description>
-    <link>http://externie.github.io/externieblog/</link>
-    <atom:link href="http://externie.github.io/externieblog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 30 May 2016 16:16:42 +0800</pubDate>
-    <lastBuildDate>Mon, 30 May 2016 16:16:42 +0800</lastBuildDate>
+    <description>重大讲座信息APP</description>
+    <link>http://externie.github.io/externie/</link>
+    <atom:link href="http://externie.github.io/externie/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 01 Jun 2016 10:23:08 +0800</pubDate>
+    <lastBuildDate>Wed, 01 Jun 2016 10:23:08 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>A Smart New World: The Dream and Reality of Cyber Physical Systems</title>
+        <description>&lt;p&gt;With continuing miniaturization and increased wireless connectivity, the computing systems are becoming deeply  ded into everyday life and interact with processes and events of the physical world. This cyber-physical interaction has the potential to transform how humans interact with and control the physical world. Systems featuring a tight combination of, and coordination between, the system’s computational and physical elements are broadly called cyber physical systems (CPS). Examples of CPS include medical devices and systems, aerospace systems, transportation systems, smart grids, robotic systems, and smart spaces. Advances in key technologies are changing how these types of systems operate. For instance, the level of uncertainty in which these systems operate is increasing, creating the need for greater robustness. Pervasive wireless access is pushing these systems to unprecedented dynamic and non-deterministic situations. There is a critical demand for CPS to be adaptive to provide robustness to meet the requirements. In this talk, we illustrate few examples of CPS, and discuss the research challenges that should be addressed to achieve the dream of a smart and safe new world.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Jun 2016 00:00:00 +0800</pubDate>
+        <link>http://externie.github.io/externie/%E5%90%8D%E5%AE%B6%E4%BC%9A%E5%AE%A2%E5%8E%85%20/2016/06/06/4120536d6172742/</link>
+        <guid isPermaLink="true">http://externie.github.io/externie/%E5%90%8D%E5%AE%B6%E4%BC%9A%E5%AE%A2%E5%8E%85%20/2016/06/06/4120536d6172742/</guid>
+        
+        
+        <category>名家会客厅 </category>
+        
+      </item>
     
       <item>
         <title>历久尚新的环境断裂</title>
         <description>&lt;p&gt;暂无讲座简介&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Jun 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E5%85%B6%E5%AE%83/2016/06/02/e58e86e4b985e5b/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%85%B6%E5%AE%83/2016/06/02/e58e86e4b985e5b/</guid>
+        <link>http://externie.github.io/externie/%E5%85%B6%E5%AE%83/2016/06/02/e58e86e4b985e5b/</link>
+        <guid isPermaLink="true">http://externie.github.io/externie/%E5%85%B6%E5%AE%83/2016/06/02/e58e86e4b985e5b/</guid>
         
         
         <category>其它</category>
+        
+      </item>
+    
+      <item>
+        <title>《Nature》期刊主编讲座：如何在《Nature》及其姊妹刊上发表文章</title>
+        <description>&lt;p&gt;为了响应重庆大学双一流建设规划，引导师生的学术成果发表在国际顶级刊物上，进一步增强学校的学术影响力和国际影响力，重庆大学图书馆特别邀请《Nature》系列期刊大中华区执行主编 Ed Gerstner博士走进重庆大学与师生交流，并就开放获取、论文选题与撰写、如何提升论文影响力、期刊发表流程等主题做专题讲座。&lt;br /&gt;
+  报告主要内容简介：&lt;br /&gt;
+  嗯，你有了一个非同寻常的发现，想告诉全世界。而且，你想把它发表在一份《Nature》系列期刊上。但该选哪个期刊呢? 是啊，为什么推出那么多《Nature》系列期刊呢？《Nature Communications》是干什么的，和其它《Nature》子刊有什么不一样吗? 开放获取是什么，有什么可关注的? 论文该怎么写，才能获得最大的影响力？在我的演讲中，我会尽量回答以上这些问题，以及任何在《Nature》系列期刊上发表论文的问题。我还会谈到：&lt;br /&gt;
+  • 我们会寻找怎样的论文去发表？&lt;br /&gt;
+  • 处理投稿的流程和机制；&lt;br /&gt;
+  • 如何决定论文是否适合我们？&lt;br /&gt;
+  • 提交论文要做怎样的准备？&lt;br /&gt;
+  • 如果认为我们（或审稿人）的决定是错误的，那该怎么做？&lt;br /&gt;
+  • 我们在中国寻找怎样的论文？&lt;br /&gt;
+  报告内容英文简介：&lt;br /&gt;
+  So, you&#39;ve discovered something extraordinary and you want to tell the world about it. And you want to publish it in a Nature journal. But which journal should you choose? Indeed, why has Nature spawned so many new  s? What is Nature Communications, and what is it trying to do that other Nature journal don&#39;t do already? What is Open Access and why should you care? And how should you write up your research to maximise its impact? In this talk I&#39;ll try to answer these and any other questions you have about getting published in a Nature journal. I&#39;ll also cover:&lt;br /&gt;
+  • What we look for in the papers that we consider for publication?&lt;br /&gt;
+  • The mechanics of how submissions are handled;&lt;br /&gt;
+  • How to decide if your paper could be for us?&lt;br /&gt;
+  • How to prepare a submission?&lt;br /&gt;
+  • What to do when you think we (or our referees) have got a decision wrong?&lt;br /&gt;
+  • What are we looking for in China?&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Jun 2016 00:00:00 +0800</pubDate>
+        <link>http://externie.github.io/externie/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/06/02/e3808a4e6174757/</link>
+        <guid isPermaLink="true">http://externie.github.io/externie/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/06/02/e3808a4e6174757/</guid>
+        
+        
+        <category>重大讲座 </category>
         
       </item>
     
@@ -32,8 +74,8 @@
   3、参与同学可加入就业指导QQ群163529181，职业规划及就业指导活动不断，更有求职信息推送。&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Jun 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E8%81%8C%E9%80%9A%E8%AE%B2%E5%9D%9B/2016/06/02/e2809ce99da2e99/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E8%81%8C%E9%80%9A%E8%AE%B2%E5%9D%9B/2016/06/02/e2809ce99da2e99/</guid>
+        <link>http://externie.github.io/externie/%E8%81%8C%E9%80%9A%E8%AE%B2%E5%9D%9B/2016/06/02/e2809ce99da2e99/</link>
+        <guid isPermaLink="true">http://externie.github.io/externie/%E8%81%8C%E9%80%9A%E8%AE%B2%E5%9D%9B/2016/06/02/e2809ce99da2e99/</guid>
         
         
         <category>职通讲坛</category>
@@ -45,8 +87,8 @@
         <description>&lt;p&gt;主持或主持完成国家自然基金重点、国家863、973计划课题、北京市重点基金等多项项目。在化工及能源环境领域国际主要期刊AIChE J., Chem. Eng. Sci., Ind. Eng. Chem. Res., Fluid Phase Equilib., Energy Environ. Sci., Environ. Sci. Technol., Green Chem., Fuel等发表SCI论文120余篇；授权发明专利15项，其中国际专利2项；应邀在国际会议作大会及主题报告10余次。2008年获中国石油和化学工业协会技术发明二等奖； 2009年获中国石油和化学工业协会科技进步一等奖；2010年获国家自然科学二等奖1项，其他省部级科技奖3项。&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Jun 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/06/01/e99da2e59091e7b/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/06/01/e99da2e59091e7b/</guid>
+        <link>http://externie.github.io/externie/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/06/01/e99da2e59091e7b/</link>
+        <guid isPermaLink="true">http://externie.github.io/externie/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/06/01/e99da2e59091e7b/</guid>
         
         
         <category>重大讲座 </category>
@@ -58,11 +100,25 @@
         <description>&lt;p&gt;This lecture discusses the key concepts in “clean energy” from source to end-use and emphasizes the importance of a systems approach to solving this complex problem for sustainable developments. Some common options such as solar energy and biofuels will be analysed in terms of these principles to understand the technological and socioeconomic challenges within. If time permits we will also discuss an even more complex sustainability issue – the waste-water-energy nexus.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Jun 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/06/01/436c65616e20456/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/06/01/436c65616e20456/</guid>
+        <link>http://externie.github.io/externie/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/06/01/436c65616e20456/</link>
+        <guid isPermaLink="true">http://externie.github.io/externie/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/06/01/436c65616e20456/</guid>
         
         
         <category>工程科学前沿讲坛</category>
+        
+      </item>
+    
+      <item>
+        <title>Automotive Body Structure – Functional Considerations</title>
+        <description>&lt;p style=&quot;text-align: justify;&quot;&gt;Body Structure in automobiles is a large, complex system that must perform several important functions for the total vehicle. The traditional Body Structure system consists of all welded body panels surrounding the passenger, powertrain and luggage compartments. Functional considerations for the Engineering of Body Structure includes considerations for all major vehicle attributes including safety, durability, aerodynamics, NVH (noise and vehicle harshness), vehicle mass and the packaging and attachment of all components.  Additionally, engineering of Body Structure must conform to the identified business assumptions for each vehicle program including program timing, manufacturing (tools, facilities and process) and cost (cost per vehicle and investment). This lecture will address all engineering considerations mentioned above.
+&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Jun 2016 00:00:00 +0800</pubDate>
+        <link>http://externie.github.io/externie/%E6%B1%BD%E8%BD%A6%E5%B7%A5%E7%A8%8B%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B%20/2016/06/01/4175746f6d6f746/</link>
+        <guid isPermaLink="true">http://externie.github.io/externie/%E6%B1%BD%E8%BD%A6%E5%B7%A5%E7%A8%8B%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B%20/2016/06/01/4175746f6d6f746/</guid>
+        
+        
+        <category>汽车工程前沿讲坛 </category>
         
       </item>
     
@@ -71,8 +127,8 @@
         <description>&lt;p&gt;氢能是高效的可再生、清洁二次能源，由于其储量极为丰富（占宇宙质量的75%），因此也被认为人类的终极能源之一。但氢在地球上主要以化合态存在，开发大规模、廉价、清洁、高效的制氢技术是氢能有效利用的关键。本报告将围绕氢能清洁获取的两种主要途径—光解水产氢与电解水产氢，结合研究组在高效半导体可见光产氢纳米催化剂与低成本电解水产氢催化剂方面的相关研究工作，介绍光、电化学产氢催化剂的研究现状与我们在高效产氢纳米催化剂的设计与制备方面的一些认识与思考。&lt;/p&gt;
 </description>
         <pubDate>Tue, 31 May 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E5%85%B6%E5%AE%83/2016/05/31/e9ab98e69588e58/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%85%B6%E5%AE%83/2016/05/31/e9ab98e69588e58/</guid>
+        <link>http://externie.github.io/externie/%E5%85%B6%E5%AE%83/2016/05/31/e9ab98e69588e58/</link>
+        <guid isPermaLink="true">http://externie.github.io/externie/%E5%85%B6%E5%AE%83/2016/05/31/e9ab98e69588e58/</guid>
         
         
         <category>其它</category>
@@ -85,8 +141,8 @@
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 31 May 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/31/436f6e666f726d6/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/31/436f6e666f726d6/</guid>
+        <link>http://externie.github.io/externie/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/31/436f6e666f726d6/</link>
+        <guid isPermaLink="true">http://externie.github.io/externie/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/31/436f6e666f726d6/</guid>
         
         
         <category>重大讲座 </category>
@@ -99,50 +155,11 @@
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 30 May 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/30/e4bb8e416c70686/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/30/e4bb8e416c70686/</guid>
+        <link>http://externie.github.io/externie/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/30/e4bb8e416c70686/</link>
+        <guid isPermaLink="true">http://externie.github.io/externie/%E9%87%8D%E5%A4%A7%E8%AE%B2%E5%BA%A7%20/2016/05/30/e4bb8e416c70686/</guid>
         
         
         <category>重大讲座 </category>
-        
-      </item>
-    
-      <item>
-        <title>页岩压裂和开采中的工程力学问题</title>
-        <description>&lt;p&gt;暂无讲座简介&lt;/p&gt;
-</description>
-        <pubDate>Sat, 28 May 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/28/e9a1b5e5b2a9e58/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/28/e9a1b5e5b2a9e58/</guid>
-        
-        
-        <category>工程科学前沿讲坛</category>
-        
-      </item>
-    
-      <item>
-        <title>石油工程水射流钻井完井增产技术研究与应用</title>
-        <description>&lt;p&gt;暂无讲座简介&lt;/p&gt;
-</description>
-        <pubDate>Sat, 28 May 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/28/e79fb3e6b2b9e5b/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/28/e79fb3e6b2b9e5b/</guid>
-        
-        
-        <category>工程科学前沿讲坛</category>
-        
-      </item>
-    
-      <item>
-        <title>损伤煤层瓦斯运移过程的热固耦合模型及其应用</title>
-        <description>&lt;p&gt;暂无讲座简介&lt;/p&gt;
-</description>
-        <pubDate>Sat, 28 May 2016 00:00:00 +0800</pubDate>
-        <link>http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/28/e68d9fe4bca4e78/</link>
-        <guid isPermaLink="true">http://externie.github.io/externieblog/%E5%B7%A5%E7%A8%8B%E7%A7%91%E5%AD%A6%E5%89%8D%E6%B2%BF%E8%AE%B2%E5%9D%9B/2016/05/28/e68d9fe4bca4e78/</guid>
-        
-        
-        <category>工程科学前沿讲坛</category>
         
       </item>
     

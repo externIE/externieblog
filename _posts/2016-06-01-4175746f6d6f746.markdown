@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Automotive Body Structure – Functional Considerations"
+dtitle:      	  "美国福特专家讲座：Automotive Body Structure – Functional Considerations"
+time: 		  	  "15:00"
+address:	  	  "重庆大学A区主教504会议室"
+campus:	  	  "A"
+speaker:	   	  "Richard W. Vanker"
+speaker-profile: "Rick Vanker has broad and deep experience in Product Development and Research in the Global Automotive Industry.&nbsp; Rick retired from Ford Motor Company in January, 2007 after 33 years in a variety of product design engineering, vehicle program management, advanced engineering and research positions.&nbsp; His last assignment at Ford from 2002 to 2007 was as Director of Technology Deployment for Asia Pacific and Africa Division.&nbsp; In this position, Rick was responsible for regional reorganization, development and training of Product Development activities in the Asia Pacific and Africa organization. He was also responsible for several core regional functions including Global Processes and Standards, Commonality, Reliability/Quality, Materials Engineering, Research, Advanced Engineering and Government Technical Affairs. A key accomplishment during this time was the planning, approval and initial launch of the Ford Research and Engineering Center in Nanjing, China."
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆自主品牌汽车协同创新中心"
+co-organizer:	  ""
+category:		  "汽车工程前沿讲坛 "
+author:		  "工程学部 陈青"
+editorInCharge:  "陈青"
+---
+<p style="text-align: justify;">Body Structure in automobiles is a large, complex system that must perform several important functions for the total vehicle. The traditional Body Structure system consists of all welded body panels surrounding the passenger, powertrain and luggage compartments. Functional considerations for the Engineering of Body Structure includes considerations for all major vehicle attributes including safety, durability, aerodynamics, NVH (noise and vehicle harshness), vehicle mass and the packaging and attachment of all components.  Additionally, engineering of Body Structure must conform to the identified business assumptions for each vehicle program including program timing, manufacturing (tools, facilities and process) and cost (cost per vehicle and investment). This lecture will address all engineering considerations mentioned above.

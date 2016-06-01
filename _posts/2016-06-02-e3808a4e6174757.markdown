@@ -1,0 +1,33 @@
+---
+layout: 			post
+title:       	  "《Nature》期刊主编讲座：如何在《Nature》及其姊妹刊上发表文章"
+dtitle:      	  "《Nature》期刊主编讲座：如何在《Nature》及其姊妹刊上发表文章"
+time: 		  	  "09:30"
+address:	  	  "主教504会议室"
+campus:	  	  "A"
+speaker:	   	  "《Nature》系列期刊大中华区执行主编 Ed Gerstner"
+speaker-profile: "Ed Gerstner博士积极倡导科学，热切主张抓住新技术为开放获取所带来的机会。1997年他获得悉尼大学物理学博士学位，此后五年分别在悉尼大学、剑桥大学和萨里大学从事科研。2002年加入《Nature》杂志，先后担任《Nature》、《Nature Materials》、《Nature Physics》和《Nature Communications》的编辑。2012年前往上海，帮助建立自然出版集团在中国大陆的第一个编辑部。作为大中华区的执行主编，他的使命是为整个《Nature》系列期刊建立位于中国的编辑团队，以进一步密切与中国科研界的联系，阐释开放研究的益处，并帮助中国科学家将其科研成果发表在世界上最好的期刊上。"
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/2016/0530/20160530093415219.jpg"
+organizer:		  "重庆大学图书馆"
+co-organizer:	  ""
+category:		  "重大讲座 "
+author:		  "图书馆 谷诗卉"
+editorInCharge:  "谷诗卉"
+---
+为了响应重庆大学双一流建设规划，引导师生的学术成果发表在国际顶级刊物上，进一步增强学校的学术影响力和国际影响力，重庆大学图书馆特别邀请《Nature》系列期刊大中华区执行主编 Ed Gerstner博士走进重庆大学与师生交流，并就开放获取、论文选题与撰写、如何提升论文影响力、期刊发表流程等主题做专题讲座。
+  报告主要内容简介：
+  嗯，你有了一个非同寻常的发现，想告诉全世界。而且，你想把它发表在一份《Nature》系列期刊上。但该选哪个期刊呢? 是啊，为什么推出那么多《Nature》系列期刊呢？《Nature Communications》是干什么的，和其它《Nature》子刊有什么不一样吗? 开放获取是什么，有什么可关注的? 论文该怎么写，才能获得最大的影响力？在我的演讲中，我会尽量回答以上这些问题，以及任何在《Nature》系列期刊上发表论文的问题。我还会谈到：
+  • 我们会寻找怎样的论文去发表？
+  • 处理投稿的流程和机制；
+  • 如何决定论文是否适合我们？
+  • 提交论文要做怎样的准备？
+  • 如果认为我们（或审稿人）的决定是错误的，那该怎么做？
+  • 我们在中国寻找怎样的论文？
+  报告内容英文简介：
+  So, you&#39;ve discovered something extraordinary and you want to tell the world about it. And you want to publish it in a Nature journal. But which journal should you choose? Indeed, why has Nature spawned so many new  s? What is Nature Communications, and what is it trying to do that other Nature journal don&#39;t do already? What is Open Access and why should you care? And how should you write up your research to maximise its impact? In this talk I&#39;ll try to answer these and any other questions you have about getting published in a Nature journal. I&#39;ll also cover:
+  • What we look for in the papers that we consider for publication?
+  • The mechanics of how submissions are handled;
+  • How to decide if your paper could be for us?
+  • How to prepare a submission?
+  • What to do when you think we (or our referees) have got a decision wrong?
+  • What are we looking for in China?
