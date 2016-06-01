@@ -6,7 +6,7 @@ email: externIE@outlook.com
 description: "重大讲座信息APP"
 keyword: "重庆大学，重大，学术讲座，讲座"
 url: "http://externie.github.io"              
-baseurl: "/externie"
+baseurl: "/externieblog"
 
 
 future: true
