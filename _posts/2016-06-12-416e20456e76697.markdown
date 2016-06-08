@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "An Environment-Enhancing Energy Paradigm -- Hydrothermal Processing of Biowaste and Algae into Biofuels with Nutrient Reuse, Wastewater Treatment and Carbon Capture"
+dtitle:      	  "国家“千人计划”张源辉教授讲座"
+time: 		  	  "09:00"
+address:	  	  "动力工程学院303"
+campus:	  	  "A"
+speaker:	   	  "张源辉 教授"
+speaker-profile: "张源辉教授，美国伊利诺依大学（UIUC) 讲席教授（Endowed Innoventor Professor in Engineering,农业与生物工程系历史上第一位讲席教授）；国家“千人计划”引进人才，中国农业大学特聘教授；国务院海外专家咨询委员会专家委员。美国伊利诺依大学（UIUC）生物环境工程系学科主任，农业与生物工程系副主任，农业与生物工程系、机械科学工程系、土木与环境工程系和生物医学工程系教授；获奖奖项包括美国农业与生物工程学会HerryGeise奖，美国供暖、制冷与空调工程师学会杰出贡献奖。2010年作为国家“千人计划”引进人才到中国农业大学水利与土木工程学院兼职工作，开展环境增值能源将生物废弃物和微藻转化成原油的相关研究。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学工程学部"
+co-organizer:	  "重庆大学动力工程学院，低品位能源利用技术及系统教育部重点实验室"
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 吴瑶"
+editorInCharge:  "夏天"
+---
+<p style="text-align: justify;">Agricultural and biofuel production addictively rely on fossil fuel-derived fertilizer, which is the largest single source of reactive nitrogen in biosphere contributing to climate change. However, single-cycle nature fertilizer use would not meet the increasing food and bioenergy demand. Renewable energy can be obtained via various viable sources such as solar, wind and even geothermal. However, there is no clear sustainable pathway for renewable liquid fuels yet. A new paradigm, dubbed as “Environment-Enhancing Energy (E2-Energy)”, and a demonstration system has been established at University of Illinois.

@@ -1,0 +1,28 @@
+---
+layout: 			post
+title:       	  "第15届国际铝合金大会"
+dtitle:      	  "第15届国际铝合金大会"
+time: 		  	  "08:00"
+address:	  	  "重庆富力假日酒店"
+campus:	  	  "undefined"
+speaker:	   	  "James Liu，张海，Laurent Chappuis，Tatsuo Sato，聂建峰等"
+speaker-profile: "James Liu：诺贝丽斯亚洲区总裁"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学"
+co-organizer:	  "材料科学与工程学院"
+category:		  "其它"
+author:		  "材料科学与工程学院 邵凤雨"
+editorInCharge:  "邵凤雨"
+---
+国际铝合金大会自从1986年在美国弗吉尼亚大学召开以来，每两年一届，美洲、欧洲、亚洲地区轮流举办。是铝合金科学与技术及应用领域最高级别的会议，是全球铝工作者的盛会。第 15 届国际铝合金大会（以下简称ICAA15）预计参会人数500余人，其中国外代表约200人。全球主要的铝合金科研机构及铝合金制造应用企业均有代表参会，国内外顶级的铝合金科学家及工程技术专家大多将参会。本次会议侧重铝合金在交通运输领域的研究及应用，将为中国轻量化材料及中国汽车轻量化做出重要的推动用。
+  ICAA15会议将在6月13日至6月16日在重庆富力假日酒店举行。会议将极大的促进中国铝行业及科研工作者与国际同行们的广泛深入交流，加强彼此的合作，提升国际同行对中国铝行业及科学研究的深入了解，提升我国铝业在世界范围的地位和贡献。
+  会议设定九个分会主题，分别为：析出相变，熔铸与凝固，制备加工与热处理工艺，金属塑性与成形，强度、断裂与疲劳，腐蚀与表面性能，新工艺与合金设计，先进原子尺度表征，模拟计算。会议设置大会邀请报告、分会主题邀请报告、一般研究报告、海报及企业产品展示等形式进行研究进展和成果的交流。
+  大会报告：
+  1. Status and Development Trend of China Aluminium Industry. Hai Zhang, Suzhou Research Institute for Non-ferrous  ls &amp;CHINA LCO Research Institute of Science and Technology.
+  2.  The role of innovation in the manufacture of sustainable Al rolled products
+  James Liu Novelis Asia
+  3. Material specifications &amp; recycling for the 2015 ford F-150
+  Laurent Chappuis Ford Motor Company
+  4. Recent advances in research and industrial technologies for aluminum alloys in Japan Tatsuo Sato Aluminum &amp; Copper Company, Kobe Steel Ltd.
+  5. The roles of electron microscopy and modeling in aluminium alloy design Jianfeng Nie Monash University
+  更多信息详见：http://icaa15.cqu.edu.cn
