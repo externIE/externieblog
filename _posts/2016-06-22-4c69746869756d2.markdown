@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Lithium Rechargeable Battery Research and Development"
+dtitle:      	  "Lithium Rechargeable Battery Research and Development"
+time: 		  	  "10:00"
+address:	  	  "重庆大学虎溪校区理科楼LA108"
+campus:	  	  "D"
+speaker:	   	  "Gao LIU (Lawrence Berkeley National Laboratory, USA)"
+speaker-profile: "Dr. Gao LIU is the Group Leader of the Applied Energy Materials Group in the&nbsp;Energy Technologies Area at Lawrence Berkeley National Laboratory, specialized in energy storage R&D. Dr. Liu has led research projects for the U.S. Department of Energy and industry. He has over 100 peer-reviewed publications and over 20 patents and patent applications. He has received numerous awards from his work on electrochemical energy storage materials and systems. The most recent awards include R&D 100 Award in 2013 for conductive polymer for lithium-ion battery application, and FMC Scientific Achievement Award in 2014 for understanding fundamental of prelithiation, and R&D 100 Award in 2015 for high capacity lithium ion anode design."
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/20160620/1466397719393899.png"
+organizer:		  ""
+co-organizer:	  ""
+category:		  "其它"
+author:		  "化学化工学院 何巧艺"
+editorInCharge:  "胡小华"
+---
+暂无讲座简介

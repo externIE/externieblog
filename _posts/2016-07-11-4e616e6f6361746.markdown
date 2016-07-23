@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Nanocatalysis and in situ/operando studies"
+dtitle:      	  "Nanocatalysis and in situ/operando studies"
+time: 		  	  "09:00"
+address:	  	  "重庆大学虎溪校区理科楼LA107"
+campus:	  	  "D"
+speaker:	   	  "陶峰教授-美国堪萨斯大学"
+speaker-profile: "Franklin (Feng) Tao is a tenured Miller associate professor of chemical and petroleum engineering at Department of Chemical and Petroleum Engineering and of chemistry at Department of Chemistry at University of Kansas. He received a Ph.D. from Princeton University with a following postdoc research at University of California—Berkeley and Lawrence Berkeley National Laboratory. His research interests include heterogeneous catalysis for chemical transformations of small molecules to chemical and fuel feedstocks and for environmental remediation, application of catalysis to energy transformation, synthesis and catalysis of single-site &nbsp;l and oxide catalysts, development of in situ and operando characterization instruments/techniques for fundamental studies of catalyst surfaces under reaction conditions and during catalysis, and in situ and operando studies of structure and chemistry of catalysts with ambient-pressure X-ray photoelectron spectroscopy, ambient/high-pressure, high-temperature scanning tunneling microscopy, and environmental transmission electron spectroscopy. He published over 100 research articles. He is an elected fellow of Royal Society of Chemistry. He received&nbsp;Eugene P. Wigner&nbsp;Fellowship (2010), finalist prize of&nbsp;Gerhard Ertl&nbsp;Young investigator award (2011),&nbsp;Paul Holloway&nbsp;award of AVS (2012), NSF-career award, and Miller research award (2014). He is on the advisory editorial boards or editorial boards of several journals including&nbsp;Chemical Society Reviews,&nbsp;Catalysis Science & Technology, and&nbsp;Science China Materials."
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学理学部 化学化工学院"
+co-organizer:	  ""
+category:		  "其它"
+author:		  "化学化工学院 何巧艺"
+editorInCharge:  "胡小华"
+---
+In the presentation, I will introduce the lab- d in situ/operando techniques including ambient pressure X-ray photoelectron spectroscopy and high pressure scanning tunnelling microscopy for studies of catalysts under reaction conditions and during catalysis. I will focus on how these advanced characterization techniques are used for in-situ and operando studies and what specific insights we could achieve from these in situ/operando studies. In situ studies of surfaces of cobalt oxide- d catalysts for water-gas shift and reduction of NO with CO will be presented as examples.

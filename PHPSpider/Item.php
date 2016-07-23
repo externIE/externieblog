@@ -3,8 +3,15 @@
 		var $url;
 		var $category;
 		function __construct($url,$category){
-			$this->url 		= $url;
+			$this->url 		= $this->checkURL($url);
 			$this->category = $category;
+		}
+		function checkURL($url){
+			if (stristr($url,"http://news.cqu.edu.cn/newsv2/")) {
+				return $url;
+			}else{
+				return "http://news.cqu.edu.cn/newsv2/".$url;
+			}
 		}
 		function getURL(){
 			return $this->url;

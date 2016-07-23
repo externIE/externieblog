@@ -1,0 +1,23 @@
+---
+layout: 			post
+title:       	  "&amp;quot庭审进校园&amp;quot系列活动之工伤保险待遇纠纷案"
+dtitle:      	  "&amp;quot庭审进校园&amp;quot系列活动之工伤保险待遇纠纷案"
+time: 		  	  "14:30"
+address:	  	  "重大B区第二综合楼314（法学实践教学中心）"
+campus:	  	  "B"
+speaker:	   	  "重庆市九龙坡区人民法院"
+speaker-profile: ""
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学法学院"
+co-organizer:	  ""
+category:		  "其它"
+author:		  "法学院 杨练"
+editorInCharge:  "张雅莹"
+---
+案由：工伤保险待遇纠纷案
+  原告：郭某
+  被告：野菜村贸易（上海）有限公司
+  承办法院：重庆市九龙坡区人民法院
+  庭审时间：2016年6月15日（星期三）下午14:30
+  庭审地点：B区第二综合楼314（法学实践教学中心）
+  欢迎广大师生前往观摩旁听！

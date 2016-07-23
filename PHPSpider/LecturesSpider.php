@@ -4,8 +4,10 @@
 	require "Item.php";
 	date_default_timezone_set('prc');
 	spider();
+	$mLastPageURL;
 	function spider(){
-		$mainURL = "http://news.cqu.edu.cn/newsv2/info-24.html";//校园网新闻讲座首页
+		$mLastPageURL = $mainURL = "http://news.cqu.edu.cn/newsv2/info-24.html";//校园网新闻讲座首页
+		echo "init！！！！！！！！:".$mLastPageURL;
 		$items = getAllItemsURL($mainURL);
 		crawlerAllItemPages($items);
 		// testFunc();
@@ -34,11 +36,18 @@
 		return $itemsURL;
 	}
 	function nextPage($html){
+		global $mLastPageURL;
 		$nextPageE = $html->find('a.a1',2);
 		if (isset($nextPageE->prev_sibling()->href)) {
 			//还可以继续下一页
+			$nextURL = "http://news.cqu.edu.cn/newsv2/".$nextPageE->href;
+			echo "externIE nextURL::".$nextURL."  lastURL::".$mLastPageURL;
+			if ($nextURL == $mLastPageURL) {
+				return false;
+			}
 			$html->clear();
-			$html->load_file("http://news.cqu.edu.cn/newsv2/".$nextPageE->href);
+			$html->load_file($nextURL);
+			$mLastPageURL = $nextURL;
 			return true;
 		}else{
 			return false;

@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "多原子分子解离吸附过程中的模式特异性和键选择性"
+dtitle:      	  "多原子分子解离吸附过程中的模式特异性和键选择性"
+time: 		  	  "15:00"
+address:	  	  "重庆大学虎溪校区理科楼LA108"
+campus:	  	  "D"
+speaker:	   	  "郭华教授 美国新墨西哥大学"
+speaker-profile: "郭华教授1982年本科毕业于成都电子科技大学，1985年在四川大学获硕士学位，导师为鄢国森教授。1988年于英国Sussex大学获博士学位，师从英国皇家学会会士John N. Murrell。后赴美国西北大学，在George C. Schatz课题组从事博士后研究。1990年－1998年历任美国Toledo大学助理教授、副教授。1998年加入新墨西哥大学，目前是新墨西哥大学的物理系和化学系杰出教授。2013年，郭华教授获选美国物理学会会士。郭华教授的研究方向涵盖气相反应动力学、气体－表面反应动力学、非均相催化与酶催化反应机理等。"
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/20160620/1466413388967865.png"
+organizer:		  "重庆大学理学部  重庆大学化学化工学院"
+co-organizer:	  ""
+category:		  "重大讲座 "
+author:		  "化学化工学院 何巧艺"
+editorInCharge:  "胡小华"
+---
+Dissociative chemisorption is the initial and often rate-limiting step in many heterogeneous processes. As a result, an in-depth understanding of the reaction dynamics of such processes is of great importance for the establishment of a predictive model of heterogeneous catalysis. Overwhelming experimental evidence has suggested that these processes have a non-statistical nature and excitations in various reactant modes have a significant impact on reactivity. A comprehensive characterization of the reaction dynamics requires a quantum mechanical treatment on a global potential energy surface. In this talk, we summarize recent progress in constructing high-dimensional potential energy surfaces for polyatomic molecules interacting with transition  l surfaces  d on the plane-wave density functional theory and in quantum dynamical studies of dissociative chemisorption on these potential energy surfaces. A special focus is placed on the mode specificity and bond selectivity in these gas–surface collisional processes, and their rationalization in terms of the recently proposed Sudden Vector Projection model.

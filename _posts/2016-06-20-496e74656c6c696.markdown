@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Intelligent Vehicle Systems and Control and Their Applications"
+dtitle:      	  "美国福特汽车专家吕建波讲座"
+time: 		  	  "15:00"
+address:	  	  "重庆大学A区主教504会议室"
+campus:	  	  "A"
+speaker:	   	  "吕建波"
+speaker-profile: "Dr. Jianbo Lu is currently a Technical Expert in Advanced Vehicle Controls at Autonomous Vehicle and Controls Research and Advanced Engineering, Research & Innovation Center, Ford Motor Company. He holds a Ph.D. in Aeronautics and Astronautics from Purdue University.&nbsp; He has published around 70 referred research articles. He is an inventor or co-inventor of more than 100 US patents. His invented technologies have been widely implemented in the tens and millions of vehicles with brand name such as Ford, Lincoln, Volvo, and Land Rover. His research interests include Automotive controls, vehicle dynamics, advanced driver assist systems (ADAS), active safety systems, intelligent vehicle systems (IVS), automated driving, future mobility, prognostics and fault tolerance, personalization and user experience. He is a two-time recipient of the Henry Ford Technology Award at Ford Motor Company. He currently serves as an Associate Editor for the IEEE Transactions on Control Systems Technology, and he is on the editorial board of International Journal of Vehicle Autonomous Systems and International Journal of Vehicle Performance. He also serves as the Chair of Intelligent Vehicular Systems and Control Technical Committee under IEEE Society of Systems, Man and Cybernetics.&nbsp; From 2008 to 2014, he served as an Associate Editor for the IFAC J. of Control Engineering Practice. He served as the Vice Chair for Industry and Applications at the 2015’s American Control Conference. Dr. Lu is a senior member of IEEE Control System Society, a member of ASME, SAE, and Tau Beta Pi."
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆自主品牌汽车协同创新中心"
+co-organizer:	  ""
+category:		  "汽车工程前沿讲坛 "
+author:		  "工程学部 陈青"
+editorInCharge:  "陈青"
+---
+The current disruptive technologies in automotive and transportation systems such as diverse mobility, automated driving (including driverless cars), electrification, and connectivity are demanding the automotive research and education to expand their portfolio. One of the expanded portfolios is the vehicle intelligentification (VI), which is an enhancement to the traditional intelligent vehicle systems but focuses on the action part of making car more intelligent through either automation or intelligent utilization of information. The intelligence here is closely related to how human being is thinking, perceiving, making decision, and how they are influenced by the available information. Hence understanding the human driver and mimicking his actions in driving are the essential part of VI, on top of the other  ives. VI has many applications ranging from user experience/driver assistance to autonomous driving. For example, the key to the success of designing driverless car is no more than designing a “virtual driver” that can digitally mimic a human driver to drive a car. VI has a deep root in the traditional expertise of controls, sensing, and networking. In this talk, we use industrial examples to illustrate how the traditional automotive disciplines can contribute to VI and how some Vis are achieved through innovatively utilizing information and approaches. Our goal is to use this to motivate a rather broad thinking in the most exciting era of the automotive history.

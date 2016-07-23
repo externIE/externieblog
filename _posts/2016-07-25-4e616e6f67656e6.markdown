@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Nanogenerators for Self-Powered Systems and Large-scale Blue Energy and Piezotronics for Intelligent Devices"
+dtitle:      	  "王中林院士学术报告会"
+time: 		  	  "10:00"
+address:	  	  "重庆大学虎溪校区图书馆1F-9学术厅"
+campus:	  	  "D"
+speaker:	   	  "王中林 院士"
+speaker-profile: "王中林，中国科学院外籍院士，欧洲科学院院士。王教授是首批中组部“千人计划”顶尖人才入选者，是中国科学院北京纳米能源与系统研究所首席科学家和首任所长，美国佐治亚理工学院终身校董事讲席教授，Hightower终身讲席教授和纳米结构表征中心主任。 &nbsp;"
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/2016/0721/20160721094546997.jpg"
+organizer:		  "重庆大学物理学院 重庆大学化学与化工学院 重庆大学光电工程学院"
+co-organizer:	  ""
+category:		  "重大讲座 "
+author:		  "光电工程学院 周大秋"
+editorInCharge:  "周大秋"
+---
+暂无讲座简介

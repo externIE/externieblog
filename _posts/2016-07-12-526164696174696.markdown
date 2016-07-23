@@ -1,0 +1,18 @@
+---
+layout: 			post
+title:       	  "Radiation Effects: Challenges and Opportunities to the Material Scientists"
+dtitle:      	  "美国密西根大学教授讲座"
+time: 		  	  "16:00"
+address:	  	  "重庆大学A区综合实验楼319会议室"
+campus:	  	  "A"
+speaker:	   	  "王鲁闽  密西根大学终身教授，核科学及核工程专家"
+speaker-profile: "王鲁闽教授1982年自北京赴美留学。1984年获美国威斯康星大学材料科学硕士学位，1988年获博士学位。此后，先后任职于美国阿岗国家实验室和新墨西哥大学，并于1997年受聘于密西根大学核工程与放射科学系。现为密西根大学核工程与放射科学系及材料科学与工程系两系终身教授（密西根大学核工系连续多年在美国核工程系排名第一），2005-2009兼密西根大学电子显微分析实验室主任。王鲁闽教授主要研究方向包括核工程材料的辐照损伤，核废物处置及新型核燃料研发，离子束材料改性等。是美国能源部和自然基金会十余项重大科研项目的主持人，已发表科学研究论文450余篇（SCI论文350余篇），他引10000余次，h-因子44（SCI）、51（Google Scholar)。王鲁闽教授曾多次主持国际辐照损伤领域学术会议，应邀在各种国际学术会议及世界各著名科研机构与大学演讲100余次，是美国材料研究学会，核学会，显微学会等学会会员，美国核学会国际合作委员会负责与中国联络的委员，中国国家自然科学基金委海外杰出青年基金获得者，曾任国际原子能机构核燃料长期储存顾问委员会顾问。王鲁闽教授多年来在中国招收并帮助资助了30多名国内本科及硕士毕业生赴美留学，其中十余人已回国在国内三大核电集团及高校和研究机构任职。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学工程学部"
+co-organizer:	  "重庆大学材料科学与工程学院"
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 陈青"
+editorInCharge:  "陈青"
+---
+While in service，materials in a nuclear reactor are exposed to an intense particle flux originating from the fission reactions taking place in the nuclear fuel. The interaction of energetic particles with the atoms in the solid material displaces those atoms from their stable positions，creating lattice defects. The exact nature，density and the fate of point defects determine the microstructural and microchemical changes，and in turn，the performance of the material in a radiation environment. The typical irradiation effects observed in  ls and ceramics under the TEM include void/bubble and dislocation loop formation，chemical segregation，irradiation induced precipitation and dissolution，with the “ultimate damage” considered to be solid state amorphization.  These changes at the nano- or micro-scale lead to macro-scale effects such as volume swelling，embitterment and accelerated stress corrosion cracking，increased corrosion and leaching rate，thus the early failure of nuclear engineering materials.
+  However，radiation effects at the nano-scale have also been utilized to process various unique nanosctructures，including one to three-dimensional patterned nano-structures. Those structures may have important applications in advanced devices.  This talk will review the fundamental radiation effects observed in the speaker’s research group with TEM over the past 20 years.  Recent progress in radiation processing of nanostructures will be highlighted，emphasizing examples showing how a group of amorphized material can be further damaged to form unique nanostructure patterns.

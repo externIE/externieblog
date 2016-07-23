@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "Bio-Hydrogen and Biogas Production from Microalage Chlorella sp. Biomass"
+dtitle:      	  "泰国孔敬大学Alissara Reungsang教授讲座"
+time: 		  	  "09:30"
+address:	  	  "动力工程学院304"
+campus:	  	  "A"
+speaker:	   	  "Prof. Alissara Reungsang"
+speaker-profile: "Professor Alissara Reungsang received her Ph.D. from Iowa State University, Iowa, U.S.A., M.Sc. from Mahidol University, Bangkok, Thailand, and B.Sc. from Khon Kaen University (KKU), Khon Kaen, Thailand. Her research focuses in environmental biotechnology area including bio-hydrogen production from biomass and bioremediation of pesticides in contaminated soil and water. She received several research awards including KKU&#39;s Gold Medal Researcher Award (2015), Advisor of Outstanding Ph.D. Thesis Award from National Research Council of Thailand (2015), Advisor of KKU&#39;s&nbsp; Outstanding Researcher Award (2009 and 2010), Advisor of KKU&#39;s Outstanding Ph.D. Thesis Award (2014, 2013, 2010 and 2004), Advisor of Taguchi Prize Ph.D. Thesis Award from Thai Society of Biotechnology (2014, 2013), Advisor of Outstanding Ph.D. Thesis Award from Agro-Industry Academic Council of Thailand (2014), First Place “International Creative Bio-energy Championship Open Category from Resource Center for Talent Training in Biomass Energy Technology, from Feng Chia University,Taiwan (2012) and Excellent Research Group Award from Commission on Higher Education (2006)."
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "重庆大学工程学部"
+co-organizer:	  "重庆大学动力工程学院，低品位能源利用技术及系统教育部重点实验室"
+category:		  "工程科学前沿讲坛"
+author:		  "工程学部 吴瑶"
+editorInCharge:  "夏天"
+---
+<p style="text-align: justify;">Extensive utilization of non-renewable fossil fuels has resulted in serious energy crisis and environmental problems. Hydrogen is considered as an ideal alternative to fossil fuels because of its high energy density and clean combustion product. Fermentative hydrogen production from biomass using anaerobic bacteria is receiving increased attention. Aquatic algal biomass, which may be sourced from mass cultivation or natural algal bloom, is considered as a promising substrate for hydrogen fermentation. This presentation will discuss about the innovation and development in hydrogen and biogas production from green microalgae Chlorella sp., and fermentation systems which has been established in Khon Kaen University.

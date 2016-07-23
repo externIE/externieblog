@@ -1,0 +1,17 @@
+---
+layout: 			post
+title:       	  "2016高雅艺术进校园全国高等学校艺术教育专家“聆听音乐 生发畅想”专题讲座"
+dtitle:      	  "2016高雅艺术进校园全国高等学校艺术教育专家“聆听音乐 生发畅想”专题讲座"
+time: 		  	  "15:00"
+address:	  	  "重庆大学A区研究生院308国际会议厅"
+campus:	  	  "A"
+speaker:	   	  "周荫昌"
+speaker-profile: "周荫昌，音乐理论家、教育家，教授。曾任中国人民解放军艺术学院学术、学位委员会常务副主任、文化艺术研究所所长；教育部艺术教育委员会常务副主任；中国音乐家协会教育委员会副主任。现任中国人民解放军艺术学院教授。"
+speaker-img:	  "http://externie.com/nophoto.png"
+organizer:		  "党委宣传部"
+co-organizer:	  "党委研究生工作部"
+category:		  "其它"
+author:		  "党委宣传部 朱莹"
+editorInCharge:  "韦丽"
+---
+暂无讲座简介
